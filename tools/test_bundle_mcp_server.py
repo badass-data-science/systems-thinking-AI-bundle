@@ -54,14 +54,33 @@ expect("search_cards returns nothing for gibberish", json.loads(s.search_cards("
 scores = [r["score"] for r in json.loads(s.search_cards("stock and flow"))["results"]]
 expect("search_cards results are ranked", scores == sorted(scores, reverse=True))
 
-# Searching each card's own title: floors are today's rates (153 first, 171 in top 3, of 176).
-first = top3 = 0
-for cid, c in s.CARDS.items():
-    got = [r["id"] for r in json.loads(s.search_cards(c["title"], limit=3))["results"]]
-    first += bool(got) and got[0] == cid
-    top3 += cid in got
-expect(f"title search ranks the card first for >= 153 cards (now {first})", first >= 153)
-expect(f"title search ranks the card in the top 3 for >= 171 cards (now {top3})", top3 >= 171)
+# Searching each card's own title, with the exact-name bonus and without it (word
+# weighting alone). Floors are today's rates: 176 and 173 first, of 176.
+def title_search(exact_bonus=True):
+    saved, s.EXACT = s.EXACT, (s.EXACT if exact_bonus else 0)
+    first = top3 = 0
+    for cid, c in s.CARDS.items():
+        got = [r["id"] for r in json.loads(s.search_cards(c["title"], limit=3))["results"]]
+        first += bool(got) and got[0] == cid
+        top3 += cid in got
+    s.EXACT = saved
+    return first, top3
+
+
+first, top3 = title_search()
+expect(f"title search ranks the card first for all 176 cards (now {first})", first == 176)
+first, top3 = title_search(exact_bonus=False)
+expect(f"without the exact-name bonus, title search ranks the card first for >= 173 (now {first})", first >= 173)
+expect(f"without the exact-name bonus, title search ranks the card in the top 3 for all 176 (now {top3})", top3 == 176)
+
+top = lambda q: json.loads(s.search_cards(q, limit=1))["results"][0]["id"]  # noqa: E731
+expect("search matches a title ignoring case and apostrophes",
+       top("DONT REACT HARDER TO A LATE SIGNAL") == "dont-react-harder-to-late-signals")
+expect("search matches a card id", top("fixes-that-fail") == "fixes-that-fail")
+expect("search keeps two-letter words such as AI", top("AI system as a system") == "ai-system-as-a-system")
+expect("search ranks a card first from part of its title", top("fixes fail") == "fixes-that-fail")
+expect("search ranks a card first from its symptoms", top("quick fix makes it worse") == "fixes-that-fail")
+expect("search counts a repeated query word once", s._score("loop loop", "feedback-loop") == s._score("loop", "feedback-loop"))
 
 # related_cards
 rel = json.loads(s.related_cards("fixes-that-fail"))

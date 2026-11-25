@@ -2,6 +2,11 @@
 
 Notable changes to the bundle, newest first. Dates are absolute. Entries before 2026-11-25 summarize work done while the bundle lived beside the book's private manuscript; that history wasn't carried over.
 
+## 2026-11-25: search ranking
+
+- The MCP server's `search_cards` now ranks a card first when the query is its title, an alias or its id (ignoring case and punctuation), gives words in a card's title more weight than words in its summary, weights words by how rare they are across cards, counts each query word once, and keeps two-letter words such as "AI". Ties go to the shorter title. Searching each card's title now puts that card first for all 176 cards (was 153); without the exact-name rule, the weighting alone puts it first for 173 and in the top three for all 176. `match_archetype` is unchanged.
+- `tools/test_bundle_mcp_server.py`'s floors raised to the new rates, with checks for partial titles, ids, apostrophes, two-letter words and repeated words.
+
 ## 2026-11-25: tests and CI
 
 - New tests: `tools/test_bundle_mcp_server.py` (52 checks: every MCP tool, planted errors for `check_loops`, and floors on search and archetype matching at today's rates) and `tools/test_run_evals.py` (29 checks, offline: a stand-in `claude` script plays the answering model and the grader).

@@ -22,6 +22,7 @@ they rank candidates to read, and every result says so.
 from __future__ import annotations
 
 import json
+import math
 import re
 import sys
 from collections import Counter
@@ -53,13 +54,37 @@ def _card_text(c: dict) -> str:
     return " ".join(parts)
 
 
-INDEX = {cid: Counter(_tokens(_card_text(c))) for cid, c in CARDS.items()}
-HEAD = {cid: set(_tokens(" ".join([c["title"], " ".join(c.get("aliases") or []), c["summary"]]))) for cid, c in CARDS.items()}
+# Search scores each distinct query word by where it appears in a card (the
+# title counts most, then aliases and summary, then the body, capped so a long
+# card can't win on repetition), weighted by how rare the word is across cards.
+# A query that is a card's whole title, alias or id ranks that card first.
+# Search keeps two-letter words such as "AI", which archetype matching drops.
+
+
+def _search_tokens(text: str) -> list[str]:
+    return [t for t in re.findall(r"[a-z0-9]+", text.lower()) if t not in STOP and len(t) > 1]
+
+
+def _norm(text: str) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+", text.lower().replace("'", "")))
+
+
+INDEX = {cid: Counter(_search_tokens(_card_text(c))) for cid, c in CARDS.items()}
+TITLE = {cid: set(_search_tokens(c["title"])) for cid, c in CARDS.items()}
+HEAD = {cid: set(_search_tokens(" ".join([" ".join(c.get("aliases") or []), c["summary"]]))) for cid, c in CARDS.items()}
+NAMES = {cid: {_norm(c["title"]), _norm(cid)} | {_norm(a) for a in c.get("aliases") or []} for cid, c in CARDS.items()}
+_search_df = Counter(t for counts in INDEX.values() for t in counts)
+SEARCH_IDF = {t: math.log((1 + len(CARDS)) / (1 + d)) + 1 for t, d in _search_df.items()}
+EXACT = 100.0
 
 
 def _score(query: str, cid: str) -> float:
-    q = _tokens(query)
-    return sum(min(INDEX[cid][t], 3) + (3 if t in HEAD[cid] else 0) for t in q)
+    words = set(_search_tokens(query))
+    score = sum(SEARCH_IDF.get(t, 0) * (min(INDEX[cid][t], 3) + (6 if t in TITLE[cid] else 3 if t in HEAD[cid] else 0))
+                for t in words)
+    if score and _norm(query) in NAMES[cid]:
+        score += EXACT
+    return round(score, 2)
 
 
 def _brief(c: dict) -> dict:
@@ -76,8 +101,9 @@ def search_cards(query: str, type: str | None = None, limit: int = 8) -> str:
     concept, procedure, archetype, heuristic, case or tool. Returns ranked
     candidates with summaries; open the best ones with get_card."""
     pool = [cid for cid, c in CARDS.items() if type is None or c["type"] == type]
-    ranked = sorted(pool, key=lambda cid: -_score(query, cid))
-    hits = [dict(_brief(CARDS[cid]), score=_score(query, cid)) for cid in ranked[:limit] if _score(query, cid) > 0]
+    scores = {cid: _score(query, cid) for cid in pool}
+    ranked = sorted((cid for cid in pool if scores[cid] > 0), key=lambda cid: (-scores[cid], len(CARDS[cid]["title"]), cid))
+    hits = [dict(_brief(CARDS[cid]), score=scores[cid]) for cid in ranked[:limit]]
     return json.dumps({"note": "keyword ranking, not semantic search", "results": hits}, indent=1, ensure_ascii=False)
 
 
@@ -123,8 +149,6 @@ def _section(body: str, name: str) -> str:
 # summary), weighted by inverse document frequency across archetypes.
 # The Misapplications and Distinguish-from sections are excluded because they
 # name the neighbours' vocabulary on purpose.
-import math  # noqa: E402
-
 ARCH = {cid: c for cid, c in CARDS.items() if c["type"] == "archetype"}
 ARCH_TEXT = {cid: Counter(_tokens(" ".join([
     c["title"], " ".join(c.get("aliases") or []), c["summary"], c["diagnostic_question"],
