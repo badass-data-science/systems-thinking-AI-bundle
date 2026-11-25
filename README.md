@@ -15,7 +15,7 @@ The main thing here is **`systems-thinking/`**, an Agent Skill: a `SKILL.md` ent
 ## Quick start
 
 ```bash
-pip install -r requirements.txt          # build, MCP server and tests (pyyaml, mcp<2)
+pip install -r requirements.txt          # build, MCP server and tests (pyyaml, mcp 2)
 pip install pysd SALib rdflib            # only to run the book's code
 cp -r systems-thinking ~/.claude/skills/ # install as a Claude Code skill
 ```
@@ -62,7 +62,7 @@ Then ask Claude Code about a recurring problem, a feedback loop or what to deleg
 zip -r systems-thinking-skill.zip systems-thinking
 ```
 
-**As an MCP server.** Needs `pip install -r requirements.txt` (`mcp` below version 2, which renamed the server class this script uses).
+**As an MCP server.** Needs `pip install -r requirements.txt` (`mcp` version 2; with version 1 installed, the server won't start).
 
 ```bash
 claude mcp add systems-thinking -- python3 /full/path/to/tools/bundle_mcp_server.py /full/path/to/systems-thinking
