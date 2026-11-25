@@ -6,7 +6,7 @@ ranking worse fails. Run with:
 
     python3 test_bundle_mcp_server.py
 
-Needs pyyaml and mcp 1.x. Exits 1 if any check fails.
+Needs pyyaml and mcp 2.x. Exits 1 if any check fails.
 """
 import copy
 import json
@@ -187,5 +187,30 @@ import asyncio  # noqa: E402
 names = {t.name for t in asyncio.run(s.mcp.list_tools())}
 expect("all eight tools are registered", names == {"search_cards", "get_card", "list_cards", "related_cards",
                                                      "match_archetype", "check_loops", "list_evals", "get_eval"})
+
+
+# A real round trip: start the server over stdio as an MCP client would, list its
+# tools and call two of them.
+from mcp import ClientSession, StdioServerParameters  # noqa: E402
+from mcp.client.stdio import stdio_client  # noqa: E402
+
+
+async def round_trip():
+    server = StdioServerParameters(command=sys.executable, args=[str(Path(s.__file__)), str(s.BUNDLE)])
+    async with stdio_client(server) as (read, write), ClientSession(read, write) as session:
+        await session.initialize()
+        listed = {t.name for t in (await session.list_tools()).tools}
+        card = (await session.call_tool("get_card", {"id": "fixes-that-fail"})).content[0].text
+        loops = (await session.call_tool("check_loops", {"structure": yaml.safe_dump(base)})).content[0].text
+        return listed, card, loops
+
+
+try:
+    listed, card, loops = asyncio.run(asyncio.wait_for(round_trip(), 60))
+    expect("over stdio: the server lists all eight tools", listed == names)
+    expect("over stdio: get_card returns the card", "title: Fixes That Fail" in card)
+    expect("over stdio: check_loops runs", loops.startswith("OK:"))
+except Exception as exc:  # noqa: BLE001
+    expect(f"over stdio: the server starts and answers ({type(exc).__name__}: {exc})", False)
 
 sys.exit(1 if failures else 0)

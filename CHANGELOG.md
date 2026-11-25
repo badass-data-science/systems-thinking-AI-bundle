@@ -2,6 +2,11 @@
 
 Notable changes to the bundle, newest first. Dates are absolute. Entries before 2026-11-25 summarize work done while the bundle lived beside the book's private manuscript; that history wasn't carried over.
 
+## 2026-11-25: MCP server moved to mcp 2
+
+- `tools/bundle_mcp_server.py` now uses `mcp` version 2 (`MCPServer`, which version 1 called `FastMCP`); its tools and their behaviour are unchanged. `requirements.txt` now asks for `mcp>=2,<3`, so anyone who installed `mcp` 1 for the earlier hold below version 2 needs to rerun `pip install -r requirements.txt`.
+- `tools/test_bundle_mcp_server.py` (62 checks) now also starts the server over stdio as an MCP client would, lists its tools and calls two of them.
+
 ## 2026-11-25: search ranking
 
 - The MCP server's `search_cards` now ranks a card first when the query is its title, an alias or its id (ignoring case and punctuation), gives words in a card's title more weight than words in its summary, weights words by how rare they are across cards, counts each query word once, and keeps two-letter words such as "AI". Ties go to the shorter title. Searching each card's title now puts that card first for all 176 cards (was 153); without the exact-name rule, the weighting alone puts it first for 173 and in the top three for all 176. `match_archetype` is unchanged.

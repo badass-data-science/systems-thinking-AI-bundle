@@ -29,7 +29,7 @@ from collections import Counter
 from pathlib import Path
 
 import yaml
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_bundle as bb  # noqa: E402
@@ -92,7 +92,7 @@ def _brief(c: dict) -> dict:
             "chapters": c["chapters"], "path": c["_path"]}
 
 
-mcp = FastMCP("systems-thinking-bundle")
+mcp = MCPServer("systems-thinking-bundle")
 
 
 @mcp.tool()
