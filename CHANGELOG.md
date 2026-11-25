@@ -2,6 +2,15 @@
 
 Notable changes to the bundle, newest first. Dates are absolute. Entries before 2026-11-25 summarize work done while the bundle lived beside the book's private manuscript; that history wasn't carried over.
 
+## 2026-11-25: tests and CI
+
+- New tests: `tools/test_bundle_mcp_server.py` (52 checks: every MCP tool, planted errors for `check_loops`, and floors on search and archetype matching at today's rates) and `tools/test_run_evals.py` (29 checks, offline: a stand-in `claude` script plays the answering model and the grader).
+- New CI workflow (`.github/workflows/ci.yml`) running all six checks on Python 3.10 and 3.14, plus checks that the generated files are up to date, that `graph.ttl` parses, and that `eval-results/` has no local paths. Badges added to `README.md`.
+- New `requirements.txt`. `mcp` is now held below version 2: version 2 renamed `FastMCP`, so `pip install mcp` installed a version the MCP server couldn't import. Install steps in `README.md` changed to `pip install -r requirements.txt`.
+- Fix: the MCP server's `check_loops` raised an exception when given text that parsed as YAML but wasn't a mapping (a sentence or a list); it now returns a message.
+- `README.md`'s archetype-matching figures corrected to the current 23 recognition evals: 10 right at rank 1, 15 in the top three (it said 7 and 9 of 11).
+- The "before every commit" list in `AGENTS.md` and `README.md` gains the two new tests.
+
 ## 2026-11-25: moved to its own public repository
 
 - The bundle now lives in this repository instead of an `ai-bundle/` folder in the book's private manuscript repository. It was copied as a snapshot; the earlier commit history stays private.

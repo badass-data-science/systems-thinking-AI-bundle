@@ -1,5 +1,7 @@
 # Systems Thinking AI Bundle
 
+[![CI](https://github.com/badass-data-science/systems-thinking-AI-bundle/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/badass-data-science/systems-thinking-AI-bundle/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](requirements.txt) [![Agent Skill: 176 cards](https://img.shields.io/badge/Agent%20Skill-176%20cards-8a2be2.svg)](systems-thinking/SKILL.md)
+
 *Systems Thinking for Supervillains: Feedback, Causality, and Mental Models for the Age of Agentic AI* by Lady Napalm, compiled into a structured bundle that an AI agent can load, query and be tested against, with the book's villainous framing removed. It holds the book's methods, not its prose.
 
 The main thing here is **`systems-thinking/`**, an Agent Skill: a `SKILL.md` entry point that routes the agent to the right one of 176 cards (concepts, procedures, archetypes, heuristics, cases and tools), each a Markdown file with YAML frontmatter.
@@ -13,7 +15,7 @@ The main thing here is **`systems-thinking/`**, an Agent Skill: a `SKILL.md` ent
 ## Quick start
 
 ```bash
-pip install pyyaml mcp                   # build and MCP server
+pip install -r requirements.txt          # build, MCP server and tests (pyyaml, mcp<2)
 pip install pysd SALib rdflib            # only to run the book's code
 cp -r systems-thinking ~/.claude/skills/ # install as a Claude Code skill
 ```
@@ -42,9 +44,12 @@ Then ask Claude Code about a recurring problem, a feedback loop or what to deleg
 | `tools/test_build_bundle.py` | Plants five known bugs in a copy of the bundle and confirms the validator reports each one. |
 | `tools/review_archetypes.py` | Compares each archetype card's structure with the book's diagram and writes `archetype-review/`. |
 | `tools/test_review_archetypes.py` | Plants known errors and confirms the review script reports each one. |
+| `tools/test_bundle_mcp_server.py` | Calls every MCP tool on the bundle, plants errors in structures given to `check_loops`, and fails if search or archetype matching gets worse than today. |
 | `tools/bundle_mcp_server.py` | A book-agnostic MCP server over any bundle (search, cards, graph neighbours, archetype matching, evals, and `check_loops`). |
 | `tools/run_evals.py` | Runs the evals with and without the skill through headless `claude -p` and grades the answers blind with a second model. |
+| `tools/test_run_evals.py` | Runs the eval pipeline offline against a stand-in `claude` script: setup, answering, blind grading with retries, resuming and the summary statistics. |
 | `tools/bench_match_archetype.py` | Measures the MCP server's archetype matching against the recognition evals. |
+| `requirements.txt`, `.github/workflows/ci.yml` | Python dependencies, and the CI workflow that runs every check below on each push and pull request. |
 | `tools/quote_frontmatter.py` | Quotes frontmatter values containing `: ` so YAML parses them. |
 | `PILOT-NOTES.md` | What the pilot found, decisions made, and recommendations for the other books. |
 | `PROGRESS.md` | The working log kept during the build. |
@@ -57,13 +62,13 @@ Then ask Claude Code about a recurring problem, a feedback loop or what to deleg
 zip -r systems-thinking-skill.zip systems-thinking
 ```
 
-**As an MCP server.** Needs `pip install mcp pyyaml`.
+**As an MCP server.** Needs `pip install -r requirements.txt` (`mcp` below version 2, which renamed the server class this script uses).
 
 ```bash
 claude mcp add systems-thinking -- python3 /full/path/to/tools/bundle_mcp_server.py /full/path/to/systems-thinking
 ```
 
-The most useful tool is `check_loops`, which runs the book's trace-and-count rule on a diagram the agent has drawn, so loop labels come from a deterministic check rather than the agent's feel. `match_archetype` is keyword-based (7 of 11 recognition evals right at rank 1, 9 of 11 in the top three); it returns every archetype's diagnostic question so the agent can ask them all.
+The most useful tool is `check_loops`, which runs the book's trace-and-count rule on a diagram the agent has drawn, so loop labels come from a deterministic check rather than the agent's feel. `match_archetype` is keyword-based (10 of 23 recognition evals right at rank 1, 15 of 23 in the top three); it returns every archetype's diagnostic question so the agent can ask them all.
 
 **As plain files.** Every card is Markdown with YAML frontmatter, readable by a person and loadable by any retrieval system. `graph.ttl` loads into any RDF store or `rdflib`; `SKILL.md` has an example SPARQL query.
 
@@ -76,7 +81,11 @@ python3 tools/build_bundle.py                # validate and regenerate; exits 1 
 python3 tools/test_build_bundle.py           # confirm the validator still catches planted bugs
 python3 tools/review_archetypes.py --check   # archetype cards still match the book's diagrams
 python3 tools/test_review_archetypes.py      # confirm the review script still catches planted errors
+python3 tools/test_bundle_mcp_server.py      # MCP tools work and ranking hasn't got worse
+python3 tools/test_run_evals.py              # eval runner works (offline; no model calls)
 ```
+
+CI runs the same checks on every push and pull request, on Python 3.10 and 3.14. It also fails if the generated files differ from what the build writes, if `graph.ttl` doesn't parse, or if `eval-results/` contains a local path.
 
 To check that `systems-thinking/code/` still matches the book's published code, point the build at a checkout of it:
 
