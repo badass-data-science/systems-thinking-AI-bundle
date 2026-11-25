@@ -173,6 +173,8 @@ def check_loops(structure: str) -> str:
         st = yaml.safe_load(structure)
     except yaml.YAMLError as exc:
         return f"Couldn't parse structure: {exc}"
+    if not isinstance(st, dict):
+        return "Couldn't read structure: expected a mapping with `variables`, `links` and `loops`."
     rep = bb.Report()
     bb.check_structure({"_path": "input", "structure": st}, rep)
     lines = rep.errors + rep.warnings
