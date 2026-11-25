@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It frames the problem as a collective action problem and an arms race, including a price-war analogy, but never spells out the loop in which each department reacts to the others' grades and pushes them higher in turn."
+  },
+  {
+   "score": 1,
+   "why": "It says each department's best move is to hold or raise grades and that a chair who tightens alone loses majors, so the memo fails."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a binding college-wide distribution norm, transcript context such as course medians, and judging departments on learning outcomes rather than enrollment alone."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly advises against sending the memo as a stand-alone request."
+  },
+  {
+   "committed": false,
+   "why": "The cap or target it proposes is college-wide and simultaneous, not partial."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-010",
+ "cond": "without",
+ "cost": 0.032104,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

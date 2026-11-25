@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names the vacancies, overtime, burnout, resignations, vacancies reinforcing loop and shows mandatory overtime as the cheap fix that feeds it."
+  },
+  {
+   "score": 1,
+   "why": "It places (a) as a parameter on quitting, (b) as a rule cutting the overtime-to-burnout link, and (c) as the goal that makes overtime look right."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes (c) may need an outside body and the bonus is weak, but never explicitly rates power against reach or suggests testing options in a model."
+  },
+  {
+   "score": 1,
+   "why": "It chooses clearly, labels the bonus a stopgap buying time for (b) and (c), and flags the answer-time dip during the transition."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It keeps the bonus as a targeted bridge and makes the cap central rather than dismissing either."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-020",
+ "cond": "new",
+ "cost": 0.034996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names availability and has reference-class forecasting use the long-run record, treating last month as one observation."
+  },
+  {
+   "score": 1,
+   "why": "Names anchoring and prescribes both swinging the value through sensitivity analysis and getting independent estimates made without seeing 0.5."
+  },
+  {
+   "score": 0,
+   "why": "The tone is neutral, but the answer never frames these biases as normal features of judgment rather than failings."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Suggesting Beta(2,2) as the distribution keeps the estimate centered on 0.5, which could quietly preserve the anchor it aims to fix.",
+ "id": "model-009",
+ "cond": "old",
+ "cost": 0.026812000000000002,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

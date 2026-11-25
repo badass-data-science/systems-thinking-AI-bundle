@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It names the vacancies → overtime → burnout → vacancies reinforcing loop but never frames mandatory overtime as a quick fix that backfires (Fixes That Fail)."
+  },
+  {
+   "score": 0.5,
+   "why": "It roughly identifies the links each option touches, including (c) changing the incentive to push overtime, but never places them on leverage bands as parameter, rule and goal."
+  },
+  {
+   "score": 0.5,
+   "why": "It flags that who sets the metric determines how hard (c) is, but it treats (c) as subsidiary rather than most powerful and never mentions testing options in a model."
+  },
+  {
+   "score": 1,
+   "why": "It chooses the cap first, says the cap only manages the symptom while the hiring pipeline addresses the root cause, and notes that answer times will worsen during the transition."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It keeps the bonus as a later or conditional option and does not dismiss it on principle."
+  }
+ ],
+ "notes": "It overstates that the cap is the only proposal that breaks the loop and calls (c) cheap and budget-independent, even though (c) changes the goal that drives the loop.",
+ "id": "fresh-020",
+ "cond": "without",
+ "cost": 0.039571999999999996,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It builds an evidence-based graph of read, act and review edges, but never records agents as explicit (acts on, reads output of, reviewed by) triples."
+  },
+  {
+   "score": 1,
+   "why": "It flags forecast → procurement → orders as the unreviewed path that moves money, and identifies procurement as having no reviewer."
+  },
+  {
+   "score": 0.5,
+   "why": "Sandbox injection of a bad forecast and the noted feedback loops gesture at dynamics, but it never hands paths to a CLD or simulation or says the graph is only the map."
+  },
+  {
+   "score": 0,
+   "why": "It does not address verifying agent-drafted triples that a decision rests on."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-008",
+ "cond": "without",
+ "cost": 0.032411999999999996,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

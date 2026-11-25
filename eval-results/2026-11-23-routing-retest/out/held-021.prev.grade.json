@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says a check that could not say no gives no information, and it recommends a requirements table of failable items: page and word limits, required sections, formatting, eligibility, budget caps, attachments and mandatory statements."
+  },
+  {
+   "score": 1,
+   "why": "It says to list chapters and attachments from the actual files rather than a typed list, and to confirm each was examined, including front matter, budget and appendices."
+  },
+  {
+   "score": 1,
+   "why": "It treats the confident 'done' as not evidence, requires quoted source references, and has a human check high-stakes items against the funder's source."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds script or validator checks for mechanical items and a portal test of the package, but never recomputes narrative figures against the budget spreadsheet or opens every attachment and link."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects asking the same agent to try harder; its 'least sure' prompt sits inside a redesigned, evidence-backed check."
+  }
+ ],
+ "notes": "",
+ "id": "held-021",
+ "cond": "prev",
+ "cost": 0.036775999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

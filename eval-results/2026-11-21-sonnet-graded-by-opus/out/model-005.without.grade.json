@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says six free parameters can fit many curves, so reproducing history doesn't show the model captures the real mechanisms."
+  },
+  {
+   "score": 0.5,
+   "why": "It checks whether parameters map to real quantities and which assumptions the reorg changes, but never reviews structure link by link with the people who work there or with independent reviewers."
+  },
+  {
+   "score": 0.5,
+   "why": "It runs sensitivity over plausible parameter ranges, but doesn't tie that to the reorg decision or commit in advance to what result would prove the plan wrong."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-005",
+ "cond": "without",
+ "cost": 0.022396,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

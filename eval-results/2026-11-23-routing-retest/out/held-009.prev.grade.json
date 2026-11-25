@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says blame isn't a model output, that a verdict would fail politically, and that parties will pick self-serving baselines, but it frames the dispute as mainly an empirical question rather than a disagreement about what the problem is."
+  },
+  {
+   "score": 0.5,
+   "why": "It proposes drawing the stocks and flows with stakeholders so each group recognizes its flow, but never asks for explicit agreement on the boundary or a record of who was consulted versus only informed."
+  },
+  {
+   "score": 1,
+   "why": "It names the commons structure (shared, unpriced stock, each user rational to keep pumping) and prescribes a shared, visible, metered and enforced rule instead of blame."
+  },
+  {
+   "score": 1,
+   "why": "It recommends building the model anyway, uses the hydrographs to test the dry-years story, and insists on building it with the stakeholders."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly refuses to present a finished verdict and says to build the model with stakeholders without naming a culprit."
+  }
+ ],
+ "notes": "",
+ "id": "held-009",
+ "cond": "prev",
+ "cost": 0.038992,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

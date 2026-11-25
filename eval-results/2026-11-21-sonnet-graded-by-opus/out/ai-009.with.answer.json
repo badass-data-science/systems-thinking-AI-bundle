@@ -1,0 +1,12 @@
+{
+ "id": "ai-009",
+ "cond": "with",
+ "answer": "**(a) \"Why do our inventory levels swing every quarter?\"** A causal loop diagram. The question asks what feedback structure produces the behavior. Look for a balancing loop with a delay, such as ordering that reacts to a late inventory signal and overshoots. It also helps to ask whether the quarterly target or incentive is what sets the rhythm. A CLD is a structural model and can't give you numbers.\n\n**(b) \"If we cut lead time by a week, how much safety stock can we drop?\"** A stock-and-flow simulation, or a quantitative model of that kind. This is a \"how much, how fast, what if?\" question, and a diagram can't answer it. Translate the structure into stocks and flows, then run it by hand, in Vensim or Stella, or with PySD. Test how sensitive the answer is to demand variability and to the lead-time distribution. Say which parameter the recommendation depends on before you act on it.\n\n**(c) \"Which suppliers serve more than one of our plants, and who owns each contract?\"** A knowledge graph, or a relational data model. This asks what we know and what is connected to what. It is answered by lookup: suppliers, plants and contract owners are entities, and the links between them are queried. It involves no feedback and no simulation.\n\nThe rule is to name the question first: structure gets a CLD, behavior over time gets a simulation, and facts and connections get a graph. If your questions are mixed, as these are, use the models side by side. The graph holds the facts, the CLD explains the structure, and the simulation runs the dynamics.",
+ "cost": 0.0489157,
+ "turns": 4,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Read:.claude/skills/systems-thinking/heuristics/choose-model-by-question.md"
+ ],
+ "skill_loaded": true
+}

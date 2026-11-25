@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names specification gaming/Goodhart and maps it onto Fixes That Fail: an immediate click win, a delayed erosion of retention and subscriptions, and a response of optimizing clicks harder."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly recommends measuring return visits and retention directly and treating click gains as a bridge rather than the answer."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The closing aside that the aggregate pattern resembles Escalation is a loose fit, though it is attributed to a case card and does no harm.",
+ "id": "ai-002",
+ "cond": "new",
+ "cost": 0.0235,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says every model simplifies and uses Borges' 1:1 map to show a reduction-free model is useless."
+  },
+  {
+   "score": 0.5,
+   "why": "Asks which simplification breaks the conclusions and says to test and revise where the model fails, but never frames the modeler's discipline as stating what the model left out and watching those omissions for pushback."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-015",
+ "cond": "without",
+ "cost": 0.022576,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

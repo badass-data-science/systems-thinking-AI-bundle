@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the net-total fit can't separate the two stories and warns that a flattening curve is easy to fit with several free parameters."
+  },
+  {
+   "score": 0.5,
+   "why": "It audits each model's assumptions and counts free parameters, but never proposes link-by-link review with sales or support staff or with reviewers who built neither model."
+  },
+  {
+   "score": 1,
+   "why": "It gives many discriminating checks (adds vs churn, churn by support contact, timing, segments, funnel) and asks each analyst to name in advance what result would prove them wrong."
+  },
+  {
+   "score": 0.5,
+   "why": "It reasons about the expansion-vs-support decision through asymmetry, reversibility and a pilot, but never tests which uncertain parameters would flip the choice."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says fit can't discriminate and never picks the better-fitting model."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-016",
+ "cond": "without",
+ "cost": 0.034728,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

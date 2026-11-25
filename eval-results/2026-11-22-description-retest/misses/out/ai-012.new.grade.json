@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says to look the citation up in independent sources such as Scholar, Crossref and WorldCat, and explains that fluent output looks the same whether real or not."
+  },
+  {
+   "score": 1,
+   "why": "Says to run the code in a clean environment and not to trust printed output the model may have written."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly says to treat the report's own confidence as data, not as evidence, and says plausibility is the wrong thing to go on."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The claim that Donella Meadows died in 2001 is correct and a useful red flag, though the answer rightly still requires a lookup.",
+ "id": "ai-012",
+ "cond": "new",
+ "cost": 0.02042,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

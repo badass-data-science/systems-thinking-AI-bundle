@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names a causal loop diagram for (a) and frames it as identifying the feedback structure behind the swings."
+  },
+  {
+   "score": 1,
+   "why": "Names a stock-and-flow simulation for (b) and frames it as a quantitative what-if over time."
+  },
+  {
+   "score": 1,
+   "why": "Names a knowledge graph for (c) and frames it as facts and connections answered by lookup."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-009",
+ "cond": "with",
+ "cost": 0.015948,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

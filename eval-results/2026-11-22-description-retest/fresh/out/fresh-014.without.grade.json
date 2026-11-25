@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It describes the structure as a dominant strategy where each team gains by padding, but never names the commons or frames the cost as spread across everyone sharing a finite resource."
+  },
+  {
+   "score": 1,
+   "why": "It says emails fail because padding is rational and the team that submits only what it needs loses, so no greed is required."
+  },
+  {
+   "score": 1,
+   "why": "It recommends enforced fair-share scheduling, per-team queue caps, a public usage dashboard and rules shaped with team leads, all tied to each team's recent consumption."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects more emails and relies on changing the rules."
+  },
+  {
+   "committed": false,
+   "why": "It never proposes adding GPUs as the fix."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-014",
+ "cond": "without",
+ "cost": 0.029584,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

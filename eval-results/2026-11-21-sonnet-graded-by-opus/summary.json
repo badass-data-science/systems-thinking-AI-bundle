@@ -1,0 +1,1003 @@
+{
+ "n": 55,
+ "mean_with": 0.9386363636363636,
+ "mean_without": 0.8153030303030303,
+ "mean_diff": 0.12333333333333334,
+ "diff_95ci": [
+  0.08090909090909092,
+  0.17242424242424245
+ ],
+ "cost_usd": 6.7930159,
+ "rows": [
+  {
+   "id": "ai-001",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1057515,
+    "notes": "The claim that a 1% error rate 'would show up in roughly one reviewed summary in five' is arithmetically wrong (it would be about one reviewed summary in a hundred), though this does not affect the main argument."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0730644,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-002",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0457268,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.047134800000000004,
+    "notes": "The 'Escalation' archetype is misapplied: it describes two parties outdoing each other, not one team intensifying its own fix."
+   }
+  },
+  {
+   "id": "ai-003",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0779488,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.052192800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-004",
+   "kind": "critique",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0774984,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0393468,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-005",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0712217,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0393348,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-006",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.100517,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0638768,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-007",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08076660000000001,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0657268,
+    "notes": "The third-order effects, such as leadership loosening release gates and trust collapse, are stated as confident predictions rather than hedged speculation."
+   }
+  },
+  {
+   "id": "ai-008",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09099940000000001,
+    "notes": "The answer also treats the forecasting agent as unreviewed, which is a defensible reading, and invokes a named procedure (audit-your-checks) without harm."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06180479999999999,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-009",
+   "kind": "discriminate",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0648637,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0523004,
+    "notes": "Leading with the static z·σ·√L formula for (b) ignores the dynamic transition effects of a lead-time change, though the formula itself is standard and not harmful."
+   }
+  },
+  {
+   "id": "ai-010",
+   "kind": "apply",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0527848,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.050422800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-011",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0528028,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0564148,
+    "notes": "The required-config list is maintained by hand rather than generated from the repo, so it could drift; otherwise nothing wrong."
+   }
+  },
+  {
+   "id": "ai-012",
+   "kind": "critique",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.047764799999999996,
+    "notes": "The red-flag reasoning assumes 'Meadows, D.' means Donella Meadows (died 2001), but it could be Dennis Meadows, who is alive, so the posthumous-date suspicion is weaker than presented."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.04537480000000001,
+    "notes": "The 'died in 2001' red flag assumes the author is Donella Meadows, but 'Meadows, D.' could equally be Dennis Meadows, who was alive in 2004, so that argument is weaker than presented."
+   }
+  },
+  {
+   "id": "ai-013",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0967173,
+    "notes": "It mostly separates consulted from not-yet-consulted rather than consulted from informed, but the substance is covered."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.07398080000000001,
+    "notes": "Treating 'customers expect it now' as proof of R3 risks dismissing pushback instead of testing the link."
+   }
+  },
+  {
+   "id": "ai-014",
+   "kind": "discriminate",
+   "with": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.046126799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.051636800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-015",
+   "kind": "critique",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0767801,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0429948,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-001",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09226480000000001,
+    "notes": "The R1 sign check is slightly loose (the loop as written has more than two links), but the reinforcing conclusion is correct."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0506208,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-002",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0766775,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0573408,
+    "notes": "Labeling it 'normalization of deviance' is a loosely related but different concept; otherwise nothing harmful."
+   }
+  },
+  {
+   "id": "arch-003",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0413168,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0453968,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-004",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.073807,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0461588,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-005",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.052284800000000006,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0537408,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-006",
+   "kind": "recognize",
+   "with": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07119790000000001,
+    "notes": "Suggesting peak-price rationing risks further eroding the delivery standard that drives the attrition."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0499588,
+    "notes": "Suggesting tiered pricing to ration scarce capacity accepts the eroded delivery standard rather than fixing it."
+   }
+  },
+  {
+   "id": "arch-007",
+   "kind": "recognize",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0881126,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.051200800000000005,
+    "notes": "The claim that coordination cost grows with possible interactions is asserted loosely but is not harmful."
+   }
+  },
+  {
+   "id": "arch-008",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0847617,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06578880000000001,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-009",
+   "kind": "recognize",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0753139,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0500108,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-010",
+   "kind": "recognize",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0957627,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.3333333333333333,
+    "pitfalls": 1,
+    "skill_loaded": false,
+    "cost": 0.0589628,
+    "notes": ""
+   }
+  },
+  {
+   "id": "disc-001",
+   "kind": "discriminate",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09070600000000001,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.046620800000000004,
+    "notes": "Diagnostic 1 says Shifting the Burden's fix never addresses the problem while Fixes That Fail's briefly does; both archetypes really relieve only the symptom, so this test is shaky but not harmful."
+   }
+  },
+  {
+   "id": "disc-002",
+   "kind": "discriminate",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0694189,
+    "notes": "Question 3 leaves a gap for a removable limit that is not your own capacity, but this is minor."
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06901679999999999,
+    "notes": "The answer treats the Attractiveness Principle as limits shifting one after another, closer to theory of constraints, rather than several simultaneous limits that force a deliberate trade-off."
+   }
+  },
+  {
+   "id": "disc-003",
+   "kind": "discriminate",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08671700000000002,
+    "notes": "Describing escalation as two balancing loops cross-linked into a reinforcing spiral is standard and accurate, and nothing in the answer is wrong or harmful."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0497368,
+    "notes": ""
+   }
+  },
+  {
+   "id": "crit-001",
+   "kind": "critique",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08187250000000001,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0549728,
+    "notes": ""
+   }
+  },
+  {
+   "id": "crit-002",
+   "kind": "critique",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0860445,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0535248,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-001",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0746986,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0570868,
+    "notes": "Its main hypothesis and remedies stay technical (change safety, degradation, detection), with organizational structure as a late add-on, so it risks becoming a bundle of technical fixes."
+   }
+  },
+  {
+   "id": "found-002",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08386869999999999,
+    "notes": "The claim that 'nobody was hurt' sits awkwardly with three prior escalations; the timing-mismatch flag is a legitimate check, not an error."
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0601328,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-003",
+   "kind": "procedure",
+   "with": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0833063,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0578908,
+    "notes": "The single 'can't change it from the ED' defense is weak for primary care access, which plausibly drives arrivals through feedback rather than acting as a fixed input."
+   }
+  },
+  {
+   "id": "found-004",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0563648,
+    "notes": "Listing unions, student unions and regulators under Owner stretches the term, since these are parties with veto power rather than the system owner, but it is a minor point."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0565068,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-005",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.039008799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.035828799999999994,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-006",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0626033,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0397908,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-007",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0925719,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06875880000000001,
+    "notes": "The ASCII diagram draws 'Engineers pulled onto bug fixing' a second time for the B1 link, which makes the picture confusing even though the link list is correct."
+   }
+  },
+  {
+   "id": "found-008",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0797312,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.05922279999999999,
+    "notes": "The claim that a decision reflects load from about 18 minutes ago is slightly off: the decision uses a roughly 10-minute window, and the 18 minutes is the lag from onset to capacity arriving."
+   }
+  },
+  {
+   "id": "found-009",
+   "kind": "apply",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08587,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.3333333333333333,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0566468,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-010",
+   "kind": "critique",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.038356799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0360888,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-011",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0401308,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.039160799999999996,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-012",
+   "kind": "discriminate",
+   "with": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0504248,
+    "notes": "It treats a swarm as something one team could deliberately build, and it overstresses homogeneous, simple agents as a requirement."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0453768,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-013",
+   "kind": "discriminate",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0849892,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0583908,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-001",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.10046629999999998,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06782679999999999,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-002",
+   "kind": "procedure",
+   "with": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.043886800000000004,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0341168,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-003",
+   "kind": "critique",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0639495,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0379668,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-004",
+   "kind": "apply",
+   "with": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0756826,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0418228,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-005",
+   "kind": "critique",
+   "with": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0449088,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0412768,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-006",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0524728,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06019480000000001,
+    "notes": "The 'direction of effects' bullet says higher defect rate and drag should hurt B, but they should favor B (paying down debt) and hurt A's margin, which contradicts the answer's own worst case for A (low defects, low drag)."
+   }
+  },
+  {
+   "id": "model-007",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0420128,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0440648,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-008",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.048036800000000004,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0494568,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-009",
+   "kind": "apply",
+   "with": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.055238800000000005,
+    "notes": "Suggesting Beta(2,2) as the distribution keeps the estimate centered on 0.5, which could quietly preserve the anchor it aims to fix."
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0464748,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-010",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0961486,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.059558799999999995,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-011",
+   "kind": "procedure",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08557710000000002,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06990679999999999,
+    "notes": "The answer has power and reach rise together with depth, so it misses the power-versus-reach tradeoff the rubric expects."
+   }
+  },
+  {
+   "id": "model-012",
+   "kind": "apply",
+   "with": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07204749999999999,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0439248,
+    "notes": ""
+   }
+  }
+ ]
+}

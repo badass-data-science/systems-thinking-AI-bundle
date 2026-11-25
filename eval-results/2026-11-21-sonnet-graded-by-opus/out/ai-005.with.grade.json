@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gates (1) and (3), citing identical-answer reproducibility and high stakes requiring explicit confirmation."
+  },
+  {
+   "score": 1,
+   "why": "Assigns (2) and (4) to agent judgment as context-heavy, open-ended and cheap to correct."
+  },
+  {
+   "score": 1,
+   "why": "States the identical-facts-identical-answer test and explains that a gate's non-relaxing scrutiny breaks the trust-and-scrutiny loop."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-005",
+ "cond": "with",
+ "cost": 0.019272,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

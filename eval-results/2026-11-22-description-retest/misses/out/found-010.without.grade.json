@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Point 4 explicitly requires referred users to refer others (compounding) and distinguishes a channel from a loop, which is the self-causation check."
+  },
+  {
+   "score": 1,
+   "why": "Points 1 and 3 list outside causes like seasonality, press, and a competitor's decline that could drive the same growth."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-010",
+ "cond": "without",
+ "cost": 0.016464,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Fixes That Fail and explains how each reasonable sign-off led to rarer, bigger batches that made incidents worse and harder to diagnose."
+  },
+  {
+   "score": 0.5,
+   "why": "Traces the reinforcing side-effect loop and calls the incident a delayed side effect, but omits the balancing loop where sign-offs actually reduce incidents."
+  },
+  {
+   "score": 0.5,
+   "why": "Says each round of the fix feeds the problem and a fourth would repeat it, but does not explicitly project what a fourth does a few rounds out."
+  },
+  {
+   "score": 1,
+   "why": "Recommends smaller, more frequent deploys, automated checks, feature flags and fast rollback, tracking batch size and time to identify the cause, and a time-boxed bridge for any DB review."
+  },
+  {
+   "score": 1,
+   "why": "Moves to the pattern across all three incidents (and asks to verify the first two), the structure, and the belief that approvals feel safer without being safer."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly recommends against the fourth sign-off and allows only a scoped, expiring stopgap."
+  },
+  {
+   "committed": false,
+   "why": "Blames no individual and says the people who added sign-offs weren't wrong."
+  }
+ ],
+ "notes": "Claiming the loop has 'no minus signs' and is purely reinforcing misstates the structure, since the sign-offs do have a real short-term balancing effect on incidents.",
+ "id": "held-002",
+ "cond": "new",
+ "cost": 0.041276,
+ "score": 0.8,
+ "pitfalls_committed": 0
+}

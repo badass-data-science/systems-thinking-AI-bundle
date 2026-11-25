@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It sees diffuse, reasonable exceptions with no open opposition, but reads them mainly as goal erosion; it only hints at an unaccommodated real constraint at the very end."
+  },
+  {
+   "score": 0.5,
+   "why": "It sketches a goal/gap/correction loop, but the target is the stated policy rather than an implicit coordination or response-time target that pulls meetings back."
+  },
+  {
+   "score": 0,
+   "why": "It never suggests asking the people who book Wednesday meetings what they're protecting or where that expectation came from; it only proposes classifying meetings as internal or external."
+  },
+  {
+   "score": 0.5,
+   "why": "Items 4 and 5 (fix why meetings can't move, resize the goal) point toward meeting or changing the target, but much of the advice adds enforcement pressure on the state."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects a stronger re-announcement and explicitly says the policy didn't fail because people ignored it."
+  }
+ ],
+ "notes": "Its core fixes (senior approval, public counts, making each exception owned by a person) push harder on the state without moving the underlying target, which the rubric predicts will meet the same pushback.",
+ "id": "held-018",
+ "cond": "prev",
+ "cost": 0.038284,
+ "score": 0.375,
+ "pitfalls_committed": 0
+}

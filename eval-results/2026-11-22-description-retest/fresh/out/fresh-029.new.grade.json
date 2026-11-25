@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It warns against a verdict and against simulating a disputed structure, but never says the problem definition itself is contested and proposes its own framing."
+  },
+  {
+   "score": 0.5,
+   "why": "It calls for a picture all four groups recognise, built live with everyone in the room, but treats this as link-drawing rather than surfacing each worldview, and places it after a stock-and-flow sketch."
+  },
+  {
+   "score": 0,
+   "why": "It never runs CATWOE or examines the worldview behind each group's preferred fix."
+  },
+  {
+   "score": 0,
+   "why": "It has no consulted/informed/not-consulted marking, and it sketches stock-and-flow in step 2 before any definition is agreed."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly cautions that bed shortage may be a symptom and does not build a capacity model around it."
+  }
+ ],
+ "notes": "It frames the question around delayed transfers of medically fit patients (closer to the nurses' and social workers' view) and starts a stock-and-flow sketch before stakeholders agree, which partly contradicts its own advice not to declare a winner.",
+ "id": "fresh-029",
+ "cond": "new",
+ "cost": 0.040772,
+ "score": 0.25,
+ "pitfalls_committed": 0
+}

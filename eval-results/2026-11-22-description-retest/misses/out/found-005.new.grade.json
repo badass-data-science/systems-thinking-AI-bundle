@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly asks whether outflow (leaving faster) or inflow (hiring slower) moved, framing headcount as a stock."
+  },
+  {
+   "score": 1,
+   "why": "Explains attrition calls for structural fixes while hiring decline may call for recruiting fixes, and that the wrong fix can backfire."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-005",
+ "cond": "new",
+ "cost": 0.016472,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

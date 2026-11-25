@@ -1,0 +1,800 @@
+{
+ "n": 30,
+ "conds": [
+  "new",
+  "prev",
+  "without"
+ ],
+ "means": {
+  "new": 0.8491666666666667,
+  "prev": 0.8241666666666667,
+  "without": 0.6958333333333333
+ },
+ "comparisons": {
+  "new": {
+   "mean_diff": 0.15333333333333332,
+   "ci95": [
+    0.09916666666666667,
+    0.2125
+   ],
+   "better": 19,
+   "worse": 0,
+   "split": {
+    "loaded": {
+     "n": 30,
+     "new": 0.8491666666666667,
+     "without": 0.6958333333333333
+    }
+   }
+  },
+  "prev": {
+   "mean_diff": 0.12833333333333333,
+   "ci95": [
+    0.07833333333333334,
+    0.18333333333333332
+   ],
+   "better": 18,
+   "worse": 0,
+   "split": {
+    "loaded": {
+     "n": 30,
+     "prev": 0.8241666666666667,
+     "without": 0.6958333333333333
+    }
+   }
+  }
+ },
+ "cost_usd": 8.033164,
+ "rows": [
+  {
+   "id": "held-001",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09963190000000001,
+    "notes": ""
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1024575,
+    "notes": "It assumes the agent wrote the tests as well as the change and says review has 'stopped doing anything', both stated with more certainty than the user's summary supports, though it does flag that it lacks the timeline."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.07243440000000001,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-002",
+   "kind": "recognize",
+   "new": {
+    "score": 0.8,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1144529,
+    "notes": "Claiming the loop has 'no minus signs' and is purely reinforcing misstates the structure, since the sign-offs do have a real short-term balancing effect on incidents."
+   },
+   "prev": {
+    "score": 0.7,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1068173,
+    "notes": "The claim that 'every link is positive, so it reinforces itself' is wrong for the quick-fix link, which reduces incidents and forms a balancing loop."
+   },
+   "without": {
+    "score": 0.7,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0761779,
+    "notes": "Claims the sign-offs add 'little real assurance' and suggests retiring one without evidence, which overstates the case and may undercut credibility with the VP."
+   }
+  },
+  {
+   "id": "held-003",
+   "kind": "critique",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09112420000000002,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0919847,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0671259,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-004",
+   "kind": "procedure",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1109966,
+    "notes": "The answer proposes a specific causal order with the marketing date as the origin before any evidence is gathered; it is flagged as an inference, but it could still anchor the room on Product's framing."
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.112165,
+    "notes": "Its upfront hypothesis that the fixed date drove the chain leans toward product's framing, though it is labeled a guess to be tested against the timeline."
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0727699,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-005",
+   "kind": "apply",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.11477520000000001,
+    "notes": "Letting the agent diagnose freely during a live incident keeps the confident-wrong-diagnosis channel open, though the gated-action rules reduce the damage."
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1054332,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.375,
+    "pitfalls": 1,
+    "skill_loaded": false,
+    "cost": 0.0740339,
+    "notes": "Tier 2 lets the agent restart services or roll back changes autonomously on its own diagnosis mid-outage, which risks repeating Saturday's failure on a smaller scale."
+   }
+  },
+  {
+   "id": "held-006",
+   "kind": "recognize",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.10910120000000001,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1054157,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0692839,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-007",
+   "kind": "procedure",
+   "new": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1197982,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.375,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.10804269999999999,
+    "notes": "The suggested board script promises that 'in six weeks we'll know' the causal breakdown, which overstates what observational segmentation can establish."
+   },
+   "without": {
+    "score": 0.375,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0791139,
+    "notes": "It claims the disagreement exists only because no one has checked the data, which treats a partly value-based dispute (e.g. whose job attendance is) as purely empirical."
+   }
+  },
+  {
+   "id": "held-008",
+   "kind": "recognize",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.11319159999999999,
+    "notes": "It wrongly says every link is 'more leads to more' with no minus signs, though step 2 has volume lowering quality, and 'escalates without limit' overstates it."
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09323609999999999,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0646239,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-009",
+   "kind": "apply",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1070095,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.12238990000000001,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0662559,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-010",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.098798,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1328116,
+    "notes": "It claims local data will 'settle much of the committee argument with facts', which overstates how far data can resolve a problem whose framing is contested."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0704999,
+    "notes": "Saying to 'settle the causal debate with local data' implies the problem has one resolvable answer that HMIS data can deliver, which understates how contested it is."
+   }
+  },
+  {
+   "id": "held-011",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0826255,
+    "notes": "The sentence 'about halfway to 200 on that scale only after roughly a year and a half' is garbled, but its timing is roughly right."
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0897841,
+    "notes": "The suggested CFO line says capacity dips for about two months, but the answer's own table shows it below baseline for three months (months 1 to 3), which is a minor inconsistency."
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0704239,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-012",
+   "kind": "procedure",
+   "new": {
+    "score": 0.8,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1535608,
+    "notes": "It states as fact that 'a 20% reserve costs more engineer-time than two hires', which is only true for teams larger than 10 engineers and so depends on team size."
+   },
+   "prev": {
+    "score": 0.9,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.15064329999999998,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.10330990000000001,
+    "notes": "Cleanup can only drain active debt, not latent debt, so the model cannot clean up shortcuts before they bite, which may understate the 20% option."
+   }
+  },
+  {
+   "id": "held-013",
+   "kind": "apply",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.098139,
+    "notes": "It states an unverified sampling error of about ±0.05–0.1 and says the 0.39 gap is 'well outside' it without consulting the actual confidence intervals; the phrase 'lose about 44% of the variance's explanatory structure' is also loose."
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1008629,
+    "notes": "The claim that the estimate error is 'probably around ±0.05' at 2,048 samples is an unverified assertion; SALib reports confidence intervals that should be read directly."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0682999,
+    "notes": "The sentence 'little effect at low churn, but a large one when churn is high or low' is self-contradictory and muddles the interaction explanation."
+   }
+  },
+  {
+   "id": "held-014",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.06896189999999999,
+    "notes": ""
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09544540000000001,
+    "notes": "It loosely calls the mix shift a 'reinforcing effect' when it comes from differential decay rather than a feedback loop, and the equal-churn check ignores the transient from the initial stock mix."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06073150000000001,
+    "notes": "The check that with referral_fraction at 0 or 1 'one stock should stay at zero or at its starting value' is wrong: a stock with no inflow drains through churn rather than holding its starting value."
+   }
+  },
+  {
+   "id": "held-015",
+   "kind": "critique",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0861151,
+    "notes": "The claim that hiring 'passes' 8 in month 4 is slightly off, since it equals 8 in month 4 and exceeds it in month 5."
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08685970000000001,
+    "notes": "The answer never says outright that a per-month rate cannot be a stock, which could leave the user's core stock/flow confusion uncorrected."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0719239,
+    "notes": "The concession that Hiring Rate 'can' be modeled as a stock blurs the stock/flow distinction it otherwise draws correctly."
+   }
+  },
+  {
+   "id": "held-016",
+   "kind": "apply",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1068027,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0811268,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0644559,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-017",
+   "kind": "critique",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0841432,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08241989999999999,
+    "notes": "Calling a one-directional measurement bias 'skewed incentives' is a mislabel, and counting mill yield loss as landfill loss is debatable."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.055711899999999995,
+    "notes": "The worked 53% example adjusts only for residue, though the answer correctly labels it illustrative and lists the other losses."
+   }
+  },
+  {
+   "id": "held-018",
+   "kind": "recognize",
+   "new": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0972148,
+    "notes": "Several fixes (approvers, exception budgets, owners, measurement) add enforcement pressure on the state rather than moving the target, which could reproduce the same resistance."
+   },
+   "prev": {
+    "score": 0.375,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0944793,
+    "notes": "Its core fixes (senior approval, public counts, making each exception owned by a person) push harder on the state without moving the underlying target, which the rubric predicts will meet the same pushback."
+   },
+   "without": {
+    "score": 0.25,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.059321900000000004,
+    "notes": "Leaning on approvers, exception counts and an owner with authority to say no pushes harder on the state without moving the target, which risks the same drift through workarounds."
+   }
+  },
+  {
+   "id": "held-019",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0877377,
+    "notes": ""
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08641750000000001,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0637579,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-020",
+   "kind": "critique",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0908122,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0876961,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.058445899999999995,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-021",
+   "kind": "apply",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0940603,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0967135,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0593759,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-022",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.107779,
+    "notes": ""
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1260895,
+    "notes": "Rollout item 10 says to go 'from 25 users in the pilot to groups of about 8', which garbles the staging and contradicts the answer's own guess that the pilot had fewer users."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0780219,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-023",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0895454,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0876038,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.25,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0537479,
+    "notes": "The empirical advice (comparison groups, follow-up data, lottery-based test of the extension) is sound, but the answer misses the systems-modeling framing entirely."
+   }
+  },
+  {
+   "id": "held-024",
+   "kind": "procedure",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.12412789999999999,
+    "notes": "The table's label for (a), 'nothing structural for it to buy time toward', contradicts the answer's own case that (b) and (c) are the structural fixes."
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1093929,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.07592389999999999,
+    "notes": "Saying (c) needs no new law is an unsupported feasibility claim that could mislead the analyst about approval hurdles."
+   }
+  },
+  {
+   "id": "held-025",
+   "kind": "procedure",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.11367880000000001,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09516729999999998,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0695199,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-026",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0736146,
+    "notes": ""
+   },
+   "prev": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0690732,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0618079,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-027",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09823580000000001,
+    "notes": "The polarity labels in the traced loop are a bit muddled, but the conclusion that the loop is reinforcing is correct."
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1039663,
+    "notes": "The loop wrongly says reduced planting leads to 'more or bigger heat waves'; canopy loss raises local heat exposure, not the frequency or size of heat waves."
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0767799,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-028",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0897538,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.094405,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0600259,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-029",
+   "kind": "critique",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08698340000000002,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0926259,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0570499,
+    "notes": ""
+   }
+  },
+  {
+   "id": "held-030",
+   "kind": "recognize",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07442280000000001,
+    "notes": ""
+   },
+   "prev": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0938728,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0596159,
+    "notes": ""
+   }
+  }
+ ]
+}

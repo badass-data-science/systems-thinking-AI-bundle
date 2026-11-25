@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It shows that homelessness, unlike potholes, reacts to interventions and has many causes, but it never says the definition is disputed or that there is no natural stopping point."
+  },
+  {
+   "score": 1,
+   "why": "It treats housing costs, health services, the magnet effect and enforcement as interacting parts of one system that are all partly right, not as competing single causes."
+  },
+  {
+   "score": 0.5,
+   "why": "It raises the regional boundary and suggests piloting and reallocating, but never recommends drawing out views from homeless people, providers or neighboring cities."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the headline count but adds flow, return and sheltered/unsheltered measures alongside it."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects the single-cause pothole framing and declines to fund just one cause."
+  }
+ ],
+ "notes": "Saying to 'settle the causal debate with local data' implies the problem has one resolvable answer that HMIS data can deliver, which understates how contested it is.",
+ "id": "held-010",
+ "cond": "without",
+ "cost": 0.0401,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

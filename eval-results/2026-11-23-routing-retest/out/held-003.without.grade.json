@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says a good fit to calm history says little about stress behavior, that tuned parameters can hide structural gaps, and that recalibrating would give a model that fits both events and is still structurally wrong."
+  },
+  {
+   "score": 0.5,
+   "why": "Names the missing retry loop, explains why calm history couldn't reveal it, recommends adding it and stress-testing with slow-dependency and retry-storm scenarios, but never compares runs with the loop on and off."
+  },
+  {
+   "score": 0,
+   "why": "No link-by-link review with client engineers or SREs, no independent reviewers, and no record of which parameters were tuned; it only says to use retry parameters measured from code and logs."
+  },
+  {
+   "score": 0.5,
+   "why": "Gives a trust criterion (reproduce the failure from measured behavior) and ties it to go/no-go, but sets no explicit refutation test and runs no sensitivity analysis on retry, backoff and timeout assumptions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says recalibration alone won't validate the model."
+  }
+ ],
+ "notes": "",
+ "id": "held-003",
+ "cond": "without",
+ "cost": 0.039992,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

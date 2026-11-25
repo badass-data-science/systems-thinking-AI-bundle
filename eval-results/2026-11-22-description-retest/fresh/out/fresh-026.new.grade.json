@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It covers consistent answers (fixed query tools) and frequent change (automatic freshness), but never argues a graph is justified over a diagram, and even suggests a Postgres CTE would do."
+  },
+  {
+   "score": 1,
+   "why": "It chooses by how the facts are described: properties sit naturally on edges in Neo4j, RDF is strong on standards and federation, and preference alone is rejected as a reason; Neptune is not mentioned."
+  },
+  {
+   "score": 1,
+   "why": "It says reachability is a lookup the graph answers, while the cascade needs a separate dynamic simulator, and it names retry amplification as a reinforcing feedback loop."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends provenance, declared vs observed edges, and checking answers against incidents, but not verifying dependency facts the agent extracted itself."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-026",
+ "cond": "new",
+ "cost": 0.037644,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

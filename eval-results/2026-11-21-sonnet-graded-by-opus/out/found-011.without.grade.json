@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Identifies a steady 1.1x weekly multiplier as exponential growth and notes that the increments only look modest while they are small."
+  },
+  {
+   "score": 1,
+   "why": "Projects doubling about every 7.3 weeks and roughly 100x in a year, then urges a capacity review and scaling triggers now because lead times are long."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-011",
+ "cond": "without",
+ "cost": 0.0194,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

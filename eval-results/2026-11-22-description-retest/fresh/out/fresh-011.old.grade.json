@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names the eroding-goals / shifting-baseline pattern and explains that the benchmark resets every quarter, so no gap ever opens."
+  },
+  {
+   "score": 0.5,
+   "why": "It explains that each ~1.1-point step stays inside the tolerance and that constant green stops people looking, but never says there is no single decision anyone can point to."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends a fixed anchor such as 88%, the team's best period, but also offers rolling and year-ago baselines that recent results do move, and never says to write the target down."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes a fixed target would have gone red, but never frames the 9-point fall as a gap to close or says future goal changes must be argued as decisions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects reading the decline as noise and treats it as a real trend the review missed."
+  }
+ ],
+ "notes": "The suggested rolling 4-quarter and year-ago baselines would still drift down with performance, just more slowly, so they partly reproduce the original flaw.",
+ "id": "fresh-011",
+ "cond": "old",
+ "cost": 0.031956,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

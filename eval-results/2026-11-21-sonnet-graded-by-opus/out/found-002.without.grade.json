@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Monday's escalation as the event."
+  },
+  {
+   "score": 1,
+   "why": "It identifies the recurring quarterly escalations about two weeks after quarter-end and predicts the next window."
+  },
+  {
+   "score": 0.5,
+   "why": "It covers audit work competing for fixed shared capacity and the lack of a priority rule, but never explains the two-week lag as a backlog that builds and drains slowly."
+  },
+  {
+   "score": 1,
+   "why": "It identifies 'we push through' as the belief that hides the structural problem and frames raising it as a planning question, not a performance one."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-002",
+ "cond": "without",
+ "cost": 0.032048,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

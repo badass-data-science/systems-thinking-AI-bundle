@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Calls the driver shortage a structural hole rather than an objection and plans to have the skeptics co-build the model, but never says outright that the fight will be over boundary and assumptions or that being right isn't enough."
+  },
+  {
+   "score": 1,
+   "why": "Asks directly whether the boundary leaves out service capacity, explains how crowding and unreliability cap the gains, and proposes adding a driver and service-hours stock."
+  },
+  {
+   "score": 1,
+   "why": "Consults the union before the meeting on specific links, builds links live with the board, and treats pushback as a link to fix, though pre-meeting consultation with the two skeptical board members is only implied."
+  },
+  {
+   "score": 0.5,
+   "why": "Swings fare elasticity, driver supply and congestion response one at a time and reports which parameter matters most, but never names the congestion-benefit counting or the three-year horizon as value-laden choices."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Changes who is consulted, bringing in the union and operations, instead of just polishing the presentation."
+  }
+ ],
+ "notes": "",
+ "id": "held-025",
+ "cond": "prev",
+ "cost": 0.027659999999999997,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Shifting the Burden, separates the fast symptomatic fix from the slow fundamental one, and ties the crew dropping from twelve to three to the erosion."
+  },
+  {
+   "score": 1,
+   "why": "Traces a reinforcing loop through budget raids and reduced planting, and notes the multi-year lag that hides the effect and makes recovery costlier each year."
+  },
+  {
+   "score": 1,
+   "why": "Keeps and realistically funds the emergency response, frames it as the quick symptomatic fix, ring-fences forestry, sets a separate contingency reserve, and says to rebuild the crew now."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends tracking canopy cover and heat-exposure measures, but not crew size or planting rate as ongoing capability indicators."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Correctly identifies Shifting the Burden, not Fixes That Fail."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly keeps the cooling centers and funds them realistically."
+  }
+ ],
+ "notes": "The loop wrongly says reduced planting leads to 'more or bigger heat waves'; canopy loss raises local heat exposure, not the frequency or size of heat waves.",
+ "id": "held-027",
+ "cond": "prev",
+ "cost": 0.040052000000000004,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

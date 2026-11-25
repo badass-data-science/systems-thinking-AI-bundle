@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It warns the score may be uncalibrated or drifted, but it still treats the score as a valid basis for routing once calibrated, instead of saying self-reported confidence shouldn't set scrutiny."
+  },
+  {
+   "score": 1,
+   "why": "It says the low problem count may just reflect that nobody looks at auto-approved claims, so the clean record isn't evidence of accuracy."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends a permanent random audit across all score bands with blind adjusters, but never says to set scrutiny by stakes or decision type."
+  },
+  {
+   "score": 0,
+   "why": "It never proposes deterministic rule gates such as amount limits or coverage checks."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says the clean record doesn't support lowering the threshold yet."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-022",
+ "cond": "old",
+ "cost": 0.032024,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

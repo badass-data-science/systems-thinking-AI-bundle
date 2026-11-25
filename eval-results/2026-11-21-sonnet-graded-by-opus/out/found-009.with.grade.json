@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Opens by naming a balancing loop defending an unwritten goal and lists latency, capacity and delivery pressure as candidates."
+  },
+  {
+   "score": 0.5,
+   "why": "Frames workarounds as corrections against a gap toward an unwritten threshold, but never lays out state/goal/gap/correction explicitly and asks 'what sets' the goal rather than who set it."
+  },
+  {
+   "score": 1,
+   "why": "Its lead recommendation is to make the real goal explicit and decide whether to keep, write down or change it, for example a bounded one-approval path, rather than enforcing harder."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-009",
+ "cond": "with",
+ "cost": 0.031904,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

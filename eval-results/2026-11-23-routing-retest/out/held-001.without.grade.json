@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says eight clean months led to four-minute approvals, and that the clean record can't tell 'agent is reliable' from 'reviewers stopped looking', which is the trust-checking loop in substance."
+  },
+  {
+   "score": 1,
+   "why": "It explains that unit tests and a YAML diff can't see production behaviour, keeps more tests as only one item, and recommends staging or canary checks and progressive rollout with auto-rollback."
+  },
+  {
+   "score": 1,
+   "why": "Risk-tiered review with a named owner, a required pre-merge staging or canary check for critical config, and CODEOWNERS gates ties review to risk rather than track record."
+  },
+  {
+   "score": 1,
+   "why": "It proposes tracking time-to-approve and comment rate plus seeded defects, explicitly says not to frame this as reviewer error, and doesn't call the agent untrustworthy."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says not to frame the incident as reviewer error."
+  },
+  {
+   "committed": false,
+   "why": "It opens with 'No' and keeps tests as one action item among several."
+  }
+ ],
+ "notes": "",
+ "id": "held-001",
+ "cond": "without",
+ "cost": 0.037736000000000006,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

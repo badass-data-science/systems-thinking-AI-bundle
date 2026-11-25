@@ -1,0 +1,11 @@
+{
+ "id": "fresh-015",
+ "cond": "new",
+ "answer": "The list isn't heading toward zero. It's settling at 100, and the \"shrinking\" is a slowing approach to that level.\n\n**The model:** each week the list changes by arrivals minus patients seen minus dropouts.\n\n`L(next) = L + 30 − 25 − 0.05·L = 0.95·L + 5`\n\n| Week | List |\n|---|---|\n| 0 | 120.0 |\n| 1 | 119.0 |\n| 2 | 118.1 |\n| 3 | 117.2 |\n| 4 | 116.3 |\n| 5 | 115.5 |\n| 6 | 114.7 |\n| 7 | 114.0 |\n| 8 | 113.3 |\n\n**What's going on:**\n\n- **Dropouts depend on list size.** At 120 people, 5% is 6 a week, so the list falls by 1 a week (30 − 25 − 6). At 113 people, dropouts are about 5.7 and the net fall is about 0.7. The drain shrinks as the list shrinks.\n- **The equilibrium is 100.** The list stops changing when dropouts equal the gap between arrivals and capacity: 0.05·L = 5, so L = 100. It closes about 5% of the remaining gap each week. It's about 113 after 8 weeks, about 105 after 27 weeks, and it never gets below 100.\n- **The list is hiding a shortfall.** Demand exceeds capacity by 5 patients a week. At equilibrium, those 5 leave the list unseen each week rather than waiting. The list looks stable, but a sixth of your referrals (5 of 30) never get treated.\n\n**Caveats:**\n\n- The 5% rate is the key assumption. If people who wait longer drop out at a higher rate, the equilibrium sits lower than 100 and the list falls faster. If dropout is really a share of arrivals, or flat, the dynamics change. I'd check your actual cancellation counts against list size over the past few months.\n- If referrals rise or capacity slips even slightly, the equilibrium moves a lot. With 31 referrals a week, it becomes 120.\n- Fewer people waiting doesn't mean better access. If you want to measure that, track the share of referrals that end up seen, not just the list length.\n\nIf you'd like, I can model what adding a few slots a week would do, or what happens if dropout rises with wait time.",
+ "cost": 0.0435676,
+ "turns": 3,
+ "tool_calls": [
+  "Skill:systems-thinking"
+ ],
+ "skill_loaded": true
+}

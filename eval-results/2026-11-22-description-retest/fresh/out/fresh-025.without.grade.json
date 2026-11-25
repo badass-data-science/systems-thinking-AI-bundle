@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says both vendors are right that their agents meet spec and places the fault in the system design at the boundary between the agents, which implies examining either agent alone won't show the cause."
+  },
+  {
+   "score": 1,
+   "why": "It traces how each agent's action becomes the other's input and how the three-week lag turns their reactions into a delayed-feedback oscillation."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes that each agent's output feeds the other and adds manual review for large reorders, but never recommends explicitly mapping the read/act dependencies or flagging the agent-to-agent path with no human in it."
+  },
+  {
+   "score": 1,
+   "why": "It recommends order-size caps, cooldowns, smaller discount steps, smoothing/damping, system-level KPIs and simulation tests, and a named owner for the joint outcome, without tuning either agent to react harder."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says neither vendor's agent is at fault and assigns ownership of the interaction to the integrator."
+  }
+ ],
+ "notes": "Under 'Share state' it says the replenishment agent should publish planned promotions, which reverses the roles; the promotions agent should publish them.",
+ "id": "fresh-025",
+ "cond": "without",
+ "cost": 0.038284,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

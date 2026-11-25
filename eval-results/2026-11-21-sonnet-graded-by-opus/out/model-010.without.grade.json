@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Gives conditions for choosing Vensim vs Python and a stub test before committing, but no trigger for staying in the spreadsheet and no mention of escalation-of-commitment costs."
+  },
+  {
+   "score": 1,
+   "why": "Requires reproducing the spreadsheet baseline in Vensim and then in PySD on identical settings, within tolerance, before trusting either."
+  },
+  {
+   "score": 1,
+   "why": "Names mismatched time step and integration method (Euler, TIME STEP) as the main cause of differing numbers and includes a time-step halving test."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-010",
+ "cond": "without",
+ "cost": 0.030671999999999998,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

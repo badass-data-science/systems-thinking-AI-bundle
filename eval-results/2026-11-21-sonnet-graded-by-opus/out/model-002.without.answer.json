@@ -1,0 +1,9 @@
+{
+ "id": "model-002",
+ "cond": "without",
+ "answer": "Inflow = min(120, 100) = **100/week** (dock is binding, constant).\nOutflow = min(stock, 90).\n\nAssumption: each week, shipments go out of stock on hand at the start of the week, and the delivery arrives after, so it can't be shipped until next week.\n\n| Week | Start | Inflow | Outflow (min(stock, 90)) | End |\n|---|---|---|---|---|\n| 1 | 200 | 100 | min(200, 90) = 90 | 210 |\n| 2 | 210 | 100 | min(210, 90) = 90 | 220 |\n| 3 | 220 | 100 | min(220, 90) = 90 | 230 |\n| 4 | 230 | 100 | min(230, 90) = 90 | 240 |\n\nStock grows by 10 per week, from 200 to 240 after four weeks.\n\n**What's binding**\n- **Inflow:** dock capacity (100) binds, not supplier output (120). Supplier has 20/week of unused potential.\n- **Outflow:** picker capacity (90) binds, not stock on hand. Stock is never close to limiting shipments.\n- **Net:** the system is inflow-heavy by 10/week, so inventory accumulates indefinitely. Stock would never become binding unless picking exceeded the dock rate.\n\nRaising picker capacity to 100 or more would balance flow at the dock rate. Raising dock capacity alone would only add to the pile-up.",
+ "cost": 0.0179048,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "The answer never asks whether anyone is in charge and never frames the bunching as emergent behavior arising from independent drivers' local decisions."
+  },
+  {
+   "score": 0.5,
+   "why": "It raises agent-based or hybrid modeling, but only as a fallback for driver heterogeneity, and still recommends starting with stock-and-flow rather than identifying emergence as the core misfit."
+  },
+  {
+   "score": 0.5,
+   "why": "It names dispatch rules, geofences, surge pricing and queue rules as factors and policy levers, but never separates them as assigned coordination distinct from the drivers' emergent behavior."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": true,
+   "why": "It opens with 'Yes, a stock-and-flow model fits this well' and endorses the two-stock aggregate core without asking how coordination among drivers actually happens."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-005",
+ "cond": "without",
+ "cost": 0.024768,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 1
+}

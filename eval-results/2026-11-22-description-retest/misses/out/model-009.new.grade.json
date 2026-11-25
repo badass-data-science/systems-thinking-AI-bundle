@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the availability heuristic and says to set the rate from a long-window failure count or base rate, not memory."
+  },
+  {
+   "score": 1,
+   "why": "Names anchoring and gives both a swing test of the first-draft value and an independent estimate made before seeing the number."
+  },
+  {
+   "score": 0,
+   "why": "Never frames the biases as normal features of judgment rather than failings; it only describes the mechanisms."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-009",
+ "cond": "new",
+ "cost": 0.017627999999999998,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

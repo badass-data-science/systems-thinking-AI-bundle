@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It contrasts S1 0.05 with ST 0.44, puts about 0.39 down to interaction, names churn as the likely partner, proposes S2 to confirm, and rejects fixing ad response, though it never cites churn's matching gap."
+  },
+  {
+   "score": 1,
+   "why": "It says churn is the largest contributor and should be measured first, and that price sensitivity (0.15 vs 0.17) is the safer one to simplify."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes S1 sums to about 0.60, leaving roughly 40% as interaction, but never says a one-at-a-time swing near the guesses would miss it."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends rerunning on revenue minus $2M or a clear-$2M indicator and explains that variance is not decision risk, but it asserts an error of about ±0.05 instead of telling the user to check the confidence intervals."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects fixing ad response at its guess."
+  }
+ ],
+ "notes": "The claim that the estimate error is 'probably around ±0.05' at 2,048 samples is an unverified assertion; SALib reports confidence intervals that should be read directly.",
+ "id": "held-013",
+ "cond": "prev",
+ "cost": 0.040639999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

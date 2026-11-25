@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "The answer treats both questions as statistical/empirical and never frames fading as a feedback structure or the extension as a stock-and-decay simulation."
+  },
+  {
+   "score": 0.5,
+   "why": "It says the graph stores relationships and handles lookups and counts but is unreliable for estimating effects, yet it doesn't mention feedback tracing or running time forward."
+  },
+  {
+   "score": 0.5,
+   "why": "It says to revisit the graph later if relationships turn out to matter, but it omits volume, change, outside-data joins, reproducibility, and the graph's role as a data source alongside models."
+  },
+  {
+   "score": 0,
+   "why": "It recommends a data audit, longitudinal statistics and a randomized trial, not a paper sketch with tutors and teachers followed by a small simulation."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly argues against using the graph to answer the causal question."
+  }
+ ],
+ "notes": "The empirical advice (comparison groups, follow-up data, lottery-based test of the extension) is sound, but the answer misses the systems-modeling framing entirely.",
+ "id": "held-023",
+ "cond": "without",
+ "cost": 0.026156,
+ "score": 0.25,
+ "pitfalls_committed": 0
+}

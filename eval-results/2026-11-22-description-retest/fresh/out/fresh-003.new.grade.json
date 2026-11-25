@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names both the late usage report and the four-week delivery delay, and says a delayed feedback loop swings around its target."
+  },
+  {
+   "score": 1,
+   "why": "States the cycle is a property of the structure and a new buyer would likely reproduce it."
+  },
+  {
+   "score": 1,
+   "why": "Calls doubling a bigger reaction to an equally late signal and says it produces larger swings both ways."
+  },
+  {
+   "score": 1,
+   "why": "Recommends live dispensing data and correcting a fraction of the gap, and offers to simulate the rules before any change."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Advises against replacing the buyer unless there is a separate performance problem."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly rejects the order-double rule."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-003",
+ "cond": "new",
+ "cost": 0.028359999999999996,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

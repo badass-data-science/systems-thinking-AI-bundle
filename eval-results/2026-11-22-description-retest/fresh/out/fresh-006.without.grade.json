@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Nodes are directional quantities (rating, diners, wait time, kitchen rush, food quality, satisfaction), and every link in the table carries a polarity."
+  },
+  {
+   "score": 0.5,
+   "why": "It identifies R1 and the balancing loops B1/B2 correctly (each has one minus), but never derives the labels from counting minus signs."
+  },
+  {
+   "score": 1,
+   "why": "It notes the review lag and the slow running average, and explains the shift to balancing loops once demand exceeds fixed capacity, which is limits-to-growth in substance."
+  },
+  {
+   "score": 0,
+   "why": "It never reads the loops aloud as sentences or suggests checking them with staff or regulars."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "R1 uses a 'Good reviews' node that is missing from the variable list and link table, so the table doesn't contain the reinforcing loop it claims, and the remakes link is presented as fact without support.",
+ "id": "fresh-006",
+ "cond": "without",
+ "cost": 0.037556000000000006,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

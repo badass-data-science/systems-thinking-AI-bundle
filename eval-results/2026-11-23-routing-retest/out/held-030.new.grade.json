@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explains that each department's local target (batching, full scanners, block discharge, door-to-doctor) is met by adding delay downstream, so all hit their targets while ED length of stay worsens."
+  },
+  {
+   "score": 0.5,
+   "why": "It says the audit would find every department performing and miss the connecting structure, but never says fixing one part in isolation may just move the queue elsewhere."
+  },
+  {
+   "score": 1,
+   "why": "It recommends tracing patients end to end, splitting waiting time by handoff, finding where queues build, and asking why local targets add up to a worse whole."
+  },
+  {
+   "score": 1,
+   "why": "It recommends adding cross-department flow measures (ED length of stay, decision-to-bed time, turnaround for ED orders) and accepting some loss of local utilization."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects hunting for one underperforming department and warns against blaming the weakest-looking one."
+  }
+ ],
+ "notes": "",
+ "id": "held-030",
+ "cond": "new",
+ "cost": 0.030524000000000003,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

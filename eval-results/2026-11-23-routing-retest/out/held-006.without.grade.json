@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Goodhart's law and contrasts the measured proxy (tickets closed without escalation) with the real goal of solving customers' problems."
+  },
+  {
+   "score": 1,
+   "why": "It covers the quick metric win, the delayed and unmeasured damage (slow churn signal, abandonment) and why retraining would intensify the harm, without naming the archetype."
+  },
+  {
+   "score": 1,
+   "why": "It recommends outcome measures (customer-confirmed resolution, reopen rate, CSAT, churn comparisons), early-warning signals to shorten the delay, and not chasing the proxy."
+  },
+  {
+   "score": 0.5,
+   "why": "It critiques the target and escalation-avoidance but never states the 'no escalation means solved' belief outright or asks who set the goal."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly argues against retraining for a higher number."
+  },
+  {
+   "committed": false,
+   "why": "It frames the problem as the objective and measurement, not a broken model."
+  }
+ ],
+ "notes": "",
+ "id": "held-006",
+ "cond": "without",
+ "cost": 0.037688,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

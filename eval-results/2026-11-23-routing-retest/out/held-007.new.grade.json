@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Step 1 says each group defends its own worldview and would define the problem and success differently, so the district would 'argue forever'."
+  },
+  {
+   "score": 0.5,
+   "why": "It collects each group's problem statement and interviews families and students, but separately rather than as a shared picture of the system built together in one room."
+  },
+  {
+   "score": 1,
+   "why": "It treats the causes as interacting reinforcing loops and questions key assumptions, such as what transportation measures and the blame in the principals' parent story."
+  },
+  {
+   "score": 0,
+   "why": "It doesn't track who has been consulted, and it moves to data analysis on every claim without first agreeing the definitions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects picking one cause and recommends a diagnostic sprint and a staged bundle."
+  }
+ ],
+ "notes": "",
+ "id": "held-007",
+ "cond": "new",
+ "cost": 0.045428,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

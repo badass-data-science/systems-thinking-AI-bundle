@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says outright that power and reach are different: culture is strong but slow, the checklist is weaker but available now, and naming only the strongest lever isn't a finished analysis."
+  },
+  {
+   "score": 1,
+   "why": "It says low leverage doesn't mean don't do it, and that a quick fix is fine when honestly labeled as a stopgap while the structural fix is built."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends doing both in parallel with the checklist labeled as a stopgap, but it doesn't map each intervention to the specific handoff link it changes."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects skipping the checklist."
+  }
+ ],
+ "notes": "The I-PASS evidence claim is hedged appropriately, and the remark about the consultant's incentives is speculative but framed as not implying bad faith.",
+ "id": "fresh-021",
+ "cond": "new",
+ "cost": 0.028668,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

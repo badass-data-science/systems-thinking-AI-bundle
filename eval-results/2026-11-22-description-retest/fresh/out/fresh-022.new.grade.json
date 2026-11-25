@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "The answer calls the score 'data, not evidence' and questions calibration, but never says the system's own confidence measures how sure it sounds rather than whether it is right, or that it shouldn't set how much checking happens."
+  },
+  {
+   "score": 1,
+   "why": "It explains that problems only surface where something looks, and describes the self-reinforcing trust-and-scrutiny loop explicitly."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a fixed-rate random audit regardless of score, blind adjuster review as an independent check distinct from complaints, and mandatory review for high-severity claim types."
+  },
+  {
+   "score": 1,
+   "why": "It recommends score-independent guards such as dollar caps on auto-pay and mandatory review for certain claim types, though it doesn't mention policy-coverage checks."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects lowering the threshold on the clean record and allows only gradual steps after an audit is in place."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-022",
+ "cond": "new",
+ "cost": 0.033431999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

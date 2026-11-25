@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says each vendor can truthfully claim spec compliance because the failure lies in the interaction, which neither spec covers."
+  },
+  {
+   "score": 1,
+   "why": "It traces the full loop, shows each agent's action distorting the signal the other reads, and names the three-week delay as structural."
+  },
+  {
+   "score": 0.5,
+   "why": "It describes the cross-agent signal path and adds a human gate, but never recommends mapping which agent reads and acts on which outputs or flagging the unsupervised agent-to-agent path."
+  },
+  {
+   "score": 1,
+   "why": "It covers discount and order caps, cooldowns, combined-metric monitoring and a named owner, and it recommends partial-gap ordering while warning against reacting harder."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says neither agent is at fault."
+  }
+ ],
+ "notes": "Its definition of inventory position subtracts forecast lead-time demand, which is nonstandard (normally on-hand plus on-order minus backorders), but this is minor.",
+ "id": "fresh-025",
+ "cond": "new",
+ "cost": 0.034311999999999995,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

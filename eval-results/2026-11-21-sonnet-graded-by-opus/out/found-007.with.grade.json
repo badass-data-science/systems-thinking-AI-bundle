@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "All six nodes are named as quantities where higher means more, such as 'Feature delivery rate' and 'New bug rate'."
+  },
+  {
+   "score": 1,
+   "why": "Every link carries a polarity sign, and delays are marked on the slip link and on rushed code turning into reported bugs."
+  },
+  {
+   "score": 1,
+   "why": "The loop is traced back to the backlog, the two minus signs are counted, and it is labelled R."
+  },
+  {
+   "score": 1,
+   "why": "The read-aloud is one continuous causal chain around the loop, and the answer proposes running it past an engineering manager and a salesperson, who own the links."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-007",
+ "cond": "with",
+ "cost": 0.032304,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "The answer says the brief is vague and that each group defends its own metric, but it treats the views as empirically testable hypotheses rather than as a contested problem definition."
+  },
+  {
+   "score": 0.5,
+   "why": "It proposes a flow-map workshop with all four groups and a non-verdict framing, but this comes after data work rather than first, and it is a process map rather than a worldview-surfacing rich picture."
+  },
+  {
+   "score": 0,
+   "why": "CATWOE, and any analysis of the worldview behind each group's preferred fix, is absent."
+  },
+  {
+   "score": 0,
+   "why": "There is no consulted/informed/not-consulted tracking, and stock-and-flow is not limited to the agreed pieces."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly warns that adding beds may just fill them with waiting patients and does not start with a capacity model."
+  }
+ ],
+ "notes": "Letting the board alone fix the headline metric before the groups' views are surfaced risks baking in one framing, which the rubric's soft-systems approach would avoid.",
+ "id": "fresh-029",
+ "cond": "without",
+ "cost": 0.036476,
+ "score": 0.25,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It treats the board's objection as a structural challenge to the model's boundary and plans to win acceptance by building the loop with the board members and letting them name the pattern first."
+  },
+  {
+   "score": 1,
+   "why": "It names driver capacity as outside the boundary, notes that crowding and unreliability would brake ridership gains, and says to check whether the forecast quietly assumes the full schedule runs."
+  },
+  {
+   "score": 0.5,
+   "why": "It moves the union and operations to consulted before the meeting and asks them to check the loop, but the whiteboard co-building with the skeptical board members seems to happen at the meeting rather than before it."
+  },
+  {
+   "score": 0.5,
+   "why": "It sensitivity-tests elasticity, share of new riders from cars, hiring rate and lag against the decision, but never frames counting congestion benefits or the three-year horizon as value-laden choices to name openly."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly changes who is consulted by bringing in the union, scheduling and HR before the board meeting."
+  }
+ ],
+ "notes": "",
+ "id": "held-025",
+ "cond": "new",
+ "cost": 0.04242,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

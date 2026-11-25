@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer states verbatim that the mapping is close enough to be useful and wrong enough to be dangerous."
+  },
+  {
+   "score": 1,
+   "why": "It says wicked sorts by the problem's definition and is closer to Checkland's soft systems, while Cynefin sorts by the stability of cause and effect."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends CATWOE alongside probing but defines Ackoff's mess only to contrast it with chaotic and never calls housing affordability a mess."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-014",
+ "cond": "new",
+ "cost": 0.02272,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

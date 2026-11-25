@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It proposes a parameter fix (slack buffer plus comp time, close to crunch pay or limits) and rates power low, but rates reach narrow where the rubric expects high."
+  },
+  {
+   "score": 1,
+   "why": "Band 3 includes a rule that scope is the flexible variable and a definition of done that covers tests and debt."
+  },
+  {
+   "score": 0.5,
+   "why": "It redefines release success as predictable, sustainable delivery with highest power, but rates reach widest where the rubric expects low."
+  },
+  {
+   "score": 0.5,
+   "why": "Power and reach get separate columns and band 1 is called a short-term bridge, but the answer never names which fix the bridge buys time for."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The answer has power and reach rise together with depth, so it misses the power-versus-reach tradeoff the rubric expects.",
+ "id": "model-011",
+ "cond": "without",
+ "cost": 0.0338,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

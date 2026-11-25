@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It handles the event fully (hotfix confirmation, apology to affected users, rating monitoring) and adds prevention steps, but never notes that deadline pressure is what keeps analysis at the event level."
+  },
+  {
+   "score": 0,
+   "why": "It compares login success to the pre-release baseline but never asks whether ratings or login problems dipped after earlier releases."
+  },
+  {
+   "score": 0.5,
+   "why": "The postmortem asks why QA missed the login bug, a narrow structure question, but it doesn't examine how releases are planned or reviewed and raises no mental-model question about the beliefs behind the process."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Beyond the hotfix and apology, the plan includes a postmortem, a smoke test, staged rollouts and a check for non-login complaints."
+  }
+ ],
+ "notes": "The prevention items jump straight to technical fixes before any postmortem, which can lock in a solution before the systemic cause is understood.",
+ "id": "fresh-004",
+ "cond": "without",
+ "cost": 0.032496,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 0
+}

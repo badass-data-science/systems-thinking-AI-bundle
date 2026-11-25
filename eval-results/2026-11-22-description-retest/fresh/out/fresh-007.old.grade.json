@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says signed, traced loops show only internal consistency, that consistent is not true, and that a clean diagram tempts you to relax scrutiny."
+  },
+  {
+   "score": 1,
+   "why": "Recommends having people who work where each link lives (support, CS, sales, product) defend each link and flagging any link nobody can defend, which matches the intent."
+  },
+  {
+   "score": 1,
+   "why": "Treats the Fixes That Fail label as a separate claim and spells out the canonical test: a quick fix whose delayed side effect worsens the problem."
+  },
+  {
+   "score": 1,
+   "why": "States directly that fluency is not correctness and that a polished output lowers scrutiny."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly refuses to accept the archetype label on the strength of correct polarities and requires naming the fix and its side effect."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-007",
+ "cond": "old",
+ "cost": 0.029608,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

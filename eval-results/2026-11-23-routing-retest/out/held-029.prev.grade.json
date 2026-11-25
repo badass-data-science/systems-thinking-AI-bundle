@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the model was checked only against successes and that the co-designer's review isn't independent, and it gives concrete counter-practices. It doesn't frame this as normal judgment rather than a failing."
+  },
+  {
+   "score": 0.5,
+   "why": "It says a 2% match is expected if parameters were tuned and recommends a blind holdout, but it never recommends recording which parameters were tuned."
+  },
+  {
+   "score": 1,
+   "why": "It recommends writing down in advance what would prove the model wrong, with a concrete churn threshold. It also asks someone outside the model and tier design to review each causal link."
+  },
+  {
+   "score": 1,
+   "why": "It recommends sensitivity swings on elasticity and churn response tied to the decision. It also suggests replacing 'validated' with a statement of which assumptions remain to be tested in a pilot."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says the three matches are not validation."
+  }
+ ],
+ "notes": "",
+ "id": "held-029",
+ "cond": "prev",
+ "cost": 0.038908,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

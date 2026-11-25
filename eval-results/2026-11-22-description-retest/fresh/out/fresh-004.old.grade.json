@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It handles the event well (hotfix, user outreach, rating tracking) and adds a prevention section, but never says that deadline pressure tends to stop the analysis at the event level."
+  },
+  {
+   "score": 0,
+   "why": "It checks review themes for this release only and never asks whether ratings or login failures dipped after earlier releases."
+  },
+  {
+   "score": 0.5,
+   "why": "It targets release-process structure with staged rollouts, checklist items and alerting, but as ready-made fixes rather than a question about why login regressions ship, and it raises no mental-model or belief question."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The plan goes beyond the hotfix and apology to include monitoring, review recovery, prevention and a post-mortem."
+  }
+ ],
+ "notes": "The answer commits to specific prevention measures before the post-mortem has run, which risks fixing symptoms without understanding the cause.",
+ "id": "fresh-004",
+ "cond": "old",
+ "cost": 0.031259999999999996,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 0
+}

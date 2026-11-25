@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says the boundary sits at the facility scale because the data gets hard to collect there, while the question is where the material ends up."
+  },
+  {
+   "score": 1,
+   "why": "Lists contamination residue, unsellable bales, exports and downstream losses as drains past the scale that the model silently counts as diverted."
+  },
+  {
+   "score": 1,
+   "why": "Recommends getting facility residue rates and bale destinations, and reporting the 62% as 'collected for recycling' alongside an estimated recycled figure."
+  },
+  {
+   "score": 0.5,
+   "why": "Proposes an estimated second figure but never asks for each exclusion to be justified, and 'don't give a number you haven't measured' works against the point that rough estimates beat silent success."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly separates the precision of the weighing from the validity of the diversion claim."
+  }
+ ],
+ "notes": "Calling a one-directional measurement bias 'skewed incentives' is a mislabel, and counting mill yield loss as landfill loss is debatable.",
+ "id": "held-017",
+ "cond": "prev",
+ "cost": 0.032131999999999994,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

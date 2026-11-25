@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the escalation loop and explains that each department's response to relative grades raises the benchmark for the others, producing a spiral."
+  },
+  {
+   "score": 1,
+   "why": "States that every step is rational and that a department complying alone loses majors, so the memo fails."
+  },
+  {
+   "score": 1,
+   "why": "Recommends showing grade context on transcripts, a rule that binds all departments and can be verified, and decoupling resources from major counts."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects the memo as the intervention and uses it only to open a structural process."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly warns that a cap on only some departments shifts majors to the others."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-010",
+ "cond": "new",
+ "cost": 0.023864,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

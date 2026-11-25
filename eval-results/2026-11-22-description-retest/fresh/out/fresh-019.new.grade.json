@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Recommends building the model now with guessed numbers and notes explicit equations surface disagreements the sketch hides."
+  },
+  {
+   "score": 0,
+   "why": "Never has each lead write their own equations and compare them before running."
+  },
+  {
+   "score": 1,
+   "why": "Steps the model forward by hand in a table and uses one-at-a-time sensitivity swings to find which guesses to measure first."
+  },
+  {
+   "score": 0,
+   "why": "No guard against anchoring, such as independent estimates or not letting first-draft guesses become defaults."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects waiting for data before quantifying."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-019",
+ "cond": "new",
+ "cost": 0.0233,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

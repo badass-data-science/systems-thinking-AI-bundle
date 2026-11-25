@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says both models are fitted to the same curve and that a flat total fits both stories, so the fit cannot separate them."
+  },
+  {
+   "score": 0.5,
+   "why": "It flags inferred churn as a hidden free parameter, but never proposes a link-by-link structure review with sales or support staff or with independent reviewers."
+  },
+  {
+   "score": 1,
+   "why": "It lists checkable points where the models diverge (gross adds vs churn, cohorts, penetration and support segments, timing) and asks for disconfirming predictions written down beforehand."
+  },
+  {
+   "score": 0,
+   "why": "It discusses pilots and reversibility but never tests which uncertain parameters would flip the expansion-versus-support decision."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects using historical fit to choose between the models."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-016",
+ "cond": "old",
+ "cost": 0.033652,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

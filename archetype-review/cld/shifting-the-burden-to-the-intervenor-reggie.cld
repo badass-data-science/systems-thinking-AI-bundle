@@ -1,0 +1,10 @@
+refining fault incidents -> calls to Reggie: + steelblue
+calls to Reggie -> refining fault incidents: - steelblue
+refining fault incidents -> train a second diagnostician: + steelblue
+train a second diagnostician -> refining fault incidents: - delay steelblue
+calls to Reggie -> in-house diagnostic capability: - delay steelblue
+in-house diagnostic capability -> train a second diagnostician: + steelblue
+
+loop: refining fault incidents, calls to Reggie
+loop: refining fault incidents, train a second diagnostician
+loop: refining fault incidents, calls to Reggie, in-house diagnostic capability, train a second diagnostician

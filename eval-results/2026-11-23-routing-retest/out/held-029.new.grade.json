@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It flags that the tests used only successful price changes and that the reviewer shares assumptions and has a stake, then gives concrete fixes; it does not frame this as normal judgment, but the substance is there."
+  },
+  {
+   "score": 0.5,
+   "why": "It says three matches are weak evidence and that tuning makes the fit a calibration rather than a test, but it never recommends recording which parameters were tuned."
+  },
+  {
+   "score": 1,
+   "why": "It recommends writing down falsifying results in advance and having someone who neither built nor designed the model defend each causal link."
+  },
+  {
+   "score": 1,
+   "why": "It recommends sensitivity tests on the churn, usage and heavy-user guesses, ties them to the decision, and reframes 'validated' as tested so far with metrics to watch."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It says outright that the three matches do not amount to validation."
+  }
+ ],
+ "notes": "",
+ "id": "held-029",
+ "cond": "new",
+ "cost": 0.036808,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

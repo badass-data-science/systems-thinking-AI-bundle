@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It sees the erosion as real, persistent forces rather than defiance and notes that silence wasn't buy-in, but it never frames this as a process correcting toward an unstated goal."
+  },
+  {
+   "score": 0,
+   "why": "There is no loop of state, implicit target, gap and correction; it only says the pressure decays as exceptions arrive."
+  },
+  {
+   "score": 0,
+   "why": "It asks engineers whether they get focus time, not the people booking Wednesday meetings what they're protecting, and it doesn't treat 'nobody knows' as a finding."
+  },
+  {
+   "score": 0.5,
+   "why": "Async alternatives, accommodating real demands and fewer meetings overall point the right way, but most fixes add enforcement, and it never says a stronger message leaves the underlying target untouched."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It argues against a message-only re-announcement and blames no bookers; it points at leadership's own exceptions instead."
+  }
+ ],
+ "notes": "Leaning on approvers, exception counts and an owner with authority to say no pushes harder on the state without moving the target, which risks the same drift through workarounds.",
+ "id": "held-018",
+ "cond": "without",
+ "cost": 0.036456,
+ "score": 0.25,
+ "pitfalls_committed": 0
+}

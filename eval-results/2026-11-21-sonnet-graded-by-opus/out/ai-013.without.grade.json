@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It opens by asking when reps reach for a discount so their words form B1, but it doesn't anchor on a specific undisputed event such as a lost deal or end-of-quarter crunch."
+  },
+  {
+   "score": 0.5,
+   "why": "It builds the diagram step by step on pre-made slides loop by loop, but checks against experience only afterward rather than link by link with the room."
+  },
+  {
+   "score": 0.5,
+   "why": "It avoids blame language well and treats counterexamples as corrections to the model, but it presents the archetype rather than naming it only after the room describes it."
+  },
+  {
+   "score": 0.5,
+   "why": "It pre-wires the sales leader and respected reps and takes comp to leadership separately, but it doesn't map who is consulted versus informed (e.g., finance, product marketing) or plan the next room."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Treating 'customers expect it now' as proof of R3 risks dismissing pushback instead of testing the link.",
+ "id": "ai-013",
+ "cond": "without",
+ "cost": 0.040940000000000004,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

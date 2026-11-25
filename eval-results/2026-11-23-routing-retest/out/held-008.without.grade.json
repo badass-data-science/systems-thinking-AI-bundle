@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It shows each side's local fix landing on the other and notes that nobody owns the shared outcome, but it never frames them as natural allies with a common goal, so it never names the Accidental Adversaries structure."
+  },
+  {
+   "score": 1,
+   "why": "It traces volume, weak candidates, more screening and rejection, slower fills and back to more volume, and explicitly calls it a reinforcing loop."
+  },
+  {
+   "score": 1,
+   "why": "It says both sides are reacting sensibly and each reads the other's reaction as the cause when it is really the effect."
+  },
+  {
+   "score": 1,
+   "why": "It recommends shared time-to-fill and quality metrics, calibrated intake on the candidate profile, and presenting the loop as a joint system problem with shared ownership."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It opens with 'Neither is right' and keeps a balanced, system-level framing throughout."
+  },
+  {
+   "committed": false,
+   "why": "It uses 'volume escalation' only casually and never casts the two groups as rivals in an Escalation archetype."
+  }
+ ],
+ "notes": "",
+ "id": "held-008",
+ "cond": "without",
+ "cost": 0.038292,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

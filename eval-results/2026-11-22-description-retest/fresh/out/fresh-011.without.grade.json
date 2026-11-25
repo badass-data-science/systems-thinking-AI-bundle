@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explains in substance that the baseline resets each quarter and the bar moves down with the metric, so no fixed comparison ever shows a gap, though it doesn't use the archetype's name."
+  },
+  {
+   "score": 0.5,
+   "why": "Says each roughly 1-point step fell inside tolerance and each review was correct by its own rule, but doesn't note that no single decision can be pointed to."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends a fixed target, but the examples aren't anchored to customer or business need or an outside benchmark, and it doesn't say to write the target down."
+  },
+  {
+   "score": 0.5,
+   "why": "Treats 79% as a problem and recovery toward 88% as work to do, but never says future changes to the goal must be argued as explicit decisions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Names noise only as a way the drift hides and calls the decline real and steady."
+  }
+ ],
+ "notes": "Its suggested 'trailing-4-quarter best' reference still moves with recent results, so it can drift down the same way.",
+ "id": "fresh-011",
+ "cond": "without",
+ "cost": 0.032028,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

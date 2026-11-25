@@ -1,0 +1,145 @@
+# Part IV: stocks and flows, software, validation, sensitivity, leverage.
+
+- id: model-001
+  kind: procedure
+  prompt: >
+    Translate this CLD into stocks and flows: "Open support tickets (+)
+    agent overtime; overtime (+) agent burnout, with a delay; burnout (−)
+    resolution rate; resolution rate (−) open tickets." Name the stocks,
+    flows and auxiliaries, and check each loop.
+  expected:
+    - Stocks are open tickets and burnout (accumulated fatigue, the delay turned into a stock).
+    - Flows are tickets arriving, tickets resolved, burnout accruing, and recovery.
+    - Overtime is an auxiliary computed from the ticket backlog against a target (making the hidden goal and gap explicit).
+    - Checks every loop passes through a stock, writes equations with units, and reproduces each link's polarity.
+  uses: [translate-cld-to-stock-and-flow, snapshot-test, auxiliary]
+
+- id: model-002
+  kind: procedure
+  prompt: >
+    A warehouse starts with 200 units. Deliveries arrive at min(supplier
+    output 120, dock capacity 100) per week. Shipments go out at min(stock
+    on hand, 90 picker capacity) per week. Hand-iterate four weeks and say
+    what's binding.
+  expected:
+    - "Inflow is 100/week (dock capacity binds) and outflow 90/week (picker capacity binds while stock exceeds 90)."
+    - "Stock goes 210, 220, 230, 240."
+    - Says pickers bind shipments, the dock binds deliveries, and stock grows by 10/week, so supplier output and storage aren't the issue.
+  uses: [hand-iterate-a-model, stock-and-flow-diagram]
+
+- id: model-003
+  kind: critique
+  prompt: >
+    A model has "shipping rate = 90 units/week" as a constant. What's wrong
+    with that, and how should it be written?
+  expected:
+    - A bare constant hides which constraint binds and discards capacity dynamics.
+    - Write it as a min() of the competing constraints (stock available, capacity), so the binding one can change over time.
+  uses: [stock-and-flow-diagram]
+
+- id: model-004
+  kind: apply
+  prompt: >
+    A simulated feedback loop (rework from rushed jobs) never activates in
+    the base run. A colleague concludes it can be dropped from the model.
+    Respond.
+  expected:
+    - A calm base case doesn't prove a loop harmless; it may only mean nothing disturbed the system or there's no slack.
+    - Shock the model (a few periods of reduced capacity) and compare runs with the loop on and off.
+  uses: [calm-base-case-proves-nothing, hand-iterate-a-model]
+
+- id: model-005
+  kind: critique
+  prompt: >
+    A team calibrated a staffing model by adjusting six parameters until it
+    matched last year's headcount curve almost perfectly, and now wants to
+    use it to plan a reorganization. What should happen first?
+  expected:
+    - A good historical fit is easy to manufacture; behavioral validity doesn't imply structural validity.
+    - Check structure link by link with people who work where each link lives, ideally reviewers who didn't build it.
+    - Run sensitivity on the tuned parameters against the reorganization decision; write down in advance what result would prove the plan wrong.
+  uses: [validate-a-model, fit-is-easy-to-manufacture, structural-and-behavioral-validity]
+
+- id: model-006
+  kind: procedure
+  prompt: >
+    A model compares option A (hire two engineers) with option B (pay down
+    tech debt) and favors A by 40 story points per quarter. Its shakiest
+    guesses are the onboarding time for new hires, the defect rate from tech
+    debt, and how much tech debt slows velocity. Describe a one-at-a-time
+    sensitivity test and what you'd report.
+  expected:
+    - Frames the outcome as A's margin over B, so a sign change means the recommendation flips.
+    - Swings each guess ±25% with the others held fixed, draws a tornado chart, and finds flip points.
+    - Reports which unmeasured parameter the recommendation depends on as the thing to measure first.
+    - Notes the method can't see two guesses being wrong together.
+  uses: [one-at-a-time-swing-test, sensitivity-analysis]
+
+- id: model-007
+  kind: apply
+  prompt: >
+    A Sobol analysis of two parameters gives S1 = [0.10, 0.60], ST = [0.40,
+    0.88], S2 = 0.28. Interpret it.
+  expected:
+    - Parameter 2 dominates on its own (60% of the variance).
+    - Parameter 1 has little effect alone but a substantial total effect (0.40), mostly through interaction (ST−S1 ≈ 0.30, consistent with S2 = 0.28).
+    - A one-at-a-time swing near the guesses could make parameter 1 look unimportant; measure parameter 2 first and don't drop parameter 1.
+    - Indices are sample estimates with uncertainty.
+  uses: [sobol-analysis]
+
+- id: model-008
+  kind: apply
+  prompt: >
+    Each run of a model takes 15 minutes and it has 12 uncertain parameters.
+    Someone proposes a Sobol analysis with a base sample of 1,024. Advise.
+  expected:
+    - Estimates the cost (Saltelli sampling needs about N × (2D + 2) runs, about 26,600 runs at N=1,024 with second-order indices, months of compute serially).
+    - Recommends Morris screening first to rank parameters, then a smaller Sobol on the top few if needed.
+  uses: [morris-screening, sobol-analysis]
+
+- id: model-009
+  kind: apply
+  prompt: >
+    A modeler sets the probability of a supplier failure at 30% because
+    "last month's failure was a disaster." Another modeler's first draft used
+    0.5 for a parameter nobody has measured, and every later version still
+    uses about 0.5. Name the biases and the counter-practices.
+  expected:
+    - "Availability heuristic: the record, not the memorable incident, should set the rate."
+    - "Anchoring: swing the first-draft number and have someone estimate it independently before seeing it."
+    - Treats both as normal features of judgment, not moral failings.
+  uses: [availability-heuristic, anchoring, validate-a-model]
+
+- id: model-010
+  kind: procedure
+  prompt: >
+    A team wants to move a 6-stock spreadsheet model into Vensim and also
+    load it in Python. What decision process and checks would you recommend?
+  expected:
+    - Writes a trigger for each branch (spreadsheet, dedicated software, PySD); escalation of commitment has costs.
+    - After any translation (XMILE export, PySD import), reproduces a known run on identical inputs before trusting it.
+    - Checks the time step and integration method if results differ.
+  uses: [choose-simulation-tooling, verify-after-translation, numerical-integration]
+
+- id: model-011
+  kind: procedure
+  prompt: >
+    For a team stuck in Fixes That Fail (weekend crunches before every
+    release), propose one intervention at each leverage band and evaluate
+    them on power and reach.
+  expected:
+    - "Parameter: crunch pay or crunch limits (low power, high reach)."
+    - "Rule: release scope rules or a definition of done (mid)."
+    - "Goal or paradigm: what counts as success for a release (high power, low reach)."
+    - Rates power and reach separately; labels any stopgap and names the fix it buys time for.
+  uses: [rank-interventions, leverage-points, label-the-stopgap]
+
+- id: model-012
+  kind: apply
+  prompt: >
+    Write the stock update rule for a stock-and-flow model and explain why a
+    stock can keep rising while its inflow is falling.
+  expected:
+    - End level equals start level plus inflows minus outflows, per time step (a first-order difference equation).
+    - The stock rises as long as net inflow is positive, even if shrinking; a + into a stock means "adds to," not "moves with."
+  uses: [stock-and-flow-diagram, plus-into-a-stock]

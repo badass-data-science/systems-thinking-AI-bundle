@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It computes 0.99 × 1.03 = 1.0197 per cycle, notes there is no finite equilibrium, and concludes prices grow about 2% per hour without bound."
+  },
+  {
+   "score": 0.5,
+   "why": "It shows the escalation arises from the two rules interacting in a feedback loop, but never frames this as emergent behavior in a complex domain."
+  },
+  {
+   "score": 1,
+   "why": "It recommends hard floors and ceilings that sit outside the agent's logic, plus monitoring, circuit breakers and simulation of the joint dynamics."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-006",
+ "cond": "without",
+ "cost": 0.03156,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

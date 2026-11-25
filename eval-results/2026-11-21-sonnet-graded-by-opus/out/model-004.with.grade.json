@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says the base run only shows the threshold isn't reached because nothing pushes the system into rushing, not that the loop is irrelevant."
+  },
+  {
+   "score": 0.5,
+   "why": "Proposes stress scenarios such as capacity shortfall, but never explicitly compares runs with the loop switched on and off."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-004",
+ "cond": "with",
+ "cost": 0.023756,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

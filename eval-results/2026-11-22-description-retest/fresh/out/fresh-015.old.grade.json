@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States the weekly rule (30 in, 25 seen, 5% of the list leaves) and computes dropouts from the start-of-week list, e.g. 30 − 25 − 6 at 120."
+  },
+  {
+   "score": 1,
+   "why": "Steps to 119, 118.1, 117.1, 116.3 and shows the list settling toward 100, where 30 = 25 + 5% of 100."
+  },
+  {
+   "score": 1,
+   "why": "Says referrals exceed capacity by 5 a week and that cancellations are the only thing closing the gap."
+  },
+  {
+   "score": 1,
+   "why": "Says outright this isn't good news, names cancellations as the driving flow, and counts the 5–6 a week as lost patients who never get seen."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says the list isn't being worked down and won't go below about 100."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-015",
+ "cond": "old",
+ "cost": 0.033732,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

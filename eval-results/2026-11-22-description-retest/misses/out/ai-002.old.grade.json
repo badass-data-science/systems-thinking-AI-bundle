@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Goodhart's Law, which is specification gaming in substance, and maps it onto Fixes that Fail with the fast CTR win, the delayed loss of retention, and the escalating CTR push."
+  },
+  {
+   "score": 1,
+   "why": "It recommends measuring long-horizon outcomes such as return rate and subscriptions directly, treating CTR as a guardrail and periodically revalidating it."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-002",
+ "cond": "old",
+ "cost": 0.022747999999999997,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

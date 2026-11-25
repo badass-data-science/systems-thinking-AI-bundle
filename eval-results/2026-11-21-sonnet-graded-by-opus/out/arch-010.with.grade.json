@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Fixes That Fail as the main structure."
+  },
+  {
+   "score": 1,
+   "why": "It traces the balancing quick-fix loop (B1) and the delayed reinforcing side-effect loop of staleness, distrust and more caches (R1)."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends using caches as a bridge while fixing the root cause of the slowness, but never says to ask what each fix does a few rounds out."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It invokes Shifting the Burden only with a competing fundamental fix (queries, model, metric definitions) and explicit capability erosion (R3)."
+  }
+ ],
+ "notes": "",
+ "id": "arch-010",
+ "cond": "with",
+ "cost": 0.02926,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says 'optimal' is a red flag because strategy under uncertainty has no single optimum, but it never classifies the problem as complex or names the domain misclassification."
+  },
+  {
+   "score": 1,
+   "why": "It states plainly that a polished, authoritative output shows fluency, not correctness."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends reversible, low-cost first moves, a small experiment and escalation triggers, but still frames them as steps toward verifying and adopting a plan, not as a probe portfolio that replaces the plan."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-004",
+ "cond": "without",
+ "cost": 0.018908,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

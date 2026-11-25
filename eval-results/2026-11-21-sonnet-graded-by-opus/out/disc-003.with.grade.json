@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says escalation actors respond to the other party's relative position and commons actors respond to a shared resource they all draw on."
+  },
+  {
+   "score": 1,
+   "why": "The answer says everyone draws the commons down directly with no allocator, while in Success to the Successful a rule allocates the resource based on past performance and feeds the leader."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Describing escalation as two balancing loops cross-linked into a reinforcing spiral is standard and accurate, and nothing in the answer is wrong or harmful.",
+ "id": "disc-003",
+ "cond": "with",
+ "cost": 0.02118,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

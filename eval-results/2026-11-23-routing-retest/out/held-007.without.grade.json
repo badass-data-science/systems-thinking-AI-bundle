@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It treats absenteeism as several problems under one label, with each stakeholder seeing a real piece, but it never says the definition itself is contested or that a plan built on one group's framing will be resisted by the others."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks each group what evidence would change their mind and proposes interviewing students and families, but it hands diagnosis to a neutral analyst rather than building a shared picture with all stakeholders together."
+  },
+  {
+   "score": 0.5,
+   "why": "It describes how the causes feed each other and sets out a test for each claim, but it doesn't question the beliefs, ownership or who-acts assumptions behind each group's preferred fix."
+  },
+  {
+   "score": 0,
+   "why": "It doesn't track which groups have been consulted or informed, and it moves to data analysis on every claim without first getting agreement on definitions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects picking and funding a single most likely cause."
+  }
+ ],
+ "notes": "It claims the disagreement exists only because no one has checked the data, which treats a partly value-based dispute (e.g. whose job attendance is) as purely empirical.",
+ "id": "held-007",
+ "cond": "without",
+ "cost": 0.04024,
+ "score": 0.375,
+ "pitfalls_committed": 0
+}

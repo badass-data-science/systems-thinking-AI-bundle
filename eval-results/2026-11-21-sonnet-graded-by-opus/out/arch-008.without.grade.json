@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "The answer never names the Accidental Adversaries archetype; it only calls this a generic reinforcing feedback loop."
+  },
+  {
+   "score": 0.5,
+   "why": "It traces the inner vicious loop and each team's locally rational fix, but never names the outer partnership reinforcing loop or frames the fixes as balancing loops."
+  },
+  {
+   "score": 1,
+   "why": "It says each side's account is accurate about the other and blind about itself, and that each team's behavior is locally rational."
+  },
+  {
+   "score": 1,
+   "why": "It recommends walking both leads through the loop together, and proposes shared metrics and joint capacity so neither team optimizes at the other's expense."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly avoids blaming either team and attributes the problem to incentives and structure."
+  },
+  {
+   "committed": false,
+   "why": "It does not call the situation Escalation."
+  }
+ ],
+ "notes": "",
+ "id": "arch-008",
+ "cond": "without",
+ "cost": 0.034672,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

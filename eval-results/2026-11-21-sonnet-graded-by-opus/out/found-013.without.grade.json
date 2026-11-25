@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says tightening is right when the error signal is accurate but late against a date that matters, which is a defined setpoint and error signal in control terms."
+  },
+  {
+   "score": 1,
+   "why": "It argues that slips often come from underlying structure (WIP, unowned dependencies, capacity mismatch, incentives, choice of control variable) that a tighter loop only measures and does not change, and calls for a different structure."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-013",
+ "cond": "without",
+ "cost": 0.0296,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names Tragedy of the Commons."
+  },
+  {
+   "score": 1,
+   "why": "States that restraint hands the share to others and that drivers rationally overuse even while foreseeing collapse."
+  },
+  {
+   "score": 1,
+   "why": "Recommends metering/pricing and visible, enforced time limits and caps instead of appeals."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says drivers need not be selfish or short-sighted and that the problem lies in the incentives."
+  }
+ ],
+ "notes": "",
+ "id": "arch-004",
+ "cond": "with",
+ "cost": 0.020664000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

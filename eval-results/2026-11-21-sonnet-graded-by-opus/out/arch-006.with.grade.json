@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names the pattern as 'growth and underinvestment'."
+  },
+  {
+   "score": 1,
+   "why": "Describes turned-away customers leaving and that attrition being read as proof demand is unpredictable."
+  },
+  {
+   "score": 0.5,
+   "why": "Notes the nine-month delay makes a wrong 'no' costly, but never says capacity must be bought ahead of demand."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends deciding on estimated unmet demand, but never says to hold the delivery standard fixed, and suggests rationing via price instead."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Treats the constraint as a policy-driven loop, not a fixed limit."
+  }
+ ],
+ "notes": "Suggesting peak-price rationing risks further eroding the delivery standard that drives the attrition.",
+ "id": "arch-006",
+ "cond": "with",
+ "cost": 0.025996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

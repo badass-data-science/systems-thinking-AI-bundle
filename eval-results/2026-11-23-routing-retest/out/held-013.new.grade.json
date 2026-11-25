@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It contrasts ad response's S1 of 0.05 with its ST of 0.44, notes the matching 0.39 gap for churn, points to that pair as the likely interaction, recommends checking S2, and rejects fixing ad response."
+  },
+  {
+   "score": 1,
+   "why": "It says churn has the largest S1 and ST and should be measured first, and that price sensitivity (ST 0.17) is the one safe to fix."
+  },
+  {
+   "score": 0.5,
+   "why": "It conveys that the risk is both guesses being wrong together and suggests a corner test, but it never notes that S1 sums to about 0.60 or that a one-at-a-time swing would miss about 40% of the variance."
+  },
+  {
+   "score": 0.5,
+   "why": "It fully recommends re-aiming the analysis at P(revenue > $2M) or the margin, but on sampling uncertainty it asserts a rough error band instead of saying to check SALib's confidence intervals."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says not to fix ad response at its guess."
+  }
+ ],
+ "notes": "It states an unverified sampling error of about ±0.05–0.1 and says the 0.39 gap is 'well outside' it without consulting the actual confidence intervals; the phrase 'lose about 44% of the variance's explanatory structure' is also loose.",
+ "id": "held-013",
+ "cond": "new",
+ "cost": 0.03984,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

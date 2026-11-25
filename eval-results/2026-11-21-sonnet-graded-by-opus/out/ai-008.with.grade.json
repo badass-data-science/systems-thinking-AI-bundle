@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Records each agent with actsOn, readsOutputOf and reviewedBy triples, writing none where no reviewer exists."
+  },
+  {
+   "score": 1,
+   "why": "Queries for agents with no reviewer, including procurement, and for downstream paths, naming forecast errors flowing into orders with no human between."
+  },
+  {
+   "score": 1,
+   "why": "States the graph shows where errors go but not whether they spiral or settle, and hands the path to a causal loop diagram."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly checks agent-drafted triples that a decision depends on."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The answer also treats the forecasting agent as unreviewed, which is a defensible reading, and invokes a named procedure (audit-your-checks) without harm.",
+ "id": "ai-008",
+ "cond": "with",
+ "cost": 0.026116,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

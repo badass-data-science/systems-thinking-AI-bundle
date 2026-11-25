@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gives N(2D+2)=26,624 runs and ~277 days serial, matching the expected cost estimate."
+  },
+  {
+   "score": 1,
+   "why": "Recommends Morris screening first, then Sobol on the remaining 5–6 influential parameters."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-008",
+ "cond": "with",
+ "cost": 0.019496,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

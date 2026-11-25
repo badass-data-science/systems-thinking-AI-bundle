@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the base case may simply sit below the threshold, so the loop would matter only under a disturbance such as a demand surge or staff loss."
+  },
+  {
+   "score": 0.5,
+   "why": "It proposes forcing the trigger by cutting capacity and running sweeps, but never explicitly compares runs with the loop on versus off."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-004",
+ "cond": "without",
+ "cost": 0.02142,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

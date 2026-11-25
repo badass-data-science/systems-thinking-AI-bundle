@@ -1,0 +1,9 @@
+Squad A's share of training budget -> Squad A training resources: + steelblue
+Squad A training resources -> Squad A performance: + steelblue
+Squad A performance -> Squad A's share of training budget: + steelblue
+Squad A's share of training budget -> Squad B training resources: - steelblue
+Squad B training resources -> Squad B performance: + steelblue
+Squad B performance -> Squad A's share of training budget: - steelblue
+
+loop: Squad A's share of training budget, Squad A training resources, Squad A performance
+loop: Squad A's share of training budget, Squad B training resources, Squad B performance

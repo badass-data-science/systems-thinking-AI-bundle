@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the shelter runs leave the building unrecorded, so the spreadsheet keeps counting them as on hand and new software would show the same gap."
+  },
+  {
+   "score": 1,
+   "why": "It lists other unrecorded exits (spoilage, waste, unlogged pickups, pilferage) and recommends adding write-off and outflow categories for them."
+  },
+  {
+   "score": 0.5,
+   "why": "It chooses to record the shelter flow as an official outflow and says software alone won't fix the gap, but it never frames this as a deliberate boundary choice against treating the shelter as a sink outside the boundary."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It says to change what gets counted by adding outflow categories first, and treats software as secondary."
+  },
+  {
+   "committed": false,
+   "why": "It says outright that the volunteers aren't stealing and treats the runs as a process gap."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-001",
+ "cond": "without",
+ "cost": 0.030931999999999998,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

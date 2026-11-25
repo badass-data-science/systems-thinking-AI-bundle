@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It names Accidental Adversaries and shows each side's fix hurting the other, but never says the two groups are natural allies with a shared goal of fast, good hires."
+  },
+  {
+   "score": 1,
+   "why": "It traces volume to weak candidates, to more filtering and rejections, to longer time-to-fill, and back to more volume, and calls the loop reinforcing."
+  },
+  {
+   "score": 1,
+   "why": "It says each fix works by its own measure, that both stories are accurate, and that neither explains the loop alone."
+  },
+  {
+   "score": 1,
+   "why": "It recommends joint intake and calibration, presenting the loop as a shared structure, and metrics tied to screening pass-through rather than raw speed."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly declines to take either side."
+  },
+  {
+   "committed": false,
+   "why": "It names Accidental Adversaries and never mentions Escalation."
+  }
+ ],
+ "notes": "It wrongly says every link is 'more leads to more' with no minus signs, though step 2 has volume lowering quality, and 'escalates without limit' overstates it.",
+ "id": "held-008",
+ "cond": "new",
+ "cost": 0.040752,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

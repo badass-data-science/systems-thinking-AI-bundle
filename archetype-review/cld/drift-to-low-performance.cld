@@ -1,0 +1,9 @@
+heist success target -> gap below target: + steelblue
+actual heist success rate -> gap below target: - steelblue
+gap below target -> corrective action: + steelblue
+corrective action -> actual heist success rate: + delay steelblue
+gap below target -> pressure to lower the target: + steelblue
+pressure to lower the target -> heist success target: - steelblue
+
+loop: gap below target, corrective action, actual heist success rate
+loop: gap below target, pressure to lower the target, heist success target

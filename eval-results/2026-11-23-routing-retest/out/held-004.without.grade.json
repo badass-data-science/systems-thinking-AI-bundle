@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It sees that each group describes a different true piece and refuses to treat any one as the cause, but it never warns that leading with one group's framing would build that view in."
+  },
+  {
+   "score": 1,
+   "why": "It gathers every group's account and builds one blameless timeline from undisputed facts before analysis, then walks it jointly with corrections of fact only."
+  },
+  {
+   "score": 0.5,
+   "why": "It reaches structure (no shared go/no-go gate, support and compliance downstream of the date) but never checks earlier launches for the pattern or names the underlying belief that the date is fixed and review flexes."
+  },
+  {
+   "score": 0.5,
+   "why": "The readout raises the structural go/no-go ownership question for execs, but it doesn't record which groups were consulted versus only informed, and it closes mainly on action items."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly treats the vendor API as one of four contributing factors, not the root cause."
+  }
+ ],
+ "notes": "",
+ "id": "held-004",
+ "cond": "without",
+ "cost": 0.043608,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

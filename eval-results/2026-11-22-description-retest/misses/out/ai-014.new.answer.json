@@ -1,0 +1,15 @@
+{
+ "id": "ai-014",
+ "cond": "new",
+ "answer": "**Not automatically.** \"Wicked\" and \"complex\" overlap, but they answer different questions, so one doesn't imply the other.\n\n**What each term sorts by**\n- **Wicked** (Rittel and Webber) is about the problem's *definition*. There's no agreed formulation, no natural stopping point, and solutions are only better or worse, judged after the fact. Trying a solution also changes the problem.\n- **Cynefin's complex domain** is about the *stability of cause and effect*. Cause and effect are coherent only in retrospect, so you can't analyze your way to the pattern up front. You run safe-to-fail probes and respond to what you see.\n\nThe two correlate, which is why the shortcut is tempting. But \"wicked = complex\" is close enough to be useful and wrong enough to be dangerous.\n\n**Why the label doesn't settle the domain**\n- **A wicked problem can contain several Cynefin domains.** Housing affordability has stable, analyzable parts, such as how a zoning change affects permitted units or how a subsidy formula works. Those are *complicated* or even *clear*. Other parts are *complex*, such as how developers, landlords, lenders and neighbors adapt to a policy. Cynefin classifies a *decision*, not a whole topic, so \"housing affordability\" has no single domain.\n- **Wicked is closer to Checkland's \"soft\" systems.** The disagreement is over what the problem is. Is it supply, incomes, speculation, or neighborhood character? Stakeholders hold different worldviews, so a CATWOE pass is the natural tool. That is a stakeholder question, not a cause-and-effect question.\n- **Mess and chaotic are different things too.** Ackoff's \"mess\" means interacting problems. Cynefin's chaotic means no perceivable cause and effect, as in an active incident. A city housing crisis is rarely chaotic in the Cynefin sense, even when it feels like a crisis.\n\n**A better reading of the claim**\nThe speaker is probably right that *important* decisions in this problem are complex: how the market responds to rule changes, what unintended effects a policy has, and how a program is received. Treating those as complicated is the costliest misclassification. It leads to a confident expert plan where reversible pilots and small experiments are called for.\n\nI'd just say so more carefully: \"the housing problem is wicked, and many of the decisions inside it are complex. Others are merely complicated.\" Then classify each decision on its own. Analyze the complicated ones. Probe the complex ones. Use stakeholder methods like CATWOE for the contested definition.\n\nI took this from the skill's concept cards on Cynefin and on tame, messy and wicked problems. They make the point about the mapping directly. I haven't checked it against Snowden's or Rittel and Webber's original papers.",
+ "cost": 0.0583114,
+ "turns": 7,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Grep:(?i)wicked",
+  "Glob:**/*cynefin*",
+  "Read:new/.claude/skills/systems-thinking/concepts/tame-messy-wicked-problems.md",
+  "Read:new/.claude/skills/systems-thinking/concepts/cynefin-framework.md"
+ ],
+ "skill_loaded": true
+}

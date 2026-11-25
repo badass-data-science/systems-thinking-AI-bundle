@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States P2 alone explains about 60% of variance and is the dominant driver."
+  },
+  {
+   "score": 1,
+   "why": "Notes P1 has S1 0.10 but ST 0.40, with 0.30 coming through interaction, consistent with S2 = 0.28."
+  },
+  {
+   "score": 1,
+   "why": "Warns OAT or first-order-only analysis would wrongly drop P1, and advises prioritizing P2 while keeping P1."
+  },
+  {
+   "score": 1,
+   "why": "Calls the mismatches estimator noise and recommends bootstrap confidence intervals."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-007",
+ "cond": "old",
+ "cost": 0.020132,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

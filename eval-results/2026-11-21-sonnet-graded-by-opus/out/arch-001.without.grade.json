@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Shifting the Burden explicitly; it calls it the 'addiction' variant rather than the intervenor variant, which the rubric only marks as ideal."
+  },
+  {
+   "score": 1,
+   "why": "Identifies agency shifts as the quick fix and recruiting, mentoring and retaining permanent staff as the fundamental solution."
+  },
+  {
+   "score": 1,
+   "why": "Spells out the reinforcing loop in which agency use erodes preceptorship, which raises attrition and creates more gaps and more agency use."
+  },
+  {
+   "score": 1,
+   "why": "Keeps agency cover as a tapered bridge, even using it to backfill mentor time, while restarting preceptorship first."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Correctly identifies the archetype as Shifting the Burden, not Fixes That Fail."
+  },
+  {
+   "committed": false,
+   "why": "Recommends capping and tapering agency use rather than stopping it outright."
+  }
+ ],
+ "notes": "",
+ "id": "arch-001",
+ "cond": "without",
+ "cost": 0.027856,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

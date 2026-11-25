@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It names a system dynamics model and says feedback loops and delays produce the swing, which is the structural-cause substance, but it points to stock-and-flow diagrams rather than a causal loop diagram."
+  },
+  {
+   "score": 0.5,
+   "why": "It calls for a quantitative what-if model and suggests Monte Carlo simulation, but leads with a static safety-stock formula rather than a stock-and-flow simulation of behavior over time."
+  },
+  {
+   "score": 1,
+   "why": "It names a relational or graph data model of entities and relationships, which is the knowledge-graph point in substance."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Leading with the static z·σ·√L formula for (b) ignores the dynamic transition effects of a lead-time change, though the formula itself is standard and not harmful.",
+ "id": "ai-009",
+ "cond": "without",
+ "cost": 0.027143999999999998,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

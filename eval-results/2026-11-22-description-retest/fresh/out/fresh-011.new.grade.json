@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Drift to Low Performance and explains that the benchmark is last quarter's result, so the target slides down and the gap stays near zero."
+  },
+  {
+   "score": 1,
+   "why": "It shows each step was about 1.1 points against a 2-point band and says no one ever decided to accept 79%, so there is nothing to point to."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a written fixed anchor such as 88% or a customer- or benchmark-based number and judging status against it."
+  },
+  {
+   "score": 1,
+   "why": "It says to judge status against the fixed anchor and show distance from it, which turns the fall into a gap, and that any target change must be argued and written down."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly calls the steady decline structural rather than random noise."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-011",
+ "cond": "new",
+ "cost": 0.026715999999999997,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It describes the archetype in substance as a rich-get-richer, path-dependent process where early success compounds, without using the archetype's name."
+  },
+  {
+   "score": 1,
+   "why": "It says the rule feeds back on itself and that paper counts partly measure the allocation earlier counts caused, not quality."
+  },
+  {
+   "score": 1,
+   "why": "It recommends changing the rule, with a minimum allocation per group, per-capita or quality-weighted allocation, or multi-year smoothing."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects past output as proof of merit and asks for per-capita and quality measures."
+  },
+  {
+   "committed": false,
+   "why": "It never frames the dynamic as the groups reacting to each other or as Escalation."
+  }
+ ],
+ "notes": "",
+ "id": "arch-003",
+ "cond": "without",
+ "cost": 0.024408,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

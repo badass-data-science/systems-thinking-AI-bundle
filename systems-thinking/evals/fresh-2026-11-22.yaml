@@ -1,0 +1,523 @@
+# Held-out items written 2026-11-22 by a separate Claude Opus session that
+# saw the cards and existing evals but not SKILL.md. Committed before the
+# SKILL.md description was revised, to test that revision. Not edited by hand.
+
+- id: fresh-001
+  kind: apply
+  prompt: >
+    I run logistics at a regional food bank. Our inventory spreadsheet logs
+    donations coming in and deliveries out to our partner pantries, and every
+    month it shows 10 to 15% more food on hand than the physical count finds.
+    I've since learned that warehouse volunteers sometimes set aside dented or
+    near-date items and drive them to a shelter that isn't one of our partners.
+    The board wants to buy better inventory-tracking software. Will that fix
+    the gap?
+  expected:
+    - Identifies the volunteers' run to the shelter as an outflow from the inventory stock that the model never drew, so the spreadsheet keeps counting food that is already gone, and nothing inside the model can reveal that.
+    - Asks of every stock whether anything else leaves it without appearing on the diagram (spoilage, discards, staff taking items home) and recommends drawing those pipes.
+    - Says the boundary has to be redrawn on purpose. Decide whether the shelter flow is a recorded outflow or a sink outside the boundary, and defend that choice. Software that tracks only the existing pipes won't close the gap.
+  pitfalls:
+    - Treating the problem as a data-quality or software problem without changing what the model counts.
+    - Framing the volunteers as thieves rather than as an untracked flow.
+  uses: [undrawn-leak, draw-a-boundary, source-and-sink, system-boundary]
+
+- id: fresh-002
+  kind: apply
+  prompt: >
+    Three months ago we launched a quality push. Since then the number of new
+    bug reports coming in each week has fallen by about half. But our open-bug
+    count is still going up every week, and my director says that proves the
+    quality push isn't working. Is she right?
+  expected:
+    - Separates the open-bug count (a stock) from the rate of new reports (inflow) and the rate of fixes and closures (outflow).
+    - Explains that the stock keeps rising as long as inflow exceeds outflow, even while inflow is shrinking, so a rising count doesn't show the push has failed.
+    - Asks what happened to the fix rate, for example whether the quality push pulled engineers off bug-fixing, because that outflow reading calls for a different response.
+    - Judges the push on the flow it was meant to change (new bugs), and says the count will fall only once fixes outpace new reports.
+  pitfalls:
+    - Expecting the stock to fall just because its inflow fell.
+  uses: [plus-into-a-stock, name-the-flow, stock, flow]
+
+- id: fresh-003
+  kind: recognize
+  prompt: >
+    I'm a hospital pharmacy director. We reorder one of our anticoagulants
+    monthly, based on a usage report that reaches us about three weeks after
+    month-end, and the supplier takes about four weeks to deliver. We
+    alternate between emergency shortages and stock that expires on the shelf
+    and gets thrown away. I'm considering replacing our buyer and adopting a
+    rule of ordering double whenever we're short. Thoughts?
+  expected:
+    - Identifies a goal-seeking correction (stock against a target, adjusted through orders) with two delays, an information delay (the late usage report) and a material delay (delivery time), and says this structure produces oscillation.
+    - Says the swings are the expected behavior of the structure, not the buyer's fault, so replacing the buyer won't stop them.
+    - Warns that ordering double on the same late signal is reacting harder, which enlarges the swings.
+    - Recommends shortening the delays (for example live dispensing data instead of the monthly report), correcting only part of the gap and waiting to see the effect, or widening the acceptable band, and predicting the effect before acting.
+  pitfalls:
+    - Replacing the buyer.
+    - Endorsing the order-double rule.
+  uses: [oscillation-is-structural, damp-an-oscillation, dont-react-harder-to-late-signals, delay, oscillation-and-overshoot]
+
+- id: fresh-004
+  kind: apply
+  prompt: >
+    Our app's store rating dropped from 4.6 to 3.9 after Tuesday's release.
+    The release had a login bug, which we've already hotfixed. The CEO wants a
+    plan in her inbox by tonight. What should I send?
+  expected:
+    - Handles the event (the hotfix done, a note to affected users, watching the rating) but doesn't let the analysis close at the event level, because pressure is exactly what keeps analysis there.
+    - Asks for a pattern from records rather than memory, such as whether ratings or login problems dipped after earlier releases.
+    - Proposes a structure question (what in how releases are planned, tested or reviewed makes a login regression the kind of thing that ships here) and a mental-model question (what belief makes that arrangement seem reasonable), stated without blame.
+  pitfalls:
+    - Sending a plan that only covers the hotfix and an apology.
+  uses: [pressure-shrinks-the-iceberg, iceberg-analysis, iceberg-model]
+
+- id: fresh-005
+  kind: discriminate
+  prompt: >
+    I'm a transportation researcher studying why rideshare drivers in our city
+    pile up for hours in the airport waiting lot while downtown runs short of
+    cars late at night. My plan was to build a model with two accumulations,
+    drivers at the airport and drivers downtown, joined by flows between
+    them. Is that the right kind of model for this?
+  expected:
+    - Applies the "is anyone in charge?" test. Thousands of independent drivers each follow local rules (expected fare, queue length, surge prices) and nobody assigns where they go, so the bunching is emergent, swarm-like behavior.
+    - Notes that an aggregate stock-and-flow model may not capture behavior that emerges from individual decisions, and points to actor-based simulation (for example in AnyLogic) as the better fit if simulation is needed.
+    - Notes the platform's dispatch and surge rules are partly assigned coordination. Those rules are a place to look for structure and leverage, separate from the drivers' emergent behavior.
+  pitfalls:
+    - Treating the two-stock aggregate model as obviously adequate without asking how the coordination happens.
+  uses: [swarm-test, actor-based-modeling, complexity-science, system-dynamics, anylogic]
+
+- id: fresh-006
+  kind: procedure
+  prompt: >
+    Can you help me turn this into a causal loop diagram? Our ramen shop's
+    online rating climbed, which brought in more diners, who left more good
+    reviews, which pushed the rating higher. Now there's a 90-minute line on
+    weekends, the kitchen is rushing orders, and the newest reviews complain
+    about the wait and sloppy food. The rating has started slipping.
+  expected:
+    - "Lists the nodes as quantities where higher means more (rating, diners, positive reviews, wait time or kitchen rush, complaint reviews) and marks each arrow's polarity."
+    - "Traces a reinforcing loop with no minus signs (rating → diners → positive reviews → rating) and a balancing loop with one (diners → wait and rushing → rating, negative), labeled from the count."
+    - Marks the delay (reviews are posted after visits, and a running average rating moves slowly) and notes that the balancing loop takes over once diners outgrow the seating and kitchen, a limits-to-growth shape.
+    - Reads each loop aloud as a sentence and checks it with staff and regulars before relying on it.
+  uses: [build-cld-from-story, trace-loop-polarity, delay, limits-to-growth]
+
+- id: fresh-007
+  kind: critique
+  prompt: >
+    I asked an AI assistant to make a causal loop diagram of why our customers
+    churn. It produced a clean diagram with every arrow signed and every loop
+    labeled, said the loops trace correctly, and called the whole thing a
+    "Fixes That Fail" structure. It looks great. Can I put it in the board
+    deck as our explanation of churn?
+  expected:
+    - Says a diagram can be internally consistent and still not be true, and a clean first draft deserves more suspicion, not less.
+    - Recommends reading each loop aloud to the people who work where each link lives (support, success, product) and treating any wince as a wrong or missing link.
+    - Notes that a correct trace confirms polarity, not the archetype. Check the diagram against the archetype's canonical definition, which needs a quick fix whose own delayed side effect worsens the problem.
+    - Notes that a polished, confident output isn't evidence that the question or the structure is right.
+  pitfalls:
+    - Accepting the archetype label because the polarities check out.
+  uses: [consistent-is-not-true, a-trace-is-not-a-definition, fluency-is-not-correctness, fixes-that-fail]
+
+- id: fresh-008
+  kind: recognize
+  prompt: >
+    We're a food delivery startup. When a customer complains about a late
+    order, we automatically send a 20%-off coupon, and complaints drop right
+    after. But the coupons get redeemed mostly on Friday and Saturday nights,
+    already our most overloaded times. Late deliveries on those nights keep
+    climbing, so we send more coupons. Finance now wants to raise the coupon
+    to 30% to win customers back. Good idea?
+  expected:
+    - Names Fixes That Fail. The coupon genuinely relieves the symptom (complaints) right away, but its delayed side effect (more peak-time orders) makes late deliveries, the underlying problem, worse.
+    - "Traces both loops: the quick-fix balancing loop (complaints → coupons → fewer complaints) and the reinforcing side-effect loop (coupons → peak orders → late deliveries → complaints → more coupons)."
+    - Reads the move to 30% as the typical symptom of a rising dose for the same relief, and advises against it.
+    - Recommends treating the coupon as a bridge while fixing peak-time capacity or lateness, reshaping the coupon so it stops feeding the peak (for example off-peak only), and measuring the side effect directly.
+  pitfalls:
+    - Calling it Shifting the Burden without a competing fundamental fix and an eroding capability.
+  uses: [fixes-that-fail, ask-what-the-fix-does-later, label-the-stopgap]
+
+- id: fresh-009
+  kind: recognize
+  prompt: >
+    I'm a city budget director. For eight years we've hired the same
+    consulting firm to produce our multi-year revenue forecast. It's always
+    been good work. Over that time our in-house analysts left or moved to
+    other jobs, and nobody on staff has built a forecast from scratch in
+    years. The firm just proposed a 40% fee increase, and council is asking
+    whether we have an alternative. What's happened, and what should we do?
+  expected:
+    - Names Shifting the Burden to the Intervenor. An on-demand outside fixer relieved the need every year while the city's own forecasting capability eroded through disuse.
+    - Identifies the capability-erosion loop, which makes rebuilding in-house harder each year and explains why the city has no alternative now.
+    - Recommends keeping the firm for now while rebuilding capability, for example by having the firm teach rather than do, training or hiring staff, and producing an internal forecast alongside the firm's to compare.
+    - Recommends putting the dependency on the risk register by name.
+  pitfalls:
+    - Dropping the firm immediately.
+    - Treating it purely as a price negotiation.
+  uses: [shifting-the-burden-to-the-intervenor, shifting-the-burden, exercise-the-capability]
+
+- id: fresh-010
+  kind: recognize
+  prompt: >
+    I'm a dean. Average grades in our departments have crept up for a decade.
+    Departments with lower averages lose majors to departments with higher
+    ones, so each curriculum committee nudges its grading up to stay
+    competitive. Now an A barely means anything and employers are
+    complaining. I was going to send a memo asking chairs to grade more
+    rigorously. Will that work?
+  expected:
+    - Names Escalation. Each department responds to its grading relative to the others, so each department's sensible correction feeds the others into a spiral nobody wants.
+    - Says every move was locally rational, and that a department tightening alone just loses majors, so an appeal to rigor fails.
+    - Recommends changing the comparison with a standard that binds every department at once and that each can verify (for example a common grade distribution, or transcripts that show grades in context), or giving students another dimension to compare departments on.
+  pitfalls:
+    - Sending the memo or relying on chairs' willpower.
+    - A cap that binds only some departments.
+  uses: [escalation, change-the-comparison]
+
+- id: fresh-011
+  kind: recognize
+  prompt: >
+    In our quarterly reviews, the onboarding team's completion rate is
+    compared to the previous quarter, and anything within 2 points of last
+    quarter counts as on track. Over two years completion went from 88% to
+    79%, and every single review came out green. How did that happen, and
+    what should change?
+  expected:
+    - Names Drift to Low Performance. The benchmark is the team's own recent result, so the goal moves down with performance and no gap ever opens.
+    - Explains why it never looked like a problem. Each step was small and judged reasonable, and there is no single decision anyone can point to.
+    - Recommends anchoring the target to something recent results can't move (what customers or the business need, the team's best period, an outside benchmark) and writing it down.
+    - Says that against a fixed goal the 9-point fall becomes a gap to close, and any future change to the goal must be argued as a decision.
+  pitfalls:
+    - Treating it as quarter-to-quarter noise because no review flagged it.
+  uses: [drift-to-low-performance, anchor-goals-outside, reference-point]
+
+- id: fresh-012
+  kind: recognize
+  prompt: >
+    Inbound sales leads are routed each month in proportion to each rep's
+    close rate the month before. Two reps started on the same day 18 months
+    ago with similar backgrounds. One now gets three times as many leads, so
+    she can afford to work only the warmest ones; the other gets a thin
+    stream and has to chase everything. Leadership wants to put the second rep
+    on a performance improvement plan. Is that fair?
+  expected:
+    - Names Success to the Successful. Both reps draw from one pool of leads, and the routing rule itself reinforces whoever got an early edge.
+    - Explains that part of each rep's close rate is a record of past allocation (more leads mean more chances to cherry-pick warm ones), not just merit.
+    - Recommends changing the allocation rule (equal or floor allocations, at least during evaluation, or a share of leads routed at random) and judging the reps on comparable leads before any performance decision.
+  pitfalls:
+    - Treating the close-rate gap as proof of who is the better rep.
+    - Calling it Escalation (the reps aren't responding to each other).
+  uses: [success-to-the-successful, past-performance-may-be-allocation, leverage-points]
+
+- id: fresh-013
+  kind: discriminate
+  prompt: >
+    Our brewery's taproom revenue grew fast for three years and has been flat
+    for 18 months. The team has four theories. (1) Our town just isn't big
+    enough. (2) We keep deciding not to add a second brewhouse because flat
+    sales "prove" demand isn't there, even though our top beers sell out by
+    Thursday. (3) Parking, staffing and seating all got tight at about the
+    same time. (4) We and the four other breweries on our strip all run loud
+    weekend events, and noise complaints have the town talking about
+    restricting event permits for everyone. How do we tell which it is, and
+    does it matter?
+  expected:
+    - "Maps each theory to a different structure: (1) a fixed limit (Limits to Growth), (2) a removable capacity limit that keeps not being removed, with the shortfall read as proof (Growth and Underinvestment), (3) several limits at once (Attractiveness Principle), (4) a shared resource, the town's tolerance, drawn down by several actors (Tragedy of the Commons)."
+    - Names evidence that separates them, such as unmet demand (sellouts and turned-away customers point to theory 2), the history of brewhouse decisions, which limits are binding now, and whether the strain is shared with the other breweries.
+    - "Says it matters because the remedies differ: plan around or relax a fixed limit, invest ahead and hold the standard, choose which limits to relieve and which to accept, or agree collective rules with the other breweries. Notes that several can be operating at once."
+    - Aims the recommendation at the limit, not at more marketing.
+  pitfalls:
+    - Pushing harder on growth (more marketing or promotions).
+  uses: [classify-a-growth-stall, limits-to-growth, growth-and-underinvestment, attractiveness-principle, tragedy-of-the-commons]
+
+- id: fresh-014
+  kind: recognize
+  prompt: >
+    Our research institute has one shared GPU cluster. Jobs run first-come,
+    first-served, so every team now submits huge speculative job queues the
+    moment a deadline approaches, just to hold a place in line. The cluster
+    is gridlocked, small urgent jobs wait days, and every team lead tells me
+    the other teams are the problem. I've sent two emails asking people to
+    submit only what they need. Nothing changed. What now?
+  expected:
+    - Names Tragedy of the Commons. Several independent teams draw on one finite shared resource, and each is individually rewarded for over-claiming.
+    - Explains why the emails failed. A team that holds back just hands its place to the teams that don't, so restraint fails even when everyone sees the danger, and nobody needs to be greedy for this to happen.
+    - Recommends rules every team agrees to, can see being kept and can enforce (fair-share quotas, visible queue limits), or metering and charging each team for its draw so the cost comes back to it promptly.
+  pitfalls:
+    - More appeals to restraint.
+    - Assuming more GPUs alone will fix it.
+  uses: [tragedy-of-the-commons, commons-need-collective-rules]
+
+- id: fresh-015
+  kind: procedure
+  prompt: >
+    Our physical therapy clinic's waiting list is 120 people, and it's been
+    slowly shrinking even though we haven't added any capacity. We get about
+    30 new referrals a week and can see about 25 waiting patients a week, and
+    roughly 5% of whoever is on the list each week cancels or goes elsewhere.
+    Can you step this forward a few weeks and tell me what's actually going
+    on?
+  expected:
+    - "Sets up the update rule (end of week = start + referrals − patients seen − dropouts), computing each flow from the start-of-week list."
+    - "Steps it forward correctly: about 119, 118, 117.2, 116.3 over four weeks, settling toward about 100, where 30 referrals = 25 seen + 5% of 100."
+    - Says clinic capacity is binding every week (25 seen against 30 arriving), so the list shrinks only because patients leave untreated.
+    - Says the shrinking list is not good news. Name the flow doing the work, and treat dropouts (about 5 or 6 a week) as unmet demand to track.
+  pitfalls:
+    - Reading the shrinking list as the clinic catching up.
+  uses: [hand-iterate-a-model, stock-and-flow-diagram, name-the-flow]
+
+- id: fresh-016
+  kind: discriminate
+  prompt: >
+    Two analysts built models of why our subscriber numbers plateaued. One
+    says we've saturated our market. The other says churn has been rising
+    because support quality slipped. Both reproduce the last two years of
+    subscriber numbers almost exactly. Leadership wants to know which to
+    believe before deciding between expanding into new markets and investing
+    in support. How do I choose?
+  expected:
+    - Says a close historical fit can't separate them, because any model with guessed parameters can be tuned to the past. Fitting history is behavioral validity and doesn't establish that the mechanisms are right.
+    - Recommends testing each model's structure link by link with people who work where each link lives (sales, support), ideally reviewers who built neither model, and recording which parameters each analyst tuned to get the fit.
+    - Recommends finding where the two models make different predictions that can be checked (market penetration figures, churn by customer support experience, a segment or period where they diverge), and writing down beforehand what result would rule each one out.
+    - Recommends running sensitivity testing against the actual decision, expansion versus support, to see which guesses would flip it.
+  pitfalls:
+    - Picking the model with the slightly better fit.
+  uses: [structural-and-behavioral-validity, fit-is-easy-to-manufacture, validate-a-model]
+
+- id: fresh-017
+  kind: apply
+  prompt: >
+    I work in a city transport department. Our traffic model says a proposed
+    congestion charge would cut downtown car trips by 18%, comfortably above
+    the council's 10% target. The model has 14 inputs, most of them estimates.
+    A consultancy has quoted $400,000 to collect better data on all 14 before
+    the council votes. How should we decide what's actually worth measuring?
+  expected:
+    - Frames the test around the decision, the margin by which the charge clears the 10% target, so "the recommendation flips" means that margin crosses zero.
+    - Swings the shakiest estimates up and down (for example by 25%) one at a time, holding the rest fixed, shows the results as a tornado chart, and finds which inputs could push the result below 10%.
+    - Notes that one-at-a-time swings miss inputs that matter only together, and suggests a global method (Morris screening, or Sobol if runs are cheap) if the model runs in code.
+    - Says the payoff is a ranked list of the few inputs worth measuring first, not a blanket data collection or a general claim that the model is robust.
+  uses: [sensitivity-analysis, one-at-a-time-swing-test, morris-screening, sobol-analysis]
+
+- id: fresh-018
+  kind: apply
+  prompt: >
+    I rebuilt my colleague's Vensim model of a disease outbreak in Python so
+    we can run it in our pipeline. My peak case count comes out about 15%
+    higher than his. I'm using Euler's method with a time step of 1 day; he's
+    using Runge-Kutta 4 with a time step of 0.25 days. Which result is right?
+  expected:
+    - Says neither result is right by default, because the integration method and time step are modeling choices that can change the output on the same model.
+    - Recommends first checking the translation by reproducing his run with identical method, time step and inputs. If they match, the equations were carried over correctly.
+    - Recommends halving the time step (and trying RK4 in Python) until the peak stops changing. A result that moves with the step size is an artifact of the step, and a 1-day Euler step is probably too coarse for fast outbreak dynamics.
+  pitfalls:
+    - Assuming the commercial tool's number is correct.
+  uses: [numerical-integration, verify-after-translation, vensim]
+
+- id: fresh-019
+  kind: apply
+  prompt: >
+    Our product and operations leads agree on a whiteboard sketch of how our
+    support backlog builds up and drains, but they're deadlocked on whether to
+    hire more agents or build a self-service help center. Nobody has real data
+    on how many tickets self-service would deflect or how fast new agents
+    ramp up. Should we hold off on putting numbers on it until we collect
+    data?
+  expected:
+    - Recommends putting rough numbers in now. Writing explicit flow equations, even with honest guesses, forces out disagreements the qualitative sketch lets stay vague, and those are cheapest to settle on paper.
+    - Has each lead write the equations they believe in (for example the deflection rate and the ramp-up time) and compares them before running anything.
+    - Steps the model forward by hand, and lists the guessed numbers the choice depends on as the first things to measure, for sensitivity testing.
+    - Guards against anchoring by having people estimate independently before seeing each other's numbers, and by not letting the first-draft guess become the default.
+  pitfalls:
+    - Waiting for data before quantifying anything.
+  uses: [quantify-to-surface-disagreement, hand-iterate-a-model, anchoring, sensitivity-analysis]
+
+- id: fresh-020
+  kind: procedure
+  prompt: >
+    Our county 911 center keeps losing dispatchers to burnout. Vacancies get
+    covered with mandatory overtime, which burns out more people. Three
+    proposals are on the table. (a) Raise the retention bonus. (b) Cap
+    consecutive overtime shifts and make overtime beyond the cap voluntary.
+    (c) Change how the center is evaluated, which today is on call-answer time
+    alone, so that staff retention also counts. Which should we do?
+  expected:
+    - "Names the structure first: vacancies → mandatory overtime → burnout → departures → more vacancies, a reinforcing loop behind a quick fix (Fixes That Fail)."
+    - "Places each proposal on a band and marks the link it touches: (a) a parameter acting on the departure link, (b) a rule acting on the overtime-to-burnout link, (c) a goal that changes why overtime looks like the right answer."
+    - Rates power and reach separately (the evaluation change is the most powerful but may need the county board, while the bonus is easy to do but weak), and tests the options in a model if one exists.
+    - Chooses honestly, and if a lower-band option goes first, labels it a stopgap and names the fix it buys time for. Notes short-term costs such as answer times while the cap takes effect.
+  pitfalls:
+    - Ruling out the bonus or the cap on principle because they are low-leverage.
+  uses: [rank-interventions, leverage-points, label-the-stopgap, fixes-that-fail]
+
+- id: fresh-021
+  kind: critique
+  prompt: >
+    Our hospital had a run of errors during patient handoffs between shifts.
+    The nursing leadership proposed a standardized handoff checklist. An
+    outside consultant told the board the checklist is "low-leverage tinkering"
+    and that the only real fix is a culture change toward psychological
+    safety, which will take a few years. The board is now inclined to skip
+    the checklist. Is the consultant's reasoning sound?
+  expected:
+    - Says power and reach are separate axes. Culture change may be the more powerful lever, but it is slow and uncertain to reach, and naming only the strongest lever doesn't finish the analysis.
+    - Says high leverage doesn't make something the right thing to do next. A lower-band fix such as the checklist (a rule) is defensible when it is deployed honestly as a bridge.
+    - Recommends doing both, with the checklist labeled as a stopgap that buys time for the culture work, and each intervention tied to the specific link in the handoff structure it changes.
+  pitfalls:
+    - Agreeing that lower-leverage fixes should be skipped.
+  uses: [rank-interventions, leverage-points, label-the-stopgap]
+
+- id: fresh-022
+  kind: apply
+  prompt: >
+    Our insurance claims AI gives each claim a confidence score. Claims scored
+    above 0.9 are paid automatically and everything else goes to a human
+    adjuster. In a year, almost no problems have surfaced among the
+    auto-approved claims, so management wants to lower the threshold to 0.8.
+    Is our review setup sound?
+  expected:
+    - Says a confidence score produced by the system being trusted tells you how sure the output sounds, not whether it is right, so it shouldn't set how much checking happens.
+    - Notes that "almost no problems surfaced" among auto-approved claims is largely what no scrutiny produces, which is the reinforcing trust-and-scrutiny loop, not evidence of accuracy.
+    - Recommends setting scrutiny by stakes and decision type, randomly auditing auto-approved claims at a fixed rate regardless of score, and checking against an independent source.
+    - Recommends putting high-stakes or rule-checkable conditions (amount limits, policy coverage) behind deterministic gates.
+  pitfalls:
+    - Lowering the threshold on the strength of the clean record.
+  uses: [self-reported-confidence, ai-trust-loop, break-the-trust-loop, deterministic-gate-principle]
+
+- id: fresh-023
+  kind: recognize
+  prompt: >
+    Our accounting team has used an AI tool for month-end reconciliations for
+    18 months, and it's been excellent. Last month the vendor had a week-long
+    outage and we barely closed the books. Two of our newer staff had never
+    done a reconciliation by hand. The controller's takeaway is that we need a
+    backup AI vendor. Is that the right lesson?
+  expected:
+    - Recognizes reliance on an on-demand fixer, the AI tool, eroding the team's own capability (Shifting the Burden to the Intervenor). The outage exposed a risk that sat on no risk register.
+    - Says a backup vendor covers availability but leaves the capability loss in place, and may deepen it.
+    - Recommends scheduled reconciliations done by hand, compared against the tool's output, training the newer staff, and tracking whether people can still do the work.
+    - Keeps using the tool and puts the dependency on the risk register by name.
+  pitfalls:
+    - Dropping the tool.
+    - Treating the backup vendor as the whole answer.
+  uses: [shifting-the-burden-to-the-intervenor, exercise-the-capability, ai-system-as-a-system]
+
+- id: fresh-024
+  kind: critique
+  prompt: >
+    Our IT operations agent got 96% of last quarter's tickets right: password
+    resets, access requests, disk cleanup. Because of that record, I'm letting
+    it decide for itself which new requests it handles alone and which it
+    escalates. Next quarter that will include capacity planning for a new
+    region and responding to live production incidents. Reasonable?
+  expected:
+    - Says the type of decision should set the agent's role and level of review, not its track record. A strong record on routine tickets is evidence only about routine tickets.
+    - Says a person should classify each kind of decision (or check the agent's proposed classification) before the agent sees the request. The agent shouldn't classify unchecked, because it answers every question in the same analysis-then-recommendation shape.
+    - "Assigns roles by type: routine resets call a written rule or gated script; capacity planning is analysis an expert checks; live incidents follow a runbook written in advance."
+    - Names the risk of trust built on a good record lowering scrutiny where it matters most.
+  pitfalls:
+    - Granting the autonomy on the strength of the 96% figure.
+  uses: [cynefin-as-delegation-guide, cynefin-framework, deterministic-gate-principle, ai-trust-loop]
+
+- id: fresh-025
+  kind: apply
+  prompt: >
+    Our online store uses two AI agents from different vendors. A
+    replenishment agent orders from suppliers whenever an item's inventory
+    drops below a threshold. A promotions agent launches discounts whenever an
+    item's inventory is high. Supplier lead time is three weeks. On our top
+    products we now see a repeating cycle of big discount, stockout, huge
+    reorder, overstock, big discount. Each vendor says its agent is behaving
+    exactly to spec. Who's at fault, and what do we do?
+  expected:
+    - Says both vendors can be right, because the cycle is joint behavior that belongs to neither agent. Studying each agent alone won't reveal it.
+    - Traces the interaction. Each agent acts on inventory the other shapes, and the three-week lead time is a delay that turns their corrections into oscillation.
+    - Recommends mapping which agent reads and acts on which outputs and flagging the agent-to-agent path with no human between them.
+    - Recommends hard limits on each agent (discount caps, order-size and rate limits) and monitoring their combined behavior. Also recommends making someone accountable for the joint behavior and having the agents react less sharply to the delayed signal, rather than tuning either agent to react harder.
+  pitfalls:
+    - Blaming one vendor's agent.
+  uses: [bound-interacting-agents, map-the-agents, oscillation-and-overshoot, damp-an-oscillation]
+
+- id: fresh-026
+  kind: discriminate
+  prompt: >
+    We're building a knowledge graph of our roughly 300 microservices, their
+    owners and their dependencies, so our on-call AI agent can answer "what
+    breaks if service X goes down?" consistently. Half the team wants
+    RDF/SPARQL, half wants Neo4j. A third person also wants to use the graph
+    to simulate how a latency spike cascades through the system. Advise.
+  expected:
+    - Says a graph is justified here, because there are too many facts for a diagram, they change often, and the agent's answers have to come back the same every time.
+    - "Says to choose the graph model by how the facts want to be described, not by which is \"more rigorous\": a property graph (Neo4j, queried in Cypher) puts properties such as timeouts directly on edges; RDF/SPARQL is the W3C standard and suits joining external data; Amazon Neptune supports both."
+    - Says the graph answers reachability questions (everything downstream of X, by path query) but records facts, not dynamics. Simulating a cascade needs a dynamic model fed by the graph's paths, since retry storms are feedback the graph won't trace unless polarity and delay are deliberately encoded.
+    - Recommends checking any dependency facts the agent extracted itself before decisions rest on them.
+  uses: [knowledge-graph, property-graph, reach-for-a-graph-when, choose-model-by-question, amazon-neptune]
+
+- id: fresh-027
+  kind: procedure
+  prompt: >
+    An AI agent wrote 40 scripts to migrate our customer tables to a new
+    schema. It ran each one in staging, confirmed that row counts match
+    between the old and new tables, and reported "all migrations verified."
+    We're scheduled to run them in production on Friday. Is there anything
+    else we should do first?
+  expected:
+    - "Lists each check with its boundary and its kind: the row-count check covered staging data for whichever tables were on the list (was that list generated from the schema or typed by hand?) and can only notice missing or extra rows."
+    - Names blind spots no check could catch, such as wrong or truncated values, encoding or time-zone changes, mishandled nulls, broken foreign keys, and production data that differs from staging.
+    - Adds checks of a different kind, not a bigger row count, such as value-level checksums or sampled row comparisons, constraint validation, and the application reading migrated records. Writes a pass standard specific enough to fail.
+    - Restates the agent's report as "nothing these checks can see is wrong," not "verified."
+  pitfalls:
+    - Rerunning the same row-count check elsewhere and calling it more verification.
+  uses: [audit-your-checks, checking-loop, every-check-has-a-boundary-and-a-kind, standards-specific-enough-to-fail]
+
+- id: fresh-028
+  kind: procedure
+  prompt: >
+    We're rolling out an AI meeting assistant company-wide. It joins any
+    meeting, records it, and sends everyone a summary with action items, so
+    people can skip optional meetings and just read the summary. Leadership
+    loves the time savings. Before we turn it on, what could this do to us
+    down the line?
+  expected:
+    - "States the first-order gain honestly: hours saved, and people out of meetings they didn't need."
+    - Traces a second-order effect over months with a mechanism, naming who is downstream. For example, fewer people in the room means decisions get made by fewer voices, absent people rely on summaries that flatten disagreement and nuance, and summaries become the unchecked record (trust rising as scrutiny falls).
+    - Traces a third-order effect, labeled speculative, a year or more out, such as people losing the habit of synthesizing discussions themselves or junior staff losing the informal learning from attending, which is capability erosion. Checks each effect against known archetypes and stops before the chain gets too thin to defend.
+    - Proposes remedies that keep the gain, such as a named attendee reviewing each summary, requiring decision owners to attend, and periodic spot checks of summaries against recordings.
+  pitfalls:
+    - Concluding the tool should not be adopted.
+  uses: [trace-three-orders, second-order-effects, ai-trust-loop, shifting-the-burden]
+
+- id: fresh-029
+  kind: procedure
+  prompt: >
+    Our hospital board has asked me to "model the discharge problem." Doctors
+    say it's a shortage of beds. Nurses say patients can't leave because
+    community care isn't available. Finance says our incentives reward long
+    stays. Social workers say families aren't brought in early enough. Each
+    group thinks the others are the problem. Where do I start?
+  expected:
+    - Recognizes that the problem's definition itself is contested (a soft problem), so building a formal model around any one group's definition first would bake in that group's view.
+    - Recommends surfacing every group's worldview first, for example with a rich picture built live with all the parties in one room, aiming for agreement on the system even while blame is still disputed.
+    - Runs CATWOE on each candidate definition, especially the Worldview that makes each group's preferred fix look obviously right.
+    - Marks each group as consulted while drawing, informed afterward, or not yet consulted, and moves to stock-and-flow modeling only for the pieces whose definition is agreed.
+  pitfalls:
+    - Picking the bed-shortage definition and building a capacity model straight away.
+  uses: [soft-systems-methodology, hard-and-soft-systems-thinking, catwoe, boundary-critique]
+
+- id: fresh-030
+  kind: critique
+  prompt: >
+    I built a hiring and attrition model showing that our plan to double
+    engineering headcount in a year can't work with our current recruiting
+    and onboarding capacity. I presented it to the leadership team, and they
+    spent the whole hour attacking my attrition assumption and arguing that I
+    should have included contractors. I'm planning to spend the next month
+    making the model more detailed and rigorous so they can't argue with it.
+    Good plan?
+  expected:
+    - Says a correct model that nobody believes changes nothing, and that an unwelcome conclusion predictably gets fought through its boundary and parameter choices rather than head on.
+    - Says more detail alone won't win the argument. Instead, rebuild the model with the leadership team (a live build) and get agreement on the boundary, including whether contractors belong inside it, before showing results.
+    - Recommends naming the value-laden choices openly and running the contested attrition assumption through a swing test to show whether the conclusion actually depends on it.
+    - Recommends noting which leaders were consulted while the model was drawn versus only shown results, and planning those conversations.
+  pitfalls:
+    - Responding with more rigor and detail alone.
+  uses: [right-is-not-sufficient, boundary-critique, live-build-technique, one-at-a-time-swing-test]

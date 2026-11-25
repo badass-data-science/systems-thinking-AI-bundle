@@ -1,0 +1,11 @@
+{
+ "id": "found-005",
+ "cond": "new",
+ "answer": "**Ask: \"Is headcount falling because people are leaving faster, or because we're hiring slower? And if either, what is driving that?\"**\n\nHeadcount is a level (a stock), and a falling level is a claim about its flows. \"Headcount is dropping\" doesn't tell you which flow moved, and the fix depends on which one it is.\n\n**Outflow is up (attrition, layoffs).**\n- Ask who is leaving: regretted or unregretted, senior or junior, which teams, and after how long.\n- Ask why they leave, which means exit interviews and where they go.\n- Clustered departures usually point to a structural cause such as workload, a bad manager, comp, or a stalled roadmap. A hiring push won't fix that. You'd be refilling a leaking bucket.\n\n**Inflow is down (hiring).**\n- Check whether the cause is a hiring freeze, a budget cut, slow recruiting, rejected offers, or a weak employer brand.\n- Here a recruiting fix might actually help.\n\n**It may be deliberate.** Someone may have set a target, such as a cost plan or an \"efficiency\" goal, that nobody states out loud. If so, \"fixing\" the decline would fight the organization's own goal. Check whether the level is drifting toward a number someone chose.\n\n**Why this comes before any proposal:**\n- **A fix aimed at the wrong flow can backfire.** Hiring harder into a high-attrition environment burns recruiting effort and adds new people to an overloaded team. Departures then speed up, which is a classic \"fixes that fail\" pattern.\n- **Delays distort the picture.** Attrition often lags the cause by 6–18 months, so what you see now may reflect decisions made last year.\n- **\"All year\" suggests structure, not a one-off.** A steady decline over months more likely comes from a feedback loop than from a single bad event. One example is departures raising workload on those who remain, which causes more departures. Find that loop before you pick a lever.\n\nNext I'd want the monthly numbers for hires, voluntary exits, and involuntary exits over the past 12–18 months. That splits the problem into the right flows in about an hour.",
+ "cost": 0.037734699999999996,
+ "turns": 3,
+ "tool_calls": [
+  "Skill:systems-thinking"
+ ],
+ "skill_loaded": true
+}

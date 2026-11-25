@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It sets up the two stocks, in training and taking tickets, with 10 hires, 50% graduation and 5% attrition all computed from start-of-month levels."
+  },
+  {
+   "score": 1,
+   "why": "The table gives training at 10, 15, 17.5, 18.75 and trained agents at 95.0, 95.3, 98.0, 101.8, all correct."
+  },
+  {
+   "score": 1,
+   "why": "It says attrition hits immediately while the hires sit in the training pipeline, so the dip is an expected delay effect and not a failure of hiring."
+  },
+  {
+   "score": 1,
+   "why": "It gives equilibria of 20 in training and 200 trained with a slow approach, and flags attrition, early quitting by new hires and the graduation fraction for sensitivity testing."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "New hires are explicitly kept in training and graduate into ticket-taking only over later months."
+  }
+ ],
+ "notes": "The sentence 'about halfway to 200 on that scale only after roughly a year and a half' is garbled, but its timing is roughly right.",
+ "id": "held-011",
+ "cond": "new",
+ "cost": 0.035112000000000004,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

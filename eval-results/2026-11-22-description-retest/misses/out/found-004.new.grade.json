@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "All six CATWOE elements are given, each with substantive content."
+  },
+  {
+   "score": 1,
+   "why": "The Worldview is stated as a contestable claim (a lecture is mainly one-way content delivery) and an alternative worldview is offered."
+  },
+  {
+   "score": 1,
+   "why": "Several surprising findings are noted (double transformation, hidden costs, attrition loop) and the boundary is explicitly widened to include retention and support load, reframing it as a goal conflict."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-004",
+ "cond": "new",
+ "cost": 0.02446,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

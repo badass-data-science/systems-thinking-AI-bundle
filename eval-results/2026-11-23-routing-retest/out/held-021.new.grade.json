@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says the vague instruction gave the agent nothing it could fail, and recommends a numbered checklist of concrete items such as page limits, font, budget justification and headings."
+  },
+  {
+   "score": 0.5,
+   "why": "Flags that we don't know which chapters, appendices or attachments the agent opened, and requires per-chapter reports with locations, but never says to build the inventory from the proposal itself."
+  },
+  {
+   "score": 1,
+   "why": "Treats 'all comply' as unevidenced, and has people spot-check the agent's quotes and confirm high-risk items against the funder's own wording."
+  },
+  {
+   "score": 1,
+   "why": "Adds scripted checks for mechanical rules and attachment presence, plus cross-checks of budget figures against the narrative, which reading the text can't catch."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The rerun it proposes uses deliberately planted violations to test the checker, not the same vague check or an 'are you sure' prompt."
+  }
+ ],
+ "notes": "",
+ "id": "held-021",
+ "cond": "new",
+ "cost": 0.035252,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

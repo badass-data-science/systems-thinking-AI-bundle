@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explicitly asks whether the drop comes from attrition/layoffs (outflow) or from hiring not keeping pace (inflow), even though the headline question leans toward departures."
+  },
+  {
+   "score": 1,
+   "why": "It contrasts retention fixes for attrition with recruiting or budget fixes for a hiring shortfall, noting that each fix fails against the other cause."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-005",
+ "cond": "without",
+ "cost": 0.017816,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

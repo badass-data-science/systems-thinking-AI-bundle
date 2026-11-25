@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "All six CATWOE elements are given with specific content for each."
+  },
+  {
+   "score": 1,
+   "why": "The worldview that a lecture is mainly one-way content transfer is stated explicitly and set against competing worldviews."
+  },
+  {
+   "score": 1,
+   "why": "It flags the contested T, hidden costs in other budgets and overlooked at-risk first-years, and says these shift the goal from cost to retained learners and widen what the business case must include."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Listing unions, student unions and regulators under Owner stretches the term, since these are parties with veto power rather than the system owner, but it is a minor point.",
+ "id": "found-004",
+ "cond": "old",
+ "cost": 0.028984,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

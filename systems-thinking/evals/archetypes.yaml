@@ -1,0 +1,231 @@
+# Archetype recognition and discrimination. Every scenario is new (not from
+# the book) so that a passing answer shows transfer, not recall.
+
+- id: arch-001
+  kind: recognize
+  prompt: >
+    A hospital ward is short of nurses, so it books agency nurses for every
+    gap. Agency shifts cover the rota immediately. Two years on, the ward has
+    stopped running its own preceptorship program because nobody has time to
+    mentor, permanent hires leave within months for lack of support, and the
+    ward books more agency shifts than ever. Which archetype is this, and
+    what would you do?
+  expected:
+    - Names Shifting the Burden, and ideally the intervenor variant (the agency is an on-demand outside fixer).
+    - Identifies the symptomatic fix (agency shifts) and the fundamental fix (recruiting and retaining permanent staff, supported by preceptorship).
+    - Names the reinforcing capability-erosion loop (reliance on agency erodes the mentoring capability, which makes the fundamental fix harder).
+    - Recommends keeping agency cover as a stopgap while deliberately rebuilding preceptorship now, before the remaining capability is gone.
+  pitfalls:
+    - Calling it Fixes That Fail without explaining a side effect that worsens the shortage itself.
+    - Recommending stopping agency use outright.
+  uses: [shifting-the-burden, shifting-the-burden-to-the-intervenor, diagnose-an-archetype]
+
+- id: arch-002
+  kind: recognize
+  prompt: >
+    A support team's first-response-time target was 1 hour three years ago.
+    After a few bad quarters it became 4 hours "to be realistic", and last
+    year 8 hours. Customer satisfaction has fallen steadily. Nobody remembers
+    deciding to lower it. Diagnose and recommend.
+  expected:
+    - Names Drift to Low Performance (Eroding Goals).
+    - Describes two balancing loops closing the same gap, with lowering the target faster than improving performance (which is delayed).
+    - Recommends anchoring the target to something outside recent results (customer need, competitor level, the team's own best period) and making any future change an explicit decision.
+  pitfalls:
+    - Treating it as a staffing problem only, without noticing the goal moved.
+  uses: [drift-to-low-performance, anchor-goals-outside]
+
+- id: arch-003
+  kind: recognize
+  prompt: >
+    Two research groups in a department share a fixed pot of graduate
+    student stipends, allocated each year in proportion to papers published
+    the previous year. Group X had a lucky early result and got more students;
+    five years later X has eight students and Y has one. The chair says this
+    shows X is the stronger group. Evaluate the chair's claim.
+  expected:
+    - Names Success to the Successful.
+    - Explains that the allocation rule itself reinforces an early edge, so past output is partly a record of past allocation, not merit.
+    - Recommends changing the rule (needs-based allocation, a floor per group, or separate pools), the mid-leverage fix.
+  pitfalls:
+    - Accepting past output as proof of merit.
+    - Calling it Escalation (the groups aren't responding to each other).
+  uses: [success-to-the-successful, past-performance-may-be-allocation, leverage-points]
+
+- id: arch-004
+  kind: recognize
+  prompt: >
+    A city's shared EV charging stations are free. Each ride-hail driver
+    benefits from charging there as often as possible and leaving cars plugged
+    in between shifts. Stations are always full, regular residents stop
+    bothering, and the city considers removing them. What structure is this,
+    and why won't asking drivers to be considerate work?
+  expected:
+    - Names Tragedy of the Commons.
+    - Explains that unilateral restraint only cedes the resource to others, so each driver rationally over-uses even while foreseeing the result.
+    - Recommends collective rules that users can see being kept and enforced (time limits with enforcement, pricing or metering), not appeals.
+  pitfalls:
+    - Blaming drivers as greedy or shortsighted.
+  uses: [tragedy-of-the-commons, commons-need-collective-rules]
+
+- id: arch-005
+  kind: recognize
+  prompt: >
+    A startup's sign-ups grew 40% a month for a year, then flattened even
+    though marketing spend doubled. Investigation shows nearly every company
+    in their niche market is already a customer. The board wants to double
+    marketing again. Advise.
+  expected:
+    - Names Limits to Growth, with the size of the niche as the carrying capacity.
+    - Says pushing harder on the growth engine mostly makes the limit push back harder; nothing broke.
+    - Recommends working on the limit (enter adjacent markets, new segments) or planning around it.
+  pitfalls:
+    - Hunting for what broke in the funnel.
+    - Recommending more marketing spend.
+  uses: [limits-to-growth, push-on-the-limit, classify-a-growth-stall]
+
+- id: arch-006
+  kind: recognize
+  prompt: >
+    A regional bakery's ovens run at capacity. Each holiday season it turns
+    away wholesale orders. Each January the owners decide not to buy another
+    oven (it takes nine months to install) because "wholesale demand is too
+    unpredictable" and point to how few wholesale customers came back after
+    being turned away. Diagnose.
+  expected:
+    - Names Growth and Underinvestment.
+    - Identifies the self-justifying loop, where demand lost to poor delivery is read as proof demand isn't there.
+    - Notes the long build delay means investing ahead of demand.
+    - Recommends judging investment by potential demand and holding the delivery standard fixed.
+  pitfalls:
+    - Calling it plain Limits to Growth (the limit is removable by investing).
+  uses: [growth-and-underinvestment, classify-a-growth-stall]
+
+- id: arch-007
+  kind: recognize
+  prompt: >
+    A popular open-source project grows its contributor base. Past a few
+    hundred contributors, maintainers can't review pull requests fast enough.
+    They add maintainers, and then CI time becomes the bottleneck. They buy
+    more CI, and then the chat channel becomes too noisy for newcomers. Each
+    fix helps briefly. What's going on, and what decision are they not making?
+  expected:
+    - Names the Attractiveness Principle (several different limits, each binding at a different size).
+    - Says relieving one limit moves the bottleneck rather than removing it.
+    - Says the real decision is which limits to relieve and which kinds of unattractiveness to accept on purpose; not choosing hands the decision to whichever limit binds first.
+  pitfalls:
+    - Treating each bottleneck as an unrelated problem.
+  uses: [attractiveness-principle, classify-a-growth-stall]
+
+- id: arch-008
+  kind: recognize
+  prompt: >
+    A product team and a platform team should help each other: platform
+    stability helps the product ship, and product feedback helps the
+    platform prioritize. Under deadline pressure the product team starts
+    patching around platform bugs in its own code, which works for it but
+    hides bugs from the platform team. The platform team, seeing fewer bug
+    reports, freezes changes to look stable, which blocks the product team's
+    feature requests. Each team's leads say the other team is the problem.
+    Diagnose and recommend.
+  expected:
+    - Names Accidental Adversaries.
+    - Identifies the partnership reinforcing loop, each team's local balancing fix, and the side effects closing an inner vicious reinforcing loop.
+    - Uses the tell that each side blames the other while describing its own behavior as reasonable.
+    - Recommends getting both teams to look at the whole structure together, and choosing fixes that don't buy one team's numbers with the other's.
+  pitfalls:
+    - Assigning blame to one team.
+    - Calling it Escalation (they are allies, not rivals).
+  uses: [accidental-adversaries, both-sides-blame-the-other]
+
+- id: arch-009
+  kind: recognize
+  prompt: >
+    Two cloud vendors each match and beat the other's free-tier limits every
+    quarter. Both are now giving away far more compute than is profitable.
+    Neither can stop unilaterally without losing sign-ups. What structure is
+    this, and what kind of fix could work?
+  expected:
+    - Names Escalation, two balancing loops on relative position joined into a reinforcing loop.
+    - Explains why unilateral stopping fails here (customers keep rewarding the bigger free tier).
+    - Proposes changing the comparison (a differentiator neither competes on, or a limit binding both that each can verify) rather than willpower.
+  pitfalls:
+    - Treating it as ordinary reinforcing growth with a natural ceiling.
+  uses: [escalation, change-the-comparison]
+
+- id: arch-010
+  kind: recognize
+  prompt: >
+    A data team's dashboard is slow, so analysts add caching layers. Each
+    cache speeds things up immediately. Months later stale caches produce
+    conflicting numbers, analysts lose trust, add more one-off extracts with
+    their own caches, and the dashboard is slower and less trusted than ever.
+    Diagnose.
+  expected:
+    - Names Fixes That Fail.
+    - Identifies the quick fix's balancing loop and the delayed reinforcing side-effect loop (staleness, inconsistency, more caches).
+    - Recommends treating caching as a bridge while fixing why the dashboard is slow, and asking what each fix does a few rounds out.
+  pitfalls:
+    - Calling it Shifting the Burden without a competing fundamental fix and capability erosion.
+  uses: [fixes-that-fail, ask-what-the-fix-does-later]
+
+- id: disc-001
+  kind: discriminate
+  prompt: >
+    A colleague says "every quick fix is Shifting the Burden." Explain how to
+    tell Fixes That Fail from Shifting the Burden, with one example of each.
+  expected:
+    - In Fixes That Fail the fix's side effect makes the problem itself worse.
+    - In Shifting the Burden there is a competing fundamental fix, and reliance on the quick fix erodes the capability to apply it.
+    - Gives a correct example of each.
+  uses: [fixes-that-fail, shifting-the-burden, diagnose-an-archetype]
+
+- id: disc-002
+  kind: discriminate
+  prompt: >
+    Growth has stalled. Give the questions that distinguish Limits to Growth,
+    Growth and Underinvestment, the Attractiveness Principle and Tragedy of
+    the Commons, and what each answer implies for action.
+  expected:
+    - Count and kind of limits (one fixed, one removable but not removed, several).
+    - Whether the limit is a resource shared by several actors (commons).
+    - Whether the same don't-invest decision is reconfirmed by each failure.
+    - Matching actions (relax the limit, invest ahead and hold the standard, choose which unattractiveness to accept, collective rules).
+  uses: [classify-a-growth-stall, limits-to-growth, growth-and-underinvestment, attractiveness-principle, tragedy-of-the-commons]
+
+- id: disc-003
+  kind: discriminate
+  prompt: >
+    Explain the difference between Escalation and Tragedy of the Commons,
+    and between Tragedy of the Commons and Success to the Successful.
+  expected:
+    - Escalation actors respond to each other's relative position; commons actors respond to a shared resource.
+    - Commons is drawn down by everyone; in Success to the Successful the shared resource is allocated by a rule that feeds the leader.
+  uses: [escalation, tragedy-of-the-commons, success-to-the-successful]
+
+- id: crit-001
+  kind: critique
+  prompt: >
+    A consultant presents a diagram labeled "Escalation" for two departments
+    competing for budget: a single loop, A's spending raises B's spending,
+    which raises A's spending, both links positive, labeled R. They say the
+    trace is correct so the diagnosis is correct. Critique this.
+  expected:
+    - The trace may be correct, but a correct trace isn't a correct archetype.
+    - Escalation's structure is two balancing loops (each side restoring its relative position) whose cross-links form the reinforcing loop; the diagram omits the balancing loops and the relative-position variables.
+    - Asks whether the departments are responding to relative position at all, and whether a shared budget makes this Success to the Successful or a commons instead.
+  uses: [a-trace-is-not-a-definition, escalation, diagnose-an-archetype]
+
+- id: crit-002
+  kind: critique
+  prompt: >
+    An analyst opens a meeting with the warehouse team by saying "You are in
+    a classic Fixes That Fail trap," then shows a finished causal loop
+    diagram. The room becomes defensive. What went wrong, and how should the
+    next meeting run?
+  expected:
+    - Leading with the label invites the room to argue with the name rather than the substance and lands as an accusation.
+    - Run a live build from one shared, undisputed event, one link at a time, checking each against their experience.
+    - Name the archetype only after the room has described it; treat pushback as a link or boundary to defend or fix.
+    - Avoid blame-shaped language and note which stakeholders were consulted versus informed.
+  uses: [live-build-technique, boundary-critique]

@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Open Tickets and Burnout as the stocks and explicitly turns the delay into the Burnout stock."
+  },
+  {
+   "score": 1,
+   "why": "Lists new ticket arrivals, resolution rate, burnout accumulation and burnout recovery as flows."
+  },
+  {
+   "score": 1,
+   "why": "Overtime is an auxiliary computed from a backlog gap against an explicit target backlog, which it names as the hidden goal."
+  },
+  {
+   "score": 1,
+   "why": "Shows the main loop passes through both stocks, gives equations with units, says each link's polarity is reproduced, and correctly classes the loop as reinforcing."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-001",
+ "cond": "with",
+ "cost": 0.034319999999999996,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

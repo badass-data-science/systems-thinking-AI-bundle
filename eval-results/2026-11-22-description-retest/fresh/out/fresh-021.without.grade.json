@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says culture change is slow, uncertain and hard to measure while the checklist acts now, but it never grants that culture is the stronger lever and that strength and reach are separate questions."
+  },
+  {
+   "score": 0.5,
+   "why": "It defends the checklist on timing, but mostly by disputing that it is low-leverage rather than defending a lower-band rule as an honest bridge."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends both in parallel and ties the checklist to the observed failure point via root-cause review, but presents the checklist as a pilot and culture-builder rather than a labeled stopgap."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects skipping the checklist."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-021",
+ "cond": "without",
+ "cost": 0.03162,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

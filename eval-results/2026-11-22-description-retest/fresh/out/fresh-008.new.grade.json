@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Fixes That Fail and explains that the coupon cuts complaints right away while its delayed side effect, peak orders, worsens lateness."
+  },
+  {
+   "score": 0.5,
+   "why": "Traces the reinforcing side-effect loop explicitly but only implies the quick-fix balancing loop and never lays it out as a loop."
+  },
+  {
+   "score": 1,
+   "why": "Ties the 30% proposal to the dose rising for the same relief and advises against it."
+  },
+  {
+   "score": 1,
+   "why": "Recommends a bridge-and-taper approach, an off-peak-only coupon, fixing peak capacity, and tracking on-time rate by night and the Fri/Sat redemption share."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Never calls the situation Shifting the Burden."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-008",
+ "cond": "new",
+ "cost": 0.029547999999999998,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

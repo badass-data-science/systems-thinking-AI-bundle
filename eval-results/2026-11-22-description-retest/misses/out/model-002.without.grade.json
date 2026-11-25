@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States inflow 100/week with dock binding and outflow 90/week with picker capacity binding since stock exceeds 90."
+  },
+  {
+   "score": 1,
+   "why": "Table gives end stocks 210, 220, 230, 240."
+  },
+  {
+   "score": 1,
+   "why": "Names pickers binding shipments and dock binding deliveries, notes +10/week growth, and that supplier output (120) is not limiting."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-002",
+ "cond": "without",
+ "cost": 0.016212,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

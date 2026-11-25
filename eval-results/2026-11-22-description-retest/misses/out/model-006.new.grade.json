@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Defines margin as A minus B with a sign change meaning the recommendation flips."
+  },
+  {
+   "score": 1,
+   "why": "Swings each parameter ±25% with others fixed, draws a tornado chart, and searches for flip points."
+  },
+  {
+   "score": 1,
+   "why": "Ranks parameters by flip-point closeness and unmeasured status, with the top item as what to measure first."
+  },
+  {
+   "score": 1,
+   "why": "States explicitly that one-at-a-time testing never lets two guesses be wrong together, with a debt-parameter example."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "It claims all three swings should run against A, but a lower defect rate or smaller drag helps A, so the expected direction holds only for the increases, and the bug-check heuristic is muddled.",
+ "id": "model-006",
+ "cond": "new",
+ "cost": 0.023148000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

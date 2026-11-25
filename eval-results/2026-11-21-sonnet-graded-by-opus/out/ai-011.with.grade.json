@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The table gives each check's scope (paths executed, files pointed at) and what a pass can detect (asserted behaviour, syntax/style)."
+  },
+  {
+   "score": 1,
+   "why": "It states the config file never loaded by tests is outside the test suite's reach."
+  },
+  {
+   "score": 1,
+   "why": "It fixes the checks themselves: config-load tests, CI that enumerates all config files and fails on any without a loader test, and repo-wide coverage listing."
+  },
+  {
+   "score": 1,
+   "why": "It says a passing check only vouches for what it exercises and requires reports to list what was not verified."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-011",
+ "cond": "with",
+ "cost": 0.026543999999999998,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

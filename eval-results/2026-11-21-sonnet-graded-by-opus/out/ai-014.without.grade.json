@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says the label points in a defensible direction but that treating it as one complex problem risks skipping useful analysis and hiding political conflict, which is useful-but-dangerous in substance."
+  },
+  {
+   "score": 0.5,
+   "why": "It separates problem features from Cynefin's cause-effect axis and mentions no definitive formulation, but leans on value conflict rather than settledness of definition as the sorting axis and draws no soft/hard parallel."
+  },
+  {
+   "score": 0,
+   "why": "It splits the problem into separate domain pieces rather than treating it as a mess of interacting problems, and never calls for boundary or worldview interrogation like CATWOE."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-014",
+ "cond": "without",
+ "cost": 0.027588,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

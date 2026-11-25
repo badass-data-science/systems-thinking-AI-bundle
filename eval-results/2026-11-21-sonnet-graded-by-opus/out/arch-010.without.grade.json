@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "The answer labels the structure Shifting the Burden and never names Fixes That Fail."
+  },
+  {
+   "score": 0.5,
+   "why": "It describes the delayed reinforcing side effect well (staleness, divergence, distrust, more extracts) but folds it into one loop and never names the quick fix's balancing loop."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends fixing slowness at the source while keeping one governed cache, but never says to check what each fix does a few rounds out."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": true,
+   "why": "It invokes Shifting the Burden and asserts the cache 'weakens the capacity' for the fundamental fix without showing any erosion mechanism, which the case does not support."
+  }
+ ],
+ "notes": "",
+ "id": "arch-010",
+ "cond": "without",
+ "cost": 0.033824,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 1
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says escalation parties respond to each other's actions, while commons actors react to a shared resource and their own gain."
+  },
+  {
+   "score": 1,
+   "why": "The answer says the commons is degraded by over-use from all actors, and in Success to the Successful resources are allocated on past performance so the winner gets more."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "disc-003",
+ "cond": "without",
+ "cost": 0.024284,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

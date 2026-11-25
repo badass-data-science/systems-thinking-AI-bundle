@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It proposes a recruiter stock with hiring as a computed flow into Employees, but never applies a snapshot test or says Hiring Rate fails as a stock."
+  },
+  {
+   "score": 1,
+   "why": "It says summing survey scores makes a meaningless ever-climbing stock, that Morale needs drivers moving it, and that the survey is a delayed reading used for calibration."
+  },
+  {
+   "score": 1,
+   "why": "It shows fixed 8 departures can go negative and replaces them with Employees × attrition fraction(Morale), naming the turnover spiral."
+  },
+  {
+   "score": 0.5,
+   "why": "It offers to hand-iterate a few months, but never recommends checking units on each equation."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It calls Hiring Rate 'a stock' when criticising the ramp, but its revised structure makes hiring a flow driven by a recruiter stock."
+  }
+ ],
+ "notes": "The answer never says outright that a per-month rate cannot be a stock, which could leave the user's core stock/flow confusion uncorrected.",
+ "id": "held-015",
+ "cond": "prev",
+ "cost": 0.041612,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

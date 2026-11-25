@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says neither vendor is at fault, both are truthful about spec, and the cycle comes from an unowned connection between the agents."
+  },
+  {
+   "score": 1,
+   "why": "It traces the shared inventory variable step by step and names the three-week delay as the main driver turning corrections into overshoot."
+  },
+  {
+   "score": 0.5,
+   "why": "It reworks what each agent reads and adds human review gates, but never maps the read/act dependencies or flags the unmediated agent-to-agent path."
+  },
+  {
+   "score": 1,
+   "why": "It covers order caps, blocks and review gates on discounts, a joint monitor, an owner for the interaction, and partial-gap ordering, and warns that reacting harder to a late signal worsens overshoot."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly declines to blame either vendor and calls blame-assignment counterproductive."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-025",
+ "cond": "old",
+ "cost": 0.038475999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

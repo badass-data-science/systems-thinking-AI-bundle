@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It notes the model stops tracking after the scale and is 'diversion' only under a narrow definition, but never says the boundary was drawn where the county's data ends rather than around the landfill question."
+  },
+  {
+   "score": 1,
+   "why": "It names several separate post-scale losses: residue landfilled or incinerated, unsold bales stockpiled or landfilled, export problems and reprocessing losses."
+  },
+  {
+   "score": 1,
+   "why": "It recommends using facility residue rates and end-market sales data to follow material further, and restating the figure as material collected and weighed."
+  },
+  {
+   "score": 0.5,
+   "why": "It favors a rough adjusted estimate over defending the raw number, but does not call for explicitly justifying each exclusion."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It says the weighing is accurate but explicitly rejects treating that as proof of landfill diversion."
+  }
+ ],
+ "notes": "The worked 53% example adjusts only for residue, though the answer correctly labels it illustrative and lists the other losses.",
+ "id": "held-017",
+ "cond": "without",
+ "cost": 0.032563999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names the 'success to the successful' loop."
+  },
+  {
+   "score": 1,
+   "why": "Explains that students produce papers that earn stipends, so the outcome records allocation history and headcount rather than quality."
+  },
+  {
+   "score": 1,
+   "why": "Recommends changing the rule: a per-group floor, per-capita measures, multi-year averages, or rotating stipends."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects treating raw output as proof of merit."
+  },
+  {
+   "committed": false,
+   "why": "Never calls it Escalation and correctly frames it as a shared-resource compounding loop."
+  }
+ ],
+ "notes": "",
+ "id": "arch-003",
+ "cond": "with",
+ "cost": 0.019292,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

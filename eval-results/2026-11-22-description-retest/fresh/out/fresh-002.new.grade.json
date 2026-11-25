@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names the open-bug count as a stock, with new reports as inflow and fixes and closures as outflow."
+  },
+  {
+   "score": 1,
+   "why": "States the stock rises whenever inflow exceeds outflow however much inflow has fallen, and gives a numeric example."
+  },
+  {
+   "score": 1,
+   "why": "Asks about the closure rate before and after, raises the push pulling engineers off fixing, and calls it a separate capacity problem with a separate remedy."
+  },
+  {
+   "score": 1,
+   "why": "Says to judge the push on inflow per week, and that the backlog shrinks only once closures exceed reports."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects the idea that halving inflow makes the stock fall unless it drops below the closure rate."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-002",
+ "cond": "new",
+ "cost": 0.02116,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

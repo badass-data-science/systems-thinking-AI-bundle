@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explicitly names Drift to Low Performance (eroding goals)."
+  },
+  {
+   "score": 1,
+   "why": "It describes B1 (fix performance, delayed by quarters) and B2 (lower the goal, one meeting) closing the same gap, with B2 winning because it is faster."
+  },
+  {
+   "score": 1,
+   "why": "It re-anchors to customer expectations, competitors or the team's good year, and makes the target an explicit written decision with an owner and rationale."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It suspects a capacity gap but centres the diagnosis on the moving goal and calls target changes treating a symptom."
+  }
+ ],
+ "notes": "",
+ "id": "arch-002",
+ "cond": "with",
+ "cost": 0.022712,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

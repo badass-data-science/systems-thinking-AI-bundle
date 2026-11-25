@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Describes the trust-scrutiny-fewer-catches reinforcing loop and notes the 'almost never found a problem' stat is partly a product of light checking."
+  },
+  {
+   "score": 1,
+   "why": "Tabulates boundary and kind for CI and human review, says unit tests are the same kind, and recommends canary/staged rollout with auto-rollback or environment validation."
+  },
+  {
+   "score": 1,
+   "why": "Proposes risk-based scrutiny independent of track record, fixed-share sampling, and an explicit-confirmation gate for checkout config."
+  },
+  {
+   "score": 1,
+   "why": "Recommends tracking review time and comments per agent PR, and explicitly avoids blaming the reviewer or calling the agent unreliable."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says the postmortem should not blame the reviewer."
+  },
+  {
+   "committed": false,
+   "why": "Calls unit tests a minor item at most and makes other checks the main fixes."
+  }
+ ],
+ "notes": "",
+ "id": "held-001",
+ "cond": "new",
+ "cost": 0.027403999999999998,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

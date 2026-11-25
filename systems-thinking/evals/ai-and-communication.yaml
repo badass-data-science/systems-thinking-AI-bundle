@@ -1,0 +1,196 @@
+# Parts V and VI: AI systems as systems, delegation, consequences, graphs,
+# checking, and communicating a model.
+
+- id: ai-001
+  kind: procedure
+  prompt: >
+    A legal team uses an AI tool to summarize contracts. In month one,
+    lawyers checked every summary; by month nine they check about one in
+    twenty, and no errors have been reported in months. Analyze the system
+    and recommend changes.
+  expected:
+    - Draws the trust-and-scrutiny loop (trust lowers scrutiny, which means fewer errors caught, which lets trust rise) and confirms it reinforces (two minus signs).
+    - Notes that "no errors reported" is the expected output of low scrutiny, not evidence of no errors, and that trust is a stock that drains slowly.
+    - Recommends scrutiny independent of track record (fixed-rate sampling, gates on high-stakes clauses, scrutiny by decision domain, checkable sources).
+    - Checks for capability erosion (are junior lawyers still learning to read contracts?).
+  pitfalls:
+    - Concluding the tool is untrustworthy, or that the tool is proven safe.
+  uses: [break-the-trust-loop, ai-trust-loop, exercise-the-capability]
+
+- id: ai-002
+  kind: recognize
+  prompt: >
+    A recommendation model is optimized for click-through rate. Clicks rise
+    every quarter; six months later, return visits and subscriptions fall,
+    and the team optimizes click-through harder. What known structure is
+    this?
+  expected:
+    - Names specification gaming and maps it onto Fixes That Fail (a quick measurable win, a delayed degradation of the real goal, which eventually drags the metric and triggers more optimization).
+    - Recommends measuring the real goal directly and treating proxy gains as a bridge.
+  uses: [specification-gaming, fixes-that-fail]
+
+- id: ai-003
+  kind: procedure
+  prompt: >
+    Classify each decision's Cynefin domain and say what job an AI agent
+    should have: (a) applying the standard VAT rate to an invoice; (b)
+    choosing a forecasting model for a product's weekly demand; (c) deciding
+    how to respond to a new competitor's surprise launch last week; (d) a
+    production database is corrupting data right now.
+  expected:
+    - "(a) clear: the agent calls a written rule."
+    - "(b) complicated: agent analysis, checked on held-out data or by an expert."
+    - "(c) complex: agent proposes and tracks small reversible probes; a person chooses them and judges results."
+    - "(d) chaotic: stabilize first; the agent runs only a pre-written runbook."
+    - The classification is made by a person, not left to the agent unchecked.
+  uses: [cynefin-as-delegation-guide, cynefin-framework]
+
+- id: ai-004
+  kind: critique
+  prompt: >
+    Asked how to respond to a competitor's surprise launch last week, an AI
+    agent returns a detailed, confident "optimal response strategy." The
+    executive asks whether to adopt it. What's your answer?
+  expected:
+    - The problem is likely complex; the agent answered in complicated-domain shape, which is the costliest misclassification.
+    - Fluency is not evidence of domain or correctness.
+    - Asks for a set of cheap, reversible probes to run and monitor instead of a plan.
+  uses: [cynefin-framework, fluency-is-not-correctness, cynefin-as-delegation-guide]
+
+- id: ai-005
+  kind: apply
+  prompt: >
+    Which of these should sit behind a deterministic gate rather than an
+    agent's judgment, and why? (1) Deploying a model to production. (2)
+    Drafting release notes. (3) Checking that a refund doesn't exceed the
+    original charge. (4) Suggesting which customers to interview.
+  expected:
+    - (1) and (3) belong behind gates, because the same inputs should always give the same answer, or the stakes require explicit confirmation.
+    - (2) and (4) benefit from judgment.
+    - States the reproducibility criterion and that gates break the trust-and-scrutiny loop.
+  uses: [deterministic-gate-principle]
+
+- id: ai-006
+  kind: apply
+  prompt: >
+    Two companies' AI pricing agents each reprice hourly: A prices at 1%
+    below B, and B prices at 3% above A. What happens, and how should
+    either company protect itself?
+  expected:
+    - "Computes the joint multiplier: 0.99 × 1.03 ≈ 1.02 per round, so prices escalate about 2% an hour without bound."
+    - Identifies Escalation emerging from interacting agents (complex domain).
+    - Recommends hard bounds each agent can't reason past (ceilings and floors) and monitoring joint behavior.
+  uses: [bound-interacting-agents, escalation, swarm-test]
+
+- id: ai-007
+  kind: procedure
+  prompt: >
+    A team adopts an AI tool that drafts unit tests automatically. Trace the
+    consequences three orders deep and propose remedies that keep the gain.
+  expected:
+    - "First order: much faster test coverage (a real gain)."
+    - "Second order: a plausible consequence such as weaker review of test quality, or tests that assert current behavior instead of intended behavior, checked against archetypes."
+    - "Third order, labeled speculative: erosion of engineers' skill at designing tests (Shifting the Burden)."
+    - Remedies that keep the gain (review standards for generated tests, deliberate practice without the tool); stops before speculation gets indefensible.
+  uses: [trace-three-orders, second-order-effects]
+
+- id: ai-008
+  kind: procedure
+  prompt: >
+    An operations group runs a forecasting agent, a procurement agent that
+    reads the forecasts and places orders, and a reporting agent reviewed by
+    the CFO. Describe how you'd find unreviewed paths and what you'd do with
+    them.
+  expected:
+    - Records agents as triples (acts on, reads output of, reviewed by).
+    - Queries for agents with no reviewer (the procurement agent) and for downstream paths (forecast errors flow into orders unreviewed).
+    - Hands those paths to a CLD or simulation to ask what an error would do; the graph is the map, not the dynamics.
+    - Checks any agent-drafted triples a decision rests on.
+  uses: [map-the-agents, knowledge-graph]
+
+- id: ai-009
+  kind: discriminate
+  prompt: >
+    For each question, name the kind of model that should answer it: (a)
+    "Why do our inventory levels swing every quarter?" (b) "If we cut lead
+    time by a week, how much safety stock can we drop?" (c) "Which suppliers
+    serve more than one of our plants, and who owns each contract?"
+  expected:
+    - (a) a causal loop diagram (what structure produces this).
+    - (b) a stock-and-flow simulation (how it behaves over time).
+    - (c) a knowledge graph (facts and connections).
+  uses: [choose-model-by-question]
+
+- id: ai-010
+  kind: apply
+  prompt: >
+    An AI assistant is answering staff questions about which internal
+    systems depend on a legacy database, from its conversation and training.
+    Answers vary between sessions. What would you change, and what does it
+    buy?
+  expected:
+    - Puts the dependency facts, with sources, in a knowledge graph the agent queries.
+    - "Answers become reproducible, traceable and shared."
+    - Cheap checking keeps scrutiny from eroding; it doesn't make the agent right.
+  uses: [graphs-not-just-chats, retrieval-augmented-generation]
+
+- id: ai-011
+  kind: procedure
+  prompt: >
+    An AI agent refactored a codebase, ran the test suite (all green) and a
+    linter (clean), and reported the work done. Two weeks later a
+    configuration file the tests never load turned out to be broken. Audit
+    the checks and say what to change.
+  expected:
+    - Lists each check's boundary (what it looked at) and kind (what it could notice).
+    - Classifies the miss as outside the tests' boundary (a file never loaded).
+    - Fixes the check, not just the bug (generate the file list from the repo; add a config-loading check).
+    - Reframes "all green" as "nothing these checks can see is wrong."
+  uses: [audit-your-checks, every-check-has-a-boundary-and-a-kind, checking-loop]
+
+- id: ai-012
+  kind: critique
+  prompt: >
+    An AI-written report cites "Meadows, D. (2004). Feedback and Its
+    Discontents. Systems Review 12(3)" and includes a Python snippet with
+    printed output. Both look plausible. What do you do before relying on
+    either?
+  expected:
+    - Look up the citation at its source; plausible confabulated citations look exactly like real ones.
+    - Run the code against real inputs; printed output from unrun code is an unchecked claim.
+    - Treat the report's own confidence as not evidence.
+  uses: [unrun-code-is-an-unchecked-citation, self-reported-confidence]
+
+- id: ai-013
+  kind: procedure
+  prompt: >
+    You need to present a model showing that a sales team's discounting
+    habit is eroding pricing power (Shifting the Burden) to that sales team.
+    Plan the meeting.
+  expected:
+    - Starts from a shared, undisputed event (a deal lost on price, or end-of-quarter pressure) in their words.
+    - Builds the loop live, one link at a time, checking each against their experience.
+    - Names the archetype only after the room describes it, avoids blame-shaped language, and treats pushback as a link to defend or fix.
+    - Notes who has been consulted versus informed (for example, product marketing, finance) and plans the next room.
+  uses: [live-build-technique, boundary-critique]
+
+- id: ai-014
+  kind: discriminate
+  prompt: >
+    Someone calls a city's housing affordability problem "wicked" and says
+    that means it's in Cynefin's complex domain. Is that right?
+  expected:
+    - The mapping is close enough to be useful and wrong enough to be dangerous.
+    - Wicked/tame sorts by whether the problem's definition is settled (closer to Checkland's soft versus hard); Cynefin sorts by the stability of cause and effect.
+    - Housing affordability is also a mess (interacting problems), so it needs boundary interrogation (CATWOE) as well as probing.
+  uses: [tame-messy-wicked-problems, cynefin-framework, hard-and-soft-systems-thinking]
+
+- id: ai-015
+  kind: critique
+  prompt: >
+    A colleague says: "We've modeled the onboarding problem as a CLD; the
+    model is a simplification, so it's useless." Respond.
+  expected:
+    - Every model is a reduction; one that reduced nothing would be as large as the system and useless.
+    - The discipline is knowing which reduction you made, stating what it left out, and watching for pushback there.
+  uses: [know-which-reduction-you-made, emilys-laws-of-system-complexity]

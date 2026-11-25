@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says to put numbers on it now as ranges, and that committing to numbers turns a vague argument into a testable one and exposes the real disagreement."
+  },
+  {
+   "score": 0.5,
+   "why": "Has each lead give their own parameter ranges, but not their own flow equations, and doesn't compare them before running the model."
+  },
+  {
+   "score": 0.5,
+   "why": "Has a sensitivity check that names the parameter that flips the answer as the thing to measure, but never steps the model forward by hand."
+  },
+  {
+   "score": 0,
+   "why": "Never mentions anchoring, independent estimates, or keeping the first guess from becoming the default."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects waiting and recommends quantifying with ranges now."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-019",
+ "cond": "without",
+ "cost": 0.027832,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says every model is a simplification and gives the 1:1 map as an example of a useless unreduced model."
+  },
+  {
+   "score": 1,
+   "why": "It names what the CLD leaves out (magnitude, timing), checks the boundary, writes down what would prove it wrong, and treats pushback as pointing to a specific link or boundary."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-015",
+ "cond": "with",
+ "cost": 0.02222,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

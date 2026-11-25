@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly frames the test as the 8-point margin over the 10% target and defines mattering as pushing that margin below zero."
+  },
+  {
+   "score": 1,
+   "why": "Describes one-at-a-time swings with ±25% default, holding others fixed, a tornado chart against the margin with a zero line, and identifying inputs that cross it."
+  },
+  {
+   "score": 1,
+   "why": "Notes one-at-a-time misses inputs that matter together and recommends Morris screening or Sobol indices when runs are cheap."
+  },
+  {
+   "score": 1,
+   "why": "Concludes with a short measure/skip list of usually 2–4 inputs and a re-scoped quote rather than collecting all 14."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The Sobol claim that S1 tells you how much uncertainty disappears if you measure an input is a slight oversimplification (it assumes measuring removes all uncertainty), but it is not harmful.",
+ "id": "fresh-017",
+ "cond": "new",
+ "cost": 0.027616,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

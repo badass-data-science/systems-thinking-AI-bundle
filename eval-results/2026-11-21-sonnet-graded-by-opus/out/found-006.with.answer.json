@@ -1,0 +1,12 @@
+{
+ "id": "found-006",
+ "cond": "with",
+ "answer": "**Label: R, a reinforcing loop.** Both of its minus links flip the direction, so they cancel. A change in either direction gets amplified.\n\n**Nodes, phrased so that \"higher\" means \"more of that thing\":**\n- Automated tests\n- Bugs reaching users\n- Urgent hotfixes\n- Time available to write tests\n\n**Links:**\n\n| Link | Sign | Reasoning |\n|---|---|---|\n| Automated tests → Bugs reaching users | − | More tests, fewer bugs |\n| Bugs reaching users → Urgent hotfixes | + | More bugs, more hotfixes |\n| Urgent hotfixes → Time available to write tests | − | More hotfixes, less time |\n| Time available to write tests → Automated tests | + | More time, more tests |\n\n**Count:** there are 2 minus links, which is an even number, so the loop is reinforcing. I expected R before counting, and the count agrees.\n\n**What this means in practice:**\n- The loop runs in both directions. In one direction, more tests lead to fewer bugs, fewer hotfixes, more time, and more tests. In the other, a few missed tests lead to more bugs, more hotfixes, and less time, so even fewer tests get written.\n- R doesn't mean good or bad. The same structure produces the virtuous cycle and the death spiral.\n- Which direction you're in depends on the starting state. A team already buried in hotfixes is in the vicious direction. Pushing harder inside the loop won't free it, because the loop itself eats the time you'd use. You need an input from outside the loop, such as ring-fenced test time or a temporary freeze on feature work.\n- The model leaves out delays. Tests take a while to reduce bugs, so the early weeks of investing look like lost time with no payoff. Teams often quit during that gap.\n- It also leaves out other inputs. Feature pressure and code complexity both affect bug rates and available time, so the real system has more loops than this one.",
+ "cost": 0.0449073,
+ "turns": 4,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Read:.claude/skills/systems-thinking/procedures/trace-loop-polarity.md"
+ ],
+ "skill_loaded": true
+}

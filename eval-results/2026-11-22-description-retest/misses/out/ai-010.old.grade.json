@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Makes the agent look answers up in a maintained, owned dependency record, built from logs, code, CMDB and config, and cite each source; that is the knowledge-graph idea in substance, if not by name."
+  },
+  {
+   "score": 1,
+   "why": "Says sessions agree because they read the same data, answers carry citations staff can follow, and corrections flow back into a shared record."
+  },
+  {
+   "score": 0.5,
+   "why": "Says citations make answers checkable and the system is only as good as its data, but never says that cheap checking keeps human scrutiny from eroding."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-010",
+ "cond": "old",
+ "cost": 0.02788,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says tracing correctly only shows internal consistency, that a tidy diagram can be wrong, and that the polish makes it look more trustworthy than it is."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends review by customer success, support and sales, but not reading each loop aloud to the owners of each link or treating a wince as a wrong or missing link."
+  },
+  {
+   "score": 1,
+   "why": "It separates the archetype label from the trace, gives the canonical quick-fix-with-delayed-backfiring-side-effect definition, and asks the user to name the specific fix and delay."
+  },
+  {
+   "score": 1,
+   "why": "It says the polish hides that each arrow is a guess and that a confident diagram can mislead the board."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly questions the Fixes That Fail label instead of accepting it from the polarity check."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-007",
+ "cond": "without",
+ "cost": 0.03064,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

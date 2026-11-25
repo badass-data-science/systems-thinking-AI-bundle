@@ -1,0 +1,135 @@
+# Proposed mapping from each archetype card's neutral variable names to the
+# book's own causal loop diagram source (copies in archetype-review/cld/).
+#
+# This file is a PROPOSAL written by the agent that wrote the cards. Judging
+# whether each rename keeps the book's meaning is the human part of the review.
+# tools/review_archetypes.py checks everything else mechanically.
+#
+#   card variable: book (.cld) variable
+#
+# A book variable left out of a mapping is reported as "book only".
+
+accidental-adversaries:
+  figure: ch15-img3-accidental-adversaries.png
+  sources:
+    - cld: accidental-adversaries.cld
+      map:
+        "A's success": mining success
+        "A's contribution to B": on-spec ore delivered
+        "B's success": assembly success
+        "B's contribution to A": steady orders for mining
+        "A's local fix": shipment rushing
+        "B's local fix": extra inspection
+
+attractiveness-principle:
+  figure: ch14-img2-attractiveness-principle.png
+  sources:
+    - cld: attractiveness-principle.cld
+      map:
+        size: headcount
+        performance: heist success rate
+        attractiveness: Lab attractiveness to recruits
+        new arrivals: new hires
+        support per member: training time per henchman
+        crowding: bunk crowding
+        outside scrutiny: Interpol attention level
+
+drift-to-low-performance:
+  figure: ch15-img2-drift-to-low-performance.png
+  sources:
+    - cld: drift-to-low-performance.cld
+      map:
+        gap below target: gap below target
+        corrective action: corrective action
+        actual performance: actual heist success rate
+        pressure to lower target: pressure to lower the target
+        target: heist success target
+
+escalation:
+  figure: ch12-img1-escalation-cld.png
+  sources:
+    - cld: escalation-price-war.cld
+      map:
+        "A's action": "our Heroine's price cut"
+        "A's relative position": "our Heroine's relative position"
+        "B's action": "rival's price cut"
+        "B's relative position": "rival's relative position"
+
+fixes-that-fail:
+  figure: ch11-img1-fixes-that-fail-cld.png
+  sources:
+    - cld: fixes-that-fail-overtime-pay.cld
+      map:
+        performance: heist success rate
+        quick fix: overtime pay
+        immediate relief: effort
+        side effect: henchman burnout
+        underlying damage: long-run mistake rate
+
+growth-and-underinvestment:
+  figure: ch14-img1-growth-underinvestment-cld.png
+  sources:
+    - cld: growth-and-underinvestment.cld
+      map:
+        growth effort: sales effort
+        demand: warhead orders
+        delivery performance: delivery performance
+        perceived need to invest: perceived need to invest
+        investment: investment in assembly capacity
+        capacity: assembly capacity
+        performance standard: acceptable delivery performance
+
+limits-to-growth:
+  figure: ch13-img2-recruitment-spiral-ceiling.png
+  # No .cld: the book draws Limits to Growth only as a spiral (Figure 13.2),
+  # so this card is compared with Chapter 13's text instead.
+  sources: []
+  compare_with: 'Chapter 13, "The Wall Everyone Eventually Hits"'
+
+shifting-the-burden:
+  figure: ch11-img2-shifting-the-burden-shape.png
+  sources:
+    - cld: shifting-the-burden-villainium-quality.cld
+      map:
+        problem symptom: villainium quality complaint
+        symptomatic fix: hand-inspect and re-refine
+        fundamental fix: fix mine extraction process
+        fundamental capability: capability to fix extraction process
+
+shifting-the-burden-to-the-intervenor:
+  figure: ch20-img3-reggie-vs-replacement.png
+  sources:
+    - cld: shifting-the-burden-to-the-intervenor-reggie.cld
+      map:
+        problem: refining fault incidents
+        calls to intervenor: calls to Reggie
+        internal capability: in-house diagnostic capability
+        internal fixing: train a second diagnostician
+    - cld: shifting-the-burden-to-the-intervenor-ai-agent.cld
+      map:
+        problem: diagnostic incidents
+        calls to intervenor: AI agent diagnoses
+        internal capability: human diagnostic skill
+        internal fixing: human diagnostic practice
+
+success-to-the-successful:
+  figure: ch15-img1-success-to-the-successful.png
+  sources:
+    - cld: success-to-the-successful.cld
+      map:
+        "A's share of the resource": "Squad A's share of training budget"
+        "A's resources": Squad A training resources
+        "A's performance": Squad A performance
+        "B's resources": Squad B training resources
+        "B's performance": Squad B performance
+
+tragedy-of-the-commons:
+  figure: ch13-img1-volcano-lair-rush.png
+  sources:
+    - cld: volcano-lair-rush.cld
+      map:
+        "A's consumption": Operation A overbuilding
+        "A's gains": Operation A lair gains
+        "B's consumption": Operation B overbuilding
+        "B's gains": Operation B lair gains
+        shared resource: regional volcano-lair viability

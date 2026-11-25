@@ -1,0 +1,6832 @@
+{
+ "nodes": [
+  {
+   "id": "st:a-trace-is-not-a-definition",
+   "type": "heuristic",
+   "title": "A correct trace isn't a correct archetype",
+   "summary": "A diagram can close and trace to the polarity claimed and still not be the archetype it's named after; tracing confirms polarity, and only the literature confirms the structure.",
+   "chapters": [
+    24,
+    11,
+    15
+   ],
+   "path": "heuristics/a-trace-is-not-a-definition.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:accidental-adversaries",
+   "type": "archetype",
+   "title": "Accidental Adversaries",
+   "summary": "Two natural allies, each succeeding when the other does, each fix their own local gap in a way that obstructs the other, and those side effects close a vicious reinforcing loop that overpowers the partnership.",
+   "chapters": [
+    15
+   ],
+   "path": "archetypes/accidental-adversaries.md",
+   "series": [
+    "unintended-consequences",
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:actor-based-modeling",
+   "type": "concept",
+   "title": "Actor-based modeling (ABM)",
+   "summary": "A simulation paradigm in which code for many individually simulated actors, each following local rules, is run forward to see what group behavior emerges.",
+   "chapters": [
+    3,
+    26
+   ],
+   "path": "concepts/actor-based-modeling.md",
+   "series": []
+  },
+  {
+   "id": "st:agent-registry-graph",
+   "type": "case",
+   "title": "Finding the unreviewed agent",
+   "summary": "A small graph of three agents (a forecaster, a coding agent and a pricing agent) shows by query that the pricing agent sets prices with nobody reviewing it while reading the forecaster's output.",
+   "chapters": [
+    23
+   ],
+   "path": "cases/agent-registry-graph.md",
+   "series": []
+  },
+  {
+   "id": "st:agentic-ai",
+   "type": "concept",
+   "title": "Agentic AI",
+   "summary": "Real AI systems (a coding assistant, a research agent, a multi-agent pipeline) taking autonomous action, sometimes for long stretches with no human checking in.",
+   "chapters": [
+    3,
+    20,
+    21
+   ],
+   "path": "concepts/agentic-ai.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:ai-accelerated-shipping",
+   "type": "case",
+   "title": "AI-accelerated shipping, three orders deep",
+   "summary": "An AI coding agent speeds feature delivery (first order); review depth falls as shipping and review undermine each other (second order, Accidental Adversaries); and first-principles debugging skill atrophies (third order, Shifting the Burden).",
+   "chapters": [
+    22,
+    15,
+    11
+   ],
+   "path": "cases/ai-accelerated-shipping.md",
+   "series": []
+  },
+  {
+   "id": "st:ai-agent-as-intervenor",
+   "type": "case",
+   "title": "The AI agent becomes the only diagnostician",
+   "summary": "After an AI agent's fast, correct first root-cause report, every cross-system diagnosis goes to it; the organization's own diagnostic muscle erodes faster than with a human expert, because the agent never takes a vacation or visibly strains.",
+   "chapters": [
+    20,
+    1,
+    11
+   ],
+   "path": "cases/ai-agent-as-intervenor.md",
+   "series": []
+  },
+  {
+   "id": "st:ai-assisted-colonoscopy-deskilling",
+   "type": "case",
+   "title": "Detection rates after AI-assisted colonoscopy",
+   "summary": "In an observational 2025 study across four Polish endoscopy centers, clinicians' detection rate in standard colonoscopies fell from about 28% to about 22% in the months after an AI polyp-detection tool was introduced.",
+   "chapters": [
+    20
+   ],
+   "path": "cases/ai-assisted-colonoscopy-deskilling.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:ai-system-as-a-system",
+   "type": "concept",
+   "title": "AI system as a system",
+   "summary": "An AI agent's usage, the trust accumulating around its output, and the scrutiny that trust invites or discourages form a real feedback structure with stocks, flows and loops, to which every systems tool applies directly.",
+   "chapters": [
+    20
+   ],
+   "path": "concepts/ai-system-as-a-system.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:ai-trust-loop",
+   "type": "concept",
+   "title": "The trust-and-scrutiny loop",
+   "summary": "Two reinforcing loops share an AI tool's accumulated trust; usage builds trust and trust drives usage, while rising trust lowers scrutiny per output, fewer errors are caught, and trust rises further, with the second loop's output an invisible absence.",
+   "chapters": [
+    20,
+    1,
+    21,
+    23
+   ],
+   "path": "concepts/ai-trust-loop.md",
+   "series": [
+    "ai-delegation",
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:amazon-neptune",
+   "type": "tool",
+   "title": "Amazon Neptune",
+   "summary": "A managed graph database service supporting both the property-graph world (Gremlin, openCypher) and the RDF/SPARQL world in one place.",
+   "chapters": [
+    23,
+    "D"
+   ],
+   "path": "tools/amazon-neptune.md",
+   "series": []
+  },
+  {
+   "id": "st:analytical-thinking",
+   "type": "concept",
+   "title": "Analytical thinking",
+   "summary": "Decomposing a problem into isolated components, finding the component that misbehaves, and fixing it; powerful for understanding parts, blind to behavior that comes from how parts interact.",
+   "chapters": [
+    1
+   ],
+   "path": "concepts/analytical-thinking.md",
+   "series": []
+  },
+  {
+   "id": "st:anchor-goals-outside",
+   "type": "heuristic",
+   "title": "Anchor goals outside the system's own results",
+   "summary": "Tie a target to something the system's recent performance can't move (customer need, a competitor's level, your own best year), so misses stay gaps instead of becoming the new target.",
+   "chapters": [
+    15,
+    14
+   ],
+   "path": "heuristics/anchor-goals-outside.md",
+   "series": [
+    "balancing-dynamics"
+   ]
+  },
+  {
+   "id": "st:anchoring",
+   "type": "concept",
+   "title": "Anchoring",
+   "summary": "The pull an early number, even an arbitrary first-draft guess, keeps exerting over every later estimate long after better information exists.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/anchoring.md",
+   "series": [
+    "cognitive-bias"
+   ]
+  },
+  {
+   "id": "st:anylogic",
+   "type": "tool",
+   "title": "AnyLogic",
+   "summary": "A commercial multi-method simulation environment combining system dynamics with actor-based and discrete-event simulation.",
+   "chapters": [
+    17,
+    "D"
+   ],
+   "path": "tools/anylogic.md",
+   "series": []
+  },
+  {
+   "id": "st:applicant-ceiling",
+   "type": "case",
+   "title": "The applicant pool hits its ceiling",
+   "summary": "A reputation-driven applicant spiral that tripled for several rounds bends as the applicant pool approaches the total regional population willing to do the work.",
+   "chapters": [
+    13,
+    7
+   ],
+   "path": "cases/applicant-ceiling.md",
+   "series": []
+  },
+  {
+   "id": "st:ask-what-the-fix-does-later",
+   "type": "heuristic",
+   "title": "Ask what a fix does a few rounds out",
+   "summary": "Before reaching for a fix that works now, ask what it will do after it has been applied several times, because a fix that works now and fails later gets reached for again.",
+   "chapters": [
+    11,
+    22
+   ],
+   "path": "heuristics/ask-what-the-fix-does-later.md",
+   "series": [
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:attention-decay-and-tempo",
+   "type": "case",
+   "title": "Regulatory attention that decays slower than operations repeat",
+   "summary": "Inspections landing about ten weeks after each major operation, produced by a slowly decaying stock of regulatory attention and an operating tempo that never checks it.",
+   "chapters": [
+    5,
+    6,
+    8,
+    9
+   ],
+   "path": "cases/attention-decay-and-tempo.md",
+   "series": []
+  },
+  {
+   "id": "st:attention-management-loop",
+   "type": "case",
+   "title": "Managing regulatory attention on instinct",
+   "summary": "An organization lowers its operating tempo when outside scrutiny feels too high; the loop balances, its goal is unwritten, and two delays make it oscillate.",
+   "chapters": [
+    8,
+    9
+   ],
+   "path": "cases/attention-management-loop.md",
+   "series": []
+  },
+  {
+   "id": "st:attractiveness-principle",
+   "type": "archetype",
+   "title": "Attractiveness Principle",
+   "summary": "Limits to Growth with several different limits at once, each biting at a different size; relieving one only lets growth run until the next binds, so the real decision is which limits to relieve and which kinds of unattractiveness to accept on purpose.",
+   "chapters": [
+    14
+   ],
+   "path": "archetypes/attractiveness-principle.md",
+   "series": [
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:audit-your-checks",
+   "type": "procedure",
+   "title": "Audit your checks for boundary and kind",
+   "summary": "List every check a piece of work has been through, write each one's boundary (what it looked at) and kind (what it could notice), find something none of them could catch, and add a check of a different kind rather than a wider version of an old one.",
+   "chapters": [
+    24
+   ],
+   "path": "procedures/audit-your-checks.md",
+   "series": [
+    "model-validation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:auxiliary",
+   "type": "concept",
+   "title": "Auxiliary variable",
+   "summary": "In a stock-and-flow model, a quantity that is neither a stock nor a flow; recalculated each time step from other quantities, it sets how far a flow's valve opens, and constants (capacities, targets, yields) are drawn the same way.",
+   "chapters": [
+    16
+   ],
+   "path": "concepts/auxiliary.md",
+   "series": []
+  },
+  {
+   "id": "st:availability-heuristic",
+   "type": "concept",
+   "title": "Availability heuristic",
+   "summary": "Overweighting whatever example comes to mind most easily, whether or not it's typical.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/availability-heuristic.md",
+   "series": [
+    "cognitive-bias"
+   ]
+  },
+  {
+   "id": "st:balancing-loop",
+   "type": "concept",
+   "title": "Balancing loop",
+   "summary": "A feedback loop with an odd number of negative links, which compares a current state to a reference point and takes corrective action sized to the gap, so it seeks and then defends a goal it never sets.",
+   "chapters": [
+    8,
+    6
+   ],
+   "path": "concepts/balancing-loop.md",
+   "series": [
+    "balancing-dynamics"
+   ]
+  },
+  {
+   "id": "st:bank-run",
+   "type": "case",
+   "title": "Bank run",
+   "summary": "Fear that a bank will fail drives withdrawals, which make failure likelier, which drives more fear: a vicious cycle with the same structure as a virtuous one.",
+   "chapters": [
+    7
+   ],
+   "path": "cases/bank-run.md",
+   "series": [
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:both-sides-blame-the-other",
+   "type": "heuristic",
+   "title": "When both sides blame the other, look for the whole loop",
+   "summary": "If two parties who should be allies each call the other \"the problem\" and each can accurately describe its own behavior as a reasonable response, suspect Accidental Adversaries.",
+   "chapters": [
+    15
+   ],
+   "path": "heuristics/both-sides-blame-the-other.md",
+   "series": [
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:bound-interacting-agents",
+   "type": "heuristic",
+   "title": "Bound interacting agents and watch them together",
+   "summary": "When independently built agents react to one another's outputs with nobody coordinating, give each hard limits it can't reason past and monitor their joint behavior, because what they do together belongs to none of them.",
+   "chapters": [
+    21,
+    3,
+    12
+   ],
+   "path": "heuristics/bound-interacting-agents.md",
+   "series": [
+    "ai-delegation",
+    "escalation"
+   ]
+  },
+  {
+   "id": "st:boundary-critique",
+   "type": "concept",
+   "title": "Boundary critique",
+   "summary": "Asking not only what is inside a model's boundary but whose worldview that boundary needs buy-in from before anyone will act on it, and whether those stakeholders were consulted while it was drawn or only informed afterward.",
+   "chapters": [
+    25,
+    4
+   ],
+   "path": "concepts/boundary-critique.md",
+   "series": [
+    "boundary",
+    "stakeholder-worldviews",
+    "persuasion"
+   ]
+  },
+  {
+   "id": "st:break-the-trust-loop",
+   "type": "procedure",
+   "title": "Audit and break an AI trust-and-scrutiny loop",
+   "summary": "Draw the AI-assisted workflow with an explicit \"scrutiny per output\" node, trace whether rising trust lowers it, find where you'd notice scrutiny falling to zero, then tie scrutiny to something other than trust.",
+   "chapters": [
+    20,
+    21,
+    23
+   ],
+   "path": "procedures/break-the-trust-loop.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:budget-split-between-teams",
+   "type": "case",
+   "title": "Two new teams, one training budget",
+   "summary": "Two equally capable new teams compete for one fixed training budget; the first team's lucky early win earns it a larger share, and the second never recovers.",
+   "chapters": [
+    15
+   ],
+   "path": "cases/budget-split-between-teams.md",
+   "series": []
+  },
+  {
+   "id": "st:build-cld-from-story",
+   "type": "procedure",
+   "title": "Build a causal loop diagram from a story",
+   "summary": "Five steps in order: list the quantities, add polarity-marked arrows one at a time with any delays, check the chain closes, trace and label each loop, then read the whole loop aloud as a sentence a domain expert would nod along to.",
+   "chapters": [
+    10
+   ],
+   "path": "procedures/build-cld-from-story.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:building-this-book-with-an-agent",
+   "type": "case",
+   "title": "Building a book with an AI agent",
+   "summary": "A human author and an AI coding agent built a book together; the decision loop (options, a choice, done) worked, while the checking loop kept stopping early because each check saw only its own boundary and kind.",
+   "chapters": [
+    24
+   ],
+   "path": "cases/building-this-book-with-an-agent.md",
+   "series": [
+    "ai-delegation",
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:calm-base-case-proves-nothing",
+   "type": "heuristic",
+   "title": "A calm base case doesn't prove a loop harmless",
+   "summary": "If a loop never fires under baseline conditions, shock the model and compare runs with the loop intact and switched off before concluding it doesn't matter.",
+   "chapters": [
+    16,
+    18
+   ],
+   "path": "heuristics/calm-base-case-proves-nothing.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:catwoe",
+   "type": "procedure",
+   "title": "CATWOE",
+   "summary": "Checkland's six-question check of a drawn boundary (Customers, Actors, Transformation, Worldview, Owner, Environmental constraints) to surface the assumptions it hides.",
+   "chapters": [
+    4,
+    2,
+    25
+   ],
+   "path": "procedures/catwoe.md",
+   "series": [
+    "boundary",
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:causal-loop-diagram",
+   "type": "concept",
+   "title": "Causal loop diagram (CLD)",
+   "summary": "A picture of feedback structure with four ingredients: nodes that are quantities, cause-to-effect arrows marked + or -, R/B loop labels, and double-hash delay marks.",
+   "chapters": [
+    6,
+    10
+   ],
+   "path": "concepts/causal-loop-diagram.md",
+   "series": []
+  },
+  {
+   "id": "st:change-initiative-meets-balancing-loop",
+   "type": "heuristic",
+   "title": "Diffuse resistance means an unnamed balancing loop",
+   "summary": "When a change effort meets small, reasonable resistance from every direction and nobody is visibly opposing it, look for a balancing loop defending a goal the change never addressed.",
+   "chapters": [
+    8
+   ],
+   "path": "heuristics/change-initiative-meets-balancing-loop.md",
+   "series": [
+    "balancing-dynamics"
+   ]
+  },
+  {
+   "id": "st:change-the-comparison",
+   "type": "heuristic",
+   "title": "End an escalation by changing what's compared",
+   "summary": "When two parties are locked in a relative-position race, change the structure of the comparison (a verifiable shared limit, a new dimension to compete on) rather than asking one side to stop first.",
+   "chapters": [
+    12,
+    19
+   ],
+   "path": "heuristics/change-the-comparison.md",
+   "series": [
+    "escalation",
+    "intervention-leverage"
+   ]
+  },
+  {
+   "id": "st:chaos-theory",
+   "type": "concept",
+   "title": "Chaos theory",
+   "summary": "The study of how simple, fully specified deterministic systems can still be unpredictable over the long run, because tiny differences in starting points grow.",
+   "chapters": [
+    3
+   ],
+   "path": "concepts/chaos-theory.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:checking-loop",
+   "type": "concept",
+   "title": "The checking loop and its sensor",
+   "summary": "Checking work is a balancing loop whose sensor is the check itself, so it comes to rest when the check finds nothing, whether or not the work is right; errors outside the check's boundary or kind accumulate undrained.",
+   "chapters": [
+    24
+   ],
+   "path": "concepts/checking-loop.md",
+   "series": [
+    "model-validation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:choose-model-by-question",
+   "type": "heuristic",
+   "title": "Choose the model by the question",
+   "summary": "Three questions, three models: what structure is producing this? (a CLD); how will it behave over time? (a stock-and-flow simulation); what do we know and what is connected to what? (a knowledge graph).",
+   "chapters": [
+    23,
+    10,
+    17
+   ],
+   "path": "heuristics/choose-model-by-question.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:choose-simulation-tooling",
+   "type": "procedure",
+   "title": "Choose spreadsheet, simulation software, or PySD",
+   "summary": "Before opening any software, draw a three-branch decision tree (stay in the spreadsheet, move to dedicated software, go straight to PySD) and write the specific trigger that would justify each.",
+   "chapters": [
+    17
+   ],
+   "path": "procedures/choose-simulation-tooling.md",
+   "series": []
+  },
+  {
+   "id": "st:classify-a-growth-stall",
+   "type": "procedure",
+   "title": "Classify a growth stall",
+   "summary": "When growth slows, decide whether it is one limit outside the system's own capacity (Limits to Growth), the system's own capacity, which the organization keeps declining to expand (Growth and Underinvestment), several limits at once (Attractiveness Principle), or a shared resource being drawn down (Tragedy of the Commons).",
+   "chapters": [
+    13,
+    14
+   ],
+   "path": "procedures/classify-a-growth-stall.md",
+   "series": [
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:co-flow",
+   "type": "concept",
+   "title": "Co-flow",
+   "summary": "A second stock, with its own pipes, that shadows a main stock to track one attribute of what it holds, so that dividing the shadow by the main stock gives that attribute's share.",
+   "chapters": [
+    16
+   ],
+   "path": "concepts/co-flow.md",
+   "series": []
+  },
+  {
+   "id": "st:commons-need-collective-rules",
+   "type": "heuristic",
+   "title": "A commons needs rules its users can see kept",
+   "summary": "Over-use of a shared resource can't be fixed by one user's restraint; it takes rules every user agrees to, can see being kept and can enforce, whether set by a regulator or by the users themselves.",
+   "chapters": [
+    13
+   ],
+   "path": "heuristics/commons-need-collective-rules.md",
+   "series": [
+    "competing-for-shared-resources"
+   ]
+  },
+  {
+   "id": "st:complexity-science",
+   "type": "concept",
+   "title": "Complexity science",
+   "summary": "The study of how large numbers of simple, interacting actors following local rules produce coordinated behavior that nobody specified.",
+   "chapters": [
+    3,
+    21
+   ],
+   "path": "concepts/complexity-science.md",
+   "series": []
+  },
+  {
+   "id": "st:confirmation-bias",
+   "type": "concept",
+   "title": "Confirmation bias",
+   "summary": "The pull toward evidence, and toward modeling choices, that confirm what you already believed.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/confirmation-bias.md",
+   "series": [
+    "cognitive-bias"
+   ]
+  },
+  {
+   "id": "st:consistent-is-not-true",
+   "type": "heuristic",
+   "title": "A consistent diagram isn't a true one",
+   "summary": "A causal diagram can pass every notation check and still tell a story nobody who works in the system believes, so say it aloud to them before building on it.",
+   "chapters": [
+    10,
+    18,
+    25
+   ],
+   "path": "heuristics/consistent-is-not-true.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:convenience-boundary-trap",
+   "type": "heuristic",
+   "title": "Suspect a boundary that matches your data",
+   "summary": "If a model's boundary sits exactly where the easy data ends, it was probably drawn for convenience rather than for the question.",
+   "chapters": [
+    4,
+    3
+   ],
+   "path": "heuristics/convenience-boundary-trap.md",
+   "series": [
+    "boundary"
+   ]
+  },
+  {
+   "id": "st:covid-reporting-delays",
+   "type": "case",
+   "title": "COVID-19 case counts and policy oscillation",
+   "summary": "Infection-to-test and test-to-report delays meant policy reacted to a state that had already moved, so responses overshot in both directions.",
+   "chapters": [
+    3,
+    9
+   ],
+   "path": "cases/covid-reporting-delays.md",
+   "series": [
+    "delay"
+   ]
+  },
+  {
+   "id": "st:cybernetics",
+   "type": "concept",
+   "title": "Cybernetics",
+   "summary": "The study of control, named by Norbert Wiener in 1948: how a system uses feedback about its own output to keep that output on target.",
+   "chapters": [
+    2,
+    3
+   ],
+   "path": "concepts/cybernetics.md",
+   "series": [
+    "feedback",
+    "balancing-dynamics"
+   ]
+  },
+  {
+   "id": "st:cynefin-as-delegation-guide",
+   "type": "procedure",
+   "title": "Use Cynefin to decide what to delegate to an AI agent",
+   "summary": "Classify a decision's Cynefin domain before any agent sees it, and let the domain, never the agent's fluency or track record, set the agent's job: a rule it calls, an analysis someone checks, probes it proposes, or a runbook it follows.",
+   "chapters": [
+    21,
+    20
+   ],
+   "path": "procedures/cynefin-as-delegation-guide.md",
+   "series": [
+    "decision-domain",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:cynefin-framework",
+   "type": "concept",
+   "title": "Cynefin framework",
+   "summary": "Dave Snowden's framework sorting a decision by how cause and effect behave in it: clear (best practice), complicated (expert analysis finds a knowable answer), complex (coherent only in retrospect, so probe safely) and chaotic (act first to stabilize), with disorder at the center for not yet knowing which.",
+   "chapters": [
+    21
+   ],
+   "path": "concepts/cynefin-framework.md",
+   "series": [
+    "decision-domain"
+   ]
+  },
+  {
+   "id": "st:damp-an-oscillation",
+   "type": "procedure",
+   "title": "Damp an oscillation caused by delay",
+   "summary": "When a balancing loop overshoots because its feedback is late, shorten the delay, correct only part of the gap at a time, or widen the acceptable band; never react harder to the same late signal.",
+   "chapters": [
+    9
+   ],
+   "path": "procedures/damp-an-oscillation.md",
+   "series": [
+    "delay"
+   ]
+  },
+  {
+   "id": "st:deferred-capacity-and-bulk-order",
+   "type": "case",
+   "title": "Deferred capacity and the record order",
+   "summary": "Three years of deferring a year-long capacity build because demand was \"too choppy,\" then a record order the line can't fill, and the failure becomes the next argument for deferring again.",
+   "chapters": [
+    14
+   ],
+   "path": "cases/deferred-capacity-and-bulk-order.md",
+   "series": []
+  },
+  {
+   "id": "st:delay",
+   "type": "concept",
+   "title": "Delay",
+   "summary": "A link in a feedback loop where the effect lags the cause, either as an information delay (a lag in finding out) or a material delay (a lag in the world changing once everyone knows).",
+   "chapters": [
+    9,
+    16
+   ],
+   "path": "concepts/delay.md",
+   "series": [
+    "delay"
+   ]
+  },
+  {
+   "id": "st:deterministic-gate-principle",
+   "type": "heuristic",
+   "title": "Deterministic-gate principle",
+   "summary": "If a decision should produce the identical answer every time given identical inputs, it belongs behind a rule-based gate, not in open-ended judgment by a person or an agent.",
+   "chapters": [
+    21,
+    20,
+    23
+   ],
+   "path": "heuristics/deterministic-gate-principle.md",
+   "series": [
+    "ai-delegation",
+    "decision-domain"
+   ]
+  },
+  {
+   "id": "st:diagnose-an-archetype",
+   "type": "procedure",
+   "title": "Diagnose which archetype is at work",
+   "summary": "Start from the recurring behavior, form an archetype hypothesis with the diagnostic questions, then confirm it by drawing and tracing the actual links; a familiar story is a hint, not a diagnosis.",
+   "chapters": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    "C"
+   ],
+   "path": "procedures/diagnose-an-archetype.md",
+   "series": []
+  },
+  {
+   "id": "st:dont-react-harder-to-late-signals",
+   "type": "heuristic",
+   "title": "Don't react harder to a late signal",
+   "summary": "If a system oscillates because its feedback is delayed, reacting faster or more forcefully to the same late signal enlarges the swings.",
+   "chapters": [
+    9
+   ],
+   "path": "heuristics/dont-react-harder-to-late-signals.md",
+   "series": [
+    "delay"
+   ]
+  },
+  {
+   "id": "st:draw-a-boundary",
+   "type": "procedure",
+   "title": "Draw a system boundary on purpose",
+   "summary": "Choose the smallest slice of the world that still contains the structure producing the behavior in question, sketch its stocks and flows, and write a defense for every exclusion.",
+   "chapters": [
+    4
+   ],
+   "path": "procedures/draw-a-boundary.md",
+   "series": []
+  },
+  {
+   "id": "st:drift-to-low-performance",
+   "type": "archetype",
+   "title": "Drift to Low Performance",
+   "summary": "A goal quietly erodes toward whatever performance is being achieved, because lowering the target closes the gap faster than improving performance does.",
+   "chapters": [
+    15,
+    8,
+    14
+   ],
+   "path": "archetypes/drift-to-low-performance.md",
+   "series": [
+    "balancing-dynamics",
+    "proxy-metric"
+   ]
+  },
+  {
+   "id": "st:emilys-laws-of-system-complexity",
+   "type": "concept",
+   "title": "Emily's Laws of System Complexity",
+   "summary": "First Law: for every reduction, there is a greater and opposite clusterfuck. Second Law: the first law is a reductionist statement.",
+   "chapters": [
+    1,
+    11,
+    26
+   ],
+   "path": "concepts/emilys-laws-of-system-complexity.md",
+   "series": [
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:engagement-optimization",
+   "type": "case",
+   "title": "Engagement-optimizing platforms",
+   "summary": "Platforms optimizing a single measurable proxy (time on site, clicks) saw the metric rise while what it stood for degraded where no dashboard reported.",
+   "chapters": [
+    3,
+    20
+   ],
+   "path": "cases/engagement-optimization.md",
+   "series": [
+    "proxy-metric"
+   ]
+  },
+  {
+   "id": "st:escalation",
+   "type": "archetype",
+   "title": "Escalation",
+   "summary": "Two actors each respond to the other's relative gain by increasing their own effort, so two balancing loops lock together into a reinforcing spiral toward an outcome neither wants.",
+   "chapters": [
+    12,
+    3,
+    8
+   ],
+   "path": "archetypes/escalation.md",
+   "series": [
+    "escalation",
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:every-check-has-a-boundary-and-a-kind",
+   "type": "heuristic",
+   "title": "When something gets past a check, fix the check",
+   "summary": "When an error slips past a check, ask whether it fell outside the check's boundary (where it looked) or outside its kind (what it could notice), and change the check, not just the bug.",
+   "chapters": [
+    24,
+    4,
+    19
+   ],
+   "path": "heuristics/every-check-has-a-boundary-and-a-kind.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:exercise-the-capability",
+   "type": "heuristic",
+   "title": "Keep the capability exercised on purpose",
+   "summary": "When a tool or agent reliably does a skilled task, schedule people to do it without the tool and compare their answer with the tool's, so the human capability doesn't quietly atrophy.",
+   "chapters": [
+    20,
+    11
+   ],
+   "path": "heuristics/exercise-the-capability.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:expand-capacity-or-stop-corner-cutting",
+   "type": "case",
+   "title": "Expand capacity, or stop cutting corners?",
+   "summary": "The model recommends expanding assembly capacity over stopping corner-cutting by 60 tons, but the recommendation flips if an unmeasured quality-loss guess is 15% too low, or only 3% too low if transit is also faster than guessed.",
+   "chapters": [
+    18
+   ],
+   "path": "cases/expand-capacity-or-stop-corner-cutting.md",
+   "series": []
+  },
+  {
+   "id": "st:exponential-looks-flat",
+   "type": "heuristic",
+   "title": "Act while the curve still looks flat",
+   "summary": "If you have traced a reinforcing loop, decide on intervention while its output still looks boring, because compounding is invisible to the eye until several rounds have run.",
+   "chapters": [
+    7
+   ],
+   "path": "heuristics/exponential-looks-flat.md",
+   "series": [
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:feedback-loop",
+   "type": "concept",
+   "title": "Feedback loop",
+   "summary": "A causal chain that curls back on itself (A affects B, B affects C, C affects A), so a system's output becomes an input to its own future output; every such loop is either reinforcing or balancing.",
+   "chapters": [
+    6
+   ],
+   "path": "concepts/feedback-loop.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:find-the-unwritten-goal",
+   "type": "procedure",
+   "title": "Find the unwritten goal a balancing loop defends",
+   "summary": "Sketch the loop's state, goal, gap and correction, then ask what number the goal holds and who set it; \"nobody knows, we just feel it\" is a valid and important result.",
+   "chapters": [
+    8
+   ],
+   "path": "procedures/find-the-unwritten-goal.md",
+   "series": [
+    "balancing-dynamics"
+   ]
+  },
+  {
+   "id": "st:fit-is-easy-to-manufacture",
+   "type": "heuristic",
+   "title": "A good historical fit is easy to manufacture",
+   "summary": "Any model with guessed parameters can be tuned to reproduce the past, so a good fit proves only that the model can be tuned, not that its mechanisms are right.",
+   "chapters": [
+    18
+   ],
+   "path": "heuristics/fit-is-easy-to-manufacture.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:fixes-that-fail",
+   "type": "archetype",
+   "title": "Fixes That Fail",
+   "summary": "A quick fix relieves a symptom genuinely and immediately, but has a delayed side effect that makes the underlying problem worse, often triggering the same fix again, harder.",
+   "chapters": [
+    11,
+    1,
+    20
+   ],
+   "path": "archetypes/fixes-that-fail.md",
+   "series": [
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:flow",
+   "type": "concept",
+   "title": "Flow",
+   "summary": "A rate, the speed at which a stock is filling or draining per unit of time, with no inertia of its own.",
+   "chapters": [
+    4,
+    16
+   ],
+   "path": "concepts/flow.md",
+   "series": []
+  },
+  {
+   "id": "st:fluency-is-not-correctness",
+   "type": "heuristic",
+   "title": "Fluency is not system-level correctness",
+   "summary": "A fast, confident, internally consistent answer to the question asked says nothing about whether the question was the right one, so check the question, not the polish.",
+   "chapters": [
+    1,
+    20,
+    21
+   ],
+   "path": "heuristics/fluency-is-not-correctness.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:four-decisions-four-domains",
+   "type": "case",
+   "title": "Four decisions, four Cynefin domains",
+   "summary": "Renewing a known-good insurance policy (clear), choosing a seasonal forecasting model's order (complicated), responding to the first months of a price war (complex), and responding to an incident in progress (chaotic), each with a different job for an AI agent.",
+   "chapters": [
+    21
+   ],
+   "path": "cases/four-decisions-four-domains.md",
+   "series": []
+  },
+  {
+   "id": "st:general-systems-theory",
+   "type": "concept",
+   "title": "General systems theory",
+   "summary": "Ludwig von Bertalanffy's search for one vocabulary that could describe any system of any kind (open systems, hierarchy, equifinality).",
+   "chapters": [
+    2
+   ],
+   "path": "concepts/general-systems-theory.md",
+   "series": []
+  },
+  {
+   "id": "st:goal-seeking-behavior",
+   "type": "concept",
+   "title": "Goal-seeking behavior",
+   "summary": "The signature curve of a balancing loop without significant delay: the state approaches its goal quickly at first, then more and more gently, because the correction is sized to a shrinking gap.",
+   "chapters": [
+    8
+   ],
+   "path": "concepts/goal-seeking-behavior.md",
+   "series": []
+  },
+  {
+   "id": "st:graphs-not-just-chats",
+   "type": "heuristic",
+   "title": "Graphs, not just chats",
+   "summary": "When an AI agent answers factual questions about a system, give it a knowledge graph to query so its answers are reproducible, traceable to sources and shared, rather than left in one conversation.",
+   "chapters": [
+    23,
+    20,
+    21
+   ],
+   "path": "heuristics/graphs-not-just-chats.md",
+   "series": [
+    "knowledge-representation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:growing-is-not-reinforcing",
+   "type": "heuristic",
+   "title": "Growth isn't proof of a reinforcing loop",
+   "summary": "Before crediting a growth spiral to a loop, check that each round's output is what drives the next round's input, not an outside event moving the same way.",
+   "chapters": [
+    7
+   ],
+   "path": "heuristics/growing-is-not-reinforcing.md",
+   "series": []
+  },
+  {
+   "id": "st:growing-workforce-many-limits",
+   "type": "case",
+   "title": "A growing workforce meets several limits",
+   "summary": "As an organization grows it becomes less attractive to recruits for three different reasons (thin training, full housing, rising outside scrutiny), and relieving one only moves the bottleneck.",
+   "chapters": [
+    14
+   ],
+   "path": "cases/growing-workforce-many-limits.md",
+   "series": []
+  },
+  {
+   "id": "st:growth-and-underinvestment",
+   "type": "archetype",
+   "title": "Growth and Underinvestment",
+   "summary": "Growth runs into a capacity limit that investment could remove, but investment is deferred, and the demand lost to poor performance is read as proof that demand never justified investing, while the performance standard quietly erodes.",
+   "chapters": [
+    14
+   ],
+   "path": "archetypes/growth-and-underinvestment.md",
+   "series": [
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:hand-iterate-a-model",
+   "type": "procedure",
+   "title": "Hand-iterate a stock-and-flow model",
+   "summary": "Give each stock a starting value and each flow an honest-guess equation, step the model forward one time step at a time in a table, read off which constraint binds, then shock it to see whether its loops fire.",
+   "chapters": [
+    16
+   ],
+   "path": "procedures/hand-iterate-a-model.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:hard-and-soft-systems-thinking",
+   "type": "concept",
+   "title": "Hard and soft systems thinking",
+   "summary": "Checkland's distinction between problems defined well enough to model directly (hard) and problems whose definition is itself in dispute (soft).",
+   "chapters": [
+    2,
+    21
+   ],
+   "path": "concepts/hard-and-soft-systems-thinking.md",
+   "series": [
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:hiring-overshoot",
+   "type": "case",
+   "title": "Hiring overshoot through a training delay",
+   "summary": "A reputation-driven hiring spiral overshoots what a fixed training staff can handle, because poor training shows up as poor execution only weeks after hiring.",
+   "chapters": [
+    9,
+    13
+   ],
+   "path": "cases/hiring-overshoot.md",
+   "series": []
+  },
+  {
+   "id": "st:homeostasis",
+   "type": "concept",
+   "title": "Homeostasis",
+   "summary": "The special case of a balancing loop whose goal is simply \"stay the same,\" like a thermostat holding a temperature.",
+   "chapters": [
+    8,
+    2
+   ],
+   "path": "concepts/homeostasis.md",
+   "series": []
+  },
+  {
+   "id": "st:iceberg-analysis",
+   "type": "procedure",
+   "title": "Run the iceberg on an incident",
+   "summary": "Write one honest sentence for each of the iceberg's four bands (event, pattern, structure, mental model) before accepting any fix.",
+   "chapters": [
+    5
+   ],
+   "path": "procedures/iceberg-analysis.md",
+   "series": []
+  },
+  {
+   "id": "st:iceberg-model",
+   "type": "concept",
+   "title": "Iceberg model",
+   "summary": "A depth-of-analysis discipline with four bands: event (what happened), pattern (has it happened before), structure (what arrangement produces the pattern) and mental model (what belief made that structure seem reasonable).",
+   "chapters": [
+    5,
+    19
+   ],
+   "path": "concepts/iceberg-model.md",
+   "series": [
+    "intervention-leverage"
+   ]
+  },
+  {
+   "id": "st:insight-maker",
+   "type": "tool",
+   "title": "Insight Maker",
+   "summary": "A free, browser-based system dynamics tool with no install or license barrier, with lighter sensitivity and Monte Carlo tooling than the commercial options.",
+   "chapters": [
+    17,
+    "D"
+   ],
+   "path": "tools/insight-maker.md",
+   "series": []
+  },
+  {
+   "id": "st:inspection-instead-of-root-cause",
+   "type": "case",
+   "title": "Hand inspection instead of fixing the source",
+   "summary": "For two years every low-quality batch was caught by hand inspection and reworked, while the skill of diagnosing the upstream defect atrophied from disuse.",
+   "chapters": [
+    11
+   ],
+   "path": "cases/inspection-instead-of-root-cause.md",
+   "series": []
+  },
+  {
+   "id": "st:know-which-reduction-you-made",
+   "type": "heuristic",
+   "title": "Know which reduction you just made",
+   "summary": "Every model, archetype, boundary and summary is a reduction; the discipline isn't avoiding reduction but knowing which one you made, drawing what it left out, and watching what pushes back.",
+   "chapters": [
+    26,
+    1
+   ],
+   "path": "heuristics/know-which-reduction-you-made.md",
+   "series": [
+    "boundary"
+   ]
+  },
+  {
+   "id": "st:knowledge-graph",
+   "type": "concept",
+   "title": "Knowledge graph, RDF and SPARQL",
+   "summary": "A knowledge graph represents entities as nodes and typed relationships as labeled edges, a model of facts rather than dynamics; RDF is the W3C standard for writing it as subject-predicate-object triples, and SPARQL is its query language.",
+   "chapters": [
+    23,
+    10
+   ],
+   "path": "concepts/knowledge-graph.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:kumu",
+   "type": "tool",
+   "title": "Kumu",
+   "summary": "A web-based systems-mapping tool for large or shared causal loop diagrams, with automated loop detection.",
+   "chapters": [
+    10,
+    "D"
+   ],
+   "path": "tools/kumu.md",
+   "series": []
+  },
+  {
+   "id": "st:label-the-stopgap",
+   "type": "heuristic",
+   "title": "Label a stopgap as a stopgap",
+   "summary": "A low-leverage fix is fine as a deliberate bridge while a structural fix is built, as long as everyone knows which job it's doing and what it's buying time for.",
+   "chapters": [
+    19,
+    11
+   ],
+   "path": "heuristics/label-the-stopgap.md",
+   "series": [
+    "intervention-leverage"
+   ]
+  },
+  {
+   "id": "st:leverage-ladder-examples",
+   "type": "case",
+   "title": "Three interventions, three rungs",
+   "summary": "Raising overtime pay (a parameter), rewriting a success-driven budget allocation rule (a rule), and redefining what \"success\" means in reviews to count its costs (a paradigm) rank low, mid and high on the leverage ladder.",
+   "chapters": [
+    19
+   ],
+   "path": "cases/leverage-ladder-examples.md",
+   "series": []
+  },
+  {
+   "id": "st:leverage-points",
+   "type": "concept",
+   "title": "Leverage points",
+   "summary": "A ranked hierarchy of places to intervene in a system, collapsed to three bands (parameters, rules, goals and paradigms); higher bands move the structure rather than its current output, and are usually harder to reach.",
+   "chapters": [
+    19,
+    5,
+    8
+   ],
+   "path": "concepts/leverage-points.md",
+   "series": [
+    "intervention-leverage"
+   ]
+  },
+  {
+   "id": "st:limits-to-growth",
+   "type": "archetype",
+   "title": "Limits to Growth",
+   "summary": "A reinforcing growth loop runs into a balancing loop generated by a real constraint (its carrying capacity), so growth slows and levels off, or declines if the constraint itself erodes, without anything having broken.",
+   "chapters": [
+    13,
+    6,
+    9
+   ],
+   "path": "archetypes/limits-to-growth.md",
+   "series": [
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:limits-to-growth-study",
+   "type": "case",
+   "title": "The Limits to Growth study (1972)",
+   "summary": "A defensible global system dynamics model whose conclusions have been argued about for fifty years, mostly over its boundary and parameter choices rather than its mathematics.",
+   "chapters": [
+    2,
+    13
+   ],
+   "path": "cases/limits-to-growth-study.md",
+   "series": []
+  },
+  {
+   "id": "st:live-build-technique",
+   "type": "procedure",
+   "title": "Live-build a model with its audience",
+   "summary": "Start from one shared, undisputed event, build the loop live one link at a time asking \"does this match what you've seen?\", and name the archetype only after the room has said something close to it in their own words.",
+   "chapters": [
+    25,
+    10,
+    11,
+    "C"
+   ],
+   "path": "procedures/live-build-technique.md",
+   "series": [
+    "persuasion",
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:loopy",
+   "type": "tool",
+   "title": "Loopy",
+   "summary": "A free, open-source, browser-based tool for building simple causal loop diagrams and animating them.",
+   "chapters": [
+    10,
+    "D"
+   ],
+   "path": "tools/loopy.md",
+   "series": []
+  },
+  {
+   "id": "st:map-the-agents",
+   "type": "procedure",
+   "title": "Map the agents in a system as a graph",
+   "summary": "Record each AI agent as triples (what it acts on, whose output it reads, who reviews it), then query for agents nobody reviews and for everything downstream of a given agent, as the list of what to trace before any CLD or simulation.",
+   "chapters": [
+    23,
+    20,
+    21,
+    22
+   ],
+   "path": "procedures/map-the-agents.md",
+   "series": [
+    "ai-delegation",
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:minsky-financial-instability",
+   "type": "case",
+   "title": "Minsky's financial instability",
+   "summary": "Stability breeds over-leverage: rising prices justify more borrowing, which bids prices up further, until an ordinary shock meets a system with no slack.",
+   "chapters": [
+    3
+   ],
+   "path": "cases/minsky-financial-instability.md",
+   "series": [
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:morris-screening",
+   "type": "concept",
+   "title": "Morris screening",
+   "summary": "A cheaper, coarser alternative to Sobol analysis for slow models, which ranks parameters by importance and flags those whose effect depends on others, without putting a number on each share.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/morris-screening.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:name-the-flow",
+   "type": "heuristic",
+   "title": "When a stock is changing, name the flow",
+   "summary": "A sentence like \"our headcount is dropping\" hides which flow is responsible, and the inflow and outflow readings call for different fixes.",
+   "chapters": [
+    4
+   ],
+   "path": "heuristics/name-the-flow.md",
+   "series": []
+  },
+  {
+   "id": "st:neo4j",
+   "type": "tool",
+   "title": "Neo4j",
+   "summary": "The leading property graph database, queried in Cypher rather than SPARQL, with a neosemantics (n10s) plugin for importing and exporting RDF.",
+   "chapters": [
+    23,
+    "D"
+   ],
+   "path": "tools/neo4j.md",
+   "series": []
+  },
+  {
+   "id": "st:numerical-integration",
+   "type": "concept",
+   "title": "Numerical integration method and time step",
+   "summary": "How simulation software steps a model through time; Euler and Runge-Kutta methods can give meaningfully different output on the same model, so the method and time step are modeling decisions, not defaults to ignore.",
+   "chapters": [
+    17
+   ],
+   "path": "concepts/numerical-integration.md",
+   "series": []
+  },
+  {
+   "id": "st:one-at-a-time-swing-test",
+   "type": "procedure",
+   "title": "One-at-a-time swing test",
+   "summary": "Move each of the shakiest guessed parameters 25% up and 25% down while holding the others at their guesses, rerun, and see whether the recommendation flips; draw the results as a tornado chart.",
+   "chapters": [
+    18
+   ],
+   "path": "procedures/one-at-a-time-swing-test.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:oscillation-and-overshoot",
+   "type": "concept",
+   "title": "Oscillation and overshoot",
+   "summary": "What delayed feedback produces: a balancing loop correcting for where things were overshoots its goal on every swing (oscillation), and a reinforcing loop compounds well past its limit before the stopping signal arrives (overshoot).",
+   "chapters": [
+    9,
+    13
+   ],
+   "path": "concepts/oscillation-and-overshoot.md",
+   "series": [
+    "delay"
+   ]
+  },
+  {
+   "id": "st:oscillation-is-structural",
+   "type": "heuristic",
+   "title": "Don't blame people for oscillation",
+   "summary": "Repeated overshoot under delayed feedback is the expected behavior of the structure, so look for the delay before looking for the person who \"should have acted sooner.\"",
+   "chapters": [
+    9,
+    5,
+    18
+   ],
+   "path": "heuristics/oscillation-is-structural.md",
+   "series": []
+  },
+  {
+   "id": "st:overtime-and-burnout",
+   "type": "case",
+   "title": "Overtime pay and burnout",
+   "summary": "Overtime raised a slipping success rate for a quarter or two, while delayed burnout raised the mistake rate and pushed success down further, requiring more overtime.",
+   "chapters": [
+    11
+   ],
+   "path": "cases/overtime-and-burnout.md",
+   "series": []
+  },
+  {
+   "id": "st:past-performance-may-be-allocation",
+   "type": "heuristic",
+   "title": "Past performance may be a record of past allocation",
+   "summary": "When resources go to whoever performed best last round, part of each party's track record was produced by the allocation rule itself, not by merit.",
+   "chapters": [
+    15
+   ],
+   "path": "heuristics/past-performance-may-be-allocation.md",
+   "series": [
+    "competing-for-shared-resources"
+   ]
+  },
+  {
+   "id": "st:plus-into-a-stock",
+   "type": "heuristic",
+   "title": "A plus sign into a stock means \"adds to\"",
+   "summary": "On an arrow from a flow into a stock, + means the flow adds to the stock, not that the two move together; a stock keeps rising while its net inflow is positive, even as that inflow shrinks.",
+   "chapters": [
+    10,
+    16
+   ],
+   "path": "heuristics/plus-into-a-stock.md",
+   "series": []
+  },
+  {
+   "id": "st:polarity-carries-no-value",
+   "type": "heuristic",
+   "title": "Reinforcing isn't good, balancing isn't bad",
+   "summary": "Loop type says how a loop behaves, not whether that behavior is welcome; judge each loop by the direction it is running and the goal it defends.",
+   "chapters": [
+    6,
+    7,
+    8
+   ],
+   "path": "heuristics/polarity-carries-no-value.md",
+   "series": []
+  },
+  {
+   "id": "st:presenting-to-the-inspection-crew",
+   "type": "case",
+   "title": "Presenting a Shifting the Burden finding to the people doing the fix",
+   "summary": "Leading with the archetype's name and a finished diagram made an inspection crew hear an accusation; building the loop live from their own frustration led one of them to state the archetype unprompted.",
+   "chapters": [
+    25,
+    11,
+    26
+   ],
+   "path": "cases/presenting-to-the-inspection-crew.md",
+   "series": []
+  },
+  {
+   "id": "st:pressure-shrinks-the-iceberg",
+   "type": "heuristic",
+   "title": "Pressure keeps analysis at the event level",
+   "summary": "The pull to react to the event and move on is strongest when stakes are highest, so the deeper bands need to be asked for deliberately under pressure.",
+   "chapters": [
+    5
+   ],
+   "path": "heuristics/pressure-shrinks-the-iceberg.md",
+   "series": []
+  },
+  {
+   "id": "st:price-war",
+   "type": "case",
+   "title": "A price war nobody wins",
+   "summary": "A competitor undercuts prices, the incumbent cuts deeper to reclaim ground, and within three rounds both are selling at a loss, with every cut a locally correct response.",
+   "chapters": [
+    12,
+    1
+   ],
+   "path": "cases/price-war.md",
+   "series": []
+  },
+  {
+   "id": "st:property-graph",
+   "type": "concept",
+   "title": "Property graph",
+   "summary": "A graph data model where nodes and edges carry arbitrary key-value properties directly, rather than everything decomposed into triples; Neo4j's native model, queried in Cypher, not SPARQL.",
+   "chapters": [
+    23
+   ],
+   "path": "concepts/property-graph.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:publicity-and-copycats",
+   "type": "case",
+   "title": "Publicity draws copycats, which draw attention",
+   "summary": "A publicized operation attracts imitators into the same territory, whose activity raises the authorities' total attention there, which makes the next operation more visible and more publicized.",
+   "chapters": [
+    7
+   ],
+   "path": "cases/publicity-and-copycats.md",
+   "series": []
+  },
+  {
+   "id": "st:push-on-the-limit",
+   "type": "heuristic",
+   "title": "When growth stalls, look at the limit, not the engine",
+   "summary": "Slowing growth against a real constraint is the system behaving as designed; pushing harder on the growth engine mostly makes the constraint push back harder.",
+   "chapters": [
+    13,
+    14
+   ],
+   "path": "heuristics/push-on-the-limit.md",
+   "series": [
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:pysd",
+   "type": "tool",
+   "title": "PySD",
+   "summary": "An open-source Python library that loads a Vensim or XMILE model and simulates it as ordinary Python, returning a pandas DataFrame.",
+   "chapters": [
+    17,
+    18,
+    "D"
+   ],
+   "path": "tools/pysd.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:quantified-supply-chain-model",
+   "type": "case",
+   "title": "Quantifying the supply chain",
+   "summary": "Hand-iterating the supply chain shows refined material piling up, output capped by labor hours rather than refining, zero schedule slack, and a dormant corner-cutting loop that a three-week shock turns from a 30-ton gap into a 285-ton one.",
+   "chapters": [
+    16,
+    17,
+    18
+   ],
+   "path": "cases/quantified-supply-chain-model.md",
+   "series": []
+  },
+  {
+   "id": "st:quantify-to-surface-disagreement",
+   "type": "heuristic",
+   "title": "Quantify early to surface disagreement, not for precision",
+   "summary": "Writing an explicit flow equation, even with guessed numbers, forces disagreements that a qualitative diagram lets stay vague, and those are cheapest to resolve on paper.",
+   "chapters": [
+    16
+   ],
+   "path": "heuristics/quantify-to-surface-disagreement.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:rank-interventions",
+   "type": "procedure",
+   "title": "Rank interventions on the leverage ladder",
+   "summary": "For a diagnosed structure, list one intervention at each band (a parameter, a rule, a goal or mental model), mark the link or loop each touches, rate each on power and on reach separately, and label each as a real fix or a time-buying stopgap.",
+   "chapters": [
+    19
+   ],
+   "path": "procedures/rank-interventions.md",
+   "series": [
+    "intervention-leverage"
+   ]
+  },
+  {
+   "id": "st:rdf-triple-stores",
+   "type": "tool",
+   "title": "RDF triple stores",
+   "summary": "Databases that store RDF triples and speak SPARQL natively, such as Apache Jena with its Fuseki server, Ontotext GraphDB, Blazegraph and OpenLink Virtuoso.",
+   "chapters": [
+    23,
+    "D"
+   ],
+   "path": "tools/rdf-triple-stores.md",
+   "series": []
+  },
+  {
+   "id": "st:reach-for-a-graph-when",
+   "type": "heuristic",
+   "title": "Reach for a knowledge graph only when facts outgrow the diagram",
+   "summary": "A well-drawn CLD or stock-and-flow diagram is the better tool for most systems thinking; a knowledge graph earns its cost when the facts are too many, change too often, must join external data, or must come back the same every time an agent answers.",
+   "chapters": [
+    23,
+    17
+   ],
+   "path": "heuristics/reach-for-a-graph-when.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  },
+  {
+   "id": "st:recruitment-reputation-and-training",
+   "type": "case",
+   "title": "Recruitment reputation and training capacity",
+   "summary": "A reinforcing reputation loop and a balancing training-capacity loop sharing a path, where the reinforcing loop dominates while the workforce is small and the balancing loop takes over once headcount outgrows the trainers.",
+   "chapters": [
+    6,
+    7,
+    13
+   ],
+   "path": "cases/recruitment-reputation-and-training.md",
+   "series": []
+  },
+  {
+   "id": "st:recurring-causes-mean-structure",
+   "type": "heuristic",
+   "title": "Recurring, differently-caused failures point at structure",
+   "summary": "If each incident has a different, correctly fixed root cause but the overall metric doesn't improve, the cause is in the structure connecting the parts, not in any part.",
+   "chapters": [
+    1,
+    5
+   ],
+   "path": "heuristics/recurring-causes-mean-structure.md",
+   "series": [
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:reduction",
+   "type": "concept",
+   "title": "Reduction (reductionism)",
+   "summary": "Cutting a problem down to the one part that looks broken and analyzing or fixing that part in isolation, discarding its interconnections.",
+   "chapters": [
+    1,
+    11
+   ],
+   "path": "concepts/reduction.md",
+   "series": []
+  },
+  {
+   "id": "st:reference-point",
+   "type": "concept",
+   "title": "Reference point (goal)",
+   "summary": "The value a balancing loop steers toward; it comes from outside the loop and can be explicit or implicit, fixed or moving.",
+   "chapters": [
+    8,
+    15,
+    19
+   ],
+   "path": "concepts/reference-point.md",
+   "series": []
+  },
+  {
+   "id": "st:reinforcing-loop",
+   "type": "concept",
+   "title": "Reinforcing loop",
+   "summary": "A feedback loop with an even number of negative links, which amplifies whatever is currently happening, compounding growth or decline.",
+   "chapters": [
+    6,
+    7
+   ],
+   "path": "concepts/reinforcing-loop.md",
+   "series": [
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:retrieval-augmented-generation",
+   "type": "concept",
+   "title": "Retrieval-augmented generation (RAG)",
+   "summary": "An AI system fetching facts from a source before answering, rather than answering from what it learned in training; a knowledge graph is one structured source for it.",
+   "chapters": [
+    23
+   ],
+   "path": "concepts/retrieval-augmented-generation.md",
+   "series": [
+    "knowledge-representation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:right-is-not-sufficient",
+   "type": "heuristic",
+   "title": "Being right is necessary, never sufficient",
+   "summary": "A correct model that nobody believes has changed nothing, so plan for how the audience will come to accept a model as early as you plan the model itself.",
+   "chapters": [
+    2,
+    25
+   ],
+   "path": "heuristics/right-is-not-sufficient.md",
+   "series": [
+    "persuasion",
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:salib",
+   "type": "tool",
+   "title": "SALib",
+   "summary": "An open-source Python library for global sensitivity analysis (Sobol indices, Morris screening), a natural next step once a model runs in Python through PySD.",
+   "chapters": [
+    18,
+    "D"
+   ],
+   "path": "tools/salib.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:scarce-site-rush",
+   "type": "case",
+   "title": "The rush for scarce sites",
+   "summary": "Several organizations race to claim and overbuild the few sites in a region that meet strict criteria; collective overbuilding degrades the region's viability and draws scrutiny that burns every operation, including the winner.",
+   "chapters": [
+    13,
+    26
+   ],
+   "path": "cases/scarce-site-rush.md",
+   "series": []
+  },
+  {
+   "id": "st:second-order-effects",
+   "type": "concept",
+   "title": "First-, second- and third-order effects",
+   "summary": "A discipline of asking \"and then what?\" more than once, deliberately, stopping at the order where the causal chain gets too thin to defend; a real first-order gain and a real second-order risk can both be true of one change.",
+   "chapters": [
+    22
+   ],
+   "path": "concepts/second-order-effects.md",
+   "series": [
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:self-reported-confidence",
+   "type": "heuristic",
+   "title": "Self-reported confidence is not evidence",
+   "summary": "A confidence signal generated by the system being trusted (a badge, a score, an assertion of certainty) tells you how the output is phrased, not whether it is right or addresses the right question.",
+   "chapters": [
+    20,
+    1,
+    21
+   ],
+   "path": "heuristics/self-reported-confidence.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:sensitivity-analysis",
+   "type": "concept",
+   "title": "Sensitivity analysis",
+   "summary": "The discipline of finding out which of a model's guessed parameters its conclusions depend on, whose real payoff is a prioritized list of what to measure before trusting a specific recommendation.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/sensitivity-analysis.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:shifting-the-burden",
+   "type": "archetype",
+   "title": "Shifting the Burden",
+   "summary": "A fast symptomatic fix and a slower fundamental fix compete to close the same gap, and reliance on the symptomatic fix erodes the capability to apply the fundamental one, so the quick fix keeps winning.",
+   "chapters": [
+    11,
+    20
+   ],
+   "path": "archetypes/shifting-the-burden.md",
+   "series": [
+    "unintended-consequences",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:shifting-the-burden-to-the-intervenor",
+   "type": "archetype",
+   "title": "Shifting the Burden to the Intervenor",
+   "summary": "Shifting the Burden where the symptomatic fix is a specific outside fixer available on demand (a consultant, the one expert, an AI agent), so internal capability erodes faster than in the ordinary case.",
+   "chapters": [
+    11,
+    20
+   ],
+   "path": "archetypes/shifting-the-burden-to-the-intervenor.md",
+   "series": [
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:single-expert-dependency",
+   "type": "case",
+   "title": "The one person who can fix the fault",
+   "summary": "One staff member is the only person who can diagnose a recurring fault; calling them is always easier than training someone else, until their vacation is an unregistered operational risk.",
+   "chapters": [
+    11,
+    20
+   ],
+   "path": "cases/single-expert-dependency.md",
+   "series": []
+  },
+  {
+   "id": "st:sliding-target",
+   "type": "case",
+   "title": "A target that slid from 90% to 70%",
+   "summary": "An acceptable success-rate target fell from 90% to 70% over three years, one post-miss \"let's be realistic\" adjustment at a time.",
+   "chapters": [
+    15
+   ],
+   "path": "cases/sliding-target.md",
+   "series": []
+  },
+  {
+   "id": "st:snapshot-test",
+   "type": "heuristic",
+   "title": "Snapshot test",
+   "summary": "To tell a stock from a flow, imagine stopping time and photographing the system; whatever you could still count or measure in the photograph is a stock, and whatever only makes sense as a rate is a flow.",
+   "chapters": [
+    16,
+    4
+   ],
+   "path": "heuristics/snapshot-test.md",
+   "series": []
+  },
+  {
+   "id": "st:snowballing",
+   "type": "concept",
+   "title": "Snowballing (exponential compounding)",
+   "summary": "A reinforcing loop watched over several passes, where a constant multiplier on a growing base looks flat for a long stretch and then suddenly steep.",
+   "chapters": [
+    7
+   ],
+   "path": "concepts/snowballing.md",
+   "series": [
+    "reinforcing-dynamics"
+   ]
+  },
+  {
+   "id": "st:sobol-analysis",
+   "type": "concept",
+   "title": "Sobol analysis (S1, ST, S2)",
+   "summary": "A global sensitivity analysis that varies every uncertain parameter at once across its range, runs the model on thousands of combinations, and divides the variance of the result among the parameters, alone (S1), in total (ST) and in pairs (S2).",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/sobol-analysis.md",
+   "series": [
+    "uncertainty"
+   ]
+  },
+  {
+   "id": "st:soft-systems-methodology",
+   "type": "concept",
+   "title": "Soft Systems Methodology (SSM)",
+   "summary": "Peter Checkland's method for problems whose definition is contested: surface every stakeholder's worldview, often in a rich picture, before building any formal model.",
+   "chapters": [
+    2,
+    4
+   ],
+   "path": "concepts/soft-systems-methodology.md",
+   "series": [
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:software-is-escalation-of-commitment",
+   "type": "heuristic",
+   "title": "Moving to software is an escalation of commitment",
+   "summary": "Graduating a model to simulation software or code buys precision and shareability but costs a learning curve, a model fewer people can read or argue with, and a new way to be wrong (mistaking \"it runs\" for \"it's correct\").",
+   "chapters": [
+    17
+   ],
+   "path": "heuristics/software-is-escalation-of-commitment.md",
+   "series": []
+  },
+  {
+   "id": "st:source-and-sink",
+   "type": "concept",
+   "title": "Source and sink (cloud)",
+   "summary": "The cloud symbol at the open end of a pipe in a stock-and-flow diagram, marking where material comes from or goes to outside the model's boundary, untracked.",
+   "chapters": [
+    16
+   ],
+   "path": "concepts/source-and-sink.md",
+   "series": []
+  },
+  {
+   "id": "st:specification-gaming",
+   "type": "concept",
+   "title": "Specification gaming",
+   "summary": "An AI system (or any optimizer) optimizing a measured proxy at the expense of the real goal it stood in for; once the neglected goal's damage reaches the metric, its structure is identical to Fixes That Fail.",
+   "chapters": [
+    20,
+    3
+   ],
+   "path": "concepts/specification-gaming.md",
+   "series": [
+    "proxy-metric",
+    "ai-delegation",
+    "unintended-consequences"
+   ]
+  },
+  {
+   "id": "st:staged-supply-chain-not-a-swarm",
+   "type": "case",
+   "title": "A staged supply chain is not a swarm",
+   "summary": "A four-stage supply chain with a named owner per stage fails the swarm test, so the ordinary stock-and-flow toolkit is the right one for it.",
+   "chapters": [
+    3
+   ],
+   "path": "cases/staged-supply-chain-not-a-swarm.md",
+   "series": []
+  },
+  {
+   "id": "st:standards-specific-enough-to-fail",
+   "type": "heuristic",
+   "title": "Write standards specific enough to fail",
+   "summary": "A check can only catch what its standard is specific enough to name, so a vague description (\"a 2x2-plus-center diagram\") will pass every wrong arrangement.",
+   "chapters": [
+    24,
+    21
+   ],
+   "path": "heuristics/standards-specific-enough-to-fail.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:stella-and-ithink",
+   "type": "tool",
+   "title": "Stella and iThink",
+   "summary": "isee systems' commercial system dynamics authoring tools, offering the same category of diagramming, simulation and sensitivity tooling as Vensim and opening XMILE files directly.",
+   "chapters": [
+    17,
+    "D"
+   ],
+   "path": "tools/stella-and-ithink.md",
+   "series": []
+  },
+  {
+   "id": "st:stock",
+   "type": "concept",
+   "title": "Stock",
+   "summary": "An accumulation: a quantity measurable at a single instant that changes only because something fills or drains it.",
+   "chapters": [
+    4,
+    16
+   ],
+   "path": "concepts/stock.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:stock-and-flow-diagram",
+   "type": "concept",
+   "title": "Stock-and-flow diagram and flow equations",
+   "summary": "The quantified version of a system sketch or translated CLD, with units and a starting value on every stock and an equation on every flow, stepped forward as a first-order difference equation.",
+   "chapters": [
+    16,
+    4
+   ],
+   "path": "concepts/stock-and-flow-diagram.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:structural-and-behavioral-validity",
+   "type": "concept",
+   "title": "Structural and behavioral validity",
+   "summary": "Structural validity asks whether each mechanism in a model corresponds to something real, checked link by link without looking at output; behavioral validity asks whether the output reproduces observed history; passing one never implies passing the other.",
+   "chapters": [
+    18
+   ],
+   "path": "concepts/structural-and-behavioral-validity.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:success-to-the-successful",
+   "type": "archetype",
+   "title": "Success to the Successful",
+   "summary": "Two competitors draw from one limited resource, and an early edge for one, however it arose, is reinforced by the allocation rule itself, starving the other of what it would need to catch up regardless of merit.",
+   "chapters": [
+    15,
+    19
+   ],
+   "path": "archetypes/success-to-the-successful.md",
+   "series": [
+    "competing-for-shared-resources"
+   ]
+  },
+  {
+   "id": "st:supply-chain-boundary-and-catwoe",
+   "type": "case",
+   "title": "Bounding the supply chain and running CATWOE on it",
+   "summary": "A four-stage chain ending in a stockpile, bounded to the smallest slice that contains the recurring-miss structure, with CATWOE exposing an unstated worldview that readiness beats quality.",
+   "chapters": [
+    4
+   ],
+   "path": "cases/supply-chain-boundary-and-catwoe.md",
+   "series": []
+  },
+  {
+   "id": "st:supply-chain-recurring-misses",
+   "type": "case",
+   "title": "The supply chain that kept missing deadlines",
+   "summary": "Four quarters of real, correctly fixed root causes (labor shortage, supplier lead time, customs delay, scheduling conflict), and the deadline miss rate never improved.",
+   "chapters": [
+    1,
+    4,
+    10,
+    16,
+    17,
+    18
+   ],
+   "path": "cases/supply-chain-recurring-misses.md",
+   "series": []
+  },
+  {
+   "id": "st:swarm-test",
+   "type": "heuristic",
+   "title": "Swarm test",
+   "summary": "Ask \"is anyone in charge?\"; if coordination is assigned by someone accountable, use the ordinary stock/flow and feedback toolkit; if it emerges from many actors following local rules with nobody in charge, treat it as a swarm.",
+   "chapters": [
+    3,
+    21
+   ],
+   "path": "heuristics/swarm-test.md",
+   "series": []
+  },
+  {
+   "id": "st:system",
+   "type": "concept",
+   "title": "System",
+   "summary": "A set of elements and the interconnections between them, organized around a function or purpose that the arrangement produces whether or not anyone designed it to.",
+   "chapters": [
+    1,
+    2
+   ],
+   "path": "concepts/system.md",
+   "series": [
+    "boundary"
+   ]
+  },
+  {
+   "id": "st:system-boundary",
+   "type": "concept",
+   "title": "System boundary",
+   "summary": "The dividing line between what a model treats as internal structure to be explained and what it treats as external input to be accepted as given; a decision, not a discovery.",
+   "chapters": [
+    4,
+    25
+   ],
+   "path": "concepts/system-boundary.md",
+   "series": [
+    "boundary"
+   ]
+  },
+  {
+   "id": "st:system-dynamics",
+   "type": "concept",
+   "title": "System dynamics",
+   "summary": "Jay Forrester's field of quantified models built from stocks, flows and feedback, simulated forward to see what behavior a structure produces over time.",
+   "chapters": [
+    2,
+    16,
+    17
+   ],
+   "path": "concepts/system-dynamics.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:systems-archetype",
+   "type": "concept",
+   "title": "Systems archetype",
+   "summary": "A recurring causal loop shape, recognizable from its structure alone, independent of which domain is running through it.",
+   "chapters": [
+    11,
+    "C"
+   ],
+   "path": "concepts/systems-archetype.md",
+   "series": []
+  },
+  {
+   "id": "st:systems-thinking",
+   "type": "concept",
+   "title": "Systems thinking",
+   "summary": "A learnable discipline for explaining behavior that no single part explains, by drawing the structure of a whole system (its stocks, flows, feedback and boundary) and tracing what that structure produces over time.",
+   "chapters": [
+    1,
+    2
+   ],
+   "path": "concepts/systems-thinking.md",
+   "series": []
+  },
+  {
+   "id": "st:tame-messy-wicked-problems",
+   "type": "concept",
+   "title": "Tame, messy and wicked problems",
+   "summary": "An older vocabulary for problem difficulty: tame (clear formulation, right-or-wrong solution), wicked (no agreed formulation, solutions only better or worse, and attempting one changes the problem), and a mess (a system of interacting problems none solvable alone).",
+   "chapters": [
+    21,
+    2,
+    4
+   ],
+   "path": "concepts/tame-messy-wicked-problems.md",
+   "series": [
+    "decision-domain",
+    "stakeholder-worldviews"
+   ]
+  },
+  {
+   "id": "st:textbook-pricing-bots",
+   "type": "case",
+   "title": "Two pricing bots and a $23.7 million textbook",
+   "summary": "In 2011 two sellers' repricing rules (one at 0.998 times its rival, the other at about 1.27 times) multiplied a biology textbook's listed price by about 1.27 a day until it peaked at $23,698,655.93.",
+   "chapters": [
+    21
+   ],
+   "path": "cases/textbook-pricing-bots.md",
+   "series": [
+    "escalation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:trace-loop-polarity",
+   "type": "procedure",
+   "title": "Trace and count a loop's polarity",
+   "summary": "Mark every link + or -, trace the loop once and count the minus signs; even (including zero) is reinforcing, odd is balancing.",
+   "chapters": [
+    6
+   ],
+   "path": "procedures/trace-loop-polarity.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:trace-three-orders",
+   "type": "procedure",
+   "title": "Trace a change three orders deep",
+   "summary": "For a real change (often an AI-augmented workflow), write the first-order effect, what it causes months later, and what that might cause a year out (labeled speculative), check each against the archetypes, and pick remedies that keep the first-order gain.",
+   "chapters": [
+    22
+   ],
+   "path": "procedures/trace-three-orders.md",
+   "series": [
+    "unintended-consequences",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:tragedy-of-the-commons",
+   "type": "archetype",
+   "title": "Tragedy of the Commons",
+   "summary": "Several independent actors share a finite, unpriced resource; each is individually incentivized to take more than a sustainable share because holding back only cedes it to others, so the resource degrades for everyone.",
+   "chapters": [
+    13
+   ],
+   "path": "archetypes/tragedy-of-the-commons.md",
+   "series": [
+    "competing-for-shared-resources",
+    "limits-and-capacity"
+   ]
+  },
+  {
+   "id": "st:translate-cld-to-stock-and-flow",
+   "type": "procedure",
+   "title": "Translate a CLD into stocks and flows",
+   "summary": "Six steps: snapshot-test every node, give each stock its pipes, turn every delay into a stock, make everything else an auxiliary, check every loop passes through a stock, then write and check each equation's units and polarity.",
+   "chapters": [
+    16
+   ],
+   "path": "procedures/translate-cld-to-stock-and-flow.md",
+   "series": [
+    "feedback"
+   ]
+  },
+  {
+   "id": "st:trusted-forecasting-tool",
+   "type": "case",
+   "title": "A forecasting tool everyone trusts",
+   "summary": "An AI forecasting tool with a good track record accumulates trust, its forecasts get less scrutiny, and fewer errors are caught, so trust keeps rising whether or not errors occur; its designers put the highest-stakes actions behind deterministic gates.",
+   "chapters": [
+    20,
+    21
+   ],
+   "path": "cases/trusted-forecasting-tool.md",
+   "series": []
+  },
+  {
+   "id": "st:undrawn-leak",
+   "type": "case",
+   "title": "Material leaking through a pipe nobody drew",
+   "summary": "One department quietly diverts top-grade material from shipments to another use, so the model keeps counting it as in transit when it will never arrive.",
+   "chapters": [
+    4,
+    15
+   ],
+   "path": "cases/undrawn-leak.md",
+   "series": []
+  },
+  {
+   "id": "st:unrun-code-is-an-unchecked-citation",
+   "type": "heuristic",
+   "title": "Unrun code is a citation nobody looked up",
+   "summary": "Plausible-looking output (a citation, a code example, printed results) that was generated rather than verified looks exactly like the real thing, and only running or looking it up catches it.",
+   "chapters": [
+    24,
+    18,
+    17
+   ],
+   "path": "heuristics/unrun-code-is-an-unchecked-citation.md",
+   "series": [
+    "model-validation",
+    "ai-delegation"
+   ]
+  },
+  {
+   "id": "st:upstream-downstream-adversaries",
+   "type": "case",
+   "title": "Upstream and downstream divisions undermining each other",
+   "summary": "An extraction division rushes shipments to hit its speed metric and an assembly division adds inspection to hit its quality metric; rushed material hurts assembly and held shipments hurt extraction, and each blames the other.",
+   "chapters": [
+    15,
+    4
+   ],
+   "path": "cases/upstream-downstream-adversaries.md",
+   "series": []
+  },
+  {
+   "id": "st:urgency-corner-cutting-loop",
+   "type": "case",
+   "title": "Urgency, corner-cutting and defects",
+   "summary": "A low finished-goods stockpile triggers rushed orders, rushed material gets corners cut at processing two weeks later, quality falls, defects rise, and the stockpile grows more slowly, keeping it low; a vicious reinforcing loop nobody had drawn whole.",
+   "chapters": [
+    10,
+    1,
+    5,
+    16
+   ],
+   "path": "cases/urgency-corner-cutting-loop.md",
+   "series": []
+  },
+  {
+   "id": "st:validate-a-model",
+   "type": "procedure",
+   "title": "Put a model on trial",
+   "summary": "Before acting on a model, test its structure link by link, test its behavior against history separately, then find which guesses its advice depends on, while running a counter-practice for each of three named biases.",
+   "chapters": [
+    18
+   ],
+   "path": "procedures/validate-a-model.md",
+   "series": [
+    "model-validation",
+    "cognitive-bias"
+   ]
+  },
+  {
+   "id": "st:vensim",
+   "type": "tool",
+   "title": "Vensim",
+   "summary": "Ventana Systems' commercial system dynamics authoring tool, with native stock-and-flow diagramming, numerical integration, and sensitivity and Monte Carlo tooling.",
+   "chapters": [
+    17,
+    "D"
+   ],
+   "path": "tools/vensim.md",
+   "series": []
+  },
+  {
+   "id": "st:verify-after-translation",
+   "type": "heuristic",
+   "title": "Verify after every translation",
+   "summary": "After moving a model between tools, formats or languages (an XMILE round trip, a PySD import, a port to code), reproduce a known run on identical inputs before trusting it.",
+   "chapters": [
+    17
+   ],
+   "path": "heuristics/verify-after-translation.md",
+   "series": [
+    "model-validation"
+   ]
+  },
+  {
+   "id": "st:xmile",
+   "type": "tool",
+   "title": "XMILE",
+   "summary": "The OASIS-standardized, vendor-neutral XML format for exchanging system dynamics models between tools; it guarantees the structure travels, not that the model is correct.",
+   "chapters": [
+    17,
+    "D"
+   ],
+   "path": "tools/xmile.md",
+   "series": [
+    "knowledge-representation"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "st:a-trace-is-not-a-definition",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:a-trace-is-not-a-definition",
+   "relation": "related",
+   "target": "st:building-this-book-with-an-agent"
+  },
+  {
+   "source": "st:a-trace-is-not-a-definition",
+   "relation": "related",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:a-trace-is-not-a-definition",
+   "relation": "related",
+   "target": "st:systems-archetype"
+  },
+  {
+   "source": "st:a-trace-is-not-a-definition",
+   "relation": "related",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "related",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "related",
+   "target": "st:undrawn-leak"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:accidental-adversaries",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:actor-based-modeling",
+   "relation": "contrasts-with",
+   "target": "st:agentic-ai"
+  },
+  {
+   "source": "st:actor-based-modeling",
+   "relation": "related",
+   "target": "st:anylogic"
+  },
+  {
+   "source": "st:actor-based-modeling",
+   "relation": "related",
+   "target": "st:complexity-science"
+  },
+  {
+   "source": "st:actor-based-modeling",
+   "relation": "related",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:agent-registry-graph",
+   "relation": "related",
+   "target": "st:textbook-pricing-bots"
+  },
+  {
+   "source": "st:agent-registry-graph",
+   "relation": "related",
+   "target": "st:trusted-forecasting-tool"
+  },
+  {
+   "source": "st:agent-registry-graph",
+   "relation": "uses",
+   "target": "st:map-the-agents"
+  },
+  {
+   "source": "st:agentic-ai",
+   "relation": "contrasts-with",
+   "target": "st:actor-based-modeling"
+  },
+  {
+   "source": "st:agentic-ai",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:agentic-ai",
+   "relation": "related",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:agentic-ai",
+   "relation": "related",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:ai-accelerated-shipping",
+   "relation": "instance-of",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:ai-accelerated-shipping",
+   "relation": "instance-of",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:ai-accelerated-shipping",
+   "relation": "related",
+   "target": "st:ai-agent-as-intervenor"
+  },
+  {
+   "source": "st:ai-accelerated-shipping",
+   "relation": "uses",
+   "target": "st:trace-three-orders"
+  },
+  {
+   "source": "st:ai-agent-as-intervenor",
+   "relation": "instance-of",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:ai-agent-as-intervenor",
+   "relation": "related",
+   "target": "st:ai-accelerated-shipping"
+  },
+  {
+   "source": "st:ai-agent-as-intervenor",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:ai-agent-as-intervenor",
+   "relation": "related",
+   "target": "st:single-expert-dependency"
+  },
+  {
+   "source": "st:ai-agent-as-intervenor",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:ai-assisted-colonoscopy-deskilling",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:ai-assisted-colonoscopy-deskilling",
+   "relation": "instance-of",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:ai-assisted-colonoscopy-deskilling",
+   "relation": "related",
+   "target": "st:exercise-the-capability"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "related",
+   "target": "st:agentic-ai"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "related",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "related",
+   "target": "st:specification-gaming"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "requires",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:ai-system-as-a-system",
+   "relation": "requires",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "part-of",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:ai-agent-as-intervenor"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:fluency-is-not-correctness"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:self-reported-confidence"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:ai-trust-loop",
+   "relation": "related",
+   "target": "st:single-expert-dependency"
+  },
+  {
+   "source": "st:amazon-neptune",
+   "relation": "related",
+   "target": "st:neo4j"
+  },
+  {
+   "source": "st:amazon-neptune",
+   "relation": "related",
+   "target": "st:rdf-triple-stores"
+  },
+  {
+   "source": "st:analytical-thinking",
+   "relation": "contrasts-with",
+   "target": "st:systems-thinking"
+  },
+  {
+   "source": "st:anchor-goals-outside",
+   "relation": "counters",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:anchor-goals-outside",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:anchor-goals-outside",
+   "relation": "related",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:anchoring",
+   "relation": "instance-of",
+   "target": "series:cognitive-bias"
+  },
+  {
+   "source": "st:anchoring",
+   "relation": "related",
+   "target": "st:expand-capacity-or-stop-corner-cutting"
+  },
+  {
+   "source": "st:anchoring",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:anylogic",
+   "relation": "related",
+   "target": "st:actor-based-modeling"
+  },
+  {
+   "source": "st:anylogic",
+   "relation": "related",
+   "target": "st:choose-simulation-tooling"
+  },
+  {
+   "source": "st:applicant-ceiling",
+   "relation": "instance-of",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:applicant-ceiling",
+   "relation": "related",
+   "target": "st:recruitment-reputation-and-training"
+  },
+  {
+   "source": "st:applicant-ceiling",
+   "relation": "related",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:ask-what-the-fix-does-later",
+   "relation": "diagnoses",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:ask-what-the-fix-does-later",
+   "relation": "diagnoses",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:ask-what-the-fix-does-later",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:ask-what-the-fix-does-later",
+   "relation": "related",
+   "target": "st:second-order-effects"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "related",
+   "target": "st:attention-management-loop"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "related",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "related",
+   "target": "st:growing-workforce-many-limits"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "related",
+   "target": "st:publicity-and-copycats"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "uses",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:attention-decay-and-tempo",
+   "relation": "uses",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "instance-of",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "instance-of",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "related",
+   "target": "st:attention-decay-and-tempo"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "uses",
+   "target": "st:damp-an-oscillation"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:attention-management-loop",
+   "relation": "uses",
+   "target": "st:find-the-unwritten-goal"
+  },
+  {
+   "source": "st:attractiveness-principle",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:attractiveness-principle",
+   "relation": "related",
+   "target": "st:classify-a-growth-stall"
+  },
+  {
+   "source": "st:attractiveness-principle",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:attractiveness-principle",
+   "relation": "specializes",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "related",
+   "target": "st:checking-loop"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "related",
+   "target": "st:every-check-has-a-boundary-and-a-kind"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "related",
+   "target": "st:standards-specific-enough-to-fail"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "uses",
+   "target": "st:checking-loop"
+  },
+  {
+   "source": "st:audit-your-checks",
+   "relation": "uses",
+   "target": "st:every-check-has-a-boundary-and-a-kind"
+  },
+  {
+   "source": "st:auxiliary",
+   "relation": "part-of",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:auxiliary",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:availability-heuristic",
+   "relation": "instance-of",
+   "target": "series:cognitive-bias"
+  },
+  {
+   "source": "st:availability-heuristic",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "contrasts-with",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "produces",
+   "target": "st:goal-seeking-behavior"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "related",
+   "target": "st:attention-decay-and-tempo"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "related",
+   "target": "st:change-initiative-meets-balancing-loop"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "related",
+   "target": "st:cybernetics"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "related",
+   "target": "st:goal-seeking-behavior"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "related",
+   "target": "st:polarity-carries-no-value"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "requires",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:balancing-loop",
+   "relation": "specializes",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:bank-run",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:bank-run",
+   "relation": "instance-of",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:bank-run",
+   "relation": "related",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:both-sides-blame-the-other",
+   "relation": "diagnoses",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:both-sides-blame-the-other",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "instance-of",
+   "target": "series:escalation"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "related",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "related",
+   "target": "st:map-the-agents"
+  },
+  {
+   "source": "st:bound-interacting-agents",
+   "relation": "uses",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "instance-of",
+   "target": "series:persuasion"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:right-is-not-sufficient"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:soft-systems-methodology"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:boundary-critique",
+   "relation": "requires",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "counters",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "related",
+   "target": "st:cynefin-as-delegation-guide"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "related",
+   "target": "st:deterministic-gate-principle"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "related",
+   "target": "st:graphs-not-just-chats"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "related",
+   "target": "st:map-the-agents"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "uses",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:break-the-trust-loop",
+   "relation": "uses",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:budget-split-between-teams",
+   "relation": "instance-of",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:budget-split-between-teams",
+   "relation": "related",
+   "target": "st:leverage-ladder-examples"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "related",
+   "target": "st:consistent-is-not-true"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "related",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "related",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "related",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "uses",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:build-cld-from-story",
+   "relation": "uses",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "instance-of",
+   "target": "st:checking-loop"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "related",
+   "target": "st:a-trace-is-not-a-definition"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "related",
+   "target": "st:convenience-boundary-trap"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "related",
+   "target": "st:standards-specific-enough-to-fail"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "related",
+   "target": "st:unrun-code-is-an-unchecked-citation"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "uses",
+   "target": "st:audit-your-checks"
+  },
+  {
+   "source": "st:building-this-book-with-an-agent",
+   "relation": "uses",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:calm-base-case-proves-nothing",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:calm-base-case-proves-nothing",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:calm-base-case-proves-nothing",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "related",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "related",
+   "target": "st:soft-systems-methodology"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "related",
+   "target": "st:tame-messy-wicked-problems"
+  },
+  {
+   "source": "st:catwoe",
+   "relation": "uses",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "contrasts-with",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "contrasts-with",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:kumu"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:loopy"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:plus-into-a-stock"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "related",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:causal-loop-diagram",
+   "relation": "requires",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:change-initiative-meets-balancing-loop",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:change-initiative-meets-balancing-loop",
+   "relation": "related",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:change-initiative-meets-balancing-loop",
+   "relation": "related",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:change-initiative-meets-balancing-loop",
+   "relation": "uses",
+   "target": "st:find-the-unwritten-goal"
+  },
+  {
+   "source": "st:change-the-comparison",
+   "relation": "counters",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:change-the-comparison",
+   "relation": "instance-of",
+   "target": "series:escalation"
+  },
+  {
+   "source": "st:change-the-comparison",
+   "relation": "instance-of",
+   "target": "series:intervention-leverage"
+  },
+  {
+   "source": "st:change-the-comparison",
+   "relation": "related",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:chaos-theory",
+   "relation": "contrasts-with",
+   "target": "st:complexity-science"
+  },
+  {
+   "source": "st:chaos-theory",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "related",
+   "target": "st:audit-your-checks"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "related",
+   "target": "st:every-check-has-a-boundary-and-a-kind"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:checking-loop",
+   "relation": "specializes",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:kumu"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:loopy"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:reach-for-a-graph-when"
+  },
+  {
+   "source": "st:choose-model-by-question",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "related",
+   "target": "st:anylogic"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "related",
+   "target": "st:insight-maker"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "related",
+   "target": "st:software-is-escalation-of-commitment"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:choose-simulation-tooling",
+   "relation": "uses",
+   "target": "st:software-is-escalation-of-commitment"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "diagnoses",
+   "target": "st:attractiveness-principle"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "diagnoses",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "diagnoses",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "diagnoses",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "related",
+   "target": "st:attractiveness-principle"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "related",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "related",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "related",
+   "target": "st:push-on-the-limit"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "uses",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:classify-a-growth-stall",
+   "relation": "uses",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:co-flow",
+   "relation": "part-of",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:co-flow",
+   "relation": "related",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:co-flow",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:commons-need-collective-rules",
+   "relation": "counters",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:commons-need-collective-rules",
+   "relation": "instance-of",
+   "target": "series:competing-for-shared-resources"
+  },
+  {
+   "source": "st:complexity-science",
+   "relation": "contrasts-with",
+   "target": "st:chaos-theory"
+  },
+  {
+   "source": "st:complexity-science",
+   "relation": "related",
+   "target": "st:actor-based-modeling"
+  },
+  {
+   "source": "st:complexity-science",
+   "relation": "related",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:confirmation-bias",
+   "relation": "instance-of",
+   "target": "series:cognitive-bias"
+  },
+  {
+   "source": "st:confirmation-bias",
+   "relation": "related",
+   "target": "st:fit-is-easy-to-manufacture"
+  },
+  {
+   "source": "st:confirmation-bias",
+   "relation": "related",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:confirmation-bias",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:consistent-is-not-true",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:consistent-is-not-true",
+   "relation": "related",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:consistent-is-not-true",
+   "relation": "related",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:consistent-is-not-true",
+   "relation": "related",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:convenience-boundary-trap",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:convenience-boundary-trap",
+   "relation": "related",
+   "target": "st:building-this-book-with-an-agent"
+  },
+  {
+   "source": "st:convenience-boundary-trap",
+   "relation": "related",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:convenience-boundary-trap",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:covid-reporting-delays",
+   "relation": "instance-of",
+   "target": "series:delay"
+  },
+  {
+   "source": "st:covid-reporting-delays",
+   "relation": "instance-of",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:covid-reporting-delays",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:cybernetics",
+   "relation": "contrasts-with",
+   "target": "st:system-dynamics"
+  },
+  {
+   "source": "st:cybernetics",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:cybernetics",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:cybernetics",
+   "relation": "related",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:cybernetics",
+   "relation": "related",
+   "target": "st:homeostasis"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "counters",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "instance-of",
+   "target": "series:decision-domain"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "related",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "related",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "related",
+   "target": "st:deterministic-gate-principle"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "related",
+   "target": "st:fluency-is-not-correctness"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "uses",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:cynefin-as-delegation-guide",
+   "relation": "uses",
+   "target": "st:deterministic-gate-principle"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "contrasts-with",
+   "target": "st:tame-messy-wicked-problems"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "instance-of",
+   "target": "series:decision-domain"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "related",
+   "target": "st:bound-interacting-agents"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "related",
+   "target": "st:cynefin-as-delegation-guide"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "related",
+   "target": "st:hard-and-soft-systems-thinking"
+  },
+  {
+   "source": "st:cynefin-framework",
+   "relation": "related",
+   "target": "st:tame-messy-wicked-problems"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "instance-of",
+   "target": "series:delay"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "related",
+   "target": "st:dont-react-harder-to-late-signals"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "uses",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:damp-an-oscillation",
+   "relation": "uses",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:deferred-capacity-and-bulk-order",
+   "relation": "instance-of",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:delay",
+   "relation": "instance-of",
+   "target": "series:delay"
+  },
+  {
+   "source": "st:delay",
+   "relation": "part-of",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:delay",
+   "relation": "produces",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:delay",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:delay",
+   "relation": "related",
+   "target": "st:co-flow"
+  },
+  {
+   "source": "st:delay",
+   "relation": "related",
+   "target": "st:oscillation-is-structural"
+  },
+  {
+   "source": "st:delay",
+   "relation": "related",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:deterministic-gate-principle",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:deterministic-gate-principle",
+   "relation": "instance-of",
+   "target": "series:decision-domain"
+  },
+  {
+   "source": "st:deterministic-gate-principle",
+   "relation": "related",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:deterministic-gate-principle",
+   "relation": "related",
+   "target": "st:cynefin-as-delegation-guide"
+  },
+  {
+   "source": "st:deterministic-gate-principle",
+   "relation": "related",
+   "target": "st:graphs-not-just-chats"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:attractiveness-principle"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "diagnoses",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "related",
+   "target": "st:a-trace-is-not-a-definition"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "related",
+   "target": "st:classify-a-growth-stall"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "related",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "related",
+   "target": "st:rank-interventions"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "related",
+   "target": "st:systems-archetype"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "uses",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "uses",
+   "target": "st:systems-archetype"
+  },
+  {
+   "source": "st:diagnose-an-archetype",
+   "relation": "uses",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:dont-react-harder-to-late-signals",
+   "relation": "instance-of",
+   "target": "series:delay"
+  },
+  {
+   "source": "st:dont-react-harder-to-late-signals",
+   "relation": "related",
+   "target": "st:damp-an-oscillation"
+  },
+  {
+   "source": "st:dont-react-harder-to-late-signals",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "related",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "related",
+   "target": "st:convenience-boundary-trap"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "uses",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "uses",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:draw-a-boundary",
+   "relation": "uses",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "instance-of",
+   "target": "series:proxy-metric"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "related",
+   "target": "st:find-the-unwritten-goal"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "related",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "related",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:drift-to-low-performance",
+   "relation": "requires",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "related",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "related",
+   "target": "st:know-which-reduction-you-made"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "related",
+   "target": "st:overtime-and-burnout"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "related",
+   "target": "st:reduction"
+  },
+  {
+   "source": "st:emilys-laws-of-system-complexity",
+   "relation": "requires",
+   "target": "st:reduction"
+  },
+  {
+   "source": "st:engagement-optimization",
+   "relation": "instance-of",
+   "target": "series:proxy-metric"
+  },
+  {
+   "source": "st:engagement-optimization",
+   "relation": "instance-of",
+   "target": "st:specification-gaming"
+  },
+  {
+   "source": "st:engagement-optimization",
+   "relation": "related",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "contrasts-with",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "instance-of",
+   "target": "series:escalation"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:bound-interacting-agents"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:minsky-financial-instability"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:scarce-site-rush"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "related",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "requires",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:escalation",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:every-check-has-a-boundary-and-a-kind",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:every-check-has-a-boundary-and-a-kind",
+   "relation": "related",
+   "target": "st:audit-your-checks"
+  },
+  {
+   "source": "st:every-check-has-a-boundary-and-a-kind",
+   "relation": "related",
+   "target": "st:checking-loop"
+  },
+  {
+   "source": "st:every-check-has-a-boundary-and-a-kind",
+   "relation": "related",
+   "target": "st:standards-specific-enough-to-fail"
+  },
+  {
+   "source": "st:every-check-has-a-boundary-and-a-kind",
+   "relation": "related",
+   "target": "st:unrun-code-is-an-unchecked-citation"
+  },
+  {
+   "source": "st:exercise-the-capability",
+   "relation": "counters",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:exercise-the-capability",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:exercise-the-capability",
+   "relation": "related",
+   "target": "st:ai-assisted-colonoscopy-deskilling"
+  },
+  {
+   "source": "st:expand-capacity-or-stop-corner-cutting",
+   "relation": "related",
+   "target": "st:anchoring"
+  },
+  {
+   "source": "st:expand-capacity-or-stop-corner-cutting",
+   "relation": "related",
+   "target": "st:quantified-supply-chain-model"
+  },
+  {
+   "source": "st:expand-capacity-or-stop-corner-cutting",
+   "relation": "uses",
+   "target": "st:one-at-a-time-swing-test"
+  },
+  {
+   "source": "st:expand-capacity-or-stop-corner-cutting",
+   "relation": "uses",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:expand-capacity-or-stop-corner-cutting",
+   "relation": "uses",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:exponential-looks-flat",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:exponential-looks-flat",
+   "relation": "related",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:exponential-looks-flat",
+   "relation": "related",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:feedback-loop",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:feedback-loop",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:feedback-loop",
+   "relation": "related",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "diagnoses",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "instance-of",
+   "target": "series:balancing-dynamics"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "related",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "related",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "uses",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:find-the-unwritten-goal",
+   "relation": "uses",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:fit-is-easy-to-manufacture",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:fit-is-easy-to-manufacture",
+   "relation": "related",
+   "target": "st:confirmation-bias"
+  },
+  {
+   "source": "st:fit-is-easy-to-manufacture",
+   "relation": "related",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "contrasts-with",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "related",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "related",
+   "target": "st:emilys-laws-of-system-complexity"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "related",
+   "target": "st:engagement-optimization"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "related",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "related",
+   "target": "st:specification-gaming"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:fixes-that-fail",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:flow",
+   "relation": "contrasts-with",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:flow",
+   "relation": "part-of",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:flow",
+   "relation": "related",
+   "target": "st:plus-into-a-stock"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "related",
+   "target": "st:cynefin-as-delegation-guide"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "related",
+   "target": "st:self-reported-confidence"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:fluency-is-not-correctness",
+   "relation": "related",
+   "target": "st:systems-thinking"
+  },
+  {
+   "source": "st:four-decisions-four-domains",
+   "relation": "related",
+   "target": "st:price-war"
+  },
+  {
+   "source": "st:four-decisions-four-domains",
+   "relation": "uses",
+   "target": "st:cynefin-as-delegation-guide"
+  },
+  {
+   "source": "st:four-decisions-four-domains",
+   "relation": "uses",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:general-systems-theory",
+   "relation": "related",
+   "target": "st:system"
+  },
+  {
+   "source": "st:goal-seeking-behavior",
+   "relation": "related",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:goal-seeking-behavior",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "counters",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "related",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "related",
+   "target": "st:deterministic-gate-principle"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "related",
+   "target": "st:retrieval-augmented-generation"
+  },
+  {
+   "source": "st:graphs-not-just-chats",
+   "relation": "uses",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:growing-is-not-reinforcing",
+   "relation": "related",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:growing-workforce-many-limits",
+   "relation": "instance-of",
+   "target": "st:attractiveness-principle"
+  },
+  {
+   "source": "st:growing-workforce-many-limits",
+   "relation": "related",
+   "target": "st:attention-decay-and-tempo"
+  },
+  {
+   "source": "st:growing-workforce-many-limits",
+   "relation": "related",
+   "target": "st:recruitment-reputation-and-training"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "related",
+   "target": "st:classify-a-growth-stall"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "related",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "requires",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:growth-and-underinvestment",
+   "relation": "specializes",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:calm-base-case-proves-nothing"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:quantified-supply-chain-model"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:quantify-to-surface-disagreement"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:hand-iterate-a-model",
+   "relation": "uses",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:hard-and-soft-systems-thinking",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:hard-and-soft-systems-thinking",
+   "relation": "related",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:hard-and-soft-systems-thinking",
+   "relation": "related",
+   "target": "st:tame-messy-wicked-problems"
+  },
+  {
+   "source": "st:hiring-overshoot",
+   "relation": "instance-of",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:hiring-overshoot",
+   "relation": "instance-of",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:hiring-overshoot",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:hiring-overshoot",
+   "relation": "related",
+   "target": "st:recruitment-reputation-and-training"
+  },
+  {
+   "source": "st:homeostasis",
+   "relation": "related",
+   "target": "st:cybernetics"
+  },
+  {
+   "source": "st:homeostasis",
+   "relation": "specializes",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:iceberg-analysis",
+   "relation": "related",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:iceberg-analysis",
+   "relation": "related",
+   "target": "st:iceberg-model"
+  },
+  {
+   "source": "st:iceberg-analysis",
+   "relation": "related",
+   "target": "st:pressure-shrinks-the-iceberg"
+  },
+  {
+   "source": "st:iceberg-analysis",
+   "relation": "related",
+   "target": "st:recurring-causes-mean-structure"
+  },
+  {
+   "source": "st:iceberg-analysis",
+   "relation": "uses",
+   "target": "st:iceberg-model"
+  },
+  {
+   "source": "st:iceberg-model",
+   "relation": "instance-of",
+   "target": "series:intervention-leverage"
+  },
+  {
+   "source": "st:iceberg-model",
+   "relation": "related",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:iceberg-model",
+   "relation": "related",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:iceberg-model",
+   "relation": "related",
+   "target": "st:pressure-shrinks-the-iceberg"
+  },
+  {
+   "source": "st:insight-maker",
+   "relation": "related",
+   "target": "st:choose-simulation-tooling"
+  },
+  {
+   "source": "st:insight-maker",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:inspection-instead-of-root-cause",
+   "relation": "instance-of",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:inspection-instead-of-root-cause",
+   "relation": "related",
+   "target": "st:presenting-to-the-inspection-crew"
+  },
+  {
+   "source": "st:know-which-reduction-you-made",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:know-which-reduction-you-made",
+   "relation": "related",
+   "target": "st:emilys-laws-of-system-complexity"
+  },
+  {
+   "source": "st:know-which-reduction-you-made",
+   "relation": "related",
+   "target": "st:reduction"
+  },
+  {
+   "source": "st:know-which-reduction-you-made",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "contrasts-with",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "contrasts-with",
+   "target": "st:property-graph"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:graphs-not-just-chats"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:property-graph"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:rdf-triple-stores"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:reach-for-a-graph-when"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:retrieval-augmented-generation"
+  },
+  {
+   "source": "st:knowledge-graph",
+   "relation": "related",
+   "target": "st:trace-three-orders"
+  },
+  {
+   "source": "st:kumu",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:kumu",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:kumu",
+   "relation": "related",
+   "target": "st:loopy"
+  },
+  {
+   "source": "st:label-the-stopgap",
+   "relation": "counters",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:label-the-stopgap",
+   "relation": "counters",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:label-the-stopgap",
+   "relation": "instance-of",
+   "target": "series:intervention-leverage"
+  },
+  {
+   "source": "st:label-the-stopgap",
+   "relation": "related",
+   "target": "st:rank-interventions"
+  },
+  {
+   "source": "st:leverage-ladder-examples",
+   "relation": "related",
+   "target": "st:budget-split-between-teams"
+  },
+  {
+   "source": "st:leverage-ladder-examples",
+   "relation": "related",
+   "target": "st:overtime-and-burnout"
+  },
+  {
+   "source": "st:leverage-ladder-examples",
+   "relation": "uses",
+   "target": "st:rank-interventions"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "instance-of",
+   "target": "series:intervention-leverage"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "related",
+   "target": "st:change-the-comparison"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "related",
+   "target": "st:iceberg-model"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "related",
+   "target": "st:rank-interventions"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "related",
+   "target": "st:reference-point"
+  },
+  {
+   "source": "st:leverage-points",
+   "relation": "related",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "contrasts-with",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:attractiveness-principle"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:classify-a-growth-stall"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:growth-and-underinvestment"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:hiring-overshoot"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:limits-to-growth-study"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:push-on-the-limit"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "related",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:limits-to-growth",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:limits-to-growth-study",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:limits-to-growth-study",
+   "relation": "related",
+   "target": "st:right-is-not-sufficient"
+  },
+  {
+   "source": "st:limits-to-growth-study",
+   "relation": "uses",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:limits-to-growth-study",
+   "relation": "uses",
+   "target": "st:system-dynamics"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "counters",
+   "target": "st:right-is-not-sufficient"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "instance-of",
+   "target": "series:persuasion"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "related",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "related",
+   "target": "st:consistent-is-not-true"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "related",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "related",
+   "target": "st:right-is-not-sufficient"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "uses",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:live-build-technique",
+   "relation": "uses",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:loopy",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:loopy",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:loopy",
+   "relation": "related",
+   "target": "st:kumu"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "related",
+   "target": "st:bound-interacting-agents"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "related",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "related",
+   "target": "st:trace-three-orders"
+  },
+  {
+   "source": "st:map-the-agents",
+   "relation": "uses",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:minsky-financial-instability",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:minsky-financial-instability",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:minsky-financial-instability",
+   "relation": "uses",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:minsky-financial-instability",
+   "relation": "uses",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:morris-screening",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:morris-screening",
+   "relation": "part-of",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:morris-screening",
+   "relation": "related",
+   "target": "st:salib"
+  },
+  {
+   "source": "st:morris-screening",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:morris-screening",
+   "relation": "related",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:name-the-flow",
+   "relation": "uses",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:name-the-flow",
+   "relation": "uses",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:neo4j",
+   "relation": "related",
+   "target": "st:amazon-neptune"
+  },
+  {
+   "source": "st:neo4j",
+   "relation": "related",
+   "target": "st:property-graph"
+  },
+  {
+   "source": "st:numerical-integration",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:numerical-integration",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:numerical-integration",
+   "relation": "related",
+   "target": "st:verify-after-translation"
+  },
+  {
+   "source": "st:numerical-integration",
+   "relation": "related",
+   "target": "st:xmile"
+  },
+  {
+   "source": "st:one-at-a-time-swing-test",
+   "relation": "contrasts-with",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:one-at-a-time-swing-test",
+   "relation": "counters",
+   "target": "st:anchoring"
+  },
+  {
+   "source": "st:one-at-a-time-swing-test",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:one-at-a-time-swing-test",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:one-at-a-time-swing-test",
+   "relation": "uses",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "instance-of",
+   "target": "series:delay"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:attention-decay-and-tempo"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:damp-an-oscillation"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:dont-react-harder-to-late-signals"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:goal-seeking-behavior"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "related",
+   "target": "st:oscillation-is-structural"
+  },
+  {
+   "source": "st:oscillation-and-overshoot",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:oscillation-is-structural",
+   "relation": "related",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:oscillation-is-structural",
+   "relation": "related",
+   "target": "st:oscillation-and-overshoot"
+  },
+  {
+   "source": "st:overtime-and-burnout",
+   "relation": "instance-of",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:overtime-and-burnout",
+   "relation": "related",
+   "target": "st:emilys-laws-of-system-complexity"
+  },
+  {
+   "source": "st:overtime-and-burnout",
+   "relation": "related",
+   "target": "st:leverage-ladder-examples"
+  },
+  {
+   "source": "st:past-performance-may-be-allocation",
+   "relation": "diagnoses",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:past-performance-may-be-allocation",
+   "relation": "instance-of",
+   "target": "series:competing-for-shared-resources"
+  },
+  {
+   "source": "st:plus-into-a-stock",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:plus-into-a-stock",
+   "relation": "related",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:plus-into-a-stock",
+   "relation": "related",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:plus-into-a-stock",
+   "relation": "related",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:polarity-carries-no-value",
+   "relation": "related",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:polarity-carries-no-value",
+   "relation": "related",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:presenting-to-the-inspection-crew",
+   "relation": "related",
+   "target": "st:inspection-instead-of-root-cause"
+  },
+  {
+   "source": "st:presenting-to-the-inspection-crew",
+   "relation": "uses",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:presenting-to-the-inspection-crew",
+   "relation": "uses",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:pressure-shrinks-the-iceberg",
+   "relation": "related",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:pressure-shrinks-the-iceberg",
+   "relation": "related",
+   "target": "st:iceberg-model"
+  },
+  {
+   "source": "st:price-war",
+   "relation": "instance-of",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:price-war",
+   "relation": "related",
+   "target": "st:four-decisions-four-domains"
+  },
+  {
+   "source": "st:price-war",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:property-graph",
+   "relation": "contrasts-with",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:property-graph",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:property-graph",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:property-graph",
+   "relation": "related",
+   "target": "st:neo4j"
+  },
+  {
+   "source": "st:publicity-and-copycats",
+   "relation": "instance-of",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:publicity-and-copycats",
+   "relation": "related",
+   "target": "st:attention-decay-and-tempo"
+  },
+  {
+   "source": "st:push-on-the-limit",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:push-on-the-limit",
+   "relation": "related",
+   "target": "st:classify-a-growth-stall"
+  },
+  {
+   "source": "st:push-on-the-limit",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:choose-simulation-tooling"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:quantified-supply-chain-model"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:salib"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:verify-after-translation"
+  },
+  {
+   "source": "st:pysd",
+   "relation": "related",
+   "target": "st:xmile"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "related",
+   "target": "st:expand-capacity-or-stop-corner-cutting"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "related",
+   "target": "st:urgency-corner-cutting-loop"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "uses",
+   "target": "st:co-flow"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "uses",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:quantified-supply-chain-model",
+   "relation": "uses",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:quantify-to-surface-disagreement",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:quantify-to-surface-disagreement",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:quantify-to-surface-disagreement",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "instance-of",
+   "target": "series:intervention-leverage"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "related",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "related",
+   "target": "st:label-the-stopgap"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "related",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:rank-interventions",
+   "relation": "uses",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:rdf-triple-stores",
+   "relation": "related",
+   "target": "st:amazon-neptune"
+  },
+  {
+   "source": "st:rdf-triple-stores",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:reach-for-a-graph-when",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:reach-for-a-graph-when",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:reach-for-a-graph-when",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:reach-for-a-graph-when",
+   "relation": "related",
+   "target": "st:software-is-escalation-of-commitment"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "instance-of",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "related",
+   "target": "st:applicant-ceiling"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "related",
+   "target": "st:growing-workforce-many-limits"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "related",
+   "target": "st:hiring-overshoot"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "related",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "uses",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:recruitment-reputation-and-training",
+   "relation": "uses",
+   "target": "st:trace-loop-polarity"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "diagnoses",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "related",
+   "target": "st:iceberg-analysis"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "related",
+   "target": "st:reduction"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "uses",
+   "target": "st:iceberg-model"
+  },
+  {
+   "source": "st:recurring-causes-mean-structure",
+   "relation": "uses",
+   "target": "st:system"
+  },
+  {
+   "source": "st:reduction",
+   "relation": "part-of",
+   "target": "st:analytical-thinking"
+  },
+  {
+   "source": "st:reduction",
+   "relation": "related",
+   "target": "st:emilys-laws-of-system-complexity"
+  },
+  {
+   "source": "st:reduction",
+   "relation": "related",
+   "target": "st:know-which-reduction-you-made"
+  },
+  {
+   "source": "st:reduction",
+   "relation": "related",
+   "target": "st:recurring-causes-mean-structure"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "part-of",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "related",
+   "target": "st:anchor-goals-outside"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "related",
+   "target": "st:change-initiative-meets-balancing-loop"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "related",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "related",
+   "target": "st:find-the-unwritten-goal"
+  },
+  {
+   "source": "st:reference-point",
+   "relation": "related",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "contrasts-with",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "produces",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "related",
+   "target": "st:exponential-looks-flat"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "related",
+   "target": "st:growing-is-not-reinforcing"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "related",
+   "target": "st:polarity-carries-no-value"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "related",
+   "target": "st:snowballing"
+  },
+  {
+   "source": "st:reinforcing-loop",
+   "relation": "specializes",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:retrieval-augmented-generation",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:retrieval-augmented-generation",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:retrieval-augmented-generation",
+   "relation": "related",
+   "target": "st:graphs-not-just-chats"
+  },
+  {
+   "source": "st:retrieval-augmented-generation",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "instance-of",
+   "target": "series:persuasion"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "related",
+   "target": "st:limits-to-growth-study"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "related",
+   "target": "st:live-build-technique"
+  },
+  {
+   "source": "st:right-is-not-sufficient",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:salib",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:salib",
+   "relation": "related",
+   "target": "st:morris-screening"
+  },
+  {
+   "source": "st:salib",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:salib",
+   "relation": "related",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:scarce-site-rush",
+   "relation": "instance-of",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:scarce-site-rush",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:second-order-effects",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:second-order-effects",
+   "relation": "related",
+   "target": "st:ask-what-the-fix-does-later"
+  },
+  {
+   "source": "st:second-order-effects",
+   "relation": "related",
+   "target": "st:trace-three-orders"
+  },
+  {
+   "source": "st:self-reported-confidence",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:self-reported-confidence",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:self-reported-confidence",
+   "relation": "related",
+   "target": "st:fluency-is-not-correctness"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:calm-base-case-proves-nothing"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:morris-screening"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:one-at-a-time-swing-test"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:sensitivity-analysis",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "contrasts-with",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "related",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:shifting-the-burden",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:shifting-the-burden-to-the-intervenor",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:shifting-the-burden-to-the-intervenor",
+   "relation": "related",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:shifting-the-burden-to-the-intervenor",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:shifting-the-burden-to-the-intervenor",
+   "relation": "specializes",
+   "target": "st:shifting-the-burden"
+  },
+  {
+   "source": "st:single-expert-dependency",
+   "relation": "instance-of",
+   "target": "st:shifting-the-burden-to-the-intervenor"
+  },
+  {
+   "source": "st:single-expert-dependency",
+   "relation": "related",
+   "target": "st:ai-agent-as-intervenor"
+  },
+  {
+   "source": "st:single-expert-dependency",
+   "relation": "related",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:sliding-target",
+   "relation": "instance-of",
+   "target": "st:drift-to-low-performance"
+  },
+  {
+   "source": "st:snapshot-test",
+   "relation": "diagnoses",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:snapshot-test",
+   "relation": "diagnoses",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:snapshot-test",
+   "relation": "related",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:snapshot-test",
+   "relation": "related",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "instance-of",
+   "target": "series:reinforcing-dynamics"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "related",
+   "target": "st:applicant-ceiling"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "related",
+   "target": "st:bank-run"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "related",
+   "target": "st:exponential-looks-flat"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "related",
+   "target": "st:recruitment-reputation-and-training"
+  },
+  {
+   "source": "st:snowballing",
+   "relation": "related",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "contrasts-with",
+   "target": "st:one-at-a-time-swing-test"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "instance-of",
+   "target": "series:uncertainty"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "part-of",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "related",
+   "target": "st:morris-screening"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "related",
+   "target": "st:salib"
+  },
+  {
+   "source": "st:sobol-analysis",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:soft-systems-methodology",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:soft-systems-methodology",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:soft-systems-methodology",
+   "relation": "related",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:soft-systems-methodology",
+   "relation": "requires",
+   "target": "st:hard-and-soft-systems-thinking"
+  },
+  {
+   "source": "st:software-is-escalation-of-commitment",
+   "relation": "related",
+   "target": "st:choose-simulation-tooling"
+  },
+  {
+   "source": "st:software-is-escalation-of-commitment",
+   "relation": "related",
+   "target": "st:reach-for-a-graph-when"
+  },
+  {
+   "source": "st:software-is-escalation-of-commitment",
+   "relation": "related",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:source-and-sink",
+   "relation": "part-of",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:source-and-sink",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:source-and-sink",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "instance-of",
+   "target": "series:proxy-metric"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "part-of",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "related",
+   "target": "st:ai-system-as-a-system"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "related",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:specification-gaming",
+   "relation": "specializes",
+   "target": "st:fixes-that-fail"
+  },
+  {
+   "source": "st:staged-supply-chain-not-a-swarm",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:staged-supply-chain-not-a-swarm",
+   "relation": "uses",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:standards-specific-enough-to-fail",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:standards-specific-enough-to-fail",
+   "relation": "related",
+   "target": "st:audit-your-checks"
+  },
+  {
+   "source": "st:standards-specific-enough-to-fail",
+   "relation": "related",
+   "target": "st:building-this-book-with-an-agent"
+  },
+  {
+   "source": "st:standards-specific-enough-to-fail",
+   "relation": "related",
+   "target": "st:every-check-has-a-boundary-and-a-kind"
+  },
+  {
+   "source": "st:stella-and-ithink",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:stella-and-ithink",
+   "relation": "related",
+   "target": "st:xmile"
+  },
+  {
+   "source": "st:stock",
+   "relation": "contrasts-with",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:stock",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:stock",
+   "relation": "related",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:stock",
+   "relation": "related",
+   "target": "st:plus-into-a-stock"
+  },
+  {
+   "source": "st:stock",
+   "relation": "related",
+   "target": "st:snapshot-test"
+  },
+  {
+   "source": "st:stock",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "contrasts-with",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:auxiliary"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:choose-model-by-question"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:co-flow"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:numerical-integration"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:quantify-to-surface-disagreement"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:source-and-sink"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "related",
+   "target": "st:translate-cld-to-stock-and-flow"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "requires",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:stock-and-flow-diagram",
+   "relation": "requires",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "related",
+   "target": "st:confirmation-bias"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "related",
+   "target": "st:consistent-is-not-true"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "related",
+   "target": "st:fit-is-easy-to-manufacture"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "related",
+   "target": "st:software-is-escalation-of-commitment"
+  },
+  {
+   "source": "st:structural-and-behavioral-validity",
+   "relation": "related",
+   "target": "st:validate-a-model"
+  },
+  {
+   "source": "st:success-to-the-successful",
+   "relation": "instance-of",
+   "target": "series:competing-for-shared-resources"
+  },
+  {
+   "source": "st:success-to-the-successful",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:success-to-the-successful",
+   "relation": "related",
+   "target": "st:leverage-points"
+  },
+  {
+   "source": "st:success-to-the-successful",
+   "relation": "related",
+   "target": "st:tragedy-of-the-commons"
+  },
+  {
+   "source": "st:success-to-the-successful",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:supply-chain-boundary-and-catwoe",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:supply-chain-boundary-and-catwoe",
+   "relation": "uses",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:supply-chain-boundary-and-catwoe",
+   "relation": "uses",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:ai-agent-as-intervenor"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:fluency-is-not-correctness"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:price-war"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:quantified-supply-chain-model"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:staged-supply-chain-not-a-swarm"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:supply-chain-boundary-and-catwoe"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:upstream-downstream-adversaries"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "related",
+   "target": "st:urgency-corner-cutting-loop"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "uses",
+   "target": "st:recurring-causes-mean-structure"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "uses",
+   "target": "st:reduction"
+  },
+  {
+   "source": "st:supply-chain-recurring-misses",
+   "relation": "uses",
+   "target": "st:system"
+  },
+  {
+   "source": "st:swarm-test",
+   "relation": "related",
+   "target": "st:actor-based-modeling"
+  },
+  {
+   "source": "st:swarm-test",
+   "relation": "related",
+   "target": "st:agentic-ai"
+  },
+  {
+   "source": "st:swarm-test",
+   "relation": "related",
+   "target": "st:complexity-science"
+  },
+  {
+   "source": "st:swarm-test",
+   "relation": "uses",
+   "target": "st:complexity-science"
+  },
+  {
+   "source": "st:system",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:system",
+   "relation": "related",
+   "target": "st:general-systems-theory"
+  },
+  {
+   "source": "st:system",
+   "relation": "related",
+   "target": "st:system-boundary"
+  },
+  {
+   "source": "st:system",
+   "relation": "related",
+   "target": "st:systems-thinking"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "instance-of",
+   "target": "series:boundary"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "part-of",
+   "target": "st:system"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:boundary-critique"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:checking-loop"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:convenience-boundary-trap"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:know-which-reduction-you-made"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:right-is-not-sufficient"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:source-and-sink"
+  },
+  {
+   "source": "st:system-boundary",
+   "relation": "related",
+   "target": "st:system"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "contrasts-with",
+   "target": "st:cybernetics"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "related",
+   "target": "st:systems-thinking"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "uses",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "uses",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:system-dynamics",
+   "relation": "uses",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:systems-archetype",
+   "relation": "related",
+   "target": "st:a-trace-is-not-a-definition"
+  },
+  {
+   "source": "st:systems-archetype",
+   "relation": "related",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:systems-archetype",
+   "relation": "requires",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:systems-archetype",
+   "relation": "requires",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:systems-thinking",
+   "relation": "contrasts-with",
+   "target": "st:analytical-thinking"
+  },
+  {
+   "source": "st:systems-thinking",
+   "relation": "related",
+   "target": "st:fluency-is-not-correctness"
+  },
+  {
+   "source": "st:systems-thinking",
+   "relation": "related",
+   "target": "st:system"
+  },
+  {
+   "source": "st:systems-thinking",
+   "relation": "related",
+   "target": "st:system-dynamics"
+  },
+  {
+   "source": "st:systems-thinking",
+   "relation": "requires",
+   "target": "st:system"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "contrasts-with",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "instance-of",
+   "target": "series:decision-domain"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "instance-of",
+   "target": "series:stakeholder-worldviews"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "related",
+   "target": "st:catwoe"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "related",
+   "target": "st:cynefin-framework"
+  },
+  {
+   "source": "st:tame-messy-wicked-problems",
+   "relation": "related",
+   "target": "st:hard-and-soft-systems-thinking"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "instance-of",
+   "target": "series:escalation"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "instance-of",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "related",
+   "target": "st:agent-registry-graph"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "uses",
+   "target": "st:bound-interacting-agents"
+  },
+  {
+   "source": "st:textbook-pricing-bots",
+   "relation": "uses",
+   "target": "st:swarm-test"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "diagnoses",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "diagnoses",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "related",
+   "target": "st:a-trace-is-not-a-definition"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "related",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "related",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "uses",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:trace-loop-polarity",
+   "relation": "uses",
+   "target": "st:feedback-loop"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "instance-of",
+   "target": "series:unintended-consequences"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "related",
+   "target": "st:knowledge-graph"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "related",
+   "target": "st:map-the-agents"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "related",
+   "target": "st:second-order-effects"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "uses",
+   "target": "st:diagnose-an-archetype"
+  },
+  {
+   "source": "st:trace-three-orders",
+   "relation": "uses",
+   "target": "st:second-order-effects"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "instance-of",
+   "target": "series:competing-for-shared-resources"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "instance-of",
+   "target": "series:limits-and-capacity"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "related",
+   "target": "st:escalation"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "related",
+   "target": "st:limits-to-growth"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "related",
+   "target": "st:success-to-the-successful"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "requires",
+   "target": "st:balancing-loop"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "requires",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "requires",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:tragedy-of-the-commons",
+   "relation": "requires",
+   "target": "st:stock"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "instance-of",
+   "target": "series:feedback"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "related",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "related",
+   "target": "st:plus-into-a-stock"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "related",
+   "target": "st:snapshot-test"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "related",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "requires",
+   "target": "st:causal-loop-diagram"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "uses",
+   "target": "st:auxiliary"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "uses",
+   "target": "st:co-flow"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "uses",
+   "target": "st:snapshot-test"
+  },
+  {
+   "source": "st:translate-cld-to-stock-and-flow",
+   "relation": "uses",
+   "target": "st:stock-and-flow-diagram"
+  },
+  {
+   "source": "st:trusted-forecasting-tool",
+   "relation": "instance-of",
+   "target": "st:ai-trust-loop"
+  },
+  {
+   "source": "st:trusted-forecasting-tool",
+   "relation": "related",
+   "target": "st:agent-registry-graph"
+  },
+  {
+   "source": "st:trusted-forecasting-tool",
+   "relation": "uses",
+   "target": "st:break-the-trust-loop"
+  },
+  {
+   "source": "st:trusted-forecasting-tool",
+   "relation": "uses",
+   "target": "st:deterministic-gate-principle"
+  },
+  {
+   "source": "st:undrawn-leak",
+   "relation": "related",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:undrawn-leak",
+   "relation": "related",
+   "target": "st:upstream-downstream-adversaries"
+  },
+  {
+   "source": "st:undrawn-leak",
+   "relation": "uses",
+   "target": "st:draw-a-boundary"
+  },
+  {
+   "source": "st:undrawn-leak",
+   "relation": "uses",
+   "target": "st:flow"
+  },
+  {
+   "source": "st:unrun-code-is-an-unchecked-citation",
+   "relation": "instance-of",
+   "target": "series:ai-delegation"
+  },
+  {
+   "source": "st:unrun-code-is-an-unchecked-citation",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:unrun-code-is-an-unchecked-citation",
+   "relation": "related",
+   "target": "st:building-this-book-with-an-agent"
+  },
+  {
+   "source": "st:unrun-code-is-an-unchecked-citation",
+   "relation": "related",
+   "target": "st:every-check-has-a-boundary-and-a-kind"
+  },
+  {
+   "source": "st:unrun-code-is-an-unchecked-citation",
+   "relation": "related",
+   "target": "st:verify-after-translation"
+  },
+  {
+   "source": "st:upstream-downstream-adversaries",
+   "relation": "instance-of",
+   "target": "st:accidental-adversaries"
+  },
+  {
+   "source": "st:upstream-downstream-adversaries",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:upstream-downstream-adversaries",
+   "relation": "related",
+   "target": "st:undrawn-leak"
+  },
+  {
+   "source": "st:urgency-corner-cutting-loop",
+   "relation": "instance-of",
+   "target": "st:reinforcing-loop"
+  },
+  {
+   "source": "st:urgency-corner-cutting-loop",
+   "relation": "related",
+   "target": "st:quantified-supply-chain-model"
+  },
+  {
+   "source": "st:urgency-corner-cutting-loop",
+   "relation": "related",
+   "target": "st:supply-chain-recurring-misses"
+  },
+  {
+   "source": "st:urgency-corner-cutting-loop",
+   "relation": "uses",
+   "target": "st:build-cld-from-story"
+  },
+  {
+   "source": "st:urgency-corner-cutting-loop",
+   "relation": "uses",
+   "target": "st:delay"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "instance-of",
+   "target": "series:cognitive-bias"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:anchoring"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:audit-your-checks"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:availability-heuristic"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:confirmation-bias"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:hand-iterate-a-model"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:rank-interventions"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:sensitivity-analysis"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "related",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:anchoring"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:availability-heuristic"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:confirmation-bias"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:one-at-a-time-swing-test"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:sobol-analysis"
+  },
+  {
+   "source": "st:validate-a-model",
+   "relation": "uses",
+   "target": "st:structural-and-behavioral-validity"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:choose-simulation-tooling"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:insight-maker"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:numerical-integration"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:stella-and-ithink"
+  },
+  {
+   "source": "st:vensim",
+   "relation": "related",
+   "target": "st:xmile"
+  },
+  {
+   "source": "st:verify-after-translation",
+   "relation": "instance-of",
+   "target": "series:model-validation"
+  },
+  {
+   "source": "st:verify-after-translation",
+   "relation": "related",
+   "target": "st:numerical-integration"
+  },
+  {
+   "source": "st:verify-after-translation",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:verify-after-translation",
+   "relation": "related",
+   "target": "st:unrun-code-is-an-unchecked-citation"
+  },
+  {
+   "source": "st:verify-after-translation",
+   "relation": "related",
+   "target": "st:xmile"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "instance-of",
+   "target": "series:knowledge-representation"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "related",
+   "target": "st:numerical-integration"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "related",
+   "target": "st:pysd"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "related",
+   "target": "st:stella-and-ithink"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "related",
+   "target": "st:vensim"
+  },
+  {
+   "source": "st:xmile",
+   "relation": "related",
+   "target": "st:verify-after-translation"
+  }
+ ]
+}

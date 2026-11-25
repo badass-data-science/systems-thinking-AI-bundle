@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It opens by calling the pattern of five differently caused outages at an unchanged rate the real finding, which points to conditions rather than triggers."
+  },
+  {
+   "score": 0.5,
+   "why": "It lines the incidents up as one dataset and asks what structure lets them through, but it never asks what mental model keeps that structure in place beyond questioning single-root-cause thinking."
+  },
+  {
+   "score": 1,
+   "why": "It names shared, unchanged factors such as pressure to ship, on-call overload, deprioritized reliability work and unclear ownership as conditions that let any trigger become an outage."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It proposes class-level controls as a hypothesis to test across incidents, not another single root-cause fix, though its list of technical remedies leans that way."
+  }
+ ],
+ "notes": "Its main hypothesis and remedies stay technical (change safety, degradation, detection), with organizational structure as a late add-on, so it risks becoming a bundle of technical fixes.",
+ "id": "found-001",
+ "cond": "without",
+ "cost": 0.033364,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

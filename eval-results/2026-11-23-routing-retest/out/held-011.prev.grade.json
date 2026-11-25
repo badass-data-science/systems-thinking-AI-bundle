@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer sets up training and trained stocks with hires, graduations of half the trainees, and 5% quits, all computed from start-of-month levels."
+  },
+  {
+   "score": 1,
+   "why": "The table gives 10, 15, 17.5, 18.8 in training and 95, 95.3, 98.0, 101.8 trained, which matches the expected values after rounding."
+  },
+  {
+   "score": 1,
+   "why": "It explains that attrition acts immediately while hires reach the floor only after training, so the dip is expected."
+  },
+  {
+   "score": 1,
+   "why": "It gives the 20 and 200 equilibria with their balancing logic and a slow approach (about a 20-month time constant), and flags training time, the 5% attrition rate and trainee attrition as uncertain."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "New hires are held in training and only graduates count as taking tickets."
+  }
+ ],
+ "notes": "The suggested CFO line says capacity dips for about two months, but the answer's own table shows it below baseline for three months (months 1 to 3), which is a minor inconsistency.",
+ "id": "held-011",
+ "cond": "prev",
+ "cost": 0.039768000000000005,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

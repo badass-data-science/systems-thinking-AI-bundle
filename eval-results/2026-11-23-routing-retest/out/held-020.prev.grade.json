@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the reviewer checks text against guidelines, cannot see the current UI, and that a stricter prompt is the same kind of check run harder."
+  },
+  {
+   "score": 1,
+   "why": "It proposes a human or automated UI walkthrough of the steps and a release-to-article trigger that flags articles when referenced screens change."
+  },
+  {
+   "score": 0.5,
+   "why": "It gates destructive or data operations behind a human or UI-verified check, but never names the agent-to-agent-to-publish path with no human and never recommends mapping who reviews what."
+  },
+  {
+   "score": 1,
+   "why": "It recasts 98% as a measure of how rarely the reviewer objects, not of correctness, and notes it stays high on articles the reviewer can't verify."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects the stricter prompt as the fix and offers structural alternatives."
+  }
+ ],
+ "notes": "",
+ "id": "held-020",
+ "cond": "prev",
+ "cost": 0.031039999999999998,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

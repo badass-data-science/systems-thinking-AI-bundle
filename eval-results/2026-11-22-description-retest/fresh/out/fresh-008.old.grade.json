@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Fixes That Fail and says the coupon relieves complaints but adds peak demand that worsens lateness."
+  },
+  {
+   "score": 1,
+   "why": "Traces the quick-fix loop (complaint → coupon → fewer complaints) and the side-effect loop (coupons → peak demand → late deliveries → more complaints and coupons)."
+  },
+  {
+   "score": 1,
+   "why": "Calls 30% a bigger dose of the same fix and advises against it."
+  },
+  {
+   "score": 1,
+   "why": "Recommends the coupon only as a bridge, fixing peak capacity, off-peak-only redemption, and tracking redemption by time slot and peak late-rate."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Uses Fixes That Fail correctly and never invokes Shifting the Burden."
+  }
+ ],
+ "notes": "The experiment wording 'peak-only 30% group' is muddled, since the 30% coupon isn't restricted to peak, but this is minor.",
+ "id": "fresh-008",
+ "cond": "old",
+ "cost": 0.028064,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

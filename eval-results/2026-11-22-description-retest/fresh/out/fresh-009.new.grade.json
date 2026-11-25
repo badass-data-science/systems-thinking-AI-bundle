@@ -1,0 +1,37 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names shifting the burden and describes the firm relieving the yearly need while in-house skill eroded through disuse."
+  },
+  {
+   "score": 1,
+   "why": "Describes the reinforcing cycle where lost capability makes the firm more necessary each year and explains the lack of a walk-away option."
+  },
+  {
+   "score": 1,
+   "why": "Recommends keeping the firm as a stopgap, making the contract teach, hiring analysts, and running a shadow forecast for comparison."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly recommends putting 'no in-house forecasting capability' on the risk register by name."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against replacing the firm outright."
+  },
+  {
+   "score_placeholder": null,
+   "committed": false,
+   "why": "Includes negotiation and rebid steps but frames them within a structural capability-rebuilding plan."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-009",
+ "cond": "new",
+ "cost": 0.025108,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

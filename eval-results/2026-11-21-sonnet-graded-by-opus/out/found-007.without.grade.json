@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Variables such as bug backlog, engineers pulled onto bug fixing, feature work slippage, and sales promises are all quantities where higher means more."
+  },
+  {
+   "score": 1,
+   "why": "Every link carries a + polarity, and the answer names the delay between rushed custom features and the bugs that arrive months later."
+  },
+  {
+   "score": 1,
+   "why": "The five links return to the bug backlog, and the answer labels the loop reinforcing because it counts zero negative links."
+  },
+  {
+   "score": 0.5,
+   "why": "The answer reads the loop aloud but as several sentences, and it never proposes saying it to the people who own each link."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The ASCII diagram draws 'Engineers pulled onto bug fixing' a second time for the B1 link, which makes the picture confusing even though the link list is correct.",
+ "id": "found-007",
+ "cond": "without",
+ "cost": 0.037456,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

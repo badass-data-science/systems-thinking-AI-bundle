@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Frames the test around whether plausible input values push the 18% below the 10% target, which is the decision margin."
+  },
+  {
+   "score": 1,
+   "why": "Describes one-at-a-time swings across ranges with the others held at best guess, shown as a tornado chart, framed against the 10% threshold."
+  },
+  {
+   "score": 1,
+   "why": "Notes that one-at-a-time swings miss interactions and proposes joint Monte Carlo sampling with variance attribution, a global method in substance, though it doesn't name Morris or Sobol."
+  },
+  {
+   "score": 1,
+   "why": "Concludes with a ranked shortlist of 2–4 inputs for a targeted study instead of blanket collection or a bare robustness claim."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-017",
+ "cond": "old",
+ "cost": 0.030896,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

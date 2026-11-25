@@ -1,0 +1,10 @@
+diagnostic incidents -> AI agent diagnoses: + steelblue
+AI agent diagnoses -> diagnostic incidents: - steelblue
+diagnostic incidents -> human diagnostic practice: + steelblue
+human diagnostic practice -> diagnostic incidents: - delay steelblue
+AI agent diagnoses -> human diagnostic skill: - delay steelblue
+human diagnostic skill -> human diagnostic practice: + steelblue
+
+loop: diagnostic incidents, AI agent diagnoses
+loop: diagnostic incidents, human diagnostic practice
+loop: diagnostic incidents, AI agent diagnoses, human diagnostic skill, human diagnostic practice

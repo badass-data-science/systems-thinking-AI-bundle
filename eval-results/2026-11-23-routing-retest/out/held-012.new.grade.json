@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It separates stocks (debt, cumulative delivered, people), flows (delivery, debt created, paydown) and auxiliaries (pressure, drag, shortcut share), and tracks remaining work through cumulative delivered against plan."
+  },
+  {
+   "score": 1,
+   "why": "Debt gets an inflow (created) and an outflow (paydown); the answer points out that the cleanup drain is missing from the drawing and is needed for the 20% option, and it models the 'months later' delay through the debt stock."
+  },
+  {
+   "score": 1,
+   "why": "Pressure is calculated from Gap = Plan cum − Cum, which makes the plan an explicit goal."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives units and checks loop polarity, but never explicitly checks that every loop passes through a stock."
+  },
+  {
+   "score": 0.5,
+   "why": "It lists the key sensitivity parameters (h, k, ramp time) and calls the numbers guesses, but it doesn't step the model forward by hand and frames the result as a ranking flip rather than the margin between options."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Pressure, drag and shortcut share are auxiliaries, not accumulating columns."
+  },
+  {
+   "committed": false,
+   "why": "The delay comes from debt accumulating as a stock, not from a fixed lag."
+  }
+ ],
+ "notes": "It states as fact that 'a 20% reserve costs more engineer-time than two hires', which is only true for teams larger than 10 engineers and so depends on team size.",
+ "id": "held-012",
+ "cond": "new",
+ "cost": 0.047432,
+ "score": 0.8,
+ "pitfalls_committed": 0
+}

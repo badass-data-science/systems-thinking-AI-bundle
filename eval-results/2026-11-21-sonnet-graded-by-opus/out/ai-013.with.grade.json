@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Starts from an agreed shared event such as end-of-quarter deals needing a discount, put in the team's own words, and avoids opening with the conclusion."
+  },
+  {
+   "score": 1,
+   "why": "Draws the loop live one link at a time and asks 'does this match what you've seen?' after each link."
+  },
+  {
+   "score": 1,
+   "why": "Names the archetype only after someone in the room describes it, avoids blame phrasing, and treats pushback as a link or boundary to add or fix."
+  },
+  {
+   "score": 1,
+   "why": "Records sales as consulted, lists finance, pricing, product marketing, comp and CS as not yet consulted, and plans the next room."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "It mostly separates consulted from not-yet-consulted rather than consulted from informed, but the substance is covered.",
+ "id": "ai-013",
+ "cond": "with",
+ "cost": 0.029027999999999998,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

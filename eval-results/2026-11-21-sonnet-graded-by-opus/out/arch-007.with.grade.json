@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the Attractiveness Principle and describes several limits binding in turn as the project grows."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly says relieving one limit just moves the constraint to the next."
+  },
+  {
+   "score": 0.5,
+   "why": "Says the missing decision is which unattractiveness to accept on purpose, but never says that not choosing lets whichever limit binds first decide."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly links the bottlenecks to the same growth and explains why they only look unrelated."
+  }
+ ],
+ "notes": "",
+ "id": "arch-007",
+ "cond": "with",
+ "cost": 0.026379999999999997,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

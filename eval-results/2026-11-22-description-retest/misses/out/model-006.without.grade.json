@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It frames the result as A − B and makes 'does the sign flip / recommendation reverses' the headline finding."
+  },
+  {
+   "score": 1,
+   "why": "It varies each input low/high with the others at baseline, draws a tornado chart and solves for breakeven values; it uses evidence-based ranges or ±X% rather than exactly ±25%, but the substance matches."
+  },
+  {
+   "score": 1,
+   "why": "It names the dominant driver as where to spend effort on better estimates, and says a fragile result means gathering data before deciding."
+  },
+  {
+   "score": 1,
+   "why": "It says explicitly that OAT misses interactions and correlation, for example defect rate and drag moving together."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The 'direction of effects' bullet says higher defect rate and drag should hurt B, but they should favor B (paying down debt) and hurt A's margin, which contradicts the answer's own worst case for A (low defects, low drag).",
+ "id": "model-006",
+ "cond": "without",
+ "cost": 0.034708,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

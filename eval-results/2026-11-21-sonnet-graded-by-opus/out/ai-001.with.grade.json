@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It describes the loop where trust lowers scrutiny, fewer errors are caught and trust rises, and says the two minus signs make it reinforcing."
+  },
+  {
+   "score": 1,
+   "why": "It says 'no errors reported' is the loop's output rather than evidence about the tool, and calls trust a stock that drains slowly."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a fixed randomized audit floor, risk tiers with sign-off gates, clause checklists and clause-and-page citations."
+  },
+  {
+   "score": 1,
+   "why": "It flags that associates may stop reading contracts closely and proposes tool-free summarizing exercises to keep the skill."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says it is not concluding the tool is bad and that the current process cannot show the tool is safe either."
+  }
+ ],
+ "notes": "The claim that a 1% error rate 'would show up in roughly one reviewed summary in five' is arithmetically wrong (it would be about one reviewed summary in a hundred), though this does not affect the main argument.",
+ "id": "ai-001",
+ "cond": "with",
+ "cost": 0.036564,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gives Stock(t+Δt) = Stock(t) + Δt×(Inflow − Outflow), a first-order difference equation, plus the continuous form."
+  },
+  {
+   "score": 1,
+   "why": "States that the stock rises whenever net flow is positive even as inflow shrinks, and that the inflow sets the stock's rate of change rather than its level, which is the 'adds to, not moves with' point in substance."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-012",
+ "cond": "without",
+ "cost": 0.022232000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

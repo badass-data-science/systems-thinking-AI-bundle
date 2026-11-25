@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the problem lies in how departments interact and explains how each local optimization (batching, full scanners, block discharges) adds downstream waiting while every target is still met."
+  },
+  {
+   "score": 0.5,
+   "why": "It says a per-department audit will find nothing or blame the wrong unit because the problem is in the interactions, but it never says fixing one part alone may just move the queue elsewhere."
+  },
+  {
+   "score": 1,
+   "why": "It recommends timestamping every handoff end to end, finding where waits accumulate and where the constraint sits, and notes that department-level targets reward local optimization at the system's expense."
+  },
+  {
+   "score": 1,
+   "why": "It recommends adding ED length of stay, boarding time and order-to-result times to department scorecards and accepting some drop in local efficiency."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects the hunt for a single underperforming department."
+  }
+ ],
+ "notes": "",
+ "id": "held-030",
+ "cond": "without",
+ "cost": 0.031023999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

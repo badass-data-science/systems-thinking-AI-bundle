@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It finds inflow is 100 because the dock binds and outflow is 90 because the pickers bind while stock stays above 90."
+  },
+  {
+   "score": 1,
+   "why": "The table shows stock going 210, 220, 230, 240."
+  },
+  {
+   "score": 0.5,
+   "why": "It names the binding dock and pickers, the 10/week growth and the slack supplier, but never says storage isn't the issue."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-002",
+ "cond": "old",
+ "cost": 0.022996,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,17 @@
+{
+ "id": "ai-002",
+ "cond": "new",
+ "answer": "**This is Fixes That Fail (Senge's archetype). It is the form of specification gaming, or Goodhart's law, that you get once the damage reaches the metric.**\n\n**The loops.** I traced each one and counted the minus signs.\n\n- **B1, the quick fix.** Click-through is below target, so the team optimizes click-through harder. Clicks rise right away, which closes the gap. This loop has one minus sign, so it balances. It \"works\" every time, which is why the team trusts it.\n- **R1, the side effect.** Optimizing clicks pushes the model toward clickbait, sensational and novelty-heavy items. That neglects what clicks were standing in for, which is value to the user. The neglect shows up as weaker habit, trust and satisfaction. The delay is about six months, and those losses then drag down return visits and subscriptions. The team reads the lower numbers as \"engagement is down\" and optimizes clicks harder. This loop has two minus signs, so it reinforces.\n\n**Why it's hard to see.** Clicks keep rising, so the dashboard confirms the fix while the real goal erodes in a place nobody measures. The delay lets several rounds of the fix pile up before the damage appears. The clicks lever is bounded, but the erosion compounds. Each statement the team makes (\"clicks are up\", \"it worked last quarter\") is true.\n\n**What to do.**\n1. **Measure the real goal directly.** Track return visits, subscription retention and satisfaction as first-class metrics, not as lagging side effects. This also shortens the delay in the signal.\n2. **Treat click gains as a bridge.** Don't treat them as the answer. Optimize for longer-horizon outcomes such as 30-to-90-day retention, or use a counter-metric that penalizes clickbait.\n3. **Ask what the next few rounds do,** not just this quarter's. Ask what the proxy stands in for and where its degradation would show up.\n\n**Two things to check before you commit to the diagnosis.**\n- The archetype needs a side effect of the optimization itself that feeds the decline. If subscriptions are falling for an unrelated reason, such as pricing, a competitor or seasonality, then it's a different problem. A holdout test would tell you: compare users served by the click-optimized model with a group served by a less aggressive one, and see whether their retention diverges.\n- This is a diagnosis from the structure you described. I haven't seen your data, and the six-month lag is the only timing evidence I have.\n\nThe skill's `engagement-optimization` case card describes the same shape for platforms that optimized clicks and time on site. It also notes that the aggregate pattern, where each step is rational and the total is ruinous, resembles Escalation.",
+ "cost": 0.0829648,
+ "turns": 9,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Grep:metric|proxy|Goodhart",
+  "Read:new/.claude/skills/systems-thinking/archetypes/fixes-that-fail.md",
+  "Read:new/.claude/skills/systems-thinking/archetypes/drift-to-low-performance.md",
+  "Grep:specification-gaming",
+  "Read:new/.claude/skills/systems-thinking/cases/engagement-optimization.md",
+  "Read:new/.claude/skills/systems-thinking/concepts/specification-gaming.md"
+ ],
+ "skill_loaded": true
+}

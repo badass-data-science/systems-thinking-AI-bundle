@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The table lists boundary and kind for the tests, the linter and the done report."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly calls it a boundary miss because the file sat outside what any check examined."
+  },
+  {
+   "score": 1,
+   "why": "Fixes the checks with a config-loading check through the real loader and a file list globbed from the repo."
+  },
+  {
+   "score": 1,
+   "why": "States verbatim that green means 'nothing these checks can see is wrong', not that the work is right."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-011",
+ "cond": "new",
+ "cost": 0.020392,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

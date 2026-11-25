@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "Never names Growth and Underinvestment; it calls the problem censoring bias plus a generic reinforcing loop."
+  },
+  {
+   "score": 1,
+   "why": "Shows clearly that the low return of refused customers is caused by the refusal and then read as proof that demand isn't there."
+  },
+  {
+   "score": 0.5,
+   "why": "Discusses the nine-month lead time and when the decision gets made, but never says capacity has to be built ahead of demand."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends measuring true demand from turned-away orders, but doesn't call for holding the delivery standard fixed and even suggests rationing capacity."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Never frames the oven constraint as a fixed limit; it treats the constraint as removable by buying an oven."
+  }
+ ],
+ "notes": "Suggesting tiered pricing to ration scarce capacity accepts the eroded delivery standard rather than fixing it.",
+ "id": "arch-006",
+ "cond": "without",
+ "cost": 0.028156,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

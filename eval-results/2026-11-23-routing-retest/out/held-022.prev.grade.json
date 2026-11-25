@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It states that three days drops to three hours and that request volume will rise substantially."
+  },
+  {
+   "score": 1,
+   "why": "It traces volume through two seniors thinning review, the trust-scrutiny loop, and plausible join and filter errors reaching executives."
+  },
+  {
+   "score": 1,
+   "why": "It labels the 1-2 year effects as speculative, describes juniors losing SQL skill so the reviewer pipeline dries up, and admits it can't size the effects."
+  },
+  {
+   "score": 1,
+   "why": "It proposes stakes-based tiering, a fixed sample rate, reconciliation to finance figures, no-tool SQL exercises compared with the tool's output, and expanded review capacity."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It recommends adopting the tool with safeguards that keep the speed gain."
+  }
+ ],
+ "notes": "Rollout item 10 says to go 'from 25 users in the pilot to groups of about 8', which garbles the staging and contradicts the answer's own guess that the pilot had fewer users.",
+ "id": "held-022",
+ "cond": "prev",
+ "cost": 0.0405,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States the side effect feeds back into the same problem and makes it worse."
+  },
+  {
+   "score": 1,
+   "why": "Names the competing fundamental solution and says dependence on the quick fix erodes the capacity to apply it."
+  },
+  {
+   "score": 1,
+   "why": "The rushed-tickets example is a correct Fixes That Fail and the hero hot-fix example is a correct Shifting the Burden."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Diagnostic 1 says Shifting the Burden's fix never addresses the problem while Fixes That Fail's briefly does; both archetypes really relieve only the symptom, so this test is shaky but not harmful.",
+ "id": "disc-001",
+ "cond": "without",
+ "cost": 0.022276,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It does not name the Attractiveness Principle, but it describes a series of shared limits (review, CI, chat, release, governance) binding one after another as the project grows."
+  },
+  {
+   "score": 1,
+   "why": "It says outright that relieving one constraint just moves the bottleneck to the next shared resource."
+  },
+  {
+   "score": 0.5,
+   "why": "It frames the decision as choosing how much volume to want and deliberately accepting gatekeeping and fragmentation, but never says that not choosing lets whichever limit binds first decide."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly links the bottlenecks to one shared, coupled structure rather than treating them as unrelated."
+  }
+ ],
+ "notes": "The claim that coordination cost grows with possible interactions is asserted loosely but is not harmful.",
+ "id": "arch-007",
+ "cond": "without",
+ "cost": 0.028184,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

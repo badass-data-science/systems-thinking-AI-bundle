@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It covers the 2-3 year construction lag and says rents can't show the effect yet, but never mentions that rent data reflects leases signed months earlier."
+  },
+  {
+   "score": 0.5,
+   "why": "It warns that repeal causes a later completions gap and that the all-at-once package hides what worked, but it never says that reacting harder to a late signal risks overcorrection when delayed supply lands on top of the new measures."
+  },
+  {
+   "score": 1,
+   "why": "It asks for a dashboard of permits, starts and completions, and for a review date at 36-48 months with pre-agreed criteria instead of repealing now."
+  },
+  {
+   "score": 1,
+   "why": "It says to change one thing at a time and to keep any interim measure narrow, and it names outside forces such as job and population demand and financing costs."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly recommends against repeal."
+  }
+ ],
+ "notes": "",
+ "id": "held-016",
+ "cond": "prev",
+ "cost": 0.03408,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

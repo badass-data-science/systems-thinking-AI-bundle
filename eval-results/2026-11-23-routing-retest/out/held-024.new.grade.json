@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It places (a) as a parameter on the enforcement loop that only sets blitz size, (b) as a rule on the design loop's output, and (c) as the goal the design loop defends."
+  },
+  {
+   "score": 1,
+   "why": "Separate Power and Reach columns rate (c) high-power but slow and possibly outside city authority, (b) medium and limited to repaving, and (a) easy but weak and rebounding like the blitzes."
+  },
+  {
+   "score": 0.5,
+   "why": "It rejects (a) with reasons, offers cameras instead and frames (b) as a bridge to (c), but its label for (a) says there is nothing structural to buy time toward, even though (b) and (c) are exactly that."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives a clear sequence, (c) led and bridged by a narrowed (b), but proposes no pilot corridors or modelling and never names trade-offs such as longer car trips."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It pairs (c) with a narrowed (b) and leaves (a) as optional rather than choosing (c) alone."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly calls the blitz a loop that changes nothing structural."
+  }
+ ],
+ "notes": "The table's label for (a), 'nothing structural for it to buy time toward', contradicts the answer's own case that (b) and (c) are the structural fixes.",
+ "id": "held-024",
+ "cond": "new",
+ "cost": 0.047040000000000005,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It locates coordination in a centrally designed router and team-assigned roles, and concludes the pipeline is not a swarm."
+  },
+  {
+   "score": 0.5,
+   "why": "It describes no coordinator and agents reacting to each other's traces, but keeps this inside one team's designed system and never mentions independently built agents, such as pricing or trading agents in one market."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "It treats a swarm as something one team could deliberately build, and it overstresses homogeneous, simple agents as a requirement.",
+ "id": "found-012",
+ "cond": "with",
+ "cost": 0.025032,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

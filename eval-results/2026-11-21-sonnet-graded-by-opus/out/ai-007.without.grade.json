@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names the jump in test volume and coverage, and the end of test-writing as a chore, as the direct gain."
+  },
+  {
+   "score": 1,
+   "why": "It gives strong second-order consequences: tests mirroring code, enshrined bugs and reviewer skimming, with Goodhart invoked as an archetype-style check, though only at third order."
+  },
+  {
+   "score": 0.5,
+   "why": "Skill and knowledge erosion appears at third order, but it is not labeled speculative and is not tied to Shifting the Burden."
+  },
+  {
+   "score": 1,
+   "why": "It proposes concrete remedies that keep the speed gain, such as review checklists, mutation gates and juniors writing test plans by hand first, and it ends with a measured check-after-a-quarter step."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The third-order effects, such as leadership loosening release gates and trust collapse, are stated as confident predictions rather than hedged speculation.",
+ "id": "ai-007",
+ "cond": "without",
+ "cost": 0.037432,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

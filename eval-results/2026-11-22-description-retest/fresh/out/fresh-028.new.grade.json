@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It credits the hours saved, people skipping optional meetings, and better capture of action items."
+  },
+  {
+   "score": 1,
+   "why": "It traces summaries becoming the unchecked record, fewer voices and less dissent, and absent readers acting on flattened nuance, all with clear mechanisms."
+  },
+  {
+   "score": 0.5,
+   "why": "Third-order effects are labeled speculative and include skill erosion and junior staff losing exposure, but only one effect is tied to a known pattern (the reinforcing loop) rather than each checked against archetypes."
+  },
+  {
+   "score": 1,
+   "why": "Remedies include a named person confirming action items, decision meetings with expected attendance, and random spot checks against recordings, all of which keep the gain."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It recommends a pilot and safeguards rather than rejecting the tool."
+  }
+ ],
+ "notes": "Describing the EU and UK as 'all-party consent' regimes oversimplifies how recording rules work there, and legal exposure is filed under second-order effects even though the answer calls it immediate.",
+ "id": "fresh-028",
+ "cond": "new",
+ "cost": 0.036276,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,9 @@
+{
+ "id": "found-011",
+ "cond": "old",
+ "answer": "The manager's conclusion doesn't follow from the numbers. This isn't modest growth.\n\n**What the data shows**\n\nEach week is exactly 10% higher than the last (1,000 → 1,100 → 1,210 → 1,331). That's compounding growth, not linear. Adding about 100 users a week would be modest, but here the weekly increment itself grows (100, 110, 121).\n\n**What it implies if it continues**\n\n- Users double roughly every 7 weeks (1.1^7 ≈ 1.95).\n- After 26 weeks, you'd have about 12,000 weekly active users (~12x).\n- After 52 weeks, you'd have about 142,000 (~140x).\n\nAnything sized for 1,300 users, including infrastructure, support, on-call, costs and onboarding, would be badly outgrown within a quarter or two.\n\n**Fair caveats**\n\n- Four data points is a thin basis for extrapolating. A 10% weekly rate could be a launch bump, a campaign, or a one-time rollout.\n- Real growth usually flattens at some ceiling, such as the size of the target population or market saturation. If this team's addressable user base is, say, 5,000, then \"no scaling needed\" could be right.\n- The numbers are suspiciously clean. They may be projected or smoothed rather than measured, so it's worth checking the source.\n\n**What I'd say to the manager**\n\n\"At 10% week over week, we'd be at about 12x in six months and over 100x by year end. Growth that fast isn't modest. Either we have a reason to believe it'll plateau soon, such as a known user ceiling, or we should plan for scale. At minimum, let's load-test at 10x current usage, identify the first bottleneck, and set a trigger, for example 'if WAU passes 3,000, start scaling work.' That way we aren't betting the year on the trend stopping.\"\n\nThe useful question is what the ceiling is and when growth hits it. \"Modest\" isn't an accurate description of the current trend.",
+ "cost": 0.0237068,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

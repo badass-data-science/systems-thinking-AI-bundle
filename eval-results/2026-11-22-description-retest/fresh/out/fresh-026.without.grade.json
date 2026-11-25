@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0,
+   "why": "The answer assumes a graph and never argues it is warranted by fact volume, change rate or the need for repeatable answers."
+  },
+  {
+   "score": 1,
+   "why": "It picks the model by fit: property graph for attributes such as timeouts on edges, RDF for federating external linked data and ontologies. It omits the W3C-standard and Neptune details."
+  },
+  {
+   "score": 1,
+   "why": "It separates the structural blast-radius traversal from the dynamic cascade simulation, has the graph feed topology to a separate simulator, and names retry amplification."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks for provenance, reconciliation of traced edges against the catalog and validation against past incidents, but never says to check facts the agent extracted itself before relying on them."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-026",
+ "cond": "without",
+ "cost": 0.04206,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

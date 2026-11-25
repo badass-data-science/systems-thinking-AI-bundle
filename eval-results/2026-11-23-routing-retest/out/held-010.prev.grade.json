@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It separates potholes, which don't react to repairs, from homelessness, whose flows react to policy, but never says homelessness has a disputed definition or no natural stopping point."
+  },
+  {
+   "score": 1,
+   "why": "It treats the four claims as different interacting flows with no single answer and warns that one program tests only one theory."
+  },
+  {
+   "score": 0.5,
+   "why": "It raises the regional boundary and suggests learning pilots, but it never involves people experiencing homelessness, providers or neighboring cities, and it relies on data rather than drawing out views."
+  },
+  {
+   "score": 1,
+   "why": "It explicitly keeps the headline count as one of several measures rather than the definition of the problem."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects the pothole model and argues against funding a single cause."
+  }
+ ],
+ "notes": "It claims local data will 'settle much of the committee argument with facts', which overstates how far data can resolve a problem whose framing is contested.",
+ "id": "held-010",
+ "cond": "prev",
+ "cost": 0.041208,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says the up-front label lands as an accusation and that the team can only contest the analyst's label and model."
+  },
+  {
+   "score": 1,
+   "why": "It starts from a blank board and the team's own description of the problem, then draws each link as they speak and checks it with them."
+  },
+  {
+   "score": 0.5,
+   "why": "Letting the room name the pattern first is covered, but pushback is treated only as correction to accept, not as a link or boundary to defend or fix."
+  },
+  {
+   "score": 0.5,
+   "why": "Blame-free system language is covered well, but it never distinguishes stakeholders consulted from those merely informed."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "crit-002",
+ "cond": "without",
+ "cost": 0.030019999999999998,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says to search Crossref, Scholar, WorldCat or the journal for the citation, noting that plausibility is how fabrications look."
+  },
+  {
+   "score": 1,
+   "why": "Says to run the code in a fresh environment and diff against the printed output, which may be invented."
+  },
+  {
+   "score": 1,
+   "why": "Says plausibility is how fabricated content looks and that the claims are unverified leads, not evidence, until checked."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The 'died in 2001' red flag assumes the author is Donella Meadows, but 'Meadows, D.' could equally be Dennis Meadows, who was alive in 2004, so that argument is weaker than presented.",
+ "id": "ai-012",
+ "cond": "without",
+ "cost": 0.023032,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

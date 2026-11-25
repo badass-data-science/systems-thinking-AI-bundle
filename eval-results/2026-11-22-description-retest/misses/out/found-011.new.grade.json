@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It identifies an exact ×1.1 step as compounding, not linear, and notes the absolute gains keep growing."
+  },
+  {
+   "score": 1,
+   "why": "It gives doubling every ~7.3 periods, projects ~142× in a year if weekly and ~10× in 24 weeks, and recommends cheap capacity checks and triggers now to avoid a scramble."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Treating the step period as unknown and calling the manager 'defensible' if the steps are quarterly softens the urgency, but the answer still advises acting now and its math is correct.",
+ "id": "found-011",
+ "cond": "new",
+ "cost": 0.02762,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

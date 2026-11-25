@@ -1,0 +1,505 @@
+{
+ "n": 18,
+ "conds": [
+  "new",
+  "old",
+  "without"
+ ],
+ "means": {
+  "new": 0.9722222222222222,
+  "old": 0.8935185185185185,
+  "without": 0.8842592592592592
+ },
+ "comparisons": {
+  "new": {
+   "mean_diff": 0.08796296296296297,
+   "ci95": [
+    0.027777777777777773,
+    0.16666666666666666
+   ],
+   "better": 5,
+   "worse": 0,
+   "split": {
+    "loaded": {
+     "n": 17,
+     "new": 0.9705882352941176,
+     "without": 0.8774509803921569
+    },
+    "not_loaded": {
+     "n": 1,
+     "new": 1.0,
+     "without": 1.0
+    }
+   }
+  },
+  "old": {
+   "mean_diff": 0.009259259259259264,
+   "ci95": [
+    -0.03703703703703703,
+    0.07407407407407408
+   ],
+   "better": 1,
+   "worse": 2,
+   "split": {
+    "not_loaded": {
+     "n": 18,
+     "old": 0.8935185185185185,
+     "without": 0.8842592592592592
+    }
+   }
+  }
+ },
+ "cost_usd": 3.0106343,
+ "rows": [
+  {
+   "id": "ai-002",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1064648,
+    "notes": "The closing aside that the aggregate pattern resembles Escalation is a loose fit, though it is attributed to a case card and does no harm."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0457268,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.047134800000000004,
+    "notes": "The 'Escalation' archetype is misapplied: it describes two parties outdoing each other, not one team intensifying its own fix."
+   }
+  },
+  {
+   "id": "ai-010",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07536960000000001,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0527848,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.050422800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "ai-011",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0809418,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0528028,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0564148,
+    "notes": "The required-config list is maintained by hand rather than generated from the repo, so it could drift; otherwise nothing wrong."
+   }
+  },
+  {
+   "id": "ai-012",
+   "kind": "critique",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07997090000000001,
+    "notes": "The claim that Donella Meadows died in 2001 is correct and a useful red flag, though the answer rightly still requires a lookup."
+   },
+   "old": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.047764799999999996,
+    "notes": "The red-flag reasoning assumes 'Meadows, D.' means Donella Meadows (died 2001), but it could be Dennis Meadows, who is alive, so the posthumous-date suspicion is weaker than presented."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.04537480000000001,
+    "notes": "The 'died in 2001' red flag assumes the author is Donella Meadows, but 'Meadows, D.' could equally be Dennis Meadows, who was alive in 2004, so that argument is weaker than presented."
+   }
+  },
+  {
+   "id": "ai-014",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0810314,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.046126799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.051636800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-003",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0672789,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0413168,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0453968,
+    "notes": ""
+   }
+  },
+  {
+   "id": "arch-005",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08818880000000001,
+    "notes": "It contradicts itself by aiming the hedge test at an adjacent segment and then predicting the same flat result, which undercuts its own expansion advice; 'churn is the only way new sign-ups happen' is also muddled."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.052284800000000006,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0537408,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-004",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0749513,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0563648,
+    "notes": "Listing unions, student unions and regulators under Owner stretches the term, since these are parties with veto power rather than the system owner, but it is a minor point."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0565068,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-005",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0542067,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.039008799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.035828799999999994,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-010",
+   "kind": "critique",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0577895,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.038356799999999996,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0360888,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-011",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0522588,
+    "notes": "Treating the step period as unknown and calling the manager 'defensible' if the steps are quarterly softens the urgency, but the answer still advises acting now and its math is correct."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0401308,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.039160799999999996,
+    "notes": ""
+   }
+  },
+  {
+   "id": "found-012",
+   "kind": "discriminate",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0669129,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0504248,
+    "notes": "It treats a swarm as something one team could deliberately build, and it overstresses homogeneous, simple agents as a requirement."
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0453768,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-002",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0700441,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.043886800000000004,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0341168,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-005",
+   "kind": "critique",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07063910000000001,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0449088,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0412768,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-006",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.07029640000000001,
+    "notes": "It claims all three swings should run against A, but a lower defect rate or smaller drag helps A, so the expected direction holds only for the increases, and the bug-check heuristic is muddled."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0524728,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06019480000000001,
+    "notes": "The 'direction of effects' bullet says higher defect rate and drag should hurt B, but they should favor B (paying down debt) and hurt A's margin, which contradicts the answer's own worst case for A (low defects, low drag)."
+   }
+  },
+  {
+   "id": "model-007",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0714013,
+    "notes": "Minor notation slips (writing 'S1 + S1 + S2' and labeling parameter 2's index 'S1 = 0.60') and a meaningless remark about third-order effects in a two-parameter model, none of which change the interpretation."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0420128,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0440648,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-008",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0805143,
+    "notes": "The '±0.1 error at N=1,024' claim is a loose generalization, and the reference to 'the book's example' assumes context not in the exercise; neither is harmful."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.048036800000000004,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0494568,
+    "notes": ""
+   }
+  },
+  {
+   "id": "model-009",
+   "kind": "apply",
+   "new": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0740549,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.055238800000000005,
+    "notes": "Suggesting Beta(2,2) as the distribution keeps the estimate centered on 0.5, which could quietly preserve the anchor it aims to fix."
+   },
+   "without": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0464748,
+    "notes": ""
+   }
+  }
+ ]
+}

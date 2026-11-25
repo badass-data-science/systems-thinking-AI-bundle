@@ -1,0 +1,16 @@
+mining success -> on-spec ore delivered: + steelblue
+on-spec ore delivered -> assembly success: + steelblue
+assembly success -> steady orders for mining: + steelblue
+steady orders for mining -> mining success: + steelblue
+mining success -> shipment rushing: - steelblue
+shipment rushing -> mining success: + steelblue
+shipment rushing -> on-spec ore delivered: - delay steelblue
+assembly success -> extra inspection: - steelblue
+extra inspection -> assembly success: + steelblue
+extra inspection -> held shipments: + steelblue
+held shipments -> mining success: - steelblue
+
+loop: mining success, on-spec ore delivered, assembly success, steady orders for mining
+loop: mining success, shipment rushing
+loop: assembly success, extra inspection
+loop: shipment rushing, on-spec ore delivered, assembly success, extra inspection, held shipments, mining success

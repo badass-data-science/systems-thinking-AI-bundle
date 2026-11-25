@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It splits the stock into referred and other stocks, each with its own sign-up inflow and cancellation outflow, which the rubric accepts."
+  },
+  {
+   "score": 1,
+   "why": "It defines referral_share = active_referred / active_total and logs it each step."
+  },
+  {
+   "score": 1,
+   "why": "It gives each group its own churn rate, and the split stocks keep total cancellations consistent by construction."
+  },
+  {
+   "score": 1,
+   "why": "It says to verify the churn gap against data (a tenure/cohort artifact check) before baking it in, and notes the share can rise with a constant sign-up mix because referred customers accumulate."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The share is computed from the two stocks; only the sign-up mix is a parameter."
+  }
+ ],
+ "notes": "The check that with referral_fraction at 0 or 1 'one stock should stay at zero or at its starting value' is wrong: a stock with no inflow drains through churn rather than holding its starting value.",
+ "id": "held-014",
+ "cond": "without",
+ "cost": 0.034128000000000006,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

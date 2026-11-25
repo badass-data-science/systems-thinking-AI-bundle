@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gives N(D+2)=14,336 and N(2D+2)=26,624 runs with serial times of about 149 and 277 days."
+  },
+  {
+   "score": 1,
+   "why": "Recommends Morris screening first, fixing unimportant parameters, then a smaller Sobol on the 3–6 that survive."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-008",
+ "cond": "without",
+ "cost": 0.022412,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

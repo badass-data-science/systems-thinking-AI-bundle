@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer separates one inherent limit (Q2), a self-created limit that could have been built but wasn't (Q3), and several limits (Q4)."
+  },
+  {
+   "score": 1,
+   "why": "Q5 asks whether several actors draw on a shared, finite resource with private benefit and shared cost."
+  },
+  {
+   "score": 1,
+   "why": "Q3 describes slipping performance being read as soft demand, which leads to cutting investment further in a self-fulfilling loop."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives relaxing the limit, investing ahead and resetting the standard, and rules, quotas or pricing for the commons, but for Attractiveness it says to fix the binding limit first rather than choose which unattractiveness to accept."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The answer treats the Attractiveness Principle as limits shifting one after another, closer to theory of constraints, rather than several simultaneous limits that force a deliberate trade-off.",
+ "id": "disc-002",
+ "cond": "without",
+ "cost": 0.036864,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

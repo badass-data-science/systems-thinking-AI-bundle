@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the matched-and-raised bidding as a prisoner's dilemma that escalates steeply while every town gives up revenue and firms take the surplus."
+  },
+  {
+   "score": 1,
+   "why": "Says each town's moves are rational for that town, that 'how do we win the next one' is the wrong question, and that the town can't stop the race alone."
+  },
+  {
+   "score": 1,
+   "why": "Proposes a regional compact with shared caps, regional revenue sharing, state incentive limits with mandatory disclosure, and competing on sites, permitting, workforce and access."
+  },
+  {
+   "score": 1,
+   "why": "Recommends a net-present-value test for every deal that counts abated revenue, school district impact and service costs, and treats walking away as a good outcome."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly warns against outbidding the neighbors."
+  },
+  {
+   "committed": false,
+   "why": "Its own ceiling is a deal-quality test, and it ties ending the arms race to a regional or state cap rather than a unilateral one."
+  }
+ ],
+ "notes": "",
+ "id": "held-019",
+ "cond": "without",
+ "cost": 0.035088,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

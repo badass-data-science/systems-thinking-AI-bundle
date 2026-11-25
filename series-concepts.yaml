@@ -1,0 +1,62 @@
+# Series-level concepts: the shared nodes that let one book's bundle link into another's.
+# Each book's cards point here with a `series:` field. This list is provisional: the
+# Systems Thinking pilot proposed it, and the other books' bundles should add to it
+# rather than duplicate it. Keep entries domain-neutral.
+
+- id: feedback
+  title: Feedback
+  summary: A process whose output, directly or through a chain of effects, changes its own input.
+- id: reinforcing-dynamics
+  title: Reinforcing dynamics
+  summary: Change that compounds in whichever direction it is already running (growth spirals, arms races, runaway trends).
+- id: balancing-dynamics
+  title: Balancing dynamics
+  summary: Change that pushes a state back toward a reference point (control, correction, regulation).
+- id: delay
+  title: Delay
+  summary: A lag between a cause and its effect, or between an effect and anyone finding out about it.
+- id: escalation
+  title: Escalation
+  summary: Two or more parties each responding to the other's relative gain, ratcheting up together.
+- id: unintended-consequences
+  title: Unintended consequences
+  summary: Effects of an action that were not its purpose, often delayed and often feeding back on the original problem.
+- id: boundary
+  title: Boundary and scope
+  summary: The choice of what a model, plan or analysis treats as inside (explained) versus outside (taken as given).
+- id: proxy-metric
+  title: Proxy metrics and their gaming
+  summary: A measurable stand-in for a goal, and what happens when optimizing the stand-in diverges from the goal.
+- id: model-validation
+  title: Model validation
+  summary: Checking that a model's mechanisms are real and its outputs trustworthy before acting on it.
+- id: uncertainty
+  title: Uncertainty and sensitivity
+  summary: How much a conclusion depends on inputs that are guessed, noisy or unknown.
+- id: decision-domain
+  title: Decision domain
+  summary: Classifying a decision by how cause and effect relate in it, to choose a fitting way of deciding.
+- id: ai-delegation
+  title: Delegating to AI agents
+  summary: Deciding what an AI agent may do on its own, what needs checking, and how trust in it should be earned and audited.
+- id: competing-for-shared-resources
+  title: Competing for shared resources
+  summary: Several actors drawing on one limited pool, where each actor's gain is partly another's loss.
+- id: limits-and-capacity
+  title: Limits and capacity
+  summary: Growth or performance running into a constraint, and the choice between pushing harder and relieving the constraint.
+- id: stakeholder-worldviews
+  title: Stakeholder worldviews
+  summary: The differing beliefs about what a problem is that determine whether anyone will act on an analysis.
+- id: persuasion
+  title: Communicating an analysis
+  summary: Getting people to believe and act on a correct model or plan.
+- id: knowledge-representation
+  title: Knowledge representation
+  summary: Storing facts and relationships in a structured, queryable form rather than in prose or conversation.
+- id: intervention-leverage
+  title: Where to intervene
+  summary: Which kinds of change to a system move its behavior most, and how hard each is to make.
+- id: cognitive-bias
+  title: Cognitive bias in analysis
+  summary: Systematic errors of judgment that distort how analysts build models and read evidence.

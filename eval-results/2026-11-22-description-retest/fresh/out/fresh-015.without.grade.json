@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It states end = start + 30 − 25 − 5% × list and applies the 5% to the start-of-week list."
+  },
+  {
+   "score": 1,
+   "why": "It gives 119, 118.1, 117.2, 116.3 and identifies the equilibrium at 100, where 5% × 100 = 5 closes the gap."
+  },
+  {
+   "score": 1,
+   "why": "It says referrals exceed patients seen by 5 a week, so capacity alone would grow the list, and attrition is the only thing pulling it down."
+  },
+  {
+   "score": 1,
+   "why": "It says the decline comes from dropouts, not catching up, and that about 5 to 6 people a week leave untreated."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says the decline is not the clinic catching up."
+  }
+ ],
+ "notes": "The headline 'isn't really shrinking' is loose wording, since the list does shrink slowly toward 100, but the body makes this clear.",
+ "id": "fresh-015",
+ "cond": "without",
+ "cost": 0.034104,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

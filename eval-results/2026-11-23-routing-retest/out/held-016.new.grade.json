@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Covers the two-to-three-year construction lag and notes that most units haven't arrived, but never says rent figures also lag because they reflect leases signed months earlier."
+  },
+  {
+   "score": 1,
+   "why": "Warns that reacting harder to a structurally late signal causes overcorrection and criticizes bundling, noting the suburban rezoning has the same delay."
+  },
+  {
+   "score": 1,
+   "why": "Recommends tracking permits, starts and completions, estimates when units arrive, and sets a review checkpoint with completion thresholds instead of repealing."
+  },
+  {
+   "score": 1,
+   "why": "Recommends sequencing changes and a modest time-limited bridge, and points to the regional trend and financing costs as outside influences."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against repeal."
+  }
+ ],
+ "notes": "",
+ "id": "held-016",
+ "cond": "new",
+ "cost": 0.03734,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

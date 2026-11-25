@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names both the reporting lag and the delivery lag in an order-correction loop and says this delay alone makes it overshoot and undershoot."
+  },
+  {
+   "score": 1,
+   "why": "Says the pattern occurs regardless of who runs the process and that a new buyer would inherit the same cycle."
+  },
+  {
+   "score": 1,
+   "why": "Explains that doubling on a late shortage signal arrives after the need has passed and makes the oscillation stronger."
+  },
+  {
+   "score": 1,
+   "why": "Recommends live dispensing data and more frequent review to cut delays, and offers to test the current versus proposed policy against past data before acting."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Advises against replacing the buyer and suggests checking their decisions against the data first."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly rejects the order-double rule as amplifying swings."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-003",
+ "cond": "without",
+ "cost": 0.031188,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "All nodes are quantities where higher means more, complaints are captured as falling review sentiment, and every link carries a sign."
+  },
+  {
+   "score": 1,
+   "why": "It traces R1 with zero minuses and B1/B2 with one minus each, and labels them by the count."
+  },
+  {
+   "score": 1,
+   "why": "Delays are marked on the review and rating links, and it explains the balancing loops took over once demand exceeded fixed seats and kitchen capacity, a limits-to-growth shape in substance."
+  },
+  {
+   "score": 0.5,
+   "why": "It reads the loops aloud as sentences and asks the owner to check them against the shop, but never suggests checking with staff or regulars."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The ASCII diagram is muddled: it appears to draw a negative arrow from Weekend wait toward Food quality, which contradicts the links table.",
+ "id": "fresh-006",
+ "cond": "old",
+ "cost": 0.040208,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

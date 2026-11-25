@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States that six free parameters can bend a model to fit one curve and that fit doesn't show correct structure, since different structures can match history and diverge."
+  },
+  {
+   "score": 1,
+   "why": "Has each link reviewed by someone who works where it lives, ideally not a model builder, and records links that exist only to improve fit."
+  },
+  {
+   "score": 1,
+   "why": "Runs swing tests and Sobol analysis on the tuned parameters against the reorg decision margin, and writes down beforehand what would prove the model wrong."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-005",
+ "cond": "new",
+ "cost": 0.01942,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

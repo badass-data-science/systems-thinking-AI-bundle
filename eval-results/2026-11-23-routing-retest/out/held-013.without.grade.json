@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It contrasts S1 0.05 with ST 0.44, attributes the ~0.39 gap to interaction probably with churn, suggests S2 to confirm, and says not to fix ad response, though it doesn't cite churn's matching gap."
+  },
+  {
+   "score": 0.5,
+   "why": "It calls churn the clear top driver and price sensitivity the only fixable input, but never says to measure churn first and suggests ad response information may be worth the most."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes S1 sums to ~0.60 so ~40% is interaction, but doesn't say a one-at-a-time swing near the guesses would miss it."
+  },
+  {
+   "score": 1,
+   "why": "It recommends analysing against the $2M threshold (P(revenue > $2M), indicator Sobol), explains that variance differs from decision risk, and says to check the bootstrap confidence intervals."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects fixing ad response because ST, not S1, is the relevant test."
+  }
+ ],
+ "notes": "The sentence 'little effect at low churn, but a large one when churn is high or low' is self-contradictory and muddles the interaction explanation.",
+ "id": "held-013",
+ "cond": "without",
+ "cost": 0.037852000000000004,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

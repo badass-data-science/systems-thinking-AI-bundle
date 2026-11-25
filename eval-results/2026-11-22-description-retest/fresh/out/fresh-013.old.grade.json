@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It maps each theory to its structure: a fixed limit, underinvestment with flat sales read as proof, several simultaneous limits, and a shared commons of town tolerance."
+  },
+  {
+   "score": 1,
+   "why": "It names separating evidence: stockout logs and lost sales, the history of the no-demand decisions, which peak limit binds first, and whether the other breweries are also flat."
+  },
+  {
+   "score": 1,
+   "why": "It ties a different remedy to each theory (plan around, test capacity cheaply, sequence the limits, agree joint strip rules) and says several are likely operating together."
+  },
+  {
+   "score": 1,
+   "why": "Its recommendations target capacity, peak constraints and a collective noise agreement, not marketing."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It never suggests more marketing or promotions."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-013",
+ "cond": "old",
+ "cost": 0.031552,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

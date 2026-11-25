@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says to put numbers on it now as ranges, and argues that writing down the leads' unstated numbers will settle a deadlock that debate won't."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes each lead likely holds a different unstated number, but never has each lead write their own equations and compare them before running."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives a strong sensitivity test and collects data only on the parameters the decision flips on, but never steps the model forward by hand."
+  },
+  {
+   "score": 0,
+   "why": "It has no guard against anchoring: no independent estimates and no warning against the first-draft guess becoming the default."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects waiting and quantifies now with ranges."
+  }
+ ],
+ "notes": "The answer supplies its own default ranges (5–30% deflection, 2–4 month ramp), which risks anchoring both leads on those numbers.",
+ "id": "fresh-019",
+ "cond": "old",
+ "cost": 0.030384,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

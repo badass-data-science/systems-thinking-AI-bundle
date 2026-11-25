@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Puts sourced dependency triples in a knowledge graph that the assistant queries and reports from."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly covers reproducible, traceable and shared answers in the 'What it buys' section."
+  },
+  {
+   "score": 1,
+   "why": "States that unchecked claims make people check less, and that the graph makes claims cheap to check without making the assistant right."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-010",
+ "cond": "new",
+ "cost": 0.018836,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

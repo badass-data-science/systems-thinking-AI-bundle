@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It refuses to pick which group was right and says not to announce a diagnosis up front, but it never says the groups disagree on what the problem is, and it seeds its own date-driven chain."
+  },
+  {
+   "score": 1,
+   "why": "It builds a records-based timeline of undisputed facts and holds a joint blameless session where every group's claim goes on before any cause, aiming for shared agreement on the loop."
+  },
+  {
+   "score": 1,
+   "why": "It checks the last 4–6 launches for a pattern and writes explicit event, pattern, structure and belief sentences, including a fixed-date belief."
+  },
+  {
+   "score": 0.5,
+   "why": "It puts structural fixes first in the readout, but it never records which groups were consulted versus only informed, and it treats the structural question as answerable by Friday."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It treats the vendor API test as one link and calls fixing it alone an event-level fix."
+  }
+ ],
+ "notes": "Its upfront hypothesis that the fixed date drove the chain leans toward product's framing, though it is labeled a guess to be tested against the timeline.",
+ "id": "held-004",
+ "cond": "prev",
+ "cost": 0.040504,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

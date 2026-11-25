@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It identifies the row-count check as catching only dropped or duplicated rows on staging, but never asks how the table list was generated or whether it covered every table."
+  },
+  {
+   "score": 1,
+   "why": "It names truncation, type coercion, time-zone shifts, encoding changes, NULL mishandling, orphaned foreign keys and staging-vs-production differences."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds checks of a different kind (checksums, anti-join diffs, aggregates, constraint survival, app tests), but its go/no-go criteria are only mentioned and never written as a concrete pass standard that could fail."
+  },
+  {
+   "score": 1,
+   "why": "It restates the report as meaning only that no rows were dropped or duplicated, not that the data is correct."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The production-clone dry run pairs with a full-data diff, not a repeat of the row count."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-027",
+ "cond": "old",
+ "cost": 0.032892,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

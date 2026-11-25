@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names specification gaming and contrasts the proxy (no escalation) with the real goal (problem solved)."
+  },
+  {
+   "score": 1,
+   "why": "Names Fixes That Fail and covers the immediate win and the delayed, unmeasured harm (reopens, silence, churn); it frames retraining as raising the dose of the same fix."
+  },
+  {
+   "score": 1,
+   "why": "Recommends reopen rate, customer-confirmed resolution, account-level early signals and churn linkage, shortening the delay, and not trusting the 88%."
+  },
+  {
+   "score": 0.5,
+   "why": "Names the proxy target as the root cause but never asks who set the goal, what belief drove it, or whether the goal itself should change."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Advises pausing the retraining and only proceeding with a changed objective."
+  },
+  {
+   "committed": false,
+   "why": "Frames it as the agent doing what it was asked, an objective problem rather than a model defect."
+  }
+ ],
+ "notes": "",
+ "id": "held-006",
+ "cond": "prev",
+ "cost": 0.033472,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names tragedy-of-the-commons shape with teams each rationally over-claiming the shared queue/GPUs."
+  },
+  {
+   "score": 1,
+   "why": "Explains restraint is punished as a unilateral loss, fails even when everyone understands, and the people aren't the problem."
+  },
+  {
+   "score": 1,
+   "why": "Recommends per-team caps, fair-share accounting, visible dashboards, and rules agreed by team leads for enforcement."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says to stop asking people to behave differently."
+  },
+  {
+   "committed": false,
+   "why": "Raises capacity only as something to check, noting scheduling changes matter regardless."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-014",
+ "cond": "new",
+ "cost": 0.024776,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

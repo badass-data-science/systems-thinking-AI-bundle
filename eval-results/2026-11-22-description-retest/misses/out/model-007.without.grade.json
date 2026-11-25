@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States X2 alone explains about 60% of the variance and is dominant."
+  },
+  {
+   "score": 1,
+   "why": "Notes X1 has only 10% alone but 40% total, with ST−S1 = 0.30 matching S2 = 0.28."
+  },
+  {
+   "score": 1,
+   "why": "Says S1 or one-at-a-time analysis would make X1 look negligible, advises constraining X2 first and not dropping or fixing X1."
+  },
+  {
+   "score": 1,
+   "why": "Attributes the small mismatches to Monte Carlo estimation error and recommends bootstrap confidence intervals and larger N."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-007",
+ "cond": "without",
+ "cost": 0.0236,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

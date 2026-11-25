@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Names specification gaming and describes the loop of a quick win, a delayed collapse in retention and harder optimization, but labels it Escalation/Shifting the Burden rather than Fixes That Fail and never says the damage eventually drags clicks down too."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends measuring long-horizon retention and subscriptions, even as the primary objective, but never frames proxy gains as a temporary bridge to that real measure."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The 'Escalation' archetype is misapplied: it describes two parties outdoing each other, not one team intensifying its own fix.",
+ "id": "ai-002",
+ "cond": "without",
+ "cost": 0.027112,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

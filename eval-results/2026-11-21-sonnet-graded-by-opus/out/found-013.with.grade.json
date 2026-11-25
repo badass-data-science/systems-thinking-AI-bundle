@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says tightening fits a well-behaved balancing loop with a stable, real goal and a plan-vs-forecast gap, which is in substance a defined setpoint and error signal."
+  },
+  {
+   "score": 1,
+   "why": "The answer names structural causes (delay-driven oscillation, drifting goals, fixes that backfire, incentive and goal problems) and says tightening won't fix them and can make them worse."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-013",
+ "cond": "with",
+ "cost": 0.02412,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

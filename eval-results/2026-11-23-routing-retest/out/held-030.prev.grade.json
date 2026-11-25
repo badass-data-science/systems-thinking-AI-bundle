@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the problem lies in how departments interact, shows how each local optimization (batching, full scanners, block discharge) creates downstream queues, and notes that every department meets its target while ED length of stay worsens."
+  },
+  {
+   "score": 0.5,
+   "why": "It explains that a per-department audit will find everyone on target and miss the interactions, but it never says that fixing one part in isolation may just move the queue elsewhere."
+  },
+  {
+   "score": 1,
+   "why": "It recommends mapping the patient journey across departments, breaking length of stay down by stage, and asking who pays for each department's target."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a cross-department flow measure (ED length of stay, boarding hours, bed request to bed) with a named owner, and explicitly accepts some loss of local utilization."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects the hunt for one bad department; it names ward discharge as the likely biggest lever, but as a hypothesis to test and as an interaction effect, not as blame."
+  }
+ ],
+ "notes": "",
+ "id": "held-030",
+ "cond": "prev",
+ "cost": 0.034956,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

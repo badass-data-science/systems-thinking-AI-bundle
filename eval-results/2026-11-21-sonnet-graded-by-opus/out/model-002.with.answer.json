@@ -1,0 +1,9 @@
+{
+ "id": "model-002",
+ "cond": "with",
+ "answer": "**Inflow:** min(120, 100) = 100/week. The dock is binding, and 20 units/week of supplier output go unused.\n\n**Outflow:** min(stock, 90). Stock is always above 90 here, so the pickers are binding at 90/week.\n\n| Week | Start | In | Out | End |\n|---|---|---|---|---|\n| 1 | 200 | 100 | 90 | 210 |\n| 2 | 210 | 100 | 90 | 220 |\n| 3 | 220 | 100 | 90 | 230 |\n| 4 | 230 | 100 | 90 | 240 |\n\nThe result is the same whether deliveries land before or after shipping, because stock is never close to 90.\n\n**What's binding:**\n- **Dock capacity (100)** limits inflow. The supplier's 120 is slack.\n- **Picker capacity (90)** limits outflow. Stock on hand is slack.\n- **Net:** stock grows by 10 units/week, so inventory climbs without bound.\n\n**Implications:**\n- Adding supplier output does nothing, since the dock already caps inflow below it.\n- Raising picker capacity to 100 or more would stop the stock growth. At that point stock would be the only constraint on outflow, and the system would balance at dock capacity.\n- Raising dock capacity would make things worse, because it would add inflow to a system that is already accumulating.",
+ "cost": 0.0208908,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

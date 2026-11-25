@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It names the vacancies→overtime→burnout→departures reinforcing loop but never frames mandatory overtime as a quick fix that backfires (Fixes That Fail)."
+  },
+  {
+   "score": 1,
+   "why": "It places (a) as a parameter on the departure link, (b) as a rule on the overtime→burnout link, and (c) as the goal, explaining how answer-time-only evaluation makes overtime look necessary."
+  },
+  {
+   "score": 0.5,
+   "why": "Its table rates power and reach separately and notes (c) needs outside approval while (a) is easy but weak, but it never suggests testing the options in a model."
+  },
+  {
+   "score": 1,
+   "why": "It chooses clearly, labels (a) a stopgap that buys time for (b), frames (c) as what protects (b), and flags the answer-time dip and training gap as short-term costs."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It keeps the bonus as a targeted overtime premium and leads with the cap rather than dismissing either for being low-leverage."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-020",
+ "cond": "old",
+ "cost": 0.042536000000000004,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

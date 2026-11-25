@@ -1,0 +1,12 @@
+{
+ "id": "model-007",
+ "cond": "new",
+ "answer": "**Summary:** Parameter 2 dominates, parameter 1 matters mostly through its interaction with parameter 2, and the two can't be tuned separately.\n\n**Consistency check.** The numbers close for a two-parameter model:\n- S1 + S1 + S2 = 0.10 + 0.60 + 0.28 = 0.98, which is about 1. Almost all the output variance is accounted for, so there's no sign of third-order effects or a bad estimate.\n- ST₁ ≈ S1 + S2 = 0.38 (reported 0.40) and ST₂ ≈ 0.60 + 0.28 = 0.88 (reported 0.88). These match within the usual sampling error of about ±0.1.\n\n**Parameter 2**\n- It alone explains about 60% of the output variance (S1 = 0.60).\n- It is involved in 88% of the variance in total (ST = 0.88).\n- Measuring it precisely would remove roughly 60% of your uncertainty. This is where to spend your effort.\n\n**Parameter 1**\n- Alone it explains only 10% of the variance. A one-at-a-time swing around your guessed values would make it look nearly irrelevant.\n- Its total index is 0.40, so 30 points of its influence appear only in combination with parameter 2.\n- It matters mainly when parameter 2 is off. It can look harmless at one value of parameter 2 and decide the outcome at another.\n\n**Interaction**\n- S2 = 0.28, so about 28% of the variance comes from the two acting together, beyond what either does alone.\n- The model is clearly non-additive. You can't treat the effects as \"a bit from A plus a bit from B\".\n\n**What to do**\n1. Pin down parameter 2 first, since it carries the most variance.\n2. Don't fix parameter 1 at a guessed value and drop it. Its 0.40 ST says that would hide a real interaction.\n3. When presenting results, report the range of outcomes across both parameters, not a single swing around the guesses.\n4. Treat the indices as estimates. Check that the base sample is large enough (for example N = 1,024 or more), because differences of about 0.1 are within noise.\n5. Remember that Sobol indices depend on the ranges you sampled. If you widen or narrow either parameter's bounds, the shares change, so say which bounds these results assume.",
+ "cost": 0.0455573,
+ "turns": 4,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Read:new/.claude/skills/systems-thinking/concepts/sobol-analysis.md"
+ ],
+ "skill_loaded": true
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It describes many agents reacting to each other, with cascades, colliding preferences and convergence on the same slots, but never asks who coordinates or names the absence of a coordinator."
+  },
+  {
+   "score": 1,
+   "why": "It says the aggregate model will miss interaction effects and recommends an agent-based simulation plus a small, measured pilot."
+  },
+  {
+   "score": 0.5,
+   "why": "It proposes tracking combined metrics such as reschedule rate and negotiation rounds, but recommends no hard per-agent limits like reschedule caps, rate limits or unmovable meetings."
+  },
+  {
+   "score": 0,
+   "why": "It never identifies the centrally designed defaults and limits as the place where IT has leverage."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects the aggregate model because independent decision-makers interact."
+  }
+ ],
+ "notes": "",
+ "id": "held-028",
+ "cond": "without",
+ "cost": 0.03268,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

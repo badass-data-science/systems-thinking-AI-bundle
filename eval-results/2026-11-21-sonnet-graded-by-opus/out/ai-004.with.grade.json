@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It identifies the problem as complex and says the agent answered in analysis-then-recommendation shape, a category error, but never says this is the costliest misclassification."
+  },
+  {
+   "score": 1,
+   "why": "It says outright that fluency and confidence are data about the agent, not evidence the strategy is right."
+  },
+  {
+   "score": 1,
+   "why": "It tells the executive to ask the agent for small, reversible probes instead of a plan, with tripwires set in advance for monitoring."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-004",
+ "cond": "with",
+ "cost": 0.024824,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

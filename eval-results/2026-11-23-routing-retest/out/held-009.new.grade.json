@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says the groups are answering different questions, that a 'settling' model will be attacked through its weakest assumptions, and that blame is the wrong target."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends drawing out each group's views and lists the water-balance terms, but never asks for explicit agreement on the boundary, never treats rainfall as an outside input, and never records who was consulted versus only informed."
+  },
+  {
+   "score": 1,
+   "why": "Names the commons structure (shared, finite, unpriced stock where restraint just hands water to others) and points to collective rules like metering and allocation instead of blame."
+  },
+  {
+   "score": 1,
+   "why": "Keeps the model as a water-balance and scenario tool built live with stakeholders, which in substance covers testing hypotheses such as drought."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against delivering a blame verdict and recommends building the model with stakeholders."
+  }
+ ],
+ "notes": "",
+ "id": "held-009",
+ "cond": "new",
+ "cost": 0.0397,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

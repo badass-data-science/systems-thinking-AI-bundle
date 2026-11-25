@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It computes 0.99 × 1.03 ≈ 1.0197 per round, about 2% per hour with no equilibrium and no upper limit."
+  },
+  {
+   "score": 1,
+   "why": "It names the escalation archetype and says the joint behavior emerges from the interaction and belongs to neither agent, which is the complex-domain point in substance."
+  },
+  {
+   "score": 1,
+   "why": "It recommends hard floors and ceilings enforced in deterministic code the AI can't reason past, plus monitoring of the joint price ratio and trend."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-006",
+ "cond": "with",
+ "cost": 0.029171999999999997,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

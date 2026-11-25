@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It splits the two questions: 'why fade' needs a sketch of the causal structure, and 'one more semester' needs a time-based stock-and-flow model of skill built and decaying."
+  },
+  {
+   "score": 1,
+   "why": "It says a graph stores facts and answers lookups but can't find causes or answer how things change over time."
+  },
+  {
+   "score": 0.5,
+   "why": "It says a graph could be added later if lookups become the bottleneck, and notes it is reproducible. It omits the other triggers (scale, frequent change, joining district data) and doesn't frame the graph as a data source alongside the models."
+  },
+  {
+   "score": 1,
+   "why": "It recommends aligning with staff, tutors and school partners, sketching causes on paper, then building a simple model before any graph tooling."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says the graph cannot answer the causal question."
+  }
+ ],
+ "notes": "",
+ "id": "held-023",
+ "cond": "new",
+ "cost": 0.034895999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

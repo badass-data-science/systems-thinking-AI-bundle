@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names feedback delay from both the 10-minute detection lag and the 8-minute boot lag as the cause of the overshoot-undershoot cycle in a self-correcting loop."
+  },
+  {
+   "score": 1,
+   "why": "It says bigger batches under the same delayed feedback raise gain and enlarge both the overshoot and the crash."
+  },
+  {
+   "score": 1,
+   "why": "It recommends cutting boot time with warm pools, counting pending capacity with proportional sizing, and widening the band via hysteresis, and warns a 2-minute window adds jumpiness unless pending capacity is counted."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The claim that a decision reflects load from about 18 minutes ago is slightly off: the decision uses a roughly 10-minute window, and the 18 minutes is the lag from onset to capacity arriving.",
+ "id": "found-008",
+ "cond": "without",
+ "cost": 0.029684,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

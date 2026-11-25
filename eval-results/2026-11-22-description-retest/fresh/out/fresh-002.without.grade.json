@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly labels new reports as inflow, open-bug count as stock, and closures as outflow."
+  },
+  {
+   "score": 1,
+   "why": "Shows with a numeric example that the backlog keeps growing while inflow exceeds closures even after inflow halves."
+  },
+  {
+   "score": 1,
+   "why": "Raises whether engineers were moved from fixing to quality work, lowering the closure rate, and treats that as a separate problem to investigate."
+  },
+  {
+   "score": 1,
+   "why": "Judges the push by the inflow drop and says the backlog turns around once net growth reaches zero."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "States outright that a halved inflow can still leave the stock rising."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-002",
+ "cond": "without",
+ "cost": 0.020867999999999998,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

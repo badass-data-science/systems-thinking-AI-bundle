@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names shifting the burden and contrasts the symptomatic emergency response with the fundamental tree and cool-roof fix. It ties the erosion to the crew falling from 12 to 3 and to lost execution capacity."
+  },
+  {
+   "score": 1,
+   "why": "It describes a self-reinforcing capacity loss ('couldn't spend it at the old rate', which makes the cuts look justified) and the 10–20 year lag before trees provide meaningful shade."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the emergency response funded through a dedicated reserve, bars reprogramming of prevention funds, and calls for deliberately rebuilding forestry staffing. It treats the centers as the symptomatic side of one portfolio."
+  },
+  {
+   "score": 0.5,
+   "why": "It tracks canopy cover and prevention spending against emergency spending, but not crew size or planting rate as capability measures."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It correctly uses shifting the burden and never claims cooling centers worsen heat."
+  },
+  {
+   "committed": false,
+   "why": "It does not propose cutting the cooling centers."
+  }
+ ],
+ "notes": "",
+ "id": "held-027",
+ "cond": "without",
+ "cost": 0.042864,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

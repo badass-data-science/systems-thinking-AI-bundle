@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the shifting-the-burden loop where the tool erodes staff skill, and says the outage revealed a weakness that already existed."
+  },
+  {
+   "score": 1,
+   "why": "Says a second vendor addresses concentration but keeps the loop running and spreads the dependency across two tools."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends periodic manual reconciliations compared against the tool and pairing new staff, but does not propose tracking whether people can still do the work."
+  },
+  {
+   "score": 1,
+   "why": "Keeps the tool and explicitly says to put the dependency on the risk register by name."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Never suggests dropping the tool."
+  },
+  {
+   "committed": false,
+   "why": "Calls the backup vendor the smaller part and wrong if taken alone."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-023",
+ "cond": "old",
+ "cost": 0.030272,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

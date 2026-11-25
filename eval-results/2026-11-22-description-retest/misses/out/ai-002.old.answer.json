@@ -1,0 +1,9 @@
+{
+ "id": "ai-002",
+ "cond": "old",
+ "answer": "This is **Goodhart's Law** (a proxy metric stops tracking the goal once you optimize it), playing out inside a **Fixes that Fail** archetype from systems thinking.\n\n**Why it fits**\n- **Proxy vs. goal:** CTR stands in for \"users find this valuable.\" Optimizing the proxy directly pushes the model toward clickbait, sensational or repetitive content. Those get clicks but erode trust and satisfaction, so the proxy and the goal diverge.\n- **Delay:** Clicks respond immediately, but retention and subscriptions respond months later. The team sees success on the fast signal while the slow one deteriorates.\n- **Reinforcing the wrong response:** When retention drops, the team reads it as \"not enough engagement\" and pushes CTR harder. That is the fix producing the problem it is meant to cure. The balancing loop (fix the symptom) feeds a reinforcing loop that makes the symptom worse (more clickbait leads to less trust, fewer returns, and more pressure on CTR).\n\n**Related names**\n- **Shifting the Burden:** the symptomatic fix (CTR) displaces the fundamental one (content quality and user value).\n- **Metric fixation / the surrogate endpoint problem:** the same pattern in medicine and management.\n- **Engagement trap / feedback loop in recommender systems:** the model's outputs shape the user population and behavior that it is later trained on.\n\n**Ways out**\n- Measure long-horizon outcomes (7/30/90-day return rate, subscription, satisfaction surveys) alongside CTR, and treat CTR as a guardrail rather than the objective.\n- Optimize for a longer-horizon target, using holdout groups or long-term experiments to estimate the effect on retention.\n- Review whether the metric still predicts the goal. Proxies need periodic revalidation.\n\nIf you want, I can sketch this as a causal loop diagram.",
+ "cost": 0.0229788,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

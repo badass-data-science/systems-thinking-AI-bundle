@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly says five different, correctly fixed causes with a flat rate is evidence of something unchanged stressing the system, not bad luck."
+  },
+  {
+   "score": 1,
+   "why": "Lines up events, names the pattern, asks for the structure producing it and the mental model sustaining it, one sentence per band."
+  },
+  {
+   "score": 1,
+   "why": "Names unchanged interconnections such as delivery pressure, narrow-fix habits, unowned safeguards and squeezed fix work that stress whichever component is weakest."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says not to add a sixth point fix and proposes structure-level interventions instead."
+  }
+ ],
+ "notes": "",
+ "id": "found-001",
+ "cond": "with",
+ "cost": 0.022868,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

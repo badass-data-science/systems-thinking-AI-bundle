@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Fixes That Fail and explains that each sign-off works short term while its side effect, bundling into bigger releases, makes incidents riskier and harder to diagnose, which in turn prompts more sign-offs."
+  },
+  {
+   "score": 0.5,
+   "why": "Traces the side-effect chain well but merges it with the quick fix into one reinforcing loop, never identifies the balancing loop, and doesn't mention the months-long delay."
+  },
+  {
+   "score": 0.5,
+   "why": "Calls the draft action item the third turn of the loop, but never asks what a fourth sign-off would do a few rounds later."
+  },
+  {
+   "score": 1,
+   "why": "Recommends small, frequent deploys, automated checks, feature flags and fast rollback, and tracking changes per deploy and time-to-identify-cause; it doesn't explicitly frame any extra review as a stopgap."
+  },
+  {
+   "score": 0.5,
+   "why": "Frames the write-up around the pattern across incidents and the structure, but never names the underlying belief that more approval means more safety."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against the fourth sign-off and allows only a risk-proportional review for migrations."
+  },
+  {
+   "committed": false,
+   "why": "Does not blame any individual engineer."
+  }
+ ],
+ "notes": "The claim that 'every link is positive, so it reinforces itself' is wrong for the quick-fix link, which reduces incidents and forms a balancing loop.",
+ "id": "held-002",
+ "cond": "prev",
+ "cost": 0.042668000000000005,
+ "score": 0.7,
+ "pitfalls_committed": 0
+}

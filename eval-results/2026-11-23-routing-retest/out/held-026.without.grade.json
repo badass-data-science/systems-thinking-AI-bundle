@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It signs the loop (two opposite links and one same link, merging requests-to-overload-to-quality into one negative step), concludes it is reinforcing, and says the response itself is what overloads the labelers."
+  },
+  {
+   "score": 1,
+   "why": "It identifies the lead's balancing loop (more labeled data raises accuracy if labels are good) and says which loop dominates depends on labeling capacity."
+  },
+  {
+   "score": 0,
+   "why": "It never says the reinforcing loop can run upward with spare capacity (higher accuracy, fewer requests, better labels); it only frames the loop as amplifying drops."
+  },
+  {
+   "score": 1,
+   "why": "It recommends capping intake at capacity, prioritizing informative examples via active learning, and tracking label quality with gold sets and audits."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says that 'we always respond to drops' does not show self-correction, because the response feeds the problem."
+  }
+ ],
+ "notes": "",
+ "id": "held-026",
+ "cond": "without",
+ "cost": 0.033364,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,10 @@
+
+heist success rate -> overtime pay: - steelblue
+overtime pay -> effort: + steelblue
+effort -> heist success rate: + steelblue
+overtime pay -> henchman burnout: + steelblue
+henchman burnout -> long-run mistake rate: + delay steelblue
+long-run mistake rate -> heist success rate: - steelblue
+
+loop: heist success rate, overtime pay, effort
+loop: heist success rate, overtime pay, henchman burnout, long-run mistake rate

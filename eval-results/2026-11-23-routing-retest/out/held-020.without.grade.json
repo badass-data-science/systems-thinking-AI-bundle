@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the reviewer checks against guidelines and can judge tone, structure and formatting but cannot see the current UI, so a stricter prompt only tightens what it already checks."
+  },
+  {
+   "score": 1,
+   "why": "It proposes tying articles to product areas, re-verifying them when a release touches those areas, and walking the steps in a staging build with an agent or script."
+  },
+  {
+   "score": 0.5,
+   "why": "It gates destructive articles to a human or a verified walkthrough, but never names the agent-to-agent-to-publish path with no human in it or recommends mapping who reviews what."
+  },
+  {
+   "score": 0.5,
+   "why": "It questions what the 98% means and proposes measuring it with seeded errors, but never restates it as 'nothing this reviewer can see is wrong.'"
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects the prompt tweak as the whole fix and treats it as an optional small extra."
+  }
+ ],
+ "notes": "",
+ "id": "held-020",
+ "cond": "without",
+ "cost": 0.032203999999999997,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

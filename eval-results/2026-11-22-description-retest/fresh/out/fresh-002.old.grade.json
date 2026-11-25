@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names open bugs as a stock with new reports as inflow and closures as outflow."
+  },
+  {
+   "score": 1,
+   "why": "States the count rises whenever inflow exceeds outflow however much inflow has fallen, with a numeric example."
+  },
+  {
+   "score": 1,
+   "why": "Asks whether the close rate fell because engineers moved to quality work and calls it a different problem."
+  },
+  {
+   "score": 1,
+   "why": "Says the right test is whether inflow fell and that the count turns around only once inflow drops below the close rate."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says halving inflow only slows growth and does not by itself make the stock fall."
+  }
+ ],
+ "notes": "Saying the open count 'lags behind' inflow is slightly loose, but the answer immediately gives the correct turnaround condition, so nothing is harmful.",
+ "id": "fresh-002",
+ "cond": "old",
+ "cost": 0.022416000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

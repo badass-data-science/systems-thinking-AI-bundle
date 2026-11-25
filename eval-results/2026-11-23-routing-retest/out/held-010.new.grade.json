@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It calls potholes a tame problem with an agreed definition that stays fixed, and contrasts homelessness, which has a disputed definition, keeps refilling, and whose count shifts in response to interventions."
+  },
+  {
+   "score": 1,
+   "why": "It treats the four explanations as interacting flows in one system, each partly true, and warns that a single-target program will just get argued over."
+  },
+  {
+   "score": 0.5,
+   "why": "It draws out the colleagues' competing views and reframes the magnet claim as a regional boundary question, but omits people experiencing homelessness and service providers, and only loosely frames options as compared after the fact."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the count but tracks it alongside flow measures, and warns against making the headline number the target."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It rejects the pothole framing for the problem's definition, keeps the mayor's discipline only for flow measures, and funds several flows instead of one cause."
+  }
+ ],
+ "notes": "",
+ "id": "held-010",
+ "cond": "new",
+ "cost": 0.034168,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

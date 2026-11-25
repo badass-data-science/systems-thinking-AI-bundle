@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Proposes a weekend-hours cap and a rework reserve as the parameter, rated low-to-mid power and high reach."
+  },
+  {
+   "score": 1,
+   "why": "Proposes a scope-before-hours rule with sign-off and net-velocity planning, rated mid power."
+  },
+  {
+   "score": 1,
+   "why": "Redefines release success as hitting the date at sustainable cost, rated high power and low reach."
+  },
+  {
+   "score": 1,
+   "why": "Rates power and reach in separate columns and labels the cap a stopgap that buys time for the scope rule."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-011",
+ "cond": "with",
+ "cost": 0.021904,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

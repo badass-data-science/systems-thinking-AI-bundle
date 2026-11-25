@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Places (1) and (3) behind gates, citing a single correct answer every time for (3) and high, irreversible stakes needing explicit approval for (1)."
+  },
+  {
+   "score": 1,
+   "why": "Says (2) and (4) suit agent judgment because they are fuzzy, reviewed and cheap to get wrong."
+  },
+  {
+   "score": 0.5,
+   "why": "Gives a reproducibility-style criterion (crisp, checkable rules that code applies exactly every time) but never says gates break the trust-and-scrutiny loop."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-005",
+ "cond": "without",
+ "cost": 0.018908,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

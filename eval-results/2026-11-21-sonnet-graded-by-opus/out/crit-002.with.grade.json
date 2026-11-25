@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says the label is a verdict that makes people argue with it rather than the substance, and that the framing blames the room."
+  },
+  {
+   "score": 1,
+   "why": "Opens with an undisputed event and adds one link at a time on a whiteboard, checking each against their experience."
+  },
+  {
+   "score": 1,
+   "why": "Waits for the room to state the pattern before naming it, and treats each objection as a link or boundary to fix or defend."
+  },
+  {
+   "score": 1,
+   "why": "Keeps blame out of nodes and links, and distinguishes the team being informed afterward from being consulted."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "crit-002",
+ "cond": "with",
+ "cost": 0.023008,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

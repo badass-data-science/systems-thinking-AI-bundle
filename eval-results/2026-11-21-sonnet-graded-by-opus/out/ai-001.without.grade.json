@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It notes that rising trust lowers scrutiny and detection, but never closes the loop back to trust or identifies it as reinforcing."
+  },
+  {
+   "score": 0.5,
+   "why": "It argues clearly that 'no errors reported' reflects reduced detection, but never treats trust as a slowly draining stock."
+  },
+  {
+   "score": 1,
+   "why": "It recommends random fixed sampling, risk-tiered gates on high-stakes clauses, citations to the source, seeded errors and re-escalation triggers."
+  },
+  {
+   "score": 0,
+   "why": "It never raises whether lawyers, especially juniors, are losing the skill of reading contracts."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It calls reduced review reasonable if accuracy is measured, and judges the tool neither untrustworthy nor proven safe."
+  }
+ ],
+ "notes": "",
+ "id": "ai-001",
+ "cond": "without",
+ "cost": 0.0356,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

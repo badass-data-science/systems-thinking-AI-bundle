@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says a diagram that looks authoritative and has plausible arrows isn't shown to be true, but never says a clean first draft deserves more suspicion."
+  },
+  {
+   "score": 1,
+   "why": "It says to run each link past CS, sales and product, ask whether they would defend it, and keep their corrections."
+  },
+  {
+   "score": 1,
+   "why": "It treats the archetype as a separate check from the polarity trace and gives the canonical definition: a fix whose own delayed side effect worsens the problem."
+  },
+  {
+   "score": 1,
+   "why": "It says the authoritative look and the AI vouching for its own trace are not evidence the diagram is right."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly questions the Fixes That Fail label and says to drop it if no specific fix and side effect can be found."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-007",
+ "cond": "new",
+ "cost": 0.031495999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

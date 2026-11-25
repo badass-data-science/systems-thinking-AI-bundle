@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names the limits-to-growth pattern and identifies the number of potential customers in the niche as the binding constraint."
+  },
+  {
+   "score": 1,
+   "why": "It says extra spend bought nothing and raised cost per customer because the market constraint pushes back, and frames the plateau as success, not breakage."
+  },
+  {
+   "score": 1,
+   "why": "It recommends expanding into adjacent segments, new products and new geographies, and resetting forecasts to plan around saturation."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It mentions ruling out a broken funnel only as a brief verification step; it does not go hunting for one."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly advises against doubling spend and recommends cutting it back."
+  }
+ ],
+ "notes": "",
+ "id": "arch-005",
+ "cond": "old",
+ "cost": 0.028164,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Computes 26,624 runs via N×(2D+2) and converts to about 277 days serial."
+  },
+  {
+   "score": 1,
+   "why": "Recommends Morris screening to rank parameters, then Sobol on the surviving few or on a surrogate."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The '±0.1 error at N=1,024' claim is a loose generalization, and the reference to 'the book's example' assumes context not in the exercise; neither is harmful.",
+ "id": "model-008",
+ "cond": "new",
+ "cost": 0.021963999999999997,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

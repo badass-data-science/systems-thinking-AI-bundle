@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It calls Hiring Rate a rate and suggests a Recruiters stock that drives hiring, but it skips the snapshot test, never confirms Employees passes, and concedes Hiring Rate 'can' be a stock."
+  },
+  {
+   "score": 1,
+   "why": "It says summing survey scores makes Morale grow meaninglessly, models Morale as a stock with its own change driven by workload, and uses the survey to calibrate it."
+  },
+  {
+   "score": 0.5,
+   "why": "It says fixed departures can't respond, should scale with headcount and Morale, and links morale to attrition in a loop, but never notes headcount can go negative."
+  },
+  {
+   "score": 0,
+   "why": "It never recommends a units check or stepping a few months by hand."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It classifies Hiring Rate as a rate and recommends restructuring, though it briefly allows modeling it as a stock if it means recruiting capacity."
+  }
+ ],
+ "notes": "The concession that Hiring Rate 'can' be modeled as a stock blurs the stock/flow distinction it otherwise draws correctly.",
+ "id": "held-015",
+ "cond": "without",
+ "cost": 0.04356,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

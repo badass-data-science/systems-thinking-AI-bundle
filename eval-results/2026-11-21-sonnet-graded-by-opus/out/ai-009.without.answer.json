@@ -1,0 +1,9 @@
+{
+ "id": "ai-009",
+ "cond": "without",
+ "answer": "**(a) Why do inventory levels swing every quarter?** A **system dynamics model**. Quarterly oscillation usually comes from feedback loops and delays: ordering rules, lagged reactions to demand, and the bullwhip effect. Stock-and-flow diagrams with feedback show how those structures produce the cycle. If the swing is driven by quarter-end sales pushes or budget cycles, a **time-series or seasonal decomposition** would help separate calendar effects from structural ones.\n\n**(b) If we cut lead time by a week, how much safety stock can we drop?** A **quantitative inventory model**, meaning an analytical or stochastic model. Safety stock is roughly z·σ_d·√L. It depends on the service level, demand variability, and lead time (and lead-time variability). Plug in the new lead time to get the reduction. A **Monte Carlo simulation** is the next step if demand isn't normal or lead times are uncertain.\n\n**(c) Which suppliers serve more than one of our plants, and who owns each contract?** A **relational or graph data model**, i.e. a database schema. This is a lookup over entities and relationships (supplier, plant, contract, owner), not a behavioral model. You'd answer it with a SQL join or a graph query over a supplier–plant–contract structure.\n\n**Pattern:** (a) asks *why*, which needs a dynamic, causal model. (b) asks *how much if*, which needs a quantitative model. (c) asks *what exists and how it connects*, which needs a structural data model.",
+ "cost": 0.0251564,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

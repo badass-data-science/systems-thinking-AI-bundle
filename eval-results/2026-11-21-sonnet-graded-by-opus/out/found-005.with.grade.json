@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Frames headcount as a stock with outflow (resignations, layoffs) and inflow (hiring, backfills) and asks which flow changed."
+  },
+  {
+   "score": 1,
+   "why": "Gives distinct fixes for each cause: retention for attrition, pipeline work for a hiring shortfall, scope and priorities for a deliberate cut."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-005",
+ "cond": "with",
+ "cost": 0.016399999999999998,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It notes that unmet coordination demand keeps pressing on Wednesday, but it frames this as drift of the stated policy target rather than a loop defending an unwritten coordination or response-time goal."
+  },
+  {
+   "score": 0.5,
+   "why": "Its loop treats the no-meeting policy as the target and the exceptions as gap-closers, so it never names the implicit coordination target and gap that drive meetings back."
+  },
+  {
+   "score": 0.5,
+   "why": "It suggests asking the people who booked exceptions what happened and which were forced, but not what level of coordination they are protecting or who set it, and it doesn't treat 'nobody knows' as a finding."
+  },
+  {
+   "score": 1,
+   "why": "It recommends giving the demand another outlet and explains that a re-announcement leaves the pressure unchanged, so the same exceptions return."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It calls the message alone the weakest option and does not blame the people who booked the meetings."
+  }
+ ],
+ "notes": "Several fixes (approvers, exception budgets, owners, measurement) add enforcement pressure on the state rather than moving the target, which could reproduce the same resistance.",
+ "id": "held-018",
+ "cond": "new",
+ "cost": 0.040732000000000004,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

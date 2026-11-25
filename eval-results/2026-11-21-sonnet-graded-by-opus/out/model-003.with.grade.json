@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly says the constant bakes in whichever constraint happened to bind and conflates capacity with a rate, ignoring changing constraints."
+  },
+  {
+   "score": 1,
+   "why": "Writes shipping as MIN of desired shipments, inventory/dt, and max capacity, and notes the binding constraint can change."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-003",
+ "cond": "with",
+ "cost": 0.017404,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

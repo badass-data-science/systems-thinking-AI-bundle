@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the reviewer only sees article text and guidelines, so it can't detect UI drift, and a stricter prompt runs the same kind of check harder."
+  },
+  {
+   "score": 1,
+   "why": "It proposes replaying the steps in a staging build with a script or UI test, and tying articles to product areas so releases trigger re-verification."
+  },
+  {
+   "score": 0.5,
+   "why": "It notes that auto-publishing leaves no human whose job is to notice, and gates deletion, billing and export articles behind human sign-off, but it never recommends mapping who reviews what."
+  },
+  {
+   "score": 1,
+   "why": "It says 98% approval is not evidence the review works and reframes the outcome as 'nothing the current checks can see is wrong,' not 'the articles are right.'"
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says a stricter prompt cannot address this incident and is at most a cheap add-on."
+  }
+ ],
+ "notes": "",
+ "id": "held-020",
+ "cond": "new",
+ "cost": 0.033375999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

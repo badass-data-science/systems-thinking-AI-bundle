@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says a correct trace only verifies the drawing is internally consistent, not that the diagnosis is right."
+  },
+  {
+   "score": 1,
+   "why": "It explains that classic escalation is two balancing loops built on goals and perceived gaps that combine into a reinforcing one, and that the diagram hides these."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks whether B is reacting to A or to a common driver and raises the shared pool and zero-sum allocation, but never names Success to the Successful or a commons as alternative archetypes."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "crit-001",
+ "cond": "without",
+ "cost": 0.024868,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It correctly calls Hiring Rate a flow and proposes recruiters as the stock with hires = recruiters × productivity, but it never applies the snapshot/per-month test or confirms Employees as a valid stock."
+  },
+  {
+   "score": 1,
+   "why": "It says adding survey scores makes Morale a running total that rises forever, that Morale needs its own drivers, and that the survey should calibrate Morale rather than drive it."
+  },
+  {
+   "score": 1,
+   "why": "It flags the fixed 8 departures as removing feedback and proposes attrition fraction × Employees modulated by morale, with low morale raising departures, though it omits that headcount can go negative."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends hand-iterating 6–12 months before running scenarios but never explicitly says to check the units of every equation."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects Hiring Rate as a stock."
+  }
+ ],
+ "notes": "The claim that hiring 'passes' 8 in month 4 is slightly off, since it equals 8 in month 4 and exceeds it in month 5.",
+ "id": "held-015",
+ "cond": "new",
+ "cost": 0.040195999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

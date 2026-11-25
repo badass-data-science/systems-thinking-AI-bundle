@@ -1,0 +1,31 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Classifies (a) as Clear and has the agent apply deterministic rules or a tool call, escalating exceptions."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (b) as Complicated, with agent backtesting on holdout error and a human expert approving the choice."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (c) as Complex, with the agent designing and monitoring small reversible experiments while humans own the calls."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (d) as Chaotic, with stabilization first and the agent limited to pre-authorized runbook containment actions."
+  },
+  {
+   "score": 0,
+   "why": "The answer has the agent itself detect when a task doesn't fit its domain, and never says a person makes or checks the classification."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-003",
+ "cond": "without",
+ "cost": 0.029808,
+ "score": 0.8,
+ "pitfalls_committed": 0
+}

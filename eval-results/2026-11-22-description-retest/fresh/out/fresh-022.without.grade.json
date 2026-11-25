@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says scores are often uncalibrated and need checking, but never says the system's own confidence shouldn't set how much scrutiny a claim gets."
+  },
+  {
+   "score": 1,
+   "why": "It explains that nobody looks at auto-approved claims, so 'almost no problems' measures detection rather than accuracy."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a permanent random blind audit stratified by type and dollar amount, plus weighting by stakes, which supplies independent ground truth."
+  },
+  {
+   "score": 0.5,
+   "why": "It floats a payout cap for high-value claims whatever the score, but tentatively, and never mentions rule-checkable conditions like policy coverage."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It says the clean record can't justify lowering the threshold and makes any change depend on audit error rates."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-022",
+ "cond": "without",
+ "cost": 0.0329,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

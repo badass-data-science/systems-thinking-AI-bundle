@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says a close fit doesn't show the model is right, that six parameters can fit almost any curve, and that the fit may come from compensating errors in a structure the reorg will change."
+  },
+  {
+   "score": 0.5,
+   "why": "It checks each parameter against observable HR data but never reviews the causal links with the people who work there or with independent reviewers."
+  },
+  {
+   "score": 0.5,
+   "why": "It runs sensitivity on the parameters the reorg touches but never sets in advance what result would prove the plan wrong."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-005",
+ "cond": "with",
+ "cost": 0.023531999999999997,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

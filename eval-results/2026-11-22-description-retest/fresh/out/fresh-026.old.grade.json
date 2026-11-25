@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "The answer takes the graph for granted and covers consistency and changing facts, but never argues why a graph beats a diagram."
+  },
+  {
+   "score": 1,
+   "why": "It bases the choice on the edge model: property graphs put timeouts and retries on edges, while RDF suits merging external datasets and semantic standards. It omits Neptune and the W3C framing."
+  },
+  {
+   "score": 1,
+   "why": "It separates reachability, answered by transitive traversal, from dynamics that need a separate simulation, and it names retry amplification and feedback loops."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks for provenance, last_seen timestamps and cross-checking declared against observed edges, but never says to verify dependency facts the agent extracted itself."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-026",
+ "cond": "old",
+ "cost": 0.038164,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

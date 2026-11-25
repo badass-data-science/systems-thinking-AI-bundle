@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Describes the relative-position contest with no ceiling, mutual matching, and both towns paying more, which is escalation in substance."
+  },
+  {
+   "score": 1,
+   "why": "Says each move was reasonable, that unilateral retreat hands deals to the neighbor because companies reward the biggest offer, and that 'how do we win' is the wrong question."
+  },
+  {
+   "score": 1,
+   "why": "Recommends a binding, verifiable regional agreement, revenue sharing, state caps, and competing on sites, permitting and workforce."
+  },
+  {
+   "score": 1,
+   "why": "Recommends costing the NPV of foregone taxes including the school share against jobs and services, rather than counting wins."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against outbidding."
+  },
+  {
+   "committed": false,
+   "why": "Labels local guardrails as self-protection that won't stop escalation and pairs them with binding regional and state rules."
+  }
+ ],
+ "notes": "",
+ "id": "held-019",
+ "cond": "new",
+ "cost": 0.026916,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States the turnaround gain is real and notes production rises roughly 10 to 20 times."
+  },
+  {
+   "score": 1,
+   "why": "Traces volume overwhelming two seniors, skimming, trust rising as scrutiny falls, and subtle join and filter errors reaching executives."
+  },
+  {
+   "score": 1,
+   "why": "Labels the 1 to 2 year effects as speculative and traces juniors not learning, a thinning reviewer pipeline, and lost skill, without overextending."
+  },
+  {
+   "score": 1,
+   "why": "Proposes stakes-tiered review, fixed-rate sampling, finance reconciliation, tool-free exercises compared with tool output, and more reviewers, while keeping the gain."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Recommends a staged rollout with safeguards rather than rejecting the tool."
+  }
+ ],
+ "notes": "",
+ "id": "held-022",
+ "cond": "new",
+ "cost": 0.029644000000000004,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

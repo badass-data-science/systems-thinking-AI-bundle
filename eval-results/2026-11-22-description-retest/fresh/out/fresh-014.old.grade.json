@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names tragedy of the commons and explains each team is individually rewarded for over-claiming queue position."
+  },
+  {
+   "score": 1,
+   "why": "Explains holding back hands your place to others, none can stop alone even when seeing it, and it isn't selfishness."
+  },
+  {
+   "score": 1,
+   "why": "Recommends agreed, visible, enforced rules (fair-share, per-team caps, dashboard) and charging teams for requested usage so cost returns promptly."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects further appeals to restraint."
+  },
+  {
+   "committed": false,
+   "why": "Never proposes adding GPUs as the fix."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-014",
+ "cond": "old",
+ "cost": 0.023376,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

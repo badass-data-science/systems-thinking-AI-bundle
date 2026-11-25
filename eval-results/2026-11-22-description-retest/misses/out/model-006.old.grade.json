@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It records A−B for each run and treats a crossing of zero as the decision flipping."
+  },
+  {
+   "score": 1,
+   "why": "It varies each input low/high with the others held at baseline, builds a tornado chart, and reports breakeven values. It uses justified ranges instead of a fixed ±25%, which is the same method in substance."
+  },
+  {
+   "score": 1,
+   "why": "It names the parameter that can flip the result as the crux and recommends measuring velocity drag first."
+  },
+  {
+   "score": 1,
+   "why": "It states that one-at-a-time testing misses interactions and that the inputs are likely correlated, so they could be wrong together."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-006",
+ "cond": "old",
+ "cost": 0.0274,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

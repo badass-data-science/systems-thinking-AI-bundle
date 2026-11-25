@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It places (a) as a parameter that leaves the enforcement loop unchanged and fades like the blitzes, (b) as a rule locking safe design into repaving, and (c) as a goal change redefining a good project."
+  },
+  {
+   "score": 1,
+   "why": "It rates power and reach separately: (c) is highest but hardest and slow to show up, (b) acts only at the repaving rate, and (a) is weak and will fade."
+  },
+  {
+   "score": 0.5,
+   "why": "It keeps blitzes as a cheap stopgap and labels (b) a bridge to (c), but drops fines outright, though for stated deterrence reasons rather than on principle."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives a clear sequence, but there is no pilot corridor or modeling test and no open trade-off such as longer car trips."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It pairs (c) with (b) as an interim rule rather than choosing (c) alone."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly says blitzes are not a strategy."
+  }
+ ],
+ "notes": "",
+ "id": "held-024",
+ "cond": "prev",
+ "cost": 0.039363999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

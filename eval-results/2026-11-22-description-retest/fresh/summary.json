@@ -1,0 +1,810 @@
+{
+ "n": 30,
+ "conds": [
+  "new",
+  "old",
+  "without"
+ ],
+ "means": {
+  "new": 0.8444444444444444,
+  "old": 0.7902777777777777,
+  "without": 0.7
+ },
+ "comparisons": {
+  "new": {
+   "mean_diff": 0.14444444444444443,
+   "ci95": [
+    0.09166666666666666,
+    0.2
+   ],
+   "better": 18,
+   "worse": 0,
+   "split": {
+    "loaded": {
+     "n": 29,
+     "new": 0.8620689655172413,
+     "without": 0.7126436781609196
+    },
+    "not_loaded": {
+     "n": 1,
+     "new": 0.3333333333333333,
+     "without": 0.3333333333333333
+    }
+   }
+  },
+  "old": {
+   "mean_diff": 0.09027777777777776,
+   "ci95": [
+    0.03333333333333333,
+    0.15
+   ],
+   "better": 17,
+   "worse": 4,
+   "split": {
+    "loaded": {
+     "n": 19,
+     "old": 0.8048245614035088,
+     "without": 0.662280701754386
+    },
+    "not_loaded": {
+     "n": 11,
+     "old": 0.7651515151515151,
+     "without": 0.7651515151515151
+    }
+   }
+  }
+ },
+ "cost_usd": 6.9028897,
+ "rows": [
+  {
+   "id": "fresh-001",
+   "kind": "apply",
+   "new": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0879727,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.6666666666666666,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.071664,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0617424,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-002",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0620005,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.05707440000000001,
+    "notes": "Saying the open count 'lags behind' inflow is slightly loose, but the answer immediately gives the correct turnaround condition, so nothing is harmful."
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.048510399999999995,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-003",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0860219,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0904096,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0677364,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-004",
+   "kind": "apply",
+   "new": {
+    "score": 0.3333333333333333,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0553928,
+    "notes": "The answer names a root-cause fix (smoke test, staged rollout) before the post-mortem it calls for, though it does say to describe the post-mortem as in progress rather than guess."
+   },
+   "old": {
+    "score": 0.3333333333333333,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.05933479999999999,
+    "notes": "The answer commits to specific prevention measures before the post-mortem has run, which risks fixing symptoms without understanding the cause."
+   },
+   "without": {
+    "score": 0.3333333333333333,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0611748,
+    "notes": "The prevention items jump straight to technical fixes before any postmortem, which can lock in a solution before the systemic cause is understood."
+   }
+  },
+  {
+   "id": "fresh-005",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.3333333333333333,
+    "pitfalls": 1,
+    "skill_loaded": true,
+    "cost": 0.0876083,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.16666666666666666,
+    "pitfalls": 1,
+    "skill_loaded": true,
+    "cost": 0.0893983,
+    "notes": "The advice to model transit as stocks and to add delays is reasonable, but the answer recommends stock-and-flow first without testing whether the aggregate approach suits emergent behavior."
+   },
+   "without": {
+    "score": 0.3333333333333333,
+    "pitfalls": 1,
+    "skill_loaded": false,
+    "cost": 0.0525528,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-006",
+   "kind": "procedure",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1349936,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.11429829999999999,
+    "notes": "The ASCII diagram is muddled: it appears to draw a negative arrow from Weekend wait toward Food quality, which contradicts the links table."
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06701680000000002,
+    "notes": "R1 uses a 'Good reviews' node that is missing from the variable list and link table, so the table doesn't contain the reinforcing loop it claims, and the remakes link is presented as fact without support."
+   }
+  },
+  {
+   "id": "fresh-007",
+   "kind": "critique",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0983501,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1057263,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0528908,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-008",
+   "kind": "recognize",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08793139999999999,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0797577,
+    "notes": "The experiment wording 'peak-only 30% group' is muddled, since the 30% coupon isn't restricted to peak, but this is minor."
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.059876799999999994,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-009",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0846487,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0856702,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.057380799999999996,
+    "notes": "It suggests a one-time independent review rather than an internal parallel forecast, which partly but not fully rebuilds the city's own capability."
+   }
+  },
+  {
+   "id": "fresh-010",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09327919999999999,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0904691,
+    "notes": "The Princeton recollection is hedged and flagged for verification, so it is not harmful."
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.054814800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-011",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0734821,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0543828,
+    "notes": "The suggested rolling 4-quarter and year-ago baselines would still drift down with performance, just more slowly, so they partly reproduce the original flaw."
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0538288,
+    "notes": "Its suggested 'trailing-4-quarter best' reference still moves with recent results, so it can drift down the same way."
+   }
+  },
+  {
+   "id": "fresh-012",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0715645,
+    "notes": "One slip: the answer calls the first rep's close rate noisy, but the thin stream belongs to the second rep, so 'her' has the wrong referent."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0471168,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0495388,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-013",
+   "kind": "discriminate",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1101956,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1088057,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0830728,
+    "notes": "Advising to 'hold the brewhouse decision' could prolong the underinvestment pattern of theory 2, and calling theory 4 'not a cause' plays down how the shared event noise may already be eroding the strip's standing."
+   }
+  },
+  {
+   "id": "fresh-014",
+   "kind": "recognize",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0807562,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08797189999999999,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0553308,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-015",
+   "kind": "procedure",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0725636,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06374679999999999,
+    "notes": ""
+   },
+   "without": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.060942800000000005,
+    "notes": "The headline 'isn't really shrinking' is loose wording, since the list does shrink slowly toward 100, but the body makes this clear."
+   }
+  },
+  {
+   "id": "fresh-016",
+   "kind": "discriminate",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09071270000000001,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0628108,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.059810800000000004,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-017",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09776470000000001,
+    "notes": "The Sobol claim that S1 tells you how much uncertainty disappears if you measure an input is a slight oversimplification (it assumes measuring removes all uncertainty), but it is not harmful."
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.057514800000000005,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0645728,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-018",
+   "kind": "apply",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0867983,
+    "notes": "The claim that RK4 at 0.25 and 0.125 will 'almost certainly' agree is mildly overconfident but does no harm."
+   },
+   "old": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0601448,
+    "notes": "It states without support that a 15% gap is typical for Euler at dt=1 and that RK4 at dt=0.25 is effectively converged, and it frames convergence as moving toward his number rather than until the peak stops changing."
+   },
+   "without": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.057346799999999996,
+    "notes": "The claim that Euler usually overshoots the peak in a growing epidemic is stated with more confidence than is warranted, since the sign of the error depends on the model."
+   }
+  },
+  {
+   "id": "fresh-019",
+   "kind": "apply",
+   "new": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08493809999999999,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0702872,
+    "notes": "The answer supplies its own default ranges (5–30% deflection, 2–4 month ramp), which risks anchoring both leads on those numbers."
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.048886799999999994,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-020",
+   "kind": "procedure",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1018345,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1081354,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0652808,
+    "notes": "It overstates that the cap is the only proposal that breaks the loop and calls (c) cheap and budget-independent, even though (c) changes the goal that drives the loop."
+   }
+  },
+  {
+   "id": "fresh-021",
+   "kind": "critique",
+   "new": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0814074,
+    "notes": "The I-PASS evidence claim is hedged appropriately, and the remark about the consultant's incentives is speculative but framed as not implying bad faith."
+   },
+   "old": {
+    "score": 0.8333333333333334,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0801506,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0543468,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-022",
+   "kind": "apply",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09257009999999999,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06179079999999999,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0600308,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-023",
+   "kind": "recognize",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09696070000000001,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0925086,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.053882799999999995,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-024",
+   "kind": "critique",
+   "new": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0885581,
+    "notes": ""
+   },
+   "old": {
+    "score": 1.0,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.091052,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0647388,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-025",
+   "kind": "apply",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0977937,
+    "notes": "Its definition of inventory position subtracts forecast lead-time demand, which is nonstandard (normally on-hand plus on-order minus backorders), but this is minor."
+   },
+   "old": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09337589999999998,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0636868,
+    "notes": "Under 'Share state' it says the replenishment agent should publish planned promotions, which reverses the roles; the promotions agent should publish them."
+   }
+  },
+  {
+   "id": "fresh-026",
+   "kind": "discriminate",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.09934970000000001,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0791588,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0701088,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-027",
+   "kind": "procedure",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.079323,
+    "notes": ""
+   },
+   "old": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0575468,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0556988,
+    "notes": ""
+   }
+  },
+  {
+   "id": "fresh-028",
+   "kind": "procedure",
+   "new": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0875756,
+    "notes": "Describing the EU and UK as 'all-party consent' regimes oversimplifies how recording rules work there, and legal exposure is filed under second-order effects even though the answer calls it immediate."
+   },
+   "old": {
+    "score": 0.875,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1019548,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.625,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0742348,
+    "notes": "The opening sentence is garbled and contradicts itself, and most of the answer is a flat categorical risk list rather than a traced chain of effects over time."
+   }
+  },
+  {
+   "id": "fresh-029",
+   "kind": "procedure",
+   "new": {
+    "score": 0.25,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1121275,
+    "notes": "It frames the question around delayed transfers of medically fit patients (closer to the nurses' and social workers' view) and starts a stock-and-flow sketch before stakeholders agree, which partly contradicts its own advice not to declare a winner."
+   },
+   "old": {
+    "score": 0.375,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.1167495,
+    "notes": "Declaring all four claims true from the outset pre-judges contested positions instead of testing them."
+   },
+   "without": {
+    "score": 0.25,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.06648480000000001,
+    "notes": "Letting the board alone fix the headline metric before the groups' views are surfaced risks baking in one framing, which the rubric's soft-systems approach would avoid."
+   }
+  },
+  {
+   "id": "fresh-030",
+   "kind": "critique",
+   "new": {
+    "score": 0.75,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.08909700000000001,
+    "notes": "It overclaims that a robust swing result 'ends the argument' and that leaders who supply inputs 'can't attack them afterward', which oversells how settled resistance will be."
+   },
+   "old": {
+    "score": 0.5,
+    "pitfalls": 0,
+    "skill_loaded": true,
+    "cost": 0.0908911,
+    "notes": ""
+   },
+   "without": {
+    "score": 0.375,
+    "pitfalls": 0,
+    "skill_loaded": false,
+    "cost": 0.0538968,
+    "notes": ""
+   }
+  }
+ ]
+}

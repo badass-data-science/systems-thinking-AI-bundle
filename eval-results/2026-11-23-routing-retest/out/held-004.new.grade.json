@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It refuses to pick one group's story, but it treats the four accounts as one agreed chain rather than a disagreement about what the problem is, and it never warns that leading with one framing builds that view in."
+  },
+  {
+   "score": 1,
+   "why": "It recommends one shared timeline session, built from records with no analysis and no blame language, that replaces 'whose fault' with 'what happened next'."
+  },
+  {
+   "score": 1,
+   "why": "It explicitly covers the pattern (checking earlier launches from records), the structure (gates, authority, ownership) and the belief ('launch dates are commitments and readiness is something we'll make fit')."
+  },
+  {
+   "score": 0.5,
+   "why": "It puts the date-authority question to the execs and allows an honest 'we don't know yet', but never records which groups were consulted versus only informed."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The vendor API is treated as one link among several, not as the root cause, and the review is not closed there."
+  }
+ ],
+ "notes": "The answer proposes a specific causal order with the marketing date as the origin before any evidence is gathered; it is flagged as an inference, but it could still anchor the room on Product's framing.",
+ "id": "held-004",
+ "cond": "new",
+ "cost": 0.044516,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

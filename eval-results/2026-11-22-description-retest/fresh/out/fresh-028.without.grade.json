@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says the time-savings case is real but never spells out the gain (hours saved, people freed from meetings they didn't need)."
+  },
+  {
+   "score": 1,
+   "why": "It gives a mechanism: absentees can't catch confident summary errors, dissent and nuance get dropped, unchecked action items get acted on, and skipping meetings erodes influence and early warning over time."
+  },
+  {
+   "score": 0,
+   "why": "There is no labeled-speculative third-order effect such as synthesis skills or junior learning eroding, and no check against archetypes."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the gain through a pilot with attendee accuracy ratings, a human owner for decisions and action items, and required attendance when decisions are made."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly recommends a scoped rollout rather than a refusal."
+  }
+ ],
+ "notes": "The opening sentence is garbled and contradicts itself, and most of the answer is a flat categorical risk list rather than a traced chain of effects over time.",
+ "id": "fresh-028",
+ "cond": "without",
+ "cost": 0.042908,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

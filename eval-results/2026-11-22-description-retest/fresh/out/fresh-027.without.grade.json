@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says row counts only show rows weren't lost or duplicated and questions whether staging matches production, but never asks whether the table list was generated from the schema or typed by hand."
+  },
+  {
+   "score": 1,
+   "why": "It names truncation, encoding, timezone shifts, NULL handling, orphaned foreign keys, and production's odd data that staging may lack."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds checks of different kinds (column checksums, aggregates, constraint checks, app testing against migrated data), but its pass standard is only 'decide in advance' and nothing concrete enough to fail."
+  },
+  {
+   "score": 0.5,
+   "why": "It calls the agent's 'verified' a claim rather than evidence but never restates it as 'nothing these checks can see is wrong.'"
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The production-sized rehearsal is for timing and locking, and the core recommendation is value-level checks of a different kind."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-027",
+ "cond": "without",
+ "cost": 0.03268,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

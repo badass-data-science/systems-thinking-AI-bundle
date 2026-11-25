@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Adds a co-flow stock of referred active subscribers with its own inflow (sign-ups × referral fraction) and its own outflow (referred cancellations)."
+  },
+  {
+   "score": 1,
+   "why": "Defines Referral Share = Referred / Total as an auxiliary computed each period."
+  },
+  {
+   "score": 1,
+   "why": "Gives referred subscribers their own churn rate, warns against splitting existing cancellations by share, and makes total cancellations the sum of referred and non-referred."
+  },
+  {
+   "score": 1,
+   "why": "Treats the lower churn as an assumption to measure from data, recommends a swing test, and notes the share rises even with a flat referral fraction because referred survivors accumulate."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects modeling the share as a fixed percentage and derives it from two stocks."
+  }
+ ],
+ "notes": "It loosely calls the mix shift a 'reinforcing effect' when it comes from differential decay rather than a feedback loop, and the equal-churn check ignores the transient from the initial stock mix.",
+ "id": "held-014",
+ "cond": "prev",
+ "cost": 0.031716,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says a historical fit isn't validation and only shows tuned parameters reproduce the past, and that recalibrating would just add a fourth match."
+  },
+  {
+   "score": 0.5,
+   "why": "Explains that the retry loop was absent from the calm past on-sales and recommends adding it and injecting a slowdown, but never proposes comparing runs with the loop on and off."
+  },
+  {
+   "score": 1,
+   "why": "Recommends a link-by-link check by a non-builder app engineer and flagging any links that exist only to improve the fit."
+  },
+  {
+   "score": 1,
+   "why": "Recommends pre-stating what would prove the model wrong and stress-testing retry multipliers and tipping points against the go/no-go decision."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly warns that recalibrating on this on-sale proves little and does not validate the model."
+  }
+ ],
+ "notes": "",
+ "id": "held-003",
+ "cond": "new",
+ "cost": 0.03900000000000001,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

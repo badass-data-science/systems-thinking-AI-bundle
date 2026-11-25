@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the vague instruction yields a meaningless verdict and asks for an explicit list of failable requirements: page and word limits, fonts, margins, required sections in order, budget rules, eligibility and attachments."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks which files and pages the agent actually opened and for per-chapter coverage, but never says to build the check inventory from the proposal's own chapters, appendices, budget and attachments."
+  },
+  {
+   "score": 1,
+   "why": "It treats the bare 'complies' as unauditable, has a person verify disqualifying items against the funder's own checklist, and asks for cited guideline text and a check for outdated guidelines."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds scripted layout and count checks and a planted-error test, but never recomputes narrative figures against the budget spreadsheet or opens every attachment and link."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The rerun it proposes uses per-requirement evidence and scripts, and it never asks the agent whether it is sure."
+  }
+ ],
+ "notes": "",
+ "id": "held-021",
+ "cond": "without",
+ "cost": 0.035392,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

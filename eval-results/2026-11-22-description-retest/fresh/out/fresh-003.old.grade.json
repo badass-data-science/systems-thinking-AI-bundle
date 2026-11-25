@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names a balancing loop with an information delay (report) and a material delay (lead time) and says this is the classic recipe for oscillation."
+  },
+  {
+   "score": 1,
+   "why": "Says any buyer in the seat would see the same swings and a new buyer would likely reproduce the pattern."
+  },
+  {
+   "score": 1,
+   "why": "Explains that doubling on a late signal overshoots and states the rule increases the amplitude of the swings."
+  },
+  {
+   "score": 1,
+   "why": "Recommends live dispensing data and correcting only part of the gap before re-checking, and offers a simulation to predict each policy's effect before acting."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises holding off on replacing the buyer."
+  },
+  {
+   "committed": false,
+   "why": "Argues the order-double rule backfires."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-003",
+ "cond": "old",
+ "cost": 0.02916,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gives explicit triggers for spreadsheet, Vensim and Python/PySD, notes six stocks needs a reason to move, and warns against escalating because it feels more rigorous."
+  },
+  {
+   "score": 1,
+   "why": "Requires reproducing the spreadsheet in Vensim and Vensim in PySD on identical inputs, stock by stock to a stated tolerance, before trusting it."
+  },
+  {
+   "score": 1,
+   "why": "Calls time step the most common source of mismatches and requires matching the time step and integration method (Euler)."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-010",
+ "cond": "with",
+ "cost": 0.032644,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

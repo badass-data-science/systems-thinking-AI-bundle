@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It notes that each group sees a different part of the system, but treats these as compatible causes rather than contested problem definitions, and never says a plan built on one group's definition will be resisted by the others."
+  },
+  {
+   "score": 0.5,
+   "why": "It suggests reading the analyst's own loop hypothesis to a teacher, principal and parent, but not building a shared picture live with all groups, including students and transportation, in one room."
+  },
+  {
+   "score": 0.5,
+   "why": "It shows clearly that anxiety, falling behind, bullying, buses and norms interact as one system, and warns that the 'parents don't care' framing could backfire, but does not question who acts or owns each definition or the belief behind each preferred fix."
+  },
+  {
+   "score": 0,
+   "why": "It never records which groups were consulted, never notes that students have not been heard, and goes straight to data segmentation without first getting agreement on definitions."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects picking a single cause and recommends a portfolio with segmentation and pilots."
+  }
+ ],
+ "notes": "The suggested board script promises that 'in six weeks we'll know' the causal breakdown, which overstates what observational segmentation can establish.",
+ "id": "held-007",
+ "cond": "prev",
+ "cost": 0.038251999999999994,
+ "score": 0.375,
+ "pitfalls_committed": 0
+}

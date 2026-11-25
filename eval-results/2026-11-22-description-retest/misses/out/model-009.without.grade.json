@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names availability/recency bias and says the supplier's long-run failure record, not the vivid incident, should set the rate."
+  },
+  {
+   "score": 1,
+   "why": "Names anchoring, recommends sensitivity/tornado analysis to swing the parameter, and recommends blind independent re-elicitation without seeing 0.5."
+  },
+  {
+   "score": 0,
+   "why": "The neutral tone is never stated as a point; the answer does not frame these biases as normal features of judgment rather than moral failings."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-009",
+ "cond": "without",
+ "cost": 0.023584,
+ "score": 0.6666666666666666,
+ "pitfalls_committed": 0
+}

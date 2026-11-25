@@ -1,0 +1,12 @@
+{
+ "id": "model-002",
+ "cond": "new",
+ "answer": "**Setup:** stock starts at 200 units. Each week, delivery = min(120, 100) = 100. Shipment = min(stock at start of week, 90). End stock = start + delivery − shipment.\n\n| Week | Start | Delivery | Shipment | End |\n|---|---|---|---|---|\n| 1 | 200 | 100 | 90 | 210 |\n| 2 | 210 | 100 | 90 | 220 |\n| 3 | 220 | 100 | 90 | 230 |\n| 4 | 230 | 100 | 90 | 240 |\n\n**What's binding, every week:**\n- **Inflow:** dock capacity (100) binds, not supplier output (120). The supplier has 20 units a week of unused slack, so a bigger supplier or a second source wouldn't change anything.\n- **Outflow:** picker capacity (90) binds, not stock on hand. The stock term (200 or more) is never close to binding.\n- **Net:** +10 units a week. Stock rises steadily with no sign of settling, because both binding limits are fixed capacities and neither depends on the stock level.\n\n**Findings:**\n- The docks out-run the pickers by 10 a week. Adding dock capacity would make the pile grow faster. Only more picking raises throughput, and it would also have to exceed 100 a week to stop the build-up.\n- The model has no demand term. I'm assuming orders are always at least 90 a week. If demand is lower, it would become the binding constraint and the stock would grow faster.\n- Starting from this base case, the stock term in the shipment `min()` never fires, so the model can't show you the stock-out behavior. To test it, cut deliveries to zero for a few weeks. The 200 buffer would last about 2.2 weeks of 90-unit shipments before shipments start falling below 90.\n\n**Assumptions I'm relying on:** weekly time steps, both flows computed from start-of-week stock, and the 200 starting stock, 120/100/90 limits and ≥90 demand taken as given.",
+ "cost": 0.047100100000000006,
+ "turns": 4,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Read:new/.claude/skills/systems-thinking/procedures/hand-iterate-a-model.md"
+ ],
+ "skill_loaded": true
+}

@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It says the unwelcome conclusion is being fought by attacking assumptions and that more detail won't end that, but it never says outright that a correct model nobody believes changes nothing."
+  },
+  {
+   "score": 0.5,
+   "why": "It says more detail won't win the argument, but it suggests input sign-off from assumption owners and a contractor scenario rather than a live rebuild with leadership that agrees the boundary first."
+  },
+  {
+   "score": 0.5,
+   "why": "Its attrition sensitivity and break-even analysis is a clear swing test, but it doesn't recommend naming the value-laden choices openly."
+  },
+  {
+   "score": 0,
+   "why": "It doesn't track which leaders helped draw the model versus only saw results, or plan conversations on that basis."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects detail-building as the answer and redirects to sensitivity analysis, reframing and stakeholder buy-in."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-030",
+ "cond": "without",
+ "cost": 0.032112,
+ "score": 0.375,
+ "pitfalls_committed": 0
+}

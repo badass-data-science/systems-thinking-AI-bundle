@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "In substance it maps each theory to its own structure: an exhausted market for (1), a self-confirming underinvestment loop for (2), several limits binding at once for (3), and a shared resource drawn down by all five breweries for (4)."
+  },
+  {
+   "score": 1,
+   "why": "It names separating evidence: lost-sales estimates from stockouts, the history of brewhouse decisions, which constraint binds first at peak, off-peak utilization and new-customer rates, and the strip-wide nature of the noise problem."
+  },
+  {
+   "score": 1,
+   "why": "It says remedies differ (invest in a brewhouse only if beer binds, choose which limits to relieve, coordinate across the strip), warns of costly wrong fixes, and states the theories can be true together."
+  },
+  {
+   "score": 1,
+   "why": "Every recommendation targets a capacity limit or the shared permit problem, and none proposes more marketing."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It never recommends promotions or pushing harder on demand."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-013",
+ "cond": "new",
+ "cost": 0.037148,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

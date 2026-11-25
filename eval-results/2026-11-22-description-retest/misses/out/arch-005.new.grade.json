@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explicitly names Limits to Growth and calls the near-empty niche a carrying capacity."
+  },
+  {
+   "score": 1,
+   "why": "It says nothing broke and that more spend just drives acquisition cost toward infinity, which is the limit pushing back on the engine."
+  },
+  {
+   "score": 1,
+   "why": "It recommends moving the limit through adjacent niches, sizes, geographies and buyer roles, and redirecting spend to that work."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Its diagnostic numbers confirm saturation rather than hunt for a funnel defect, and it warns that better copy won't help."
+  },
+  {
+   "committed": false,
+   "why": "It advises freezing and cutting spend; the optional capped test is a small fraction aimed at an adjacent segment, not more of the same."
+  }
+ ],
+ "notes": "It contradicts itself by aiming the hedge test at an adjacent segment and then predicting the same flat result, which undercuts its own expansion advice; 'churn is the only way new sign-ups happen' is also muddled.",
+ "id": "arch-005",
+ "cond": "new",
+ "cost": 0.031944,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

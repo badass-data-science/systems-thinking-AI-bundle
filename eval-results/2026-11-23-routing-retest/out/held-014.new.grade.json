@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Adds a referred-active stock with its own sign-up inflow and cancellation outflow, splitting the total into two stocks."
+  },
+  {
+   "score": 1,
+   "why": "Defines referral_share as Active_referred / Active_total each period."
+  },
+  {
+   "score": 1,
+   "why": "Gives each group its own churn rate and keeps them consistent via the two-stock split with a derived total."
+  },
+  {
+   "score": 1,
+   "why": "Says to estimate churn rates from channel data and swing-test them, and explains the share rises with constant referral fraction due to accumulation."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects a fixed referred percentage as an assumption that can never change."
+  }
+ ],
+ "notes": "",
+ "id": "held-014",
+ "cond": "new",
+ "cost": 0.024592000000000003,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

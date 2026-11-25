@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says to look the citation up in authoritative sources, check every field, and notes that fabricated citations read as smoothly as real ones."
+  },
+  {
+   "score": 1,
+   "why": "It says to run the code yourself, compare against the printed output, and test with known-answer inputs, since the shown output may be hallucinated."
+  },
+  {
+   "score": 0.5,
+   "why": "It says plausibility and smooth prose are what AI errors look like, but never states outright that the report's own confidence is not evidence."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The red-flag reasoning assumes 'Meadows, D.' means Donella Meadows (died 2001), but it could be Dennis Meadows, who is alive, so the posthumous-date suspicion is weaker than presented.",
+ "id": "ai-012",
+ "cond": "old",
+ "cost": 0.025376,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

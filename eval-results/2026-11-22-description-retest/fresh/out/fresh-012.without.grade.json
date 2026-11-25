@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Identifies the rich-get-richer loop in which the routing rule amplifies an early edge, which is Success to the Successful in substance."
+  },
+  {
+   "score": 1,
+   "why": "Explains that more leads let the favored rep cherry-pick warm ones while the other must chase cold leads, so close rate reflects allocation."
+  },
+  {
+   "score": 1,
+   "why": "Recommends random or round-robin shares, capped swings and like-for-like comparison before any PIP decision."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says the gap may be illusory and could come from early noise alone."
+  },
+  {
+   "committed": false,
+   "why": "Does not frame it as Escalation or as reps reacting to each other."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-012",
+ "cond": "without",
+ "cost": 0.024716000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

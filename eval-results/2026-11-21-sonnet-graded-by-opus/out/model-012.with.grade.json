@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Gives Stock(t+Δt) = Stock(t) + (Inflow − Outflow)×Δt and states it as end = start + inflows − outflows per step, which is the difference equation in substance."
+  },
+  {
+   "score": 1,
+   "why": "Says the stock rises while net inflow is positive even as inflow shrinks, and that the level tracks net flow rather than the inflow's trend, which matches 'adds to,' not 'moves with.'"
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-012",
+ "cond": "with",
+ "cost": 0.02396,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,1099 @@
+@prefix st: <https://badass-data-science.github.io/supervillains/st/> .
+@prefix series: <https://badass-data-science.github.io/supervillains/series/> .
+@prefix rel: <https://badass-data-science.github.io/supervillains/rel/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+series:feedback rdfs:label "Feedback" ; rdfs:comment "A process whose output, directly or through a chain of effects, changes its own input." .
+series:reinforcing-dynamics rdfs:label "Reinforcing dynamics" ; rdfs:comment "Change that compounds in whichever direction it is already running (growth spirals, arms races, runaway trends)." .
+series:balancing-dynamics rdfs:label "Balancing dynamics" ; rdfs:comment "Change that pushes a state back toward a reference point (control, correction, regulation)." .
+series:delay rdfs:label "Delay" ; rdfs:comment "A lag between a cause and its effect, or between an effect and anyone finding out about it." .
+series:escalation rdfs:label "Escalation" ; rdfs:comment "Two or more parties each responding to the other's relative gain, ratcheting up together." .
+series:unintended-consequences rdfs:label "Unintended consequences" ; rdfs:comment "Effects of an action that were not its purpose, often delayed and often feeding back on the original problem." .
+series:boundary rdfs:label "Boundary and scope" ; rdfs:comment "The choice of what a model, plan or analysis treats as inside (explained) versus outside (taken as given)." .
+series:proxy-metric rdfs:label "Proxy metrics and their gaming" ; rdfs:comment "A measurable stand-in for a goal, and what happens when optimizing the stand-in diverges from the goal." .
+series:model-validation rdfs:label "Model validation" ; rdfs:comment "Checking that a model's mechanisms are real and its outputs trustworthy before acting on it." .
+series:uncertainty rdfs:label "Uncertainty and sensitivity" ; rdfs:comment "How much a conclusion depends on inputs that are guessed, noisy or unknown." .
+series:decision-domain rdfs:label "Decision domain" ; rdfs:comment "Classifying a decision by how cause and effect relate in it, to choose a fitting way of deciding." .
+series:ai-delegation rdfs:label "Delegating to AI agents" ; rdfs:comment "Deciding what an AI agent may do on its own, what needs checking, and how trust in it should be earned and audited." .
+series:competing-for-shared-resources rdfs:label "Competing for shared resources" ; rdfs:comment "Several actors drawing on one limited pool, where each actor's gain is partly another's loss." .
+series:limits-and-capacity rdfs:label "Limits and capacity" ; rdfs:comment "Growth or performance running into a constraint, and the choice between pushing harder and relieving the constraint." .
+series:stakeholder-worldviews rdfs:label "Stakeholder worldviews" ; rdfs:comment "The differing beliefs about what a problem is that determine whether anyone will act on an analysis." .
+series:persuasion rdfs:label "Communicating an analysis" ; rdfs:comment "Getting people to believe and act on a correct model or plan." .
+series:knowledge-representation rdfs:label "Knowledge representation" ; rdfs:comment "Storing facts and relationships in a structured, queryable form rather than in prose or conversation." .
+series:intervention-leverage rdfs:label "Where to intervene" ; rdfs:comment "Which kinds of change to a system move its behavior most, and how hard each is to make." .
+series:cognitive-bias rdfs:label "Cognitive bias in analysis" ; rdfs:comment "Systematic errors of judgment that distort how analysts build models and read evidence." .
+st:a-trace-is-not-a-definition a rel:Heuristic ; rdfs:label "A correct trace isn't a correct archetype" ; rdfs:comment "A diagram can close and trace to the polarity claimed and still not be the archetype it's named after; tracing confirms polarity, and only the literature confirms the structure." ; rel:path "heuristics/a-trace-is-not-a-definition.md" .
+st:accidental-adversaries a rel:Archetype ; rdfs:label "Accidental Adversaries" ; rdfs:comment "Two natural allies, each succeeding when the other does, each fix their own local gap in a way that obstructs the other, and those side effects close a vicious reinforcing loop that overpowers the partnership." ; rel:path "archetypes/accidental-adversaries.md" .
+st:actor-based-modeling a rel:Concept ; rdfs:label "Actor-based modeling (ABM)" ; rdfs:comment "A simulation paradigm in which code for many individually simulated actors, each following local rules, is run forward to see what group behavior emerges." ; rel:path "concepts/actor-based-modeling.md" .
+st:agent-registry-graph a rel:Case ; rdfs:label "Finding the unreviewed agent" ; rdfs:comment "A small graph of three agents (a forecaster, a coding agent and a pricing agent) shows by query that the pricing agent sets prices with nobody reviewing it while reading the forecaster's output." ; rel:path "cases/agent-registry-graph.md" .
+st:agentic-ai a rel:Concept ; rdfs:label "Agentic AI" ; rdfs:comment "Real AI systems (a coding assistant, a research agent, a multi-agent pipeline) taking autonomous action, sometimes for long stretches with no human checking in." ; rel:path "concepts/agentic-ai.md" .
+st:ai-accelerated-shipping a rel:Case ; rdfs:label "AI-accelerated shipping, three orders deep" ; rdfs:comment "An AI coding agent speeds feature delivery (first order); review depth falls as shipping and review undermine each other (second order, Accidental Adversaries); and first-principles debugging skill atrophies (third order, Shifting the Burden)." ; rel:path "cases/ai-accelerated-shipping.md" .
+st:ai-agent-as-intervenor a rel:Case ; rdfs:label "The AI agent becomes the only diagnostician" ; rdfs:comment "After an AI agent's fast, correct first root-cause report, every cross-system diagnosis goes to it; the organization's own diagnostic muscle erodes faster than with a human expert, because the agent never takes a vacation or visibly strains." ; rel:path "cases/ai-agent-as-intervenor.md" .
+st:ai-assisted-colonoscopy-deskilling a rel:Case ; rdfs:label "Detection rates after AI-assisted colonoscopy" ; rdfs:comment "In an observational 2025 study across four Polish endoscopy centers, clinicians' detection rate in standard colonoscopies fell from about 28% to about 22% in the months after an AI polyp-detection tool was introduced." ; rel:path "cases/ai-assisted-colonoscopy-deskilling.md" .
+st:ai-system-as-a-system a rel:Concept ; rdfs:label "AI system as a system" ; rdfs:comment "An AI agent's usage, the trust accumulating around its output, and the scrutiny that trust invites or discourages form a real feedback structure with stocks, flows and loops, to which every systems tool applies directly." ; rel:path "concepts/ai-system-as-a-system.md" .
+st:ai-trust-loop a rel:Concept ; rdfs:label "The trust-and-scrutiny loop" ; rdfs:comment "Two reinforcing loops share an AI tool's accumulated trust; usage builds trust and trust drives usage, while rising trust lowers scrutiny per output, fewer errors are caught, and trust rises further, with the second loop's output an invisible absence." ; rel:path "concepts/ai-trust-loop.md" .
+st:amazon-neptune a rel:Tool ; rdfs:label "Amazon Neptune" ; rdfs:comment "A managed graph database service supporting both the property-graph world (Gremlin, openCypher) and the RDF/SPARQL world in one place." ; rel:path "tools/amazon-neptune.md" .
+st:analytical-thinking a rel:Concept ; rdfs:label "Analytical thinking" ; rdfs:comment "Decomposing a problem into isolated components, finding the component that misbehaves, and fixing it; powerful for understanding parts, blind to behavior that comes from how parts interact." ; rel:path "concepts/analytical-thinking.md" .
+st:anchor-goals-outside a rel:Heuristic ; rdfs:label "Anchor goals outside the system's own results" ; rdfs:comment "Tie a target to something the system's recent performance can't move (customer need, a competitor's level, your own best year), so misses stay gaps instead of becoming the new target." ; rel:path "heuristics/anchor-goals-outside.md" .
+st:anchoring a rel:Concept ; rdfs:label "Anchoring" ; rdfs:comment "The pull an early number, even an arbitrary first-draft guess, keeps exerting over every later estimate long after better information exists." ; rel:path "concepts/anchoring.md" .
+st:anylogic a rel:Tool ; rdfs:label "AnyLogic" ; rdfs:comment "A commercial multi-method simulation environment combining system dynamics with actor-based and discrete-event simulation." ; rel:path "tools/anylogic.md" .
+st:applicant-ceiling a rel:Case ; rdfs:label "The applicant pool hits its ceiling" ; rdfs:comment "A reputation-driven applicant spiral that tripled for several rounds bends as the applicant pool approaches the total regional population willing to do the work." ; rel:path "cases/applicant-ceiling.md" .
+st:ask-what-the-fix-does-later a rel:Heuristic ; rdfs:label "Ask what a fix does a few rounds out" ; rdfs:comment "Before reaching for a fix that works now, ask what it will do after it has been applied several times, because a fix that works now and fails later gets reached for again." ; rel:path "heuristics/ask-what-the-fix-does-later.md" .
+st:attention-decay-and-tempo a rel:Case ; rdfs:label "Regulatory attention that decays slower than operations repeat" ; rdfs:comment "Inspections landing about ten weeks after each major operation, produced by a slowly decaying stock of regulatory attention and an operating tempo that never checks it." ; rel:path "cases/attention-decay-and-tempo.md" .
+st:attention-management-loop a rel:Case ; rdfs:label "Managing regulatory attention on instinct" ; rdfs:comment "An organization lowers its operating tempo when outside scrutiny feels too high; the loop balances, its goal is unwritten, and two delays make it oscillate." ; rel:path "cases/attention-management-loop.md" .
+st:attractiveness-principle a rel:Archetype ; rdfs:label "Attractiveness Principle" ; rdfs:comment "Limits to Growth with several different limits at once, each biting at a different size; relieving one only lets growth run until the next binds, so the real decision is which limits to relieve and which kinds of unattractiveness to accept on purpose." ; rel:path "archetypes/attractiveness-principle.md" .
+st:audit-your-checks a rel:Procedure ; rdfs:label "Audit your checks for boundary and kind" ; rdfs:comment "List every check a piece of work has been through, write each one's boundary (what it looked at) and kind (what it could notice), find something none of them could catch, and add a check of a different kind rather than a wider version of an old one." ; rel:path "procedures/audit-your-checks.md" .
+st:auxiliary a rel:Concept ; rdfs:label "Auxiliary variable" ; rdfs:comment "In a stock-and-flow model, a quantity that is neither a stock nor a flow; recalculated each time step from other quantities, it sets how far a flow's valve opens, and constants (capacities, targets, yields) are drawn the same way." ; rel:path "concepts/auxiliary.md" .
+st:availability-heuristic a rel:Concept ; rdfs:label "Availability heuristic" ; rdfs:comment "Overweighting whatever example comes to mind most easily, whether or not it's typical." ; rel:path "concepts/availability-heuristic.md" .
+st:balancing-loop a rel:Concept ; rdfs:label "Balancing loop" ; rdfs:comment "A feedback loop with an odd number of negative links, which compares a current state to a reference point and takes corrective action sized to the gap, so it seeks and then defends a goal it never sets." ; rel:path "concepts/balancing-loop.md" .
+st:bank-run a rel:Case ; rdfs:label "Bank run" ; rdfs:comment "Fear that a bank will fail drives withdrawals, which make failure likelier, which drives more fear: a vicious cycle with the same structure as a virtuous one." ; rel:path "cases/bank-run.md" .
+st:both-sides-blame-the-other a rel:Heuristic ; rdfs:label "When both sides blame the other, look for the whole loop" ; rdfs:comment "If two parties who should be allies each call the other \"the problem\" and each can accurately describe its own behavior as a reasonable response, suspect Accidental Adversaries." ; rel:path "heuristics/both-sides-blame-the-other.md" .
+st:bound-interacting-agents a rel:Heuristic ; rdfs:label "Bound interacting agents and watch them together" ; rdfs:comment "When independently built agents react to one another's outputs with nobody coordinating, give each hard limits it can't reason past and monitor their joint behavior, because what they do together belongs to none of them." ; rel:path "heuristics/bound-interacting-agents.md" .
+st:boundary-critique a rel:Concept ; rdfs:label "Boundary critique" ; rdfs:comment "Asking not only what is inside a model's boundary but whose worldview that boundary needs buy-in from before anyone will act on it, and whether those stakeholders were consulted while it was drawn or only informed afterward." ; rel:path "concepts/boundary-critique.md" .
+st:break-the-trust-loop a rel:Procedure ; rdfs:label "Audit and break an AI trust-and-scrutiny loop" ; rdfs:comment "Draw the AI-assisted workflow with an explicit \"scrutiny per output\" node, trace whether rising trust lowers it, find where you'd notice scrutiny falling to zero, then tie scrutiny to something other than trust." ; rel:path "procedures/break-the-trust-loop.md" .
+st:budget-split-between-teams a rel:Case ; rdfs:label "Two new teams, one training budget" ; rdfs:comment "Two equally capable new teams compete for one fixed training budget; the first team's lucky early win earns it a larger share, and the second never recovers." ; rel:path "cases/budget-split-between-teams.md" .
+st:build-cld-from-story a rel:Procedure ; rdfs:label "Build a causal loop diagram from a story" ; rdfs:comment "Five steps in order: list the quantities, add polarity-marked arrows one at a time with any delays, check the chain closes, trace and label each loop, then read the whole loop aloud as a sentence a domain expert would nod along to." ; rel:path "procedures/build-cld-from-story.md" .
+st:building-this-book-with-an-agent a rel:Case ; rdfs:label "Building a book with an AI agent" ; rdfs:comment "A human author and an AI coding agent built a book together; the decision loop (options, a choice, done) worked, while the checking loop kept stopping early because each check saw only its own boundary and kind." ; rel:path "cases/building-this-book-with-an-agent.md" .
+st:calm-base-case-proves-nothing a rel:Heuristic ; rdfs:label "A calm base case doesn't prove a loop harmless" ; rdfs:comment "If a loop never fires under baseline conditions, shock the model and compare runs with the loop intact and switched off before concluding it doesn't matter." ; rel:path "heuristics/calm-base-case-proves-nothing.md" .
+st:catwoe a rel:Procedure ; rdfs:label "CATWOE" ; rdfs:comment "Checkland's six-question check of a drawn boundary (Customers, Actors, Transformation, Worldview, Owner, Environmental constraints) to surface the assumptions it hides." ; rel:path "procedures/catwoe.md" .
+st:causal-loop-diagram a rel:Concept ; rdfs:label "Causal loop diagram (CLD)" ; rdfs:comment "A picture of feedback structure with four ingredients: nodes that are quantities, cause-to-effect arrows marked + or -, R/B loop labels, and double-hash delay marks." ; rel:path "concepts/causal-loop-diagram.md" .
+st:change-initiative-meets-balancing-loop a rel:Heuristic ; rdfs:label "Diffuse resistance means an unnamed balancing loop" ; rdfs:comment "When a change effort meets small, reasonable resistance from every direction and nobody is visibly opposing it, look for a balancing loop defending a goal the change never addressed." ; rel:path "heuristics/change-initiative-meets-balancing-loop.md" .
+st:change-the-comparison a rel:Heuristic ; rdfs:label "End an escalation by changing what's compared" ; rdfs:comment "When two parties are locked in a relative-position race, change the structure of the comparison (a verifiable shared limit, a new dimension to compete on) rather than asking one side to stop first." ; rel:path "heuristics/change-the-comparison.md" .
+st:chaos-theory a rel:Concept ; rdfs:label "Chaos theory" ; rdfs:comment "The study of how simple, fully specified deterministic systems can still be unpredictable over the long run, because tiny differences in starting points grow." ; rel:path "concepts/chaos-theory.md" .
+st:checking-loop a rel:Concept ; rdfs:label "The checking loop and its sensor" ; rdfs:comment "Checking work is a balancing loop whose sensor is the check itself, so it comes to rest when the check finds nothing, whether or not the work is right; errors outside the check's boundary or kind accumulate undrained." ; rel:path "concepts/checking-loop.md" .
+st:choose-model-by-question a rel:Heuristic ; rdfs:label "Choose the model by the question" ; rdfs:comment "Three questions, three models: what structure is producing this? (a CLD); how will it behave over time? (a stock-and-flow simulation); what do we know and what is connected to what? (a knowledge graph)." ; rel:path "heuristics/choose-model-by-question.md" .
+st:choose-simulation-tooling a rel:Procedure ; rdfs:label "Choose spreadsheet, simulation software, or PySD" ; rdfs:comment "Before opening any software, draw a three-branch decision tree (stay in the spreadsheet, move to dedicated software, go straight to PySD) and write the specific trigger that would justify each." ; rel:path "procedures/choose-simulation-tooling.md" .
+st:classify-a-growth-stall a rel:Procedure ; rdfs:label "Classify a growth stall" ; rdfs:comment "When growth slows, decide whether it is one limit outside the system's own capacity (Limits to Growth), the system's own capacity, which the organization keeps declining to expand (Growth and Underinvestment), several limits at once (Attractiveness Principle), or a shared resource being drawn down (Tragedy of the Commons)." ; rel:path "procedures/classify-a-growth-stall.md" .
+st:co-flow a rel:Concept ; rdfs:label "Co-flow" ; rdfs:comment "A second stock, with its own pipes, that shadows a main stock to track one attribute of what it holds, so that dividing the shadow by the main stock gives that attribute's share." ; rel:path "concepts/co-flow.md" .
+st:commons-need-collective-rules a rel:Heuristic ; rdfs:label "A commons needs rules its users can see kept" ; rdfs:comment "Over-use of a shared resource can't be fixed by one user's restraint; it takes rules every user agrees to, can see being kept and can enforce, whether set by a regulator or by the users themselves." ; rel:path "heuristics/commons-need-collective-rules.md" .
+st:complexity-science a rel:Concept ; rdfs:label "Complexity science" ; rdfs:comment "The study of how large numbers of simple, interacting actors following local rules produce coordinated behavior that nobody specified." ; rel:path "concepts/complexity-science.md" .
+st:confirmation-bias a rel:Concept ; rdfs:label "Confirmation bias" ; rdfs:comment "The pull toward evidence, and toward modeling choices, that confirm what you already believed." ; rel:path "concepts/confirmation-bias.md" .
+st:consistent-is-not-true a rel:Heuristic ; rdfs:label "A consistent diagram isn't a true one" ; rdfs:comment "A causal diagram can pass every notation check and still tell a story nobody who works in the system believes, so say it aloud to them before building on it." ; rel:path "heuristics/consistent-is-not-true.md" .
+st:convenience-boundary-trap a rel:Heuristic ; rdfs:label "Suspect a boundary that matches your data" ; rdfs:comment "If a model's boundary sits exactly where the easy data ends, it was probably drawn for convenience rather than for the question." ; rel:path "heuristics/convenience-boundary-trap.md" .
+st:covid-reporting-delays a rel:Case ; rdfs:label "COVID-19 case counts and policy oscillation" ; rdfs:comment "Infection-to-test and test-to-report delays meant policy reacted to a state that had already moved, so responses overshot in both directions." ; rel:path "cases/covid-reporting-delays.md" .
+st:cybernetics a rel:Concept ; rdfs:label "Cybernetics" ; rdfs:comment "The study of control, named by Norbert Wiener in 1948: how a system uses feedback about its own output to keep that output on target." ; rel:path "concepts/cybernetics.md" .
+st:cynefin-as-delegation-guide a rel:Procedure ; rdfs:label "Use Cynefin to decide what to delegate to an AI agent" ; rdfs:comment "Classify a decision's Cynefin domain before any agent sees it, and let the domain, never the agent's fluency or track record, set the agent's job: a rule it calls, an analysis someone checks, probes it proposes, or a runbook it follows." ; rel:path "procedures/cynefin-as-delegation-guide.md" .
+st:cynefin-framework a rel:Concept ; rdfs:label "Cynefin framework" ; rdfs:comment "Dave Snowden's framework sorting a decision by how cause and effect behave in it: clear (best practice), complicated (expert analysis finds a knowable answer), complex (coherent only in retrospect, so probe safely) and chaotic (act first to stabilize), with disorder at the center for not yet knowing which." ; rel:path "concepts/cynefin-framework.md" .
+st:damp-an-oscillation a rel:Procedure ; rdfs:label "Damp an oscillation caused by delay" ; rdfs:comment "When a balancing loop overshoots because its feedback is late, shorten the delay, correct only part of the gap at a time, or widen the acceptable band; never react harder to the same late signal." ; rel:path "procedures/damp-an-oscillation.md" .
+st:deferred-capacity-and-bulk-order a rel:Case ; rdfs:label "Deferred capacity and the record order" ; rdfs:comment "Three years of deferring a year-long capacity build because demand was \"too choppy,\" then a record order the line can't fill, and the failure becomes the next argument for deferring again." ; rel:path "cases/deferred-capacity-and-bulk-order.md" .
+st:delay a rel:Concept ; rdfs:label "Delay" ; rdfs:comment "A link in a feedback loop where the effect lags the cause, either as an information delay (a lag in finding out) or a material delay (a lag in the world changing once everyone knows)." ; rel:path "concepts/delay.md" .
+st:deterministic-gate-principle a rel:Heuristic ; rdfs:label "Deterministic-gate principle" ; rdfs:comment "If a decision should produce the identical answer every time given identical inputs, it belongs behind a rule-based gate, not in open-ended judgment by a person or an agent." ; rel:path "heuristics/deterministic-gate-principle.md" .
+st:diagnose-an-archetype a rel:Procedure ; rdfs:label "Diagnose which archetype is at work" ; rdfs:comment "Start from the recurring behavior, form an archetype hypothesis with the diagnostic questions, then confirm it by drawing and tracing the actual links; a familiar story is a hint, not a diagnosis." ; rel:path "procedures/diagnose-an-archetype.md" .
+st:dont-react-harder-to-late-signals a rel:Heuristic ; rdfs:label "Don't react harder to a late signal" ; rdfs:comment "If a system oscillates because its feedback is delayed, reacting faster or more forcefully to the same late signal enlarges the swings." ; rel:path "heuristics/dont-react-harder-to-late-signals.md" .
+st:draw-a-boundary a rel:Procedure ; rdfs:label "Draw a system boundary on purpose" ; rdfs:comment "Choose the smallest slice of the world that still contains the structure producing the behavior in question, sketch its stocks and flows, and write a defense for every exclusion." ; rel:path "procedures/draw-a-boundary.md" .
+st:drift-to-low-performance a rel:Archetype ; rdfs:label "Drift to Low Performance" ; rdfs:comment "A goal quietly erodes toward whatever performance is being achieved, because lowering the target closes the gap faster than improving performance does." ; rel:path "archetypes/drift-to-low-performance.md" .
+st:emilys-laws-of-system-complexity a rel:Concept ; rdfs:label "Emily's Laws of System Complexity" ; rdfs:comment "First Law: for every reduction, there is a greater and opposite clusterfuck. Second Law: the first law is a reductionist statement." ; rel:path "concepts/emilys-laws-of-system-complexity.md" .
+st:engagement-optimization a rel:Case ; rdfs:label "Engagement-optimizing platforms" ; rdfs:comment "Platforms optimizing a single measurable proxy (time on site, clicks) saw the metric rise while what it stood for degraded where no dashboard reported." ; rel:path "cases/engagement-optimization.md" .
+st:escalation a rel:Archetype ; rdfs:label "Escalation" ; rdfs:comment "Two actors each respond to the other's relative gain by increasing their own effort, so two balancing loops lock together into a reinforcing spiral toward an outcome neither wants." ; rel:path "archetypes/escalation.md" .
+st:every-check-has-a-boundary-and-a-kind a rel:Heuristic ; rdfs:label "When something gets past a check, fix the check" ; rdfs:comment "When an error slips past a check, ask whether it fell outside the check's boundary (where it looked) or outside its kind (what it could notice), and change the check, not just the bug." ; rel:path "heuristics/every-check-has-a-boundary-and-a-kind.md" .
+st:exercise-the-capability a rel:Heuristic ; rdfs:label "Keep the capability exercised on purpose" ; rdfs:comment "When a tool or agent reliably does a skilled task, schedule people to do it without the tool and compare their answer with the tool's, so the human capability doesn't quietly atrophy." ; rel:path "heuristics/exercise-the-capability.md" .
+st:expand-capacity-or-stop-corner-cutting a rel:Case ; rdfs:label "Expand capacity, or stop cutting corners?" ; rdfs:comment "The model recommends expanding assembly capacity over stopping corner-cutting by 60 tons, but the recommendation flips if an unmeasured quality-loss guess is 15% too low, or only 3% too low if transit is also faster than guessed." ; rel:path "cases/expand-capacity-or-stop-corner-cutting.md" .
+st:exponential-looks-flat a rel:Heuristic ; rdfs:label "Act while the curve still looks flat" ; rdfs:comment "If you have traced a reinforcing loop, decide on intervention while its output still looks boring, because compounding is invisible to the eye until several rounds have run." ; rel:path "heuristics/exponential-looks-flat.md" .
+st:feedback-loop a rel:Concept ; rdfs:label "Feedback loop" ; rdfs:comment "A causal chain that curls back on itself (A affects B, B affects C, C affects A), so a system's output becomes an input to its own future output; every such loop is either reinforcing or balancing." ; rel:path "concepts/feedback-loop.md" .
+st:find-the-unwritten-goal a rel:Procedure ; rdfs:label "Find the unwritten goal a balancing loop defends" ; rdfs:comment "Sketch the loop's state, goal, gap and correction, then ask what number the goal holds and who set it; \"nobody knows, we just feel it\" is a valid and important result." ; rel:path "procedures/find-the-unwritten-goal.md" .
+st:fit-is-easy-to-manufacture a rel:Heuristic ; rdfs:label "A good historical fit is easy to manufacture" ; rdfs:comment "Any model with guessed parameters can be tuned to reproduce the past, so a good fit proves only that the model can be tuned, not that its mechanisms are right." ; rel:path "heuristics/fit-is-easy-to-manufacture.md" .
+st:fixes-that-fail a rel:Archetype ; rdfs:label "Fixes That Fail" ; rdfs:comment "A quick fix relieves a symptom genuinely and immediately, but has a delayed side effect that makes the underlying problem worse, often triggering the same fix again, harder." ; rel:path "archetypes/fixes-that-fail.md" .
+st:flow a rel:Concept ; rdfs:label "Flow" ; rdfs:comment "A rate, the speed at which a stock is filling or draining per unit of time, with no inertia of its own." ; rel:path "concepts/flow.md" .
+st:fluency-is-not-correctness a rel:Heuristic ; rdfs:label "Fluency is not system-level correctness" ; rdfs:comment "A fast, confident, internally consistent answer to the question asked says nothing about whether the question was the right one, so check the question, not the polish." ; rel:path "heuristics/fluency-is-not-correctness.md" .
+st:four-decisions-four-domains a rel:Case ; rdfs:label "Four decisions, four Cynefin domains" ; rdfs:comment "Renewing a known-good insurance policy (clear), choosing a seasonal forecasting model's order (complicated), responding to the first months of a price war (complex), and responding to an incident in progress (chaotic), each with a different job for an AI agent." ; rel:path "cases/four-decisions-four-domains.md" .
+st:general-systems-theory a rel:Concept ; rdfs:label "General systems theory" ; rdfs:comment "Ludwig von Bertalanffy's search for one vocabulary that could describe any system of any kind (open systems, hierarchy, equifinality)." ; rel:path "concepts/general-systems-theory.md" .
+st:goal-seeking-behavior a rel:Concept ; rdfs:label "Goal-seeking behavior" ; rdfs:comment "The signature curve of a balancing loop without significant delay: the state approaches its goal quickly at first, then more and more gently, because the correction is sized to a shrinking gap." ; rel:path "concepts/goal-seeking-behavior.md" .
+st:graphs-not-just-chats a rel:Heuristic ; rdfs:label "Graphs, not just chats" ; rdfs:comment "When an AI agent answers factual questions about a system, give it a knowledge graph to query so its answers are reproducible, traceable to sources and shared, rather than left in one conversation." ; rel:path "heuristics/graphs-not-just-chats.md" .
+st:growing-is-not-reinforcing a rel:Heuristic ; rdfs:label "Growth isn't proof of a reinforcing loop" ; rdfs:comment "Before crediting a growth spiral to a loop, check that each round's output is what drives the next round's input, not an outside event moving the same way." ; rel:path "heuristics/growing-is-not-reinforcing.md" .
+st:growing-workforce-many-limits a rel:Case ; rdfs:label "A growing workforce meets several limits" ; rdfs:comment "As an organization grows it becomes less attractive to recruits for three different reasons (thin training, full housing, rising outside scrutiny), and relieving one only moves the bottleneck." ; rel:path "cases/growing-workforce-many-limits.md" .
+st:growth-and-underinvestment a rel:Archetype ; rdfs:label "Growth and Underinvestment" ; rdfs:comment "Growth runs into a capacity limit that investment could remove, but investment is deferred, and the demand lost to poor performance is read as proof that demand never justified investing, while the performance standard quietly erodes." ; rel:path "archetypes/growth-and-underinvestment.md" .
+st:hand-iterate-a-model a rel:Procedure ; rdfs:label "Hand-iterate a stock-and-flow model" ; rdfs:comment "Give each stock a starting value and each flow an honest-guess equation, step the model forward one time step at a time in a table, read off which constraint binds, then shock it to see whether its loops fire." ; rel:path "procedures/hand-iterate-a-model.md" .
+st:hard-and-soft-systems-thinking a rel:Concept ; rdfs:label "Hard and soft systems thinking" ; rdfs:comment "Checkland's distinction between problems defined well enough to model directly (hard) and problems whose definition is itself in dispute (soft)." ; rel:path "concepts/hard-and-soft-systems-thinking.md" .
+st:hiring-overshoot a rel:Case ; rdfs:label "Hiring overshoot through a training delay" ; rdfs:comment "A reputation-driven hiring spiral overshoots what a fixed training staff can handle, because poor training shows up as poor execution only weeks after hiring." ; rel:path "cases/hiring-overshoot.md" .
+st:homeostasis a rel:Concept ; rdfs:label "Homeostasis" ; rdfs:comment "The special case of a balancing loop whose goal is simply \"stay the same,\" like a thermostat holding a temperature." ; rel:path "concepts/homeostasis.md" .
+st:iceberg-analysis a rel:Procedure ; rdfs:label "Run the iceberg on an incident" ; rdfs:comment "Write one honest sentence for each of the iceberg's four bands (event, pattern, structure, mental model) before accepting any fix." ; rel:path "procedures/iceberg-analysis.md" .
+st:iceberg-model a rel:Concept ; rdfs:label "Iceberg model" ; rdfs:comment "A depth-of-analysis discipline with four bands: event (what happened), pattern (has it happened before), structure (what arrangement produces the pattern) and mental model (what belief made that structure seem reasonable)." ; rel:path "concepts/iceberg-model.md" .
+st:insight-maker a rel:Tool ; rdfs:label "Insight Maker" ; rdfs:comment "A free, browser-based system dynamics tool with no install or license barrier, with lighter sensitivity and Monte Carlo tooling than the commercial options." ; rel:path "tools/insight-maker.md" .
+st:inspection-instead-of-root-cause a rel:Case ; rdfs:label "Hand inspection instead of fixing the source" ; rdfs:comment "For two years every low-quality batch was caught by hand inspection and reworked, while the skill of diagnosing the upstream defect atrophied from disuse." ; rel:path "cases/inspection-instead-of-root-cause.md" .
+st:know-which-reduction-you-made a rel:Heuristic ; rdfs:label "Know which reduction you just made" ; rdfs:comment "Every model, archetype, boundary and summary is a reduction; the discipline isn't avoiding reduction but knowing which one you made, drawing what it left out, and watching what pushes back." ; rel:path "heuristics/know-which-reduction-you-made.md" .
+st:knowledge-graph a rel:Concept ; rdfs:label "Knowledge graph, RDF and SPARQL" ; rdfs:comment "A knowledge graph represents entities as nodes and typed relationships as labeled edges, a model of facts rather than dynamics; RDF is the W3C standard for writing it as subject-predicate-object triples, and SPARQL is its query language." ; rel:path "concepts/knowledge-graph.md" .
+st:kumu a rel:Tool ; rdfs:label "Kumu" ; rdfs:comment "A web-based systems-mapping tool for large or shared causal loop diagrams, with automated loop detection." ; rel:path "tools/kumu.md" .
+st:label-the-stopgap a rel:Heuristic ; rdfs:label "Label a stopgap as a stopgap" ; rdfs:comment "A low-leverage fix is fine as a deliberate bridge while a structural fix is built, as long as everyone knows which job it's doing and what it's buying time for." ; rel:path "heuristics/label-the-stopgap.md" .
+st:leverage-ladder-examples a rel:Case ; rdfs:label "Three interventions, three rungs" ; rdfs:comment "Raising overtime pay (a parameter), rewriting a success-driven budget allocation rule (a rule), and redefining what \"success\" means in reviews to count its costs (a paradigm) rank low, mid and high on the leverage ladder." ; rel:path "cases/leverage-ladder-examples.md" .
+st:leverage-points a rel:Concept ; rdfs:label "Leverage points" ; rdfs:comment "A ranked hierarchy of places to intervene in a system, collapsed to three bands (parameters, rules, goals and paradigms); higher bands move the structure rather than its current output, and are usually harder to reach." ; rel:path "concepts/leverage-points.md" .
+st:limits-to-growth a rel:Archetype ; rdfs:label "Limits to Growth" ; rdfs:comment "A reinforcing growth loop runs into a balancing loop generated by a real constraint (its carrying capacity), so growth slows and levels off, or declines if the constraint itself erodes, without anything having broken." ; rel:path "archetypes/limits-to-growth.md" .
+st:limits-to-growth-study a rel:Case ; rdfs:label "The Limits to Growth study (1972)" ; rdfs:comment "A defensible global system dynamics model whose conclusions have been argued about for fifty years, mostly over its boundary and parameter choices rather than its mathematics." ; rel:path "cases/limits-to-growth-study.md" .
+st:live-build-technique a rel:Procedure ; rdfs:label "Live-build a model with its audience" ; rdfs:comment "Start from one shared, undisputed event, build the loop live one link at a time asking \"does this match what you've seen?\", and name the archetype only after the room has said something close to it in their own words." ; rel:path "procedures/live-build-technique.md" .
+st:loopy a rel:Tool ; rdfs:label "Loopy" ; rdfs:comment "A free, open-source, browser-based tool for building simple causal loop diagrams and animating them." ; rel:path "tools/loopy.md" .
+st:map-the-agents a rel:Procedure ; rdfs:label "Map the agents in a system as a graph" ; rdfs:comment "Record each AI agent as triples (what it acts on, whose output it reads, who reviews it), then query for agents nobody reviews and for everything downstream of a given agent, as the list of what to trace before any CLD or simulation." ; rel:path "procedures/map-the-agents.md" .
+st:minsky-financial-instability a rel:Case ; rdfs:label "Minsky's financial instability" ; rdfs:comment "Stability breeds over-leverage: rising prices justify more borrowing, which bids prices up further, until an ordinary shock meets a system with no slack." ; rel:path "cases/minsky-financial-instability.md" .
+st:morris-screening a rel:Concept ; rdfs:label "Morris screening" ; rdfs:comment "A cheaper, coarser alternative to Sobol analysis for slow models, which ranks parameters by importance and flags those whose effect depends on others, without putting a number on each share." ; rel:path "concepts/morris-screening.md" .
+st:name-the-flow a rel:Heuristic ; rdfs:label "When a stock is changing, name the flow" ; rdfs:comment "A sentence like \"our headcount is dropping\" hides which flow is responsible, and the inflow and outflow readings call for different fixes." ; rel:path "heuristics/name-the-flow.md" .
+st:neo4j a rel:Tool ; rdfs:label "Neo4j" ; rdfs:comment "The leading property graph database, queried in Cypher rather than SPARQL, with a neosemantics (n10s) plugin for importing and exporting RDF." ; rel:path "tools/neo4j.md" .
+st:numerical-integration a rel:Concept ; rdfs:label "Numerical integration method and time step" ; rdfs:comment "How simulation software steps a model through time; Euler and Runge-Kutta methods can give meaningfully different output on the same model, so the method and time step are modeling decisions, not defaults to ignore." ; rel:path "concepts/numerical-integration.md" .
+st:one-at-a-time-swing-test a rel:Procedure ; rdfs:label "One-at-a-time swing test" ; rdfs:comment "Move each of the shakiest guessed parameters 25% up and 25% down while holding the others at their guesses, rerun, and see whether the recommendation flips; draw the results as a tornado chart." ; rel:path "procedures/one-at-a-time-swing-test.md" .
+st:oscillation-and-overshoot a rel:Concept ; rdfs:label "Oscillation and overshoot" ; rdfs:comment "What delayed feedback produces: a balancing loop correcting for where things were overshoots its goal on every swing (oscillation), and a reinforcing loop compounds well past its limit before the stopping signal arrives (overshoot)." ; rel:path "concepts/oscillation-and-overshoot.md" .
+st:oscillation-is-structural a rel:Heuristic ; rdfs:label "Don't blame people for oscillation" ; rdfs:comment "Repeated overshoot under delayed feedback is the expected behavior of the structure, so look for the delay before looking for the person who \"should have acted sooner.\"" ; rel:path "heuristics/oscillation-is-structural.md" .
+st:overtime-and-burnout a rel:Case ; rdfs:label "Overtime pay and burnout" ; rdfs:comment "Overtime raised a slipping success rate for a quarter or two, while delayed burnout raised the mistake rate and pushed success down further, requiring more overtime." ; rel:path "cases/overtime-and-burnout.md" .
+st:past-performance-may-be-allocation a rel:Heuristic ; rdfs:label "Past performance may be a record of past allocation" ; rdfs:comment "When resources go to whoever performed best last round, part of each party's track record was produced by the allocation rule itself, not by merit." ; rel:path "heuristics/past-performance-may-be-allocation.md" .
+st:plus-into-a-stock a rel:Heuristic ; rdfs:label "A plus sign into a stock means \"adds to\"" ; rdfs:comment "On an arrow from a flow into a stock, + means the flow adds to the stock, not that the two move together; a stock keeps rising while its net inflow is positive, even as that inflow shrinks." ; rel:path "heuristics/plus-into-a-stock.md" .
+st:polarity-carries-no-value a rel:Heuristic ; rdfs:label "Reinforcing isn't good, balancing isn't bad" ; rdfs:comment "Loop type says how a loop behaves, not whether that behavior is welcome; judge each loop by the direction it is running and the goal it defends." ; rel:path "heuristics/polarity-carries-no-value.md" .
+st:presenting-to-the-inspection-crew a rel:Case ; rdfs:label "Presenting a Shifting the Burden finding to the people doing the fix" ; rdfs:comment "Leading with the archetype's name and a finished diagram made an inspection crew hear an accusation; building the loop live from their own frustration led one of them to state the archetype unprompted." ; rel:path "cases/presenting-to-the-inspection-crew.md" .
+st:pressure-shrinks-the-iceberg a rel:Heuristic ; rdfs:label "Pressure keeps analysis at the event level" ; rdfs:comment "The pull to react to the event and move on is strongest when stakes are highest, so the deeper bands need to be asked for deliberately under pressure." ; rel:path "heuristics/pressure-shrinks-the-iceberg.md" .
+st:price-war a rel:Case ; rdfs:label "A price war nobody wins" ; rdfs:comment "A competitor undercuts prices, the incumbent cuts deeper to reclaim ground, and within three rounds both are selling at a loss, with every cut a locally correct response." ; rel:path "cases/price-war.md" .
+st:property-graph a rel:Concept ; rdfs:label "Property graph" ; rdfs:comment "A graph data model where nodes and edges carry arbitrary key-value properties directly, rather than everything decomposed into triples; Neo4j's native model, queried in Cypher, not SPARQL." ; rel:path "concepts/property-graph.md" .
+st:publicity-and-copycats a rel:Case ; rdfs:label "Publicity draws copycats, which draw attention" ; rdfs:comment "A publicized operation attracts imitators into the same territory, whose activity raises the authorities' total attention there, which makes the next operation more visible and more publicized." ; rel:path "cases/publicity-and-copycats.md" .
+st:push-on-the-limit a rel:Heuristic ; rdfs:label "When growth stalls, look at the limit, not the engine" ; rdfs:comment "Slowing growth against a real constraint is the system behaving as designed; pushing harder on the growth engine mostly makes the constraint push back harder." ; rel:path "heuristics/push-on-the-limit.md" .
+st:pysd a rel:Tool ; rdfs:label "PySD" ; rdfs:comment "An open-source Python library that loads a Vensim or XMILE model and simulates it as ordinary Python, returning a pandas DataFrame." ; rel:path "tools/pysd.md" .
+st:quantified-supply-chain-model a rel:Case ; rdfs:label "Quantifying the supply chain" ; rdfs:comment "Hand-iterating the supply chain shows refined material piling up, output capped by labor hours rather than refining, zero schedule slack, and a dormant corner-cutting loop that a three-week shock turns from a 30-ton gap into a 285-ton one." ; rel:path "cases/quantified-supply-chain-model.md" .
+st:quantify-to-surface-disagreement a rel:Heuristic ; rdfs:label "Quantify early to surface disagreement, not for precision" ; rdfs:comment "Writing an explicit flow equation, even with guessed numbers, forces disagreements that a qualitative diagram lets stay vague, and those are cheapest to resolve on paper." ; rel:path "heuristics/quantify-to-surface-disagreement.md" .
+st:rank-interventions a rel:Procedure ; rdfs:label "Rank interventions on the leverage ladder" ; rdfs:comment "For a diagnosed structure, list one intervention at each band (a parameter, a rule, a goal or mental model), mark the link or loop each touches, rate each on power and on reach separately, and label each as a real fix or a time-buying stopgap." ; rel:path "procedures/rank-interventions.md" .
+st:rdf-triple-stores a rel:Tool ; rdfs:label "RDF triple stores" ; rdfs:comment "Databases that store RDF triples and speak SPARQL natively, such as Apache Jena with its Fuseki server, Ontotext GraphDB, Blazegraph and OpenLink Virtuoso." ; rel:path "tools/rdf-triple-stores.md" .
+st:reach-for-a-graph-when a rel:Heuristic ; rdfs:label "Reach for a knowledge graph only when facts outgrow the diagram" ; rdfs:comment "A well-drawn CLD or stock-and-flow diagram is the better tool for most systems thinking; a knowledge graph earns its cost when the facts are too many, change too often, must join external data, or must come back the same every time an agent answers." ; rel:path "heuristics/reach-for-a-graph-when.md" .
+st:recruitment-reputation-and-training a rel:Case ; rdfs:label "Recruitment reputation and training capacity" ; rdfs:comment "A reinforcing reputation loop and a balancing training-capacity loop sharing a path, where the reinforcing loop dominates while the workforce is small and the balancing loop takes over once headcount outgrows the trainers." ; rel:path "cases/recruitment-reputation-and-training.md" .
+st:recurring-causes-mean-structure a rel:Heuristic ; rdfs:label "Recurring, differently-caused failures point at structure" ; rdfs:comment "If each incident has a different, correctly fixed root cause but the overall metric doesn't improve, the cause is in the structure connecting the parts, not in any part." ; rel:path "heuristics/recurring-causes-mean-structure.md" .
+st:reduction a rel:Concept ; rdfs:label "Reduction (reductionism)" ; rdfs:comment "Cutting a problem down to the one part that looks broken and analyzing or fixing that part in isolation, discarding its interconnections." ; rel:path "concepts/reduction.md" .
+st:reference-point a rel:Concept ; rdfs:label "Reference point (goal)" ; rdfs:comment "The value a balancing loop steers toward; it comes from outside the loop and can be explicit or implicit, fixed or moving." ; rel:path "concepts/reference-point.md" .
+st:reinforcing-loop a rel:Concept ; rdfs:label "Reinforcing loop" ; rdfs:comment "A feedback loop with an even number of negative links, which amplifies whatever is currently happening, compounding growth or decline." ; rel:path "concepts/reinforcing-loop.md" .
+st:retrieval-augmented-generation a rel:Concept ; rdfs:label "Retrieval-augmented generation (RAG)" ; rdfs:comment "An AI system fetching facts from a source before answering, rather than answering from what it learned in training; a knowledge graph is one structured source for it." ; rel:path "concepts/retrieval-augmented-generation.md" .
+st:right-is-not-sufficient a rel:Heuristic ; rdfs:label "Being right is necessary, never sufficient" ; rdfs:comment "A correct model that nobody believes has changed nothing, so plan for how the audience will come to accept a model as early as you plan the model itself." ; rel:path "heuristics/right-is-not-sufficient.md" .
+st:salib a rel:Tool ; rdfs:label "SALib" ; rdfs:comment "An open-source Python library for global sensitivity analysis (Sobol indices, Morris screening), a natural next step once a model runs in Python through PySD." ; rel:path "tools/salib.md" .
+st:scarce-site-rush a rel:Case ; rdfs:label "The rush for scarce sites" ; rdfs:comment "Several organizations race to claim and overbuild the few sites in a region that meet strict criteria; collective overbuilding degrades the region's viability and draws scrutiny that burns every operation, including the winner." ; rel:path "cases/scarce-site-rush.md" .
+st:second-order-effects a rel:Concept ; rdfs:label "First-, second- and third-order effects" ; rdfs:comment "A discipline of asking \"and then what?\" more than once, deliberately, stopping at the order where the causal chain gets too thin to defend; a real first-order gain and a real second-order risk can both be true of one change." ; rel:path "concepts/second-order-effects.md" .
+st:self-reported-confidence a rel:Heuristic ; rdfs:label "Self-reported confidence is not evidence" ; rdfs:comment "A confidence signal generated by the system being trusted (a badge, a score, an assertion of certainty) tells you how the output is phrased, not whether it is right or addresses the right question." ; rel:path "heuristics/self-reported-confidence.md" .
+st:sensitivity-analysis a rel:Concept ; rdfs:label "Sensitivity analysis" ; rdfs:comment "The discipline of finding out which of a model's guessed parameters its conclusions depend on, whose real payoff is a prioritized list of what to measure before trusting a specific recommendation." ; rel:path "concepts/sensitivity-analysis.md" .
+st:shifting-the-burden a rel:Archetype ; rdfs:label "Shifting the Burden" ; rdfs:comment "A fast symptomatic fix and a slower fundamental fix compete to close the same gap, and reliance on the symptomatic fix erodes the capability to apply the fundamental one, so the quick fix keeps winning." ; rel:path "archetypes/shifting-the-burden.md" .
+st:shifting-the-burden-to-the-intervenor a rel:Archetype ; rdfs:label "Shifting the Burden to the Intervenor" ; rdfs:comment "Shifting the Burden where the symptomatic fix is a specific outside fixer available on demand (a consultant, the one expert, an AI agent), so internal capability erodes faster than in the ordinary case." ; rel:path "archetypes/shifting-the-burden-to-the-intervenor.md" .
+st:single-expert-dependency a rel:Case ; rdfs:label "The one person who can fix the fault" ; rdfs:comment "One staff member is the only person who can diagnose a recurring fault; calling them is always easier than training someone else, until their vacation is an unregistered operational risk." ; rel:path "cases/single-expert-dependency.md" .
+st:sliding-target a rel:Case ; rdfs:label "A target that slid from 90% to 70%" ; rdfs:comment "An acceptable success-rate target fell from 90% to 70% over three years, one post-miss \"let's be realistic\" adjustment at a time." ; rel:path "cases/sliding-target.md" .
+st:snapshot-test a rel:Heuristic ; rdfs:label "Snapshot test" ; rdfs:comment "To tell a stock from a flow, imagine stopping time and photographing the system; whatever you could still count or measure in the photograph is a stock, and whatever only makes sense as a rate is a flow." ; rel:path "heuristics/snapshot-test.md" .
+st:snowballing a rel:Concept ; rdfs:label "Snowballing (exponential compounding)" ; rdfs:comment "A reinforcing loop watched over several passes, where a constant multiplier on a growing base looks flat for a long stretch and then suddenly steep." ; rel:path "concepts/snowballing.md" .
+st:sobol-analysis a rel:Concept ; rdfs:label "Sobol analysis (S1, ST, S2)" ; rdfs:comment "A global sensitivity analysis that varies every uncertain parameter at once across its range, runs the model on thousands of combinations, and divides the variance of the result among the parameters, alone (S1), in total (ST) and in pairs (S2)." ; rel:path "concepts/sobol-analysis.md" .
+st:soft-systems-methodology a rel:Concept ; rdfs:label "Soft Systems Methodology (SSM)" ; rdfs:comment "Peter Checkland's method for problems whose definition is contested: surface every stakeholder's worldview, often in a rich picture, before building any formal model." ; rel:path "concepts/soft-systems-methodology.md" .
+st:software-is-escalation-of-commitment a rel:Heuristic ; rdfs:label "Moving to software is an escalation of commitment" ; rdfs:comment "Graduating a model to simulation software or code buys precision and shareability but costs a learning curve, a model fewer people can read or argue with, and a new way to be wrong (mistaking \"it runs\" for \"it's correct\")." ; rel:path "heuristics/software-is-escalation-of-commitment.md" .
+st:source-and-sink a rel:Concept ; rdfs:label "Source and sink (cloud)" ; rdfs:comment "The cloud symbol at the open end of a pipe in a stock-and-flow diagram, marking where material comes from or goes to outside the model's boundary, untracked." ; rel:path "concepts/source-and-sink.md" .
+st:specification-gaming a rel:Concept ; rdfs:label "Specification gaming" ; rdfs:comment "An AI system (or any optimizer) optimizing a measured proxy at the expense of the real goal it stood in for; once the neglected goal's damage reaches the metric, its structure is identical to Fixes That Fail." ; rel:path "concepts/specification-gaming.md" .
+st:staged-supply-chain-not-a-swarm a rel:Case ; rdfs:label "A staged supply chain is not a swarm" ; rdfs:comment "A four-stage supply chain with a named owner per stage fails the swarm test, so the ordinary stock-and-flow toolkit is the right one for it." ; rel:path "cases/staged-supply-chain-not-a-swarm.md" .
+st:standards-specific-enough-to-fail a rel:Heuristic ; rdfs:label "Write standards specific enough to fail" ; rdfs:comment "A check can only catch what its standard is specific enough to name, so a vague description (\"a 2x2-plus-center diagram\") will pass every wrong arrangement." ; rel:path "heuristics/standards-specific-enough-to-fail.md" .
+st:stella-and-ithink a rel:Tool ; rdfs:label "Stella and iThink" ; rdfs:comment "isee systems' commercial system dynamics authoring tools, offering the same category of diagramming, simulation and sensitivity tooling as Vensim and opening XMILE files directly." ; rel:path "tools/stella-and-ithink.md" .
+st:stock a rel:Concept ; rdfs:label "Stock" ; rdfs:comment "An accumulation: a quantity measurable at a single instant that changes only because something fills or drains it." ; rel:path "concepts/stock.md" .
+st:stock-and-flow-diagram a rel:Concept ; rdfs:label "Stock-and-flow diagram and flow equations" ; rdfs:comment "The quantified version of a system sketch or translated CLD, with units and a starting value on every stock and an equation on every flow, stepped forward as a first-order difference equation." ; rel:path "concepts/stock-and-flow-diagram.md" .
+st:structural-and-behavioral-validity a rel:Concept ; rdfs:label "Structural and behavioral validity" ; rdfs:comment "Structural validity asks whether each mechanism in a model corresponds to something real, checked link by link without looking at output; behavioral validity asks whether the output reproduces observed history; passing one never implies passing the other." ; rel:path "concepts/structural-and-behavioral-validity.md" .
+st:success-to-the-successful a rel:Archetype ; rdfs:label "Success to the Successful" ; rdfs:comment "Two competitors draw from one limited resource, and an early edge for one, however it arose, is reinforced by the allocation rule itself, starving the other of what it would need to catch up regardless of merit." ; rel:path "archetypes/success-to-the-successful.md" .
+st:supply-chain-boundary-and-catwoe a rel:Case ; rdfs:label "Bounding the supply chain and running CATWOE on it" ; rdfs:comment "A four-stage chain ending in a stockpile, bounded to the smallest slice that contains the recurring-miss structure, with CATWOE exposing an unstated worldview that readiness beats quality." ; rel:path "cases/supply-chain-boundary-and-catwoe.md" .
+st:supply-chain-recurring-misses a rel:Case ; rdfs:label "The supply chain that kept missing deadlines" ; rdfs:comment "Four quarters of real, correctly fixed root causes (labor shortage, supplier lead time, customs delay, scheduling conflict), and the deadline miss rate never improved." ; rel:path "cases/supply-chain-recurring-misses.md" .
+st:swarm-test a rel:Heuristic ; rdfs:label "Swarm test" ; rdfs:comment "Ask \"is anyone in charge?\"; if coordination is assigned by someone accountable, use the ordinary stock/flow and feedback toolkit; if it emerges from many actors following local rules with nobody in charge, treat it as a swarm." ; rel:path "heuristics/swarm-test.md" .
+st:system a rel:Concept ; rdfs:label "System" ; rdfs:comment "A set of elements and the interconnections between them, organized around a function or purpose that the arrangement produces whether or not anyone designed it to." ; rel:path "concepts/system.md" .
+st:system-boundary a rel:Concept ; rdfs:label "System boundary" ; rdfs:comment "The dividing line between what a model treats as internal structure to be explained and what it treats as external input to be accepted as given; a decision, not a discovery." ; rel:path "concepts/system-boundary.md" .
+st:system-dynamics a rel:Concept ; rdfs:label "System dynamics" ; rdfs:comment "Jay Forrester's field of quantified models built from stocks, flows and feedback, simulated forward to see what behavior a structure produces over time." ; rel:path "concepts/system-dynamics.md" .
+st:systems-archetype a rel:Concept ; rdfs:label "Systems archetype" ; rdfs:comment "A recurring causal loop shape, recognizable from its structure alone, independent of which domain is running through it." ; rel:path "concepts/systems-archetype.md" .
+st:systems-thinking a rel:Concept ; rdfs:label "Systems thinking" ; rdfs:comment "A learnable discipline for explaining behavior that no single part explains, by drawing the structure of a whole system (its stocks, flows, feedback and boundary) and tracing what that structure produces over time." ; rel:path "concepts/systems-thinking.md" .
+st:tame-messy-wicked-problems a rel:Concept ; rdfs:label "Tame, messy and wicked problems" ; rdfs:comment "An older vocabulary for problem difficulty: tame (clear formulation, right-or-wrong solution), wicked (no agreed formulation, solutions only better or worse, and attempting one changes the problem), and a mess (a system of interacting problems none solvable alone)." ; rel:path "concepts/tame-messy-wicked-problems.md" .
+st:textbook-pricing-bots a rel:Case ; rdfs:label "Two pricing bots and a $23.7 million textbook" ; rdfs:comment "In 2011 two sellers' repricing rules (one at 0.998 times its rival, the other at about 1.27 times) multiplied a biology textbook's listed price by about 1.27 a day until it peaked at $23,698,655.93." ; rel:path "cases/textbook-pricing-bots.md" .
+st:trace-loop-polarity a rel:Procedure ; rdfs:label "Trace and count a loop's polarity" ; rdfs:comment "Mark every link + or -, trace the loop once and count the minus signs; even (including zero) is reinforcing, odd is balancing." ; rel:path "procedures/trace-loop-polarity.md" .
+st:trace-three-orders a rel:Procedure ; rdfs:label "Trace a change three orders deep" ; rdfs:comment "For a real change (often an AI-augmented workflow), write the first-order effect, what it causes months later, and what that might cause a year out (labeled speculative), check each against the archetypes, and pick remedies that keep the first-order gain." ; rel:path "procedures/trace-three-orders.md" .
+st:tragedy-of-the-commons a rel:Archetype ; rdfs:label "Tragedy of the Commons" ; rdfs:comment "Several independent actors share a finite, unpriced resource; each is individually incentivized to take more than a sustainable share because holding back only cedes it to others, so the resource degrades for everyone." ; rel:path "archetypes/tragedy-of-the-commons.md" .
+st:translate-cld-to-stock-and-flow a rel:Procedure ; rdfs:label "Translate a CLD into stocks and flows" ; rdfs:comment "Six steps: snapshot-test every node, give each stock its pipes, turn every delay into a stock, make everything else an auxiliary, check every loop passes through a stock, then write and check each equation's units and polarity." ; rel:path "procedures/translate-cld-to-stock-and-flow.md" .
+st:trusted-forecasting-tool a rel:Case ; rdfs:label "A forecasting tool everyone trusts" ; rdfs:comment "An AI forecasting tool with a good track record accumulates trust, its forecasts get less scrutiny, and fewer errors are caught, so trust keeps rising whether or not errors occur; its designers put the highest-stakes actions behind deterministic gates." ; rel:path "cases/trusted-forecasting-tool.md" .
+st:undrawn-leak a rel:Case ; rdfs:label "Material leaking through a pipe nobody drew" ; rdfs:comment "One department quietly diverts top-grade material from shipments to another use, so the model keeps counting it as in transit when it will never arrive." ; rel:path "cases/undrawn-leak.md" .
+st:unrun-code-is-an-unchecked-citation a rel:Heuristic ; rdfs:label "Unrun code is a citation nobody looked up" ; rdfs:comment "Plausible-looking output (a citation, a code example, printed results) that was generated rather than verified looks exactly like the real thing, and only running or looking it up catches it." ; rel:path "heuristics/unrun-code-is-an-unchecked-citation.md" .
+st:upstream-downstream-adversaries a rel:Case ; rdfs:label "Upstream and downstream divisions undermining each other" ; rdfs:comment "An extraction division rushes shipments to hit its speed metric and an assembly division adds inspection to hit its quality metric; rushed material hurts assembly and held shipments hurt extraction, and each blames the other." ; rel:path "cases/upstream-downstream-adversaries.md" .
+st:urgency-corner-cutting-loop a rel:Case ; rdfs:label "Urgency, corner-cutting and defects" ; rdfs:comment "A low finished-goods stockpile triggers rushed orders, rushed material gets corners cut at processing two weeks later, quality falls, defects rise, and the stockpile grows more slowly, keeping it low; a vicious reinforcing loop nobody had drawn whole." ; rel:path "cases/urgency-corner-cutting-loop.md" .
+st:validate-a-model a rel:Procedure ; rdfs:label "Put a model on trial" ; rdfs:comment "Before acting on a model, test its structure link by link, test its behavior against history separately, then find which guesses its advice depends on, while running a counter-practice for each of three named biases." ; rel:path "procedures/validate-a-model.md" .
+st:vensim a rel:Tool ; rdfs:label "Vensim" ; rdfs:comment "Ventana Systems' commercial system dynamics authoring tool, with native stock-and-flow diagramming, numerical integration, and sensitivity and Monte Carlo tooling." ; rel:path "tools/vensim.md" .
+st:verify-after-translation a rel:Heuristic ; rdfs:label "Verify after every translation" ; rdfs:comment "After moving a model between tools, formats or languages (an XMILE round trip, a PySD import, a port to code), reproduce a known run on identical inputs before trusting it." ; rel:path "heuristics/verify-after-translation.md" .
+st:xmile a rel:Tool ; rdfs:label "XMILE" ; rdfs:comment "The OASIS-standardized, vendor-neutral XML format for exchanging system dynamics models between tools; it guarantees the structure travels, not that the model is correct." ; rel:path "tools/xmile.md" .
+st:a-trace-is-not-a-definition rel:instance_of series:model-validation .
+st:a-trace-is-not-a-definition rel:related st:building-this-book-with-an-agent .
+st:a-trace-is-not-a-definition rel:related st:diagnose-an-archetype .
+st:a-trace-is-not-a-definition rel:related st:systems-archetype .
+st:a-trace-is-not-a-definition rel:related st:trace-loop-polarity .
+st:accidental-adversaries rel:instance_of series:stakeholder-worldviews .
+st:accidental-adversaries rel:instance_of series:unintended-consequences .
+st:accidental-adversaries rel:related st:escalation .
+st:accidental-adversaries rel:related st:fixes-that-fail .
+st:accidental-adversaries rel:related st:undrawn-leak .
+st:accidental-adversaries rel:requires st:balancing-loop .
+st:accidental-adversaries rel:requires st:reinforcing-loop .
+st:actor-based-modeling rel:contrasts_with st:agentic-ai .
+st:actor-based-modeling rel:related st:anylogic .
+st:actor-based-modeling rel:related st:complexity-science .
+st:actor-based-modeling rel:related st:swarm-test .
+st:agent-registry-graph rel:related st:textbook-pricing-bots .
+st:agent-registry-graph rel:related st:trusted-forecasting-tool .
+st:agent-registry-graph rel:uses st:map-the-agents .
+st:agentic-ai rel:contrasts_with st:actor-based-modeling .
+st:agentic-ai rel:instance_of series:ai-delegation .
+st:agentic-ai rel:related st:ai-system-as-a-system .
+st:agentic-ai rel:related st:swarm-test .
+st:ai-accelerated-shipping rel:instance_of st:accidental-adversaries .
+st:ai-accelerated-shipping rel:instance_of st:shifting-the-burden .
+st:ai-accelerated-shipping rel:related st:ai-agent-as-intervenor .
+st:ai-accelerated-shipping rel:uses st:trace-three-orders .
+st:ai-agent-as-intervenor rel:instance_of st:shifting-the-burden-to-the-intervenor .
+st:ai-agent-as-intervenor rel:related st:ai-accelerated-shipping .
+st:ai-agent-as-intervenor rel:related st:ai-trust-loop .
+st:ai-agent-as-intervenor rel:related st:single-expert-dependency .
+st:ai-agent-as-intervenor rel:related st:supply-chain-recurring-misses .
+st:ai-assisted-colonoscopy-deskilling rel:instance_of series:ai-delegation .
+st:ai-assisted-colonoscopy-deskilling rel:instance_of st:shifting-the-burden-to-the-intervenor .
+st:ai-assisted-colonoscopy-deskilling rel:related st:exercise-the-capability .
+st:ai-system-as-a-system rel:instance_of series:ai-delegation .
+st:ai-system-as-a-system rel:related st:agentic-ai .
+st:ai-system-as-a-system rel:related st:ai-trust-loop .
+st:ai-system-as-a-system rel:related st:shifting-the-burden-to-the-intervenor .
+st:ai-system-as-a-system rel:related st:specification-gaming .
+st:ai-system-as-a-system rel:requires st:feedback-loop .
+st:ai-system-as-a-system rel:requires st:stock .
+st:ai-trust-loop rel:instance_of series:ai-delegation .
+st:ai-trust-loop rel:instance_of series:reinforcing-dynamics .
+st:ai-trust-loop rel:part_of st:ai-system-as-a-system .
+st:ai-trust-loop rel:related st:ai-agent-as-intervenor .
+st:ai-trust-loop rel:related st:ai-system-as-a-system .
+st:ai-trust-loop rel:related st:break-the-trust-loop .
+st:ai-trust-loop rel:related st:fluency-is-not-correctness .
+st:ai-trust-loop rel:related st:self-reported-confidence .
+st:ai-trust-loop rel:related st:shifting-the-burden-to-the-intervenor .
+st:ai-trust-loop rel:related st:single-expert-dependency .
+st:amazon-neptune rel:related st:neo4j .
+st:amazon-neptune rel:related st:rdf-triple-stores .
+st:analytical-thinking rel:contrasts_with st:systems-thinking .
+st:anchor-goals-outside rel:counters st:drift-to-low-performance .
+st:anchor-goals-outside rel:instance_of series:balancing-dynamics .
+st:anchor-goals-outside rel:related st:reference-point .
+st:anchoring rel:instance_of series:cognitive-bias .
+st:anchoring rel:related st:expand-capacity-or-stop-corner-cutting .
+st:anchoring rel:related st:validate-a-model .
+st:anylogic rel:related st:actor-based-modeling .
+st:anylogic rel:related st:choose-simulation-tooling .
+st:applicant-ceiling rel:instance_of st:limits-to-growth .
+st:applicant-ceiling rel:related st:recruitment-reputation-and-training .
+st:applicant-ceiling rel:related st:snowballing .
+st:ask-what-the-fix-does-later rel:diagnoses st:fixes-that-fail .
+st:ask-what-the-fix-does-later rel:diagnoses st:shifting-the-burden .
+st:ask-what-the-fix-does-later rel:instance_of series:unintended-consequences .
+st:ask-what-the-fix-does-later rel:related st:second-order-effects .
+st:attention-decay-and-tempo rel:related st:attention-management-loop .
+st:attention-decay-and-tempo rel:related st:balancing-loop .
+st:attention-decay-and-tempo rel:related st:growing-workforce-many-limits .
+st:attention-decay-and-tempo rel:related st:oscillation-and-overshoot .
+st:attention-decay-and-tempo rel:related st:publicity-and-copycats .
+st:attention-decay-and-tempo rel:uses st:delay .
+st:attention-decay-and-tempo rel:uses st:iceberg-analysis .
+st:attention-decay-and-tempo rel:uses st:stock .
+st:attention-management-loop rel:instance_of st:balancing-loop .
+st:attention-management-loop rel:instance_of st:oscillation-and-overshoot .
+st:attention-management-loop rel:related st:attention-decay-and-tempo .
+st:attention-management-loop rel:uses st:damp-an-oscillation .
+st:attention-management-loop rel:uses st:delay .
+st:attention-management-loop rel:uses st:find-the-unwritten-goal .
+st:attractiveness-principle rel:instance_of series:limits-and-capacity .
+st:attractiveness-principle rel:related st:classify-a-growth-stall .
+st:attractiveness-principle rel:related st:limits-to-growth .
+st:attractiveness-principle rel:specializes st:limits-to-growth .
+st:audit-your-checks rel:instance_of series:ai-delegation .
+st:audit-your-checks rel:instance_of series:model-validation .
+st:audit-your-checks rel:related st:checking-loop .
+st:audit-your-checks rel:related st:every-check-has-a-boundary-and-a-kind .
+st:audit-your-checks rel:related st:standards-specific-enough-to-fail .
+st:audit-your-checks rel:related st:validate-a-model .
+st:audit-your-checks rel:uses st:checking-loop .
+st:audit-your-checks rel:uses st:every-check-has-a-boundary-and-a-kind .
+st:auxiliary rel:part_of st:stock-and-flow-diagram .
+st:auxiliary rel:related st:stock-and-flow-diagram .
+st:availability-heuristic rel:instance_of series:cognitive-bias .
+st:availability-heuristic rel:related st:validate-a-model .
+st:balancing-loop rel:contrasts_with st:reinforcing-loop .
+st:balancing-loop rel:instance_of series:balancing-dynamics .
+st:balancing-loop rel:produces st:goal-seeking-behavior .
+st:balancing-loop rel:related st:attention-decay-and-tempo .
+st:balancing-loop rel:related st:change-initiative-meets-balancing-loop .
+st:balancing-loop rel:related st:cybernetics .
+st:balancing-loop rel:related st:goal-seeking-behavior .
+st:balancing-loop rel:related st:polarity-carries-no-value .
+st:balancing-loop rel:requires st:reference-point .
+st:balancing-loop rel:specializes st:feedback-loop .
+st:bank-run rel:instance_of series:reinforcing-dynamics .
+st:bank-run rel:instance_of st:reinforcing-loop .
+st:bank-run rel:related st:snowballing .
+st:both-sides-blame-the-other rel:diagnoses st:accidental-adversaries .
+st:both-sides-blame-the-other rel:instance_of series:stakeholder-worldviews .
+st:bound-interacting-agents rel:instance_of series:ai-delegation .
+st:bound-interacting-agents rel:instance_of series:escalation .
+st:bound-interacting-agents rel:related st:cynefin-framework .
+st:bound-interacting-agents rel:related st:escalation .
+st:bound-interacting-agents rel:related st:map-the-agents .
+st:bound-interacting-agents rel:uses st:swarm-test .
+st:boundary-critique rel:instance_of series:boundary .
+st:boundary-critique rel:instance_of series:persuasion .
+st:boundary-critique rel:instance_of series:stakeholder-worldviews .
+st:boundary-critique rel:related st:catwoe .
+st:boundary-critique rel:related st:draw-a-boundary .
+st:boundary-critique rel:related st:live-build-technique .
+st:boundary-critique rel:related st:right-is-not-sufficient .
+st:boundary-critique rel:related st:soft-systems-methodology .
+st:boundary-critique rel:related st:system-boundary .
+st:boundary-critique rel:requires st:system-boundary .
+st:break-the-trust-loop rel:counters st:shifting-the-burden-to-the-intervenor .
+st:break-the-trust-loop rel:instance_of series:ai-delegation .
+st:break-the-trust-loop rel:related st:ai-trust-loop .
+st:break-the-trust-loop rel:related st:cynefin-as-delegation-guide .
+st:break-the-trust-loop rel:related st:deterministic-gate-principle .
+st:break-the-trust-loop rel:related st:graphs-not-just-chats .
+st:break-the-trust-loop rel:related st:map-the-agents .
+st:break-the-trust-loop rel:uses st:ai-trust-loop .
+st:break-the-trust-loop rel:uses st:trace-loop-polarity .
+st:budget-split-between-teams rel:instance_of st:success-to-the-successful .
+st:budget-split-between-teams rel:related st:leverage-ladder-examples .
+st:build-cld-from-story rel:instance_of series:feedback .
+st:build-cld-from-story rel:related st:causal-loop-diagram .
+st:build-cld-from-story rel:related st:consistent-is-not-true .
+st:build-cld-from-story rel:related st:iceberg-analysis .
+st:build-cld-from-story rel:related st:live-build-technique .
+st:build-cld-from-story rel:related st:translate-cld-to-stock-and-flow .
+st:build-cld-from-story rel:uses st:causal-loop-diagram .
+st:build-cld-from-story rel:uses st:delay .
+st:build-cld-from-story rel:uses st:trace-loop-polarity .
+st:building-this-book-with-an-agent rel:instance_of series:ai-delegation .
+st:building-this-book-with-an-agent rel:instance_of series:model-validation .
+st:building-this-book-with-an-agent rel:instance_of st:checking-loop .
+st:building-this-book-with-an-agent rel:related st:a-trace-is-not-a-definition .
+st:building-this-book-with-an-agent rel:related st:convenience-boundary-trap .
+st:building-this-book-with-an-agent rel:related st:standards-specific-enough-to-fail .
+st:building-this-book-with-an-agent rel:related st:unrun-code-is-an-unchecked-citation .
+st:building-this-book-with-an-agent rel:uses st:audit-your-checks .
+st:building-this-book-with-an-agent rel:uses st:iceberg-analysis .
+st:calm-base-case-proves-nothing rel:instance_of series:model-validation .
+st:calm-base-case-proves-nothing rel:related st:hand-iterate-a-model .
+st:calm-base-case-proves-nothing rel:related st:sensitivity-analysis .
+st:catwoe rel:instance_of series:boundary .
+st:catwoe rel:instance_of series:stakeholder-worldviews .
+st:catwoe rel:related st:boundary-critique .
+st:catwoe rel:related st:draw-a-boundary .
+st:catwoe rel:related st:soft-systems-methodology .
+st:catwoe rel:related st:system-boundary .
+st:catwoe rel:related st:tame-messy-wicked-problems .
+st:catwoe rel:uses st:system-boundary .
+st:causal-loop-diagram rel:contrasts_with st:knowledge-graph .
+st:causal-loop-diagram rel:contrasts_with st:stock-and-flow-diagram .
+st:causal-loop-diagram rel:related st:build-cld-from-story .
+st:causal-loop-diagram rel:related st:choose-model-by-question .
+st:causal-loop-diagram rel:related st:delay .
+st:causal-loop-diagram rel:related st:feedback-loop .
+st:causal-loop-diagram rel:related st:kumu .
+st:causal-loop-diagram rel:related st:loopy .
+st:causal-loop-diagram rel:related st:plus-into-a-stock .
+st:causal-loop-diagram rel:related st:trace-loop-polarity .
+st:causal-loop-diagram rel:requires st:feedback-loop .
+st:change-initiative-meets-balancing-loop rel:instance_of series:balancing-dynamics .
+st:change-initiative-meets-balancing-loop rel:related st:balancing-loop .
+st:change-initiative-meets-balancing-loop rel:related st:reference-point .
+st:change-initiative-meets-balancing-loop rel:uses st:find-the-unwritten-goal .
+st:change-the-comparison rel:counters st:escalation .
+st:change-the-comparison rel:instance_of series:escalation .
+st:change-the-comparison rel:instance_of series:intervention-leverage .
+st:change-the-comparison rel:related st:leverage-points .
+st:chaos-theory rel:contrasts_with st:complexity-science .
+st:chaos-theory rel:instance_of series:uncertainty .
+st:checking-loop rel:instance_of series:ai-delegation .
+st:checking-loop rel:instance_of series:model-validation .
+st:checking-loop rel:related st:audit-your-checks .
+st:checking-loop rel:related st:every-check-has-a-boundary-and-a-kind .
+st:checking-loop rel:related st:system-boundary .
+st:checking-loop rel:specializes st:balancing-loop .
+st:choose-model-by-question rel:instance_of series:knowledge-representation .
+st:choose-model-by-question rel:related st:causal-loop-diagram .
+st:choose-model-by-question rel:related st:knowledge-graph .
+st:choose-model-by-question rel:related st:kumu .
+st:choose-model-by-question rel:related st:loopy .
+st:choose-model-by-question rel:related st:pysd .
+st:choose-model-by-question rel:related st:reach-for-a-graph-when .
+st:choose-model-by-question rel:related st:stock-and-flow-diagram .
+st:choose-simulation-tooling rel:related st:anylogic .
+st:choose-simulation-tooling rel:related st:insight-maker .
+st:choose-simulation-tooling rel:related st:pysd .
+st:choose-simulation-tooling rel:related st:software-is-escalation-of-commitment .
+st:choose-simulation-tooling rel:related st:vensim .
+st:choose-simulation-tooling rel:uses st:software-is-escalation-of-commitment .
+st:classify-a-growth-stall rel:diagnoses st:attractiveness-principle .
+st:classify-a-growth-stall rel:diagnoses st:growth-and-underinvestment .
+st:classify-a-growth-stall rel:diagnoses st:limits-to-growth .
+st:classify-a-growth-stall rel:diagnoses st:tragedy-of-the-commons .
+st:classify-a-growth-stall rel:instance_of series:limits-and-capacity .
+st:classify-a-growth-stall rel:related st:attractiveness-principle .
+st:classify-a-growth-stall rel:related st:diagnose-an-archetype .
+st:classify-a-growth-stall rel:related st:growth-and-underinvestment .
+st:classify-a-growth-stall rel:related st:limits-to-growth .
+st:classify-a-growth-stall rel:related st:push-on-the-limit .
+st:classify-a-growth-stall rel:uses st:balancing-loop .
+st:classify-a-growth-stall rel:uses st:reinforcing-loop .
+st:co-flow rel:part_of st:stock-and-flow-diagram .
+st:co-flow rel:related st:delay .
+st:co-flow rel:related st:stock-and-flow-diagram .
+st:commons-need-collective-rules rel:counters st:tragedy-of-the-commons .
+st:commons-need-collective-rules rel:instance_of series:competing-for-shared-resources .
+st:complexity-science rel:contrasts_with st:chaos-theory .
+st:complexity-science rel:related st:actor-based-modeling .
+st:complexity-science rel:related st:swarm-test .
+st:confirmation-bias rel:instance_of series:cognitive-bias .
+st:confirmation-bias rel:related st:fit-is-easy-to-manufacture .
+st:confirmation-bias rel:related st:structural-and-behavioral-validity .
+st:confirmation-bias rel:related st:validate-a-model .
+st:consistent-is-not-true rel:instance_of series:model-validation .
+st:consistent-is-not-true rel:related st:build-cld-from-story .
+st:consistent-is-not-true rel:related st:live-build-technique .
+st:consistent-is-not-true rel:related st:structural-and-behavioral-validity .
+st:convenience-boundary-trap rel:instance_of series:boundary .
+st:convenience-boundary-trap rel:related st:building-this-book-with-an-agent .
+st:convenience-boundary-trap rel:related st:draw-a-boundary .
+st:convenience-boundary-trap rel:related st:system-boundary .
+st:covid-reporting-delays rel:instance_of series:delay .
+st:covid-reporting-delays rel:instance_of st:oscillation-and-overshoot .
+st:covid-reporting-delays rel:uses st:delay .
+st:cybernetics rel:contrasts_with st:system-dynamics .
+st:cybernetics rel:instance_of series:balancing-dynamics .
+st:cybernetics rel:instance_of series:feedback .
+st:cybernetics rel:related st:balancing-loop .
+st:cybernetics rel:related st:homeostasis .
+st:cynefin-as-delegation-guide rel:counters st:ai-trust-loop .
+st:cynefin-as-delegation-guide rel:instance_of series:ai-delegation .
+st:cynefin-as-delegation-guide rel:instance_of series:decision-domain .
+st:cynefin-as-delegation-guide rel:related st:break-the-trust-loop .
+st:cynefin-as-delegation-guide rel:related st:cynefin-framework .
+st:cynefin-as-delegation-guide rel:related st:deterministic-gate-principle .
+st:cynefin-as-delegation-guide rel:related st:fluency-is-not-correctness .
+st:cynefin-as-delegation-guide rel:uses st:cynefin-framework .
+st:cynefin-as-delegation-guide rel:uses st:deterministic-gate-principle .
+st:cynefin-framework rel:contrasts_with st:tame-messy-wicked-problems .
+st:cynefin-framework rel:instance_of series:decision-domain .
+st:cynefin-framework rel:related st:bound-interacting-agents .
+st:cynefin-framework rel:related st:cynefin-as-delegation-guide .
+st:cynefin-framework rel:related st:hard-and-soft-systems-thinking .
+st:cynefin-framework rel:related st:tame-messy-wicked-problems .
+st:damp-an-oscillation rel:instance_of series:delay .
+st:damp-an-oscillation rel:related st:dont-react-harder-to-late-signals .
+st:damp-an-oscillation rel:related st:oscillation-and-overshoot .
+st:damp-an-oscillation rel:uses st:balancing-loop .
+st:damp-an-oscillation rel:uses st:delay .
+st:damp-an-oscillation rel:uses st:oscillation-and-overshoot .
+st:deferred-capacity-and-bulk-order rel:instance_of st:growth-and-underinvestment .
+st:delay rel:instance_of series:delay .
+st:delay rel:part_of st:causal-loop-diagram .
+st:delay rel:produces st:oscillation-and-overshoot .
+st:delay rel:related st:causal-loop-diagram .
+st:delay rel:related st:co-flow .
+st:delay rel:related st:oscillation-is-structural .
+st:delay rel:related st:stock .
+st:deterministic-gate-principle rel:instance_of series:ai-delegation .
+st:deterministic-gate-principle rel:instance_of series:decision-domain .
+st:deterministic-gate-principle rel:related st:break-the-trust-loop .
+st:deterministic-gate-principle rel:related st:cynefin-as-delegation-guide .
+st:deterministic-gate-principle rel:related st:graphs-not-just-chats .
+st:diagnose-an-archetype rel:diagnoses st:accidental-adversaries .
+st:diagnose-an-archetype rel:diagnoses st:attractiveness-principle .
+st:diagnose-an-archetype rel:diagnoses st:drift-to-low-performance .
+st:diagnose-an-archetype rel:diagnoses st:escalation .
+st:diagnose-an-archetype rel:diagnoses st:fixes-that-fail .
+st:diagnose-an-archetype rel:diagnoses st:growth-and-underinvestment .
+st:diagnose-an-archetype rel:diagnoses st:limits-to-growth .
+st:diagnose-an-archetype rel:diagnoses st:shifting-the-burden .
+st:diagnose-an-archetype rel:diagnoses st:shifting-the-burden-to-the-intervenor .
+st:diagnose-an-archetype rel:diagnoses st:success-to-the-successful .
+st:diagnose-an-archetype rel:diagnoses st:tragedy-of-the-commons .
+st:diagnose-an-archetype rel:related st:a-trace-is-not-a-definition .
+st:diagnose-an-archetype rel:related st:classify-a-growth-stall .
+st:diagnose-an-archetype rel:related st:live-build-technique .
+st:diagnose-an-archetype rel:related st:rank-interventions .
+st:diagnose-an-archetype rel:related st:systems-archetype .
+st:diagnose-an-archetype rel:uses st:build-cld-from-story .
+st:diagnose-an-archetype rel:uses st:systems-archetype .
+st:diagnose-an-archetype rel:uses st:trace-loop-polarity .
+st:dont-react-harder-to-late-signals rel:instance_of series:delay .
+st:dont-react-harder-to-late-signals rel:related st:damp-an-oscillation .
+st:dont-react-harder-to-late-signals rel:related st:oscillation-and-overshoot .
+st:draw-a-boundary rel:related st:boundary-critique .
+st:draw-a-boundary rel:related st:catwoe .
+st:draw-a-boundary rel:related st:convenience-boundary-trap .
+st:draw-a-boundary rel:related st:system-boundary .
+st:draw-a-boundary rel:uses st:flow .
+st:draw-a-boundary rel:uses st:stock .
+st:draw-a-boundary rel:uses st:system-boundary .
+st:drift-to-low-performance rel:instance_of series:balancing-dynamics .
+st:drift-to-low-performance rel:instance_of series:proxy-metric .
+st:drift-to-low-performance rel:related st:find-the-unwritten-goal .
+st:drift-to-low-performance rel:related st:growth-and-underinvestment .
+st:drift-to-low-performance rel:related st:reference-point .
+st:drift-to-low-performance rel:requires st:balancing-loop .
+st:drift-to-low-performance rel:requires st:delay .
+st:drift-to-low-performance rel:requires st:reference-point .
+st:emilys-laws-of-system-complexity rel:instance_of series:unintended-consequences .
+st:emilys-laws-of-system-complexity rel:related st:fixes-that-fail .
+st:emilys-laws-of-system-complexity rel:related st:know-which-reduction-you-made .
+st:emilys-laws-of-system-complexity rel:related st:overtime-and-burnout .
+st:emilys-laws-of-system-complexity rel:related st:reduction .
+st:emilys-laws-of-system-complexity rel:requires st:reduction .
+st:engagement-optimization rel:instance_of series:proxy-metric .
+st:engagement-optimization rel:instance_of st:specification-gaming .
+st:engagement-optimization rel:related st:fixes-that-fail .
+st:escalation rel:contrasts_with st:limits-to-growth .
+st:escalation rel:instance_of series:escalation .
+st:escalation rel:instance_of series:reinforcing-dynamics .
+st:escalation rel:related st:accidental-adversaries .
+st:escalation rel:related st:bound-interacting-agents .
+st:escalation rel:related st:minsky-financial-instability .
+st:escalation rel:related st:scarce-site-rush .
+st:escalation rel:related st:success-to-the-successful .
+st:escalation rel:related st:tragedy-of-the-commons .
+st:escalation rel:requires st:balancing-loop .
+st:escalation rel:requires st:reference-point .
+st:escalation rel:requires st:reinforcing-loop .
+st:every-check-has-a-boundary-and-a-kind rel:instance_of series:model-validation .
+st:every-check-has-a-boundary-and-a-kind rel:related st:audit-your-checks .
+st:every-check-has-a-boundary-and-a-kind rel:related st:checking-loop .
+st:every-check-has-a-boundary-and-a-kind rel:related st:standards-specific-enough-to-fail .
+st:every-check-has-a-boundary-and-a-kind rel:related st:unrun-code-is-an-unchecked-citation .
+st:exercise-the-capability rel:counters st:shifting-the-burden-to-the-intervenor .
+st:exercise-the-capability rel:instance_of series:ai-delegation .
+st:exercise-the-capability rel:related st:ai-assisted-colonoscopy-deskilling .
+st:expand-capacity-or-stop-corner-cutting rel:related st:anchoring .
+st:expand-capacity-or-stop-corner-cutting rel:related st:quantified-supply-chain-model .
+st:expand-capacity-or-stop-corner-cutting rel:uses st:one-at-a-time-swing-test .
+st:expand-capacity-or-stop-corner-cutting rel:uses st:sobol-analysis .
+st:expand-capacity-or-stop-corner-cutting rel:uses st:validate-a-model .
+st:exponential-looks-flat rel:instance_of series:reinforcing-dynamics .
+st:exponential-looks-flat rel:related st:reinforcing-loop .
+st:exponential-looks-flat rel:related st:snowballing .
+st:feedback-loop rel:instance_of series:feedback .
+st:feedback-loop rel:related st:causal-loop-diagram .
+st:feedback-loop rel:related st:trace-loop-polarity .
+st:find-the-unwritten-goal rel:diagnoses st:drift-to-low-performance .
+st:find-the-unwritten-goal rel:instance_of series:balancing-dynamics .
+st:find-the-unwritten-goal rel:related st:drift-to-low-performance .
+st:find-the-unwritten-goal rel:related st:reference-point .
+st:find-the-unwritten-goal rel:uses st:balancing-loop .
+st:find-the-unwritten-goal rel:uses st:reference-point .
+st:fit-is-easy-to-manufacture rel:instance_of series:model-validation .
+st:fit-is-easy-to-manufacture rel:related st:confirmation-bias .
+st:fit-is-easy-to-manufacture rel:related st:structural-and-behavioral-validity .
+st:fixes-that-fail rel:contrasts_with st:shifting-the-burden .
+st:fixes-that-fail rel:instance_of series:unintended-consequences .
+st:fixes-that-fail rel:related st:accidental-adversaries .
+st:fixes-that-fail rel:related st:emilys-laws-of-system-complexity .
+st:fixes-that-fail rel:related st:engagement-optimization .
+st:fixes-that-fail rel:related st:shifting-the-burden .
+st:fixes-that-fail rel:related st:specification-gaming .
+st:fixes-that-fail rel:requires st:balancing-loop .
+st:fixes-that-fail rel:requires st:delay .
+st:fixes-that-fail rel:requires st:reinforcing-loop .
+st:flow rel:contrasts_with st:stock .
+st:flow rel:part_of st:stock-and-flow-diagram .
+st:flow rel:related st:plus-into-a-stock .
+st:fluency-is-not-correctness rel:instance_of series:ai-delegation .
+st:fluency-is-not-correctness rel:related st:ai-trust-loop .
+st:fluency-is-not-correctness rel:related st:cynefin-as-delegation-guide .
+st:fluency-is-not-correctness rel:related st:self-reported-confidence .
+st:fluency-is-not-correctness rel:related st:supply-chain-recurring-misses .
+st:fluency-is-not-correctness rel:related st:systems-thinking .
+st:four-decisions-four-domains rel:related st:price-war .
+st:four-decisions-four-domains rel:uses st:cynefin-as-delegation-guide .
+st:four-decisions-four-domains rel:uses st:cynefin-framework .
+st:general-systems-theory rel:related st:system .
+st:goal-seeking-behavior rel:related st:balancing-loop .
+st:goal-seeking-behavior rel:related st:oscillation-and-overshoot .
+st:graphs-not-just-chats rel:counters st:ai-trust-loop .
+st:graphs-not-just-chats rel:instance_of series:ai-delegation .
+st:graphs-not-just-chats rel:instance_of series:knowledge-representation .
+st:graphs-not-just-chats rel:related st:break-the-trust-loop .
+st:graphs-not-just-chats rel:related st:deterministic-gate-principle .
+st:graphs-not-just-chats rel:related st:knowledge-graph .
+st:graphs-not-just-chats rel:related st:retrieval-augmented-generation .
+st:graphs-not-just-chats rel:uses st:knowledge-graph .
+st:growing-is-not-reinforcing rel:related st:reinforcing-loop .
+st:growing-workforce-many-limits rel:instance_of st:attractiveness-principle .
+st:growing-workforce-many-limits rel:related st:attention-decay-and-tempo .
+st:growing-workforce-many-limits rel:related st:recruitment-reputation-and-training .
+st:growth-and-underinvestment rel:instance_of series:limits-and-capacity .
+st:growth-and-underinvestment rel:related st:classify-a-growth-stall .
+st:growth-and-underinvestment rel:related st:drift-to-low-performance .
+st:growth-and-underinvestment rel:related st:limits-to-growth .
+st:growth-and-underinvestment rel:requires st:delay .
+st:growth-and-underinvestment rel:requires st:reference-point .
+st:growth-and-underinvestment rel:specializes st:limits-to-growth .
+st:hand-iterate-a-model rel:instance_of series:model-validation .
+st:hand-iterate-a-model rel:related st:calm-base-case-proves-nothing .
+st:hand-iterate-a-model rel:related st:quantified-supply-chain-model .
+st:hand-iterate-a-model rel:related st:quantify-to-surface-disagreement .
+st:hand-iterate-a-model rel:related st:sensitivity-analysis .
+st:hand-iterate-a-model rel:related st:stock-and-flow-diagram .
+st:hand-iterate-a-model rel:related st:translate-cld-to-stock-and-flow .
+st:hand-iterate-a-model rel:related st:validate-a-model .
+st:hand-iterate-a-model rel:uses st:stock-and-flow-diagram .
+st:hard-and-soft-systems-thinking rel:instance_of series:stakeholder-worldviews .
+st:hard-and-soft-systems-thinking rel:related st:cynefin-framework .
+st:hard-and-soft-systems-thinking rel:related st:tame-messy-wicked-problems .
+st:hiring-overshoot rel:instance_of st:limits-to-growth .
+st:hiring-overshoot rel:instance_of st:oscillation-and-overshoot .
+st:hiring-overshoot rel:related st:limits-to-growth .
+st:hiring-overshoot rel:related st:recruitment-reputation-and-training .
+st:homeostasis rel:related st:cybernetics .
+st:homeostasis rel:specializes st:balancing-loop .
+st:iceberg-analysis rel:related st:build-cld-from-story .
+st:iceberg-analysis rel:related st:iceberg-model .
+st:iceberg-analysis rel:related st:pressure-shrinks-the-iceberg .
+st:iceberg-analysis rel:related st:recurring-causes-mean-structure .
+st:iceberg-analysis rel:uses st:iceberg-model .
+st:iceberg-model rel:instance_of series:intervention-leverage .
+st:iceberg-model rel:related st:iceberg-analysis .
+st:iceberg-model rel:related st:leverage-points .
+st:iceberg-model rel:related st:pressure-shrinks-the-iceberg .
+st:insight-maker rel:related st:choose-simulation-tooling .
+st:insight-maker rel:related st:vensim .
+st:inspection-instead-of-root-cause rel:instance_of st:shifting-the-burden .
+st:inspection-instead-of-root-cause rel:related st:presenting-to-the-inspection-crew .
+st:know-which-reduction-you-made rel:instance_of series:boundary .
+st:know-which-reduction-you-made rel:related st:emilys-laws-of-system-complexity .
+st:know-which-reduction-you-made rel:related st:reduction .
+st:know-which-reduction-you-made rel:related st:system-boundary .
+st:knowledge-graph rel:contrasts_with st:causal-loop-diagram .
+st:knowledge-graph rel:contrasts_with st:property-graph .
+st:knowledge-graph rel:instance_of series:knowledge-representation .
+st:knowledge-graph rel:related st:choose-model-by-question .
+st:knowledge-graph rel:related st:graphs-not-just-chats .
+st:knowledge-graph rel:related st:property-graph .
+st:knowledge-graph rel:related st:rdf-triple-stores .
+st:knowledge-graph rel:related st:reach-for-a-graph-when .
+st:knowledge-graph rel:related st:retrieval-augmented-generation .
+st:knowledge-graph rel:related st:trace-three-orders .
+st:kumu rel:related st:causal-loop-diagram .
+st:kumu rel:related st:choose-model-by-question .
+st:kumu rel:related st:loopy .
+st:label-the-stopgap rel:counters st:fixes-that-fail .
+st:label-the-stopgap rel:counters st:shifting-the-burden .
+st:label-the-stopgap rel:instance_of series:intervention-leverage .
+st:label-the-stopgap rel:related st:rank-interventions .
+st:leverage-ladder-examples rel:related st:budget-split-between-teams .
+st:leverage-ladder-examples rel:related st:overtime-and-burnout .
+st:leverage-ladder-examples rel:uses st:rank-interventions .
+st:leverage-points rel:instance_of series:intervention-leverage .
+st:leverage-points rel:related st:change-the-comparison .
+st:leverage-points rel:related st:iceberg-model .
+st:leverage-points rel:related st:rank-interventions .
+st:leverage-points rel:related st:reference-point .
+st:leverage-points rel:related st:success-to-the-successful .
+st:limits-to-growth rel:contrasts_with st:escalation .
+st:limits-to-growth rel:instance_of series:limits-and-capacity .
+st:limits-to-growth rel:related st:attractiveness-principle .
+st:limits-to-growth rel:related st:classify-a-growth-stall .
+st:limits-to-growth rel:related st:growth-and-underinvestment .
+st:limits-to-growth rel:related st:hiring-overshoot .
+st:limits-to-growth rel:related st:limits-to-growth-study .
+st:limits-to-growth rel:related st:oscillation-and-overshoot .
+st:limits-to-growth rel:related st:push-on-the-limit .
+st:limits-to-growth rel:related st:tragedy-of-the-commons .
+st:limits-to-growth rel:requires st:balancing-loop .
+st:limits-to-growth rel:requires st:reinforcing-loop .
+st:limits-to-growth-study rel:related st:limits-to-growth .
+st:limits-to-growth-study rel:related st:right-is-not-sufficient .
+st:limits-to-growth-study rel:uses st:system-boundary .
+st:limits-to-growth-study rel:uses st:system-dynamics .
+st:live-build-technique rel:counters st:right-is-not-sufficient .
+st:live-build-technique rel:instance_of series:persuasion .
+st:live-build-technique rel:instance_of series:stakeholder-worldviews .
+st:live-build-technique rel:related st:boundary-critique .
+st:live-build-technique rel:related st:build-cld-from-story .
+st:live-build-technique rel:related st:consistent-is-not-true .
+st:live-build-technique rel:related st:diagnose-an-archetype .
+st:live-build-technique rel:related st:right-is-not-sufficient .
+st:live-build-technique rel:uses st:boundary-critique .
+st:live-build-technique rel:uses st:causal-loop-diagram .
+st:loopy rel:related st:causal-loop-diagram .
+st:loopy rel:related st:choose-model-by-question .
+st:loopy rel:related st:kumu .
+st:map-the-agents rel:instance_of series:ai-delegation .
+st:map-the-agents rel:instance_of series:knowledge-representation .
+st:map-the-agents rel:related st:bound-interacting-agents .
+st:map-the-agents rel:related st:break-the-trust-loop .
+st:map-the-agents rel:related st:trace-three-orders .
+st:map-the-agents rel:uses st:knowledge-graph .
+st:minsky-financial-instability rel:instance_of series:reinforcing-dynamics .
+st:minsky-financial-instability rel:related st:escalation .
+st:minsky-financial-instability rel:uses st:oscillation-and-overshoot .
+st:minsky-financial-instability rel:uses st:reinforcing-loop .
+st:morris-screening rel:instance_of series:uncertainty .
+st:morris-screening rel:part_of st:sensitivity-analysis .
+st:morris-screening rel:related st:salib .
+st:morris-screening rel:related st:sensitivity-analysis .
+st:morris-screening rel:related st:sobol-analysis .
+st:name-the-flow rel:uses st:flow .
+st:name-the-flow rel:uses st:stock .
+st:neo4j rel:related st:amazon-neptune .
+st:neo4j rel:related st:property-graph .
+st:numerical-integration rel:related st:stock-and-flow-diagram .
+st:numerical-integration rel:related st:vensim .
+st:numerical-integration rel:related st:verify-after-translation .
+st:numerical-integration rel:related st:xmile .
+st:one-at-a-time-swing-test rel:contrasts_with st:sobol-analysis .
+st:one-at-a-time-swing-test rel:counters st:anchoring .
+st:one-at-a-time-swing-test rel:instance_of series:uncertainty .
+st:one-at-a-time-swing-test rel:related st:sensitivity-analysis .
+st:one-at-a-time-swing-test rel:uses st:sensitivity-analysis .
+st:oscillation-and-overshoot rel:instance_of series:delay .
+st:oscillation-and-overshoot rel:related st:attention-decay-and-tempo .
+st:oscillation-and-overshoot rel:related st:damp-an-oscillation .
+st:oscillation-and-overshoot rel:related st:dont-react-harder-to-late-signals .
+st:oscillation-and-overshoot rel:related st:goal-seeking-behavior .
+st:oscillation-and-overshoot rel:related st:limits-to-growth .
+st:oscillation-and-overshoot rel:related st:oscillation-is-structural .
+st:oscillation-and-overshoot rel:requires st:delay .
+st:oscillation-is-structural rel:related st:delay .
+st:oscillation-is-structural rel:related st:oscillation-and-overshoot .
+st:overtime-and-burnout rel:instance_of st:fixes-that-fail .
+st:overtime-and-burnout rel:related st:emilys-laws-of-system-complexity .
+st:overtime-and-burnout rel:related st:leverage-ladder-examples .
+st:past-performance-may-be-allocation rel:diagnoses st:success-to-the-successful .
+st:past-performance-may-be-allocation rel:instance_of series:competing-for-shared-resources .
+st:plus-into-a-stock rel:related st:causal-loop-diagram .
+st:plus-into-a-stock rel:related st:flow .
+st:plus-into-a-stock rel:related st:stock .
+st:plus-into-a-stock rel:related st:translate-cld-to-stock-and-flow .
+st:polarity-carries-no-value rel:related st:balancing-loop .
+st:polarity-carries-no-value rel:related st:reinforcing-loop .
+st:presenting-to-the-inspection-crew rel:related st:inspection-instead-of-root-cause .
+st:presenting-to-the-inspection-crew rel:uses st:boundary-critique .
+st:presenting-to-the-inspection-crew rel:uses st:live-build-technique .
+st:pressure-shrinks-the-iceberg rel:related st:iceberg-analysis .
+st:pressure-shrinks-the-iceberg rel:related st:iceberg-model .
+st:price-war rel:instance_of st:escalation .
+st:price-war rel:related st:four-decisions-four-domains .
+st:price-war rel:related st:supply-chain-recurring-misses .
+st:property-graph rel:contrasts_with st:knowledge-graph .
+st:property-graph rel:instance_of series:knowledge-representation .
+st:property-graph rel:related st:knowledge-graph .
+st:property-graph rel:related st:neo4j .
+st:publicity-and-copycats rel:instance_of st:reinforcing-loop .
+st:publicity-and-copycats rel:related st:attention-decay-and-tempo .
+st:push-on-the-limit rel:instance_of series:limits-and-capacity .
+st:push-on-the-limit rel:related st:classify-a-growth-stall .
+st:push-on-the-limit rel:related st:limits-to-growth .
+st:pysd rel:instance_of series:knowledge-representation .
+st:pysd rel:related st:choose-model-by-question .
+st:pysd rel:related st:choose-simulation-tooling .
+st:pysd rel:related st:quantified-supply-chain-model .
+st:pysd rel:related st:salib .
+st:pysd rel:related st:vensim .
+st:pysd rel:related st:verify-after-translation .
+st:pysd rel:related st:xmile .
+st:quantified-supply-chain-model rel:related st:expand-capacity-or-stop-corner-cutting .
+st:quantified-supply-chain-model rel:related st:hand-iterate-a-model .
+st:quantified-supply-chain-model rel:related st:pysd .
+st:quantified-supply-chain-model rel:related st:supply-chain-recurring-misses .
+st:quantified-supply-chain-model rel:related st:urgency-corner-cutting-loop .
+st:quantified-supply-chain-model rel:uses st:co-flow .
+st:quantified-supply-chain-model rel:uses st:hand-iterate-a-model .
+st:quantified-supply-chain-model rel:uses st:translate-cld-to-stock-and-flow .
+st:quantify-to-surface-disagreement rel:instance_of series:model-validation .
+st:quantify-to-surface-disagreement rel:related st:hand-iterate-a-model .
+st:quantify-to-surface-disagreement rel:related st:stock-and-flow-diagram .
+st:rank-interventions rel:instance_of series:intervention-leverage .
+st:rank-interventions rel:related st:diagnose-an-archetype .
+st:rank-interventions rel:related st:label-the-stopgap .
+st:rank-interventions rel:related st:leverage-points .
+st:rank-interventions rel:related st:validate-a-model .
+st:rank-interventions rel:uses st:leverage-points .
+st:rdf-triple-stores rel:related st:amazon-neptune .
+st:rdf-triple-stores rel:related st:knowledge-graph .
+st:reach-for-a-graph-when rel:instance_of series:knowledge-representation .
+st:reach-for-a-graph-when rel:related st:choose-model-by-question .
+st:reach-for-a-graph-when rel:related st:knowledge-graph .
+st:reach-for-a-graph-when rel:related st:software-is-escalation-of-commitment .
+st:recruitment-reputation-and-training rel:instance_of st:limits-to-growth .
+st:recruitment-reputation-and-training rel:related st:applicant-ceiling .
+st:recruitment-reputation-and-training rel:related st:growing-workforce-many-limits .
+st:recruitment-reputation-and-training rel:related st:hiring-overshoot .
+st:recruitment-reputation-and-training rel:related st:snowballing .
+st:recruitment-reputation-and-training rel:uses st:causal-loop-diagram .
+st:recruitment-reputation-and-training rel:uses st:trace-loop-polarity .
+st:recurring-causes-mean-structure rel:diagnoses st:fixes-that-fail .
+st:recurring-causes-mean-structure rel:instance_of series:unintended-consequences .
+st:recurring-causes-mean-structure rel:related st:iceberg-analysis .
+st:recurring-causes-mean-structure rel:related st:reduction .
+st:recurring-causes-mean-structure rel:uses st:iceberg-model .
+st:recurring-causes-mean-structure rel:uses st:system .
+st:reduction rel:part_of st:analytical-thinking .
+st:reduction rel:related st:emilys-laws-of-system-complexity .
+st:reduction rel:related st:know-which-reduction-you-made .
+st:reduction rel:related st:recurring-causes-mean-structure .
+st:reference-point rel:part_of st:balancing-loop .
+st:reference-point rel:related st:anchor-goals-outside .
+st:reference-point rel:related st:change-initiative-meets-balancing-loop .
+st:reference-point rel:related st:drift-to-low-performance .
+st:reference-point rel:related st:find-the-unwritten-goal .
+st:reference-point rel:related st:leverage-points .
+st:reinforcing-loop rel:contrasts_with st:balancing-loop .
+st:reinforcing-loop rel:instance_of series:reinforcing-dynamics .
+st:reinforcing-loop rel:produces st:snowballing .
+st:reinforcing-loop rel:related st:exponential-looks-flat .
+st:reinforcing-loop rel:related st:growing-is-not-reinforcing .
+st:reinforcing-loop rel:related st:polarity-carries-no-value .
+st:reinforcing-loop rel:related st:snowballing .
+st:reinforcing-loop rel:specializes st:feedback-loop .
+st:retrieval-augmented-generation rel:instance_of series:ai-delegation .
+st:retrieval-augmented-generation rel:instance_of series:knowledge-representation .
+st:retrieval-augmented-generation rel:related st:graphs-not-just-chats .
+st:retrieval-augmented-generation rel:related st:knowledge-graph .
+st:right-is-not-sufficient rel:instance_of series:persuasion .
+st:right-is-not-sufficient rel:instance_of series:stakeholder-worldviews .
+st:right-is-not-sufficient rel:related st:boundary-critique .
+st:right-is-not-sufficient rel:related st:limits-to-growth-study .
+st:right-is-not-sufficient rel:related st:live-build-technique .
+st:right-is-not-sufficient rel:related st:system-boundary .
+st:salib rel:instance_of series:uncertainty .
+st:salib rel:related st:morris-screening .
+st:salib rel:related st:pysd .
+st:salib rel:related st:sobol-analysis .
+st:scarce-site-rush rel:instance_of st:tragedy-of-the-commons .
+st:scarce-site-rush rel:related st:escalation .
+st:second-order-effects rel:instance_of series:unintended-consequences .
+st:second-order-effects rel:related st:ask-what-the-fix-does-later .
+st:second-order-effects rel:related st:trace-three-orders .
+st:self-reported-confidence rel:instance_of series:ai-delegation .
+st:self-reported-confidence rel:related st:ai-trust-loop .
+st:self-reported-confidence rel:related st:fluency-is-not-correctness .
+st:sensitivity-analysis rel:instance_of series:uncertainty .
+st:sensitivity-analysis rel:related st:calm-base-case-proves-nothing .
+st:sensitivity-analysis rel:related st:hand-iterate-a-model .
+st:sensitivity-analysis rel:related st:morris-screening .
+st:sensitivity-analysis rel:related st:one-at-a-time-swing-test .
+st:sensitivity-analysis rel:related st:sobol-analysis .
+st:sensitivity-analysis rel:related st:validate-a-model .
+st:shifting-the-burden rel:contrasts_with st:fixes-that-fail .
+st:shifting-the-burden rel:instance_of series:ai-delegation .
+st:shifting-the-burden rel:instance_of series:unintended-consequences .
+st:shifting-the-burden rel:related st:fixes-that-fail .
+st:shifting-the-burden rel:requires st:balancing-loop .
+st:shifting-the-burden rel:requires st:delay .
+st:shifting-the-burden rel:requires st:reinforcing-loop .
+st:shifting-the-burden-to-the-intervenor rel:instance_of series:ai-delegation .
+st:shifting-the-burden-to-the-intervenor rel:related st:ai-system-as-a-system .
+st:shifting-the-burden-to-the-intervenor rel:related st:ai-trust-loop .
+st:shifting-the-burden-to-the-intervenor rel:specializes st:shifting-the-burden .
+st:single-expert-dependency rel:instance_of st:shifting-the-burden-to-the-intervenor .
+st:single-expert-dependency rel:related st:ai-agent-as-intervenor .
+st:single-expert-dependency rel:related st:ai-trust-loop .
+st:sliding-target rel:instance_of st:drift-to-low-performance .
+st:snapshot-test rel:diagnoses st:flow .
+st:snapshot-test rel:diagnoses st:stock .
+st:snapshot-test rel:related st:stock .
+st:snapshot-test rel:related st:translate-cld-to-stock-and-flow .
+st:snowballing rel:instance_of series:reinforcing-dynamics .
+st:snowballing rel:related st:applicant-ceiling .
+st:snowballing rel:related st:bank-run .
+st:snowballing rel:related st:exponential-looks-flat .
+st:snowballing rel:related st:recruitment-reputation-and-training .
+st:snowballing rel:related st:reinforcing-loop .
+st:sobol-analysis rel:contrasts_with st:one-at-a-time-swing-test .
+st:sobol-analysis rel:instance_of series:uncertainty .
+st:sobol-analysis rel:part_of st:sensitivity-analysis .
+st:sobol-analysis rel:related st:morris-screening .
+st:sobol-analysis rel:related st:salib .
+st:sobol-analysis rel:related st:sensitivity-analysis .
+st:soft-systems-methodology rel:instance_of series:stakeholder-worldviews .
+st:soft-systems-methodology rel:related st:boundary-critique .
+st:soft-systems-methodology rel:related st:catwoe .
+st:soft-systems-methodology rel:requires st:hard-and-soft-systems-thinking .
+st:software-is-escalation-of-commitment rel:related st:choose-simulation-tooling .
+st:software-is-escalation-of-commitment rel:related st:reach-for-a-graph-when .
+st:software-is-escalation-of-commitment rel:related st:structural-and-behavioral-validity .
+st:source-and-sink rel:part_of st:stock-and-flow-diagram .
+st:source-and-sink rel:related st:stock-and-flow-diagram .
+st:source-and-sink rel:related st:system-boundary .
+st:specification-gaming rel:instance_of series:ai-delegation .
+st:specification-gaming rel:instance_of series:proxy-metric .
+st:specification-gaming rel:instance_of series:unintended-consequences .
+st:specification-gaming rel:part_of st:ai-system-as-a-system .
+st:specification-gaming rel:related st:ai-system-as-a-system .
+st:specification-gaming rel:related st:fixes-that-fail .
+st:specification-gaming rel:specializes st:fixes-that-fail .
+st:staged-supply-chain-not-a-swarm rel:related st:supply-chain-recurring-misses .
+st:staged-supply-chain-not-a-swarm rel:uses st:swarm-test .
+st:standards-specific-enough-to-fail rel:instance_of series:model-validation .
+st:standards-specific-enough-to-fail rel:related st:audit-your-checks .
+st:standards-specific-enough-to-fail rel:related st:building-this-book-with-an-agent .
+st:standards-specific-enough-to-fail rel:related st:every-check-has-a-boundary-and-a-kind .
+st:stella-and-ithink rel:related st:vensim .
+st:stella-and-ithink rel:related st:xmile .
+st:stock rel:contrasts_with st:flow .
+st:stock rel:instance_of series:feedback .
+st:stock rel:related st:delay .
+st:stock rel:related st:plus-into-a-stock .
+st:stock rel:related st:snapshot-test .
+st:stock rel:related st:stock-and-flow-diagram .
+st:stock-and-flow-diagram rel:contrasts_with st:causal-loop-diagram .
+st:stock-and-flow-diagram rel:instance_of series:feedback .
+st:stock-and-flow-diagram rel:related st:auxiliary .
+st:stock-and-flow-diagram rel:related st:choose-model-by-question .
+st:stock-and-flow-diagram rel:related st:co-flow .
+st:stock-and-flow-diagram rel:related st:hand-iterate-a-model .
+st:stock-and-flow-diagram rel:related st:numerical-integration .
+st:stock-and-flow-diagram rel:related st:quantify-to-surface-disagreement .
+st:stock-and-flow-diagram rel:related st:source-and-sink .
+st:stock-and-flow-diagram rel:related st:stock .
+st:stock-and-flow-diagram rel:related st:translate-cld-to-stock-and-flow .
+st:stock-and-flow-diagram rel:requires st:flow .
+st:stock-and-flow-diagram rel:requires st:stock .
+st:structural-and-behavioral-validity rel:instance_of series:model-validation .
+st:structural-and-behavioral-validity rel:related st:confirmation-bias .
+st:structural-and-behavioral-validity rel:related st:consistent-is-not-true .
+st:structural-and-behavioral-validity rel:related st:fit-is-easy-to-manufacture .
+st:structural-and-behavioral-validity rel:related st:software-is-escalation-of-commitment .
+st:structural-and-behavioral-validity rel:related st:validate-a-model .
+st:success-to-the-successful rel:instance_of series:competing-for-shared-resources .
+st:success-to-the-successful rel:related st:escalation .
+st:success-to-the-successful rel:related st:leverage-points .
+st:success-to-the-successful rel:related st:tragedy-of-the-commons .
+st:success-to-the-successful rel:requires st:reinforcing-loop .
+st:supply-chain-boundary-and-catwoe rel:related st:supply-chain-recurring-misses .
+st:supply-chain-boundary-and-catwoe rel:uses st:catwoe .
+st:supply-chain-boundary-and-catwoe rel:uses st:draw-a-boundary .
+st:supply-chain-recurring-misses rel:related st:ai-agent-as-intervenor .
+st:supply-chain-recurring-misses rel:related st:fluency-is-not-correctness .
+st:supply-chain-recurring-misses rel:related st:price-war .
+st:supply-chain-recurring-misses rel:related st:quantified-supply-chain-model .
+st:supply-chain-recurring-misses rel:related st:staged-supply-chain-not-a-swarm .
+st:supply-chain-recurring-misses rel:related st:supply-chain-boundary-and-catwoe .
+st:supply-chain-recurring-misses rel:related st:upstream-downstream-adversaries .
+st:supply-chain-recurring-misses rel:related st:urgency-corner-cutting-loop .
+st:supply-chain-recurring-misses rel:uses st:recurring-causes-mean-structure .
+st:supply-chain-recurring-misses rel:uses st:reduction .
+st:supply-chain-recurring-misses rel:uses st:system .
+st:swarm-test rel:related st:actor-based-modeling .
+st:swarm-test rel:related st:agentic-ai .
+st:swarm-test rel:related st:complexity-science .
+st:swarm-test rel:uses st:complexity-science .
+st:system rel:instance_of series:boundary .
+st:system rel:related st:general-systems-theory .
+st:system rel:related st:system-boundary .
+st:system rel:related st:systems-thinking .
+st:system-boundary rel:instance_of series:boundary .
+st:system-boundary rel:part_of st:system .
+st:system-boundary rel:related st:boundary-critique .
+st:system-boundary rel:related st:catwoe .
+st:system-boundary rel:related st:checking-loop .
+st:system-boundary rel:related st:convenience-boundary-trap .
+st:system-boundary rel:related st:draw-a-boundary .
+st:system-boundary rel:related st:know-which-reduction-you-made .
+st:system-boundary rel:related st:right-is-not-sufficient .
+st:system-boundary rel:related st:source-and-sink .
+st:system-boundary rel:related st:system .
+st:system-dynamics rel:contrasts_with st:cybernetics .
+st:system-dynamics rel:instance_of series:feedback .
+st:system-dynamics rel:related st:systems-thinking .
+st:system-dynamics rel:uses st:feedback-loop .
+st:system-dynamics rel:uses st:flow .
+st:system-dynamics rel:uses st:stock .
+st:systems-archetype rel:related st:a-trace-is-not-a-definition .
+st:systems-archetype rel:related st:diagnose-an-archetype .
+st:systems-archetype rel:requires st:causal-loop-diagram .
+st:systems-archetype rel:requires st:feedback-loop .
+st:systems-thinking rel:contrasts_with st:analytical-thinking .
+st:systems-thinking rel:related st:fluency-is-not-correctness .
+st:systems-thinking rel:related st:system .
+st:systems-thinking rel:related st:system-dynamics .
+st:systems-thinking rel:requires st:system .
+st:tame-messy-wicked-problems rel:contrasts_with st:cynefin-framework .
+st:tame-messy-wicked-problems rel:instance_of series:decision-domain .
+st:tame-messy-wicked-problems rel:instance_of series:stakeholder-worldviews .
+st:tame-messy-wicked-problems rel:related st:catwoe .
+st:tame-messy-wicked-problems rel:related st:cynefin-framework .
+st:tame-messy-wicked-problems rel:related st:hard-and-soft-systems-thinking .
+st:textbook-pricing-bots rel:instance_of series:ai-delegation .
+st:textbook-pricing-bots rel:instance_of series:escalation .
+st:textbook-pricing-bots rel:instance_of st:escalation .
+st:textbook-pricing-bots rel:related st:agent-registry-graph .
+st:textbook-pricing-bots rel:uses st:bound-interacting-agents .
+st:textbook-pricing-bots rel:uses st:swarm-test .
+st:trace-loop-polarity rel:diagnoses st:balancing-loop .
+st:trace-loop-polarity rel:diagnoses st:reinforcing-loop .
+st:trace-loop-polarity rel:instance_of series:feedback .
+st:trace-loop-polarity rel:related st:a-trace-is-not-a-definition .
+st:trace-loop-polarity rel:related st:causal-loop-diagram .
+st:trace-loop-polarity rel:related st:feedback-loop .
+st:trace-loop-polarity rel:uses st:causal-loop-diagram .
+st:trace-loop-polarity rel:uses st:feedback-loop .
+st:trace-three-orders rel:instance_of series:ai-delegation .
+st:trace-three-orders rel:instance_of series:unintended-consequences .
+st:trace-three-orders rel:related st:knowledge-graph .
+st:trace-three-orders rel:related st:map-the-agents .
+st:trace-three-orders rel:related st:second-order-effects .
+st:trace-three-orders rel:uses st:diagnose-an-archetype .
+st:trace-three-orders rel:uses st:second-order-effects .
+st:tragedy-of-the-commons rel:instance_of series:competing-for-shared-resources .
+st:tragedy-of-the-commons rel:instance_of series:limits-and-capacity .
+st:tragedy-of-the-commons rel:related st:escalation .
+st:tragedy-of-the-commons rel:related st:limits-to-growth .
+st:tragedy-of-the-commons rel:related st:success-to-the-successful .
+st:tragedy-of-the-commons rel:requires st:balancing-loop .
+st:tragedy-of-the-commons rel:requires st:delay .
+st:tragedy-of-the-commons rel:requires st:reinforcing-loop .
+st:tragedy-of-the-commons rel:requires st:stock .
+st:translate-cld-to-stock-and-flow rel:instance_of series:feedback .
+st:translate-cld-to-stock-and-flow rel:related st:build-cld-from-story .
+st:translate-cld-to-stock-and-flow rel:related st:hand-iterate-a-model .
+st:translate-cld-to-stock-and-flow rel:related st:plus-into-a-stock .
+st:translate-cld-to-stock-and-flow rel:related st:snapshot-test .
+st:translate-cld-to-stock-and-flow rel:related st:stock-and-flow-diagram .
+st:translate-cld-to-stock-and-flow rel:requires st:causal-loop-diagram .
+st:translate-cld-to-stock-and-flow rel:uses st:auxiliary .
+st:translate-cld-to-stock-and-flow rel:uses st:co-flow .
+st:translate-cld-to-stock-and-flow rel:uses st:delay .
+st:translate-cld-to-stock-and-flow rel:uses st:snapshot-test .
+st:translate-cld-to-stock-and-flow rel:uses st:stock-and-flow-diagram .
+st:trusted-forecasting-tool rel:instance_of st:ai-trust-loop .
+st:trusted-forecasting-tool rel:related st:agent-registry-graph .
+st:trusted-forecasting-tool rel:uses st:break-the-trust-loop .
+st:trusted-forecasting-tool rel:uses st:deterministic-gate-principle .
+st:undrawn-leak rel:related st:accidental-adversaries .
+st:undrawn-leak rel:related st:upstream-downstream-adversaries .
+st:undrawn-leak rel:uses st:draw-a-boundary .
+st:undrawn-leak rel:uses st:flow .
+st:unrun-code-is-an-unchecked-citation rel:instance_of series:ai-delegation .
+st:unrun-code-is-an-unchecked-citation rel:instance_of series:model-validation .
+st:unrun-code-is-an-unchecked-citation rel:related st:building-this-book-with-an-agent .
+st:unrun-code-is-an-unchecked-citation rel:related st:every-check-has-a-boundary-and-a-kind .
+st:unrun-code-is-an-unchecked-citation rel:related st:verify-after-translation .
+st:upstream-downstream-adversaries rel:instance_of st:accidental-adversaries .
+st:upstream-downstream-adversaries rel:related st:supply-chain-recurring-misses .
+st:upstream-downstream-adversaries rel:related st:undrawn-leak .
+st:urgency-corner-cutting-loop rel:instance_of st:reinforcing-loop .
+st:urgency-corner-cutting-loop rel:related st:quantified-supply-chain-model .
+st:urgency-corner-cutting-loop rel:related st:supply-chain-recurring-misses .
+st:urgency-corner-cutting-loop rel:uses st:build-cld-from-story .
+st:urgency-corner-cutting-loop rel:uses st:delay .
+st:validate-a-model rel:instance_of series:cognitive-bias .
+st:validate-a-model rel:instance_of series:model-validation .
+st:validate-a-model rel:related st:anchoring .
+st:validate-a-model rel:related st:audit-your-checks .
+st:validate-a-model rel:related st:availability-heuristic .
+st:validate-a-model rel:related st:confirmation-bias .
+st:validate-a-model rel:related st:hand-iterate-a-model .
+st:validate-a-model rel:related st:rank-interventions .
+st:validate-a-model rel:related st:sensitivity-analysis .
+st:validate-a-model rel:related st:structural-and-behavioral-validity .
+st:validate-a-model rel:uses st:anchoring .
+st:validate-a-model rel:uses st:availability-heuristic .
+st:validate-a-model rel:uses st:confirmation-bias .
+st:validate-a-model rel:uses st:one-at-a-time-swing-test .
+st:validate-a-model rel:uses st:sobol-analysis .
+st:validate-a-model rel:uses st:structural-and-behavioral-validity .
+st:vensim rel:related st:choose-simulation-tooling .
+st:vensim rel:related st:insight-maker .
+st:vensim rel:related st:numerical-integration .
+st:vensim rel:related st:pysd .
+st:vensim rel:related st:stella-and-ithink .
+st:vensim rel:related st:xmile .
+st:verify-after-translation rel:instance_of series:model-validation .
+st:verify-after-translation rel:related st:numerical-integration .
+st:verify-after-translation rel:related st:pysd .
+st:verify-after-translation rel:related st:unrun-code-is-an-unchecked-citation .
+st:verify-after-translation rel:related st:xmile .
+st:xmile rel:instance_of series:knowledge-representation .
+st:xmile rel:related st:numerical-integration .
+st:xmile rel:related st:pysd .
+st:xmile rel:related st:stella-and-ithink .
+st:xmile rel:related st:vensim .
+st:xmile rel:related st:verify-after-translation .

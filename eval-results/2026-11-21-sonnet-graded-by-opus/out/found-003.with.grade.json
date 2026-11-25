@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It states the question explicitly as why median and 90th-percentile door-to-discharge time keep rising, and says the boundary follows from it."
+  },
+  {
+   "score": 1,
+   "why": "It names stocks (waiting room, treatment bays, boarders, queues) and flows (arrivals, admission, discharge, leaks)."
+  },
+  {
+   "score": 1,
+   "why": "It brings inpatient beds, discharge flow and primary-care demand inside, and explicitly calls the ED-only data a convenience boundary."
+  },
+  {
+   "score": 0.5,
+   "why": "It defends each exclusion and checks for leaks (left without being seen, diversions, transfers), but never runs CATWOE or an equivalent stakeholder-perspective check."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-003",
+ "cond": "with",
+ "cost": 0.02844,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

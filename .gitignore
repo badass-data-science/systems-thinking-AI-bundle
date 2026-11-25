@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# PySD translates the model into Python when the book's scripts run
+systems-thinking/code/quantified-supply-chain.py
+
+# Packaged skill (make it with: zip -r systems-thinking-skill.zip systems-thinking)
+*.zip
+
+# Scratch folders from tools/run_evals.py and checkouts used for the code-drift check
+/work/
+/scratch/
+/books/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

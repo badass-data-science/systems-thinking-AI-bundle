@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Signs all four links correctly, counts two minus signs to show the loop is reinforcing, and says the lead's response is what feeds the spiral."
+  },
+  {
+   "score": 1,
+   "why": "Identifies the balancing loop through more labeled data and says which loop dominates depends on the labeling team's capacity."
+  },
+  {
+   "score": 0,
+   "why": "Never says the reinforcing loop can run upward into a virtuous cycle; it treats it only as a downward spiral past capacity."
+  },
+  {
+   "score": 1,
+   "why": "Recommends capping inflow to capacity, targeting examples via active learning, and tracking label quality directly with a gold set or agreement measure."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects 'we always respond to drops' as proof of self-correction."
+  }
+ ],
+ "notes": "",
+ "id": "held-026",
+ "cond": "new",
+ "cost": 0.029227999999999997,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

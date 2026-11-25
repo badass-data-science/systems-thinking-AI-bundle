@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Explains the 2-3 year construction lag and that most new units don't exist yet, but never mentions that rent data itself lags because it reflects leases signed earlier."
+  },
+  {
+   "score": 0.5,
+   "why": "Warns against doing everything at once, but only because the effects can't be attributed; it doesn't mention overcorrection or a later supply wave stacking on the other measures."
+  },
+  {
+   "score": 1,
+   "why": "Recommends quarterly tracking of permits, starts and completions, and asking what result by what date would count as success, instead of repealing now."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends narrow, temporary, separately tracked measures, but doesn't mention outside forces like regional demand or interest rates driving rents."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against repeal."
+  }
+ ],
+ "notes": "",
+ "id": "held-016",
+ "cond": "without",
+ "cost": 0.035128,
+ "score": 0.625,
+ "pitfalls_committed": 0
+}

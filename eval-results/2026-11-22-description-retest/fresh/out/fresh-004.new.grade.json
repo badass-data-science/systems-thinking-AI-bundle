@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Handles the event thoroughly (hotfix, user note, tracking) and adds a post-mortem, but never flags that deadline pressure pulls the analysis toward staying at the event level."
+  },
+  {
+   "score": 0,
+   "why": "Never asks whether ratings or login problems dipped after earlier releases, or to check past records for a pattern."
+  },
+  {
+   "score": 0.5,
+   "why": "Asks why the bug passed QA and proposes process fixes (staged rollout, smoke test), which touches structure, but never raises the belief or mental model that makes the current setup seem reasonable."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The plan goes beyond the hotfix and apology to include a post-mortem, staged rollout, smoke tests and tracking."
+  }
+ ],
+ "notes": "The answer names a root-cause fix (smoke test, staged rollout) before the post-mortem it calls for, though it does say to describe the post-mortem as in progress rather than guess.",
+ "id": "fresh-004",
+ "cond": "new",
+ "cost": 0.026136,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 0
+}

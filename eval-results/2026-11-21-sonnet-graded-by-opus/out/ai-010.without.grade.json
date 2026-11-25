@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It moves the dependency facts, with per-entry evidence, into queried sources and a generated dependency map the assistant reads, which is a knowledge graph in substance."
+  },
+  {
+   "score": 1,
+   "why": "It claims consistency from shared data, comparable and diffable sessions, and citations that trace wrong answers back to a bad source."
+  },
+  {
+   "score": 0.5,
+   "why": "It says citations make checking easy and that answers are only as good as coverage, but it never argues that cheap checking keeps human scrutiny from eroding."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-010",
+ "cond": "without",
+ "cost": 0.026944,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

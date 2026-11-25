@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "States that in Fixes That Fail the fix's side effect makes the underlying problem itself worse."
+  },
+  {
+   "score": 1,
+   "why": "States that Shifting the Burden requires a competing fundamental fix whose capability erodes through reliance on the quick fix."
+  },
+  {
+   "score": 1,
+   "why": "Overtime-driven burnout and rework fits Fixes That Fail, and the hero engineer whose fixes stop others learning the system fits Shifting the Burden."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "disc-001",
+ "cond": "with",
+ "cost": 0.022864,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

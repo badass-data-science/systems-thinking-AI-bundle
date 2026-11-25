@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It states the purpose explicitly: explain why ED door-to-departure time keeps rising."
+  },
+  {
+   "score": 0.5,
+   "why": "Arrivals, boarding, admissions and discharge timing appear, but they are never framed as stocks and flows, and the stock of patients waiting is only implied."
+  },
+  {
+   "score": 1,
+   "why": "It brings inpatient bed availability and discharge timing inside the boundary and argues against limiting the model to ED data, considering primary care as an exogenous driver."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives one blanket defense for all exclusions rather than one per exclusion, partially checks leaking flows (left-without-being-seen, diversion), and does no CATWOE."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The single 'can't change it from the ED' defense is weak for primary care access, which plausibly drives arrivals through feedback rather than acting as a fixed input.",
+ "id": "found-003",
+ "cond": "without",
+ "cost": 0.032563999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

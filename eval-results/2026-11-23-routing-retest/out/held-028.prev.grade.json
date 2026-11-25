@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly applies the 'is anyone in charge?' test, notes no coordinator among 3,000 independently configured agents, and names cascading reschedules and congestion into remaining slots."
+  },
+  {
+   "score": 1,
+   "why": "Says the aggregate model averages away the interactions, recommends an agent-based simulation, and calls for validating against a small monitored pilot rolled out in stages."
+  },
+  {
+   "score": 1,
+   "why": "Recommends caps on moves per meeting, rate limits, and escalation to a human on deadlock, plus company-wide monitoring of reschedules and meeting load from day one."
+  },
+  {
+   "score": 0.5,
+   "why": "Proposes IT-set safeguards and asks whether a shared protocol exists, but never says that the centrally designed defaults and limits are where IT's leverage lies."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects the aggregate model as the forecasting tool because no one coordinates the agents."
+  }
+ ],
+ "notes": "",
+ "id": "held-028",
+ "cond": "prev",
+ "cost": 0.035484,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

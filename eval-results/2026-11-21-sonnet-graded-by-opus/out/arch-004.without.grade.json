@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names tragedy of the commons."
+  },
+  {
+   "score": 1,
+   "why": "Explains that restraint just means you go without while others fill the gap, so overuse is individually rational."
+  },
+  {
+   "score": 1,
+   "why": "Recommends pricing, idle fees, time limits with automated enforcement, and monitoring and transparency instead of appeals."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Frames the overuse as rational responses to incentives, not as driver greed."
+  }
+ ],
+ "notes": "",
+ "id": "arch-004",
+ "cond": "without",
+ "cost": 0.02186,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

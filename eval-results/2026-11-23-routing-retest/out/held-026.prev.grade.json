@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Signs all four links correctly, counts two negatives as reinforcing, and says the response feeds the cause rather than correcting it."
+  },
+  {
+   "score": 1,
+   "why": "Identifies the balancing loop through more labeled data raising accuracy, and says which loop wins depends on load versus labeler capacity."
+  },
+  {
+   "score": 1,
+   "why": "States the reinforcing loop can run either way, vicious under high load and virtuous when load is low."
+  },
+  {
+   "score": 1,
+   "why": "Recommends capping work at labeler capacity, active learning for better-chosen examples, and tracking label quality against a gold set."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects the idea that responding to each drop makes the loop self-correcting."
+  }
+ ],
+ "notes": "",
+ "id": "held-026",
+ "cond": "prev",
+ "cost": 0.023864,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

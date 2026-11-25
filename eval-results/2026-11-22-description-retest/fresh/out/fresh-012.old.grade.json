@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names success to the successful and explains how the routing rule reinforces an early edge, with leads as the shared resource."
+  },
+  {
+   "score": 1,
+   "why": "Explains that close rate reflects lead selection and allocation (a filtered warm pool versus everything), not skill."
+  },
+  {
+   "score": 1,
+   "why": "Recommends random or round-robin routing, caps, and a controlled random-assignment period, with quality-adjusted comparison before any PIP."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says the gap tells little about skill."
+  },
+  {
+   "committed": false,
+   "why": "Does not invoke Escalation."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-012",
+ "cond": "old",
+ "cost": 0.022168,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

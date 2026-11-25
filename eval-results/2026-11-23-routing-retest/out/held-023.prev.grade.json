@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Separates 'why fade' (structure, via a causal-loop sketch) from 'would another semester fix it' (change over time, via a stock-and-flow model of skill gained versus decayed)."
+  },
+  {
+   "score": 1,
+   "why": "Says a knowledge graph records facts and answers by lookup, and that it does not explain causes or project forward."
+  },
+  {
+   "score": 0.5,
+   "why": "Covers scattered records and multi-hop queries, plus guardrails for deterministic, sourced answers. It omits frequently changing facts and joining outside data such as district records, and doesn't frame the graph as a data source alongside the models."
+  },
+  {
+   "score": 1,
+   "why": "Recommends a mechanism-mapping session with tutors and teachers before any build, mentions a simple stock-and-flow model, and defers storage decisions with plain tables first."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly calls the graph the wrong tool for the causal question."
+  }
+ ],
+ "notes": "",
+ "id": "held-023",
+ "cond": "prev",
+ "cost": 0.034727999999999995,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

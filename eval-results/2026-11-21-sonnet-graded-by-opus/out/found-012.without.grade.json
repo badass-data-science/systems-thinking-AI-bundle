@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says control is central and the triage agent, designed by the team, assigns the work, so the system is not a swarm."
+  },
+  {
+   "score": 0.5,
+   "why": "It describes many agents interacting through shared state with no one directing them, but it never says the agents are built independently by different parties, as in a shared market, and keeps them inside one team's design."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-012",
+ "cond": "without",
+ "cost": 0.02114,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

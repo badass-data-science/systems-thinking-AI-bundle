@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It asks whether each referred user brings in more than one further user per cycle and names the viral coefficient, which is the self-causation test."
+  },
+  {
+   "score": 1,
+   "why": "It lists outside causes such as seasonality, press, a competitor's stumble and market tailwinds, and asks for a counterfactual."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-010",
+ "cond": "new",
+ "cost": 0.020052,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

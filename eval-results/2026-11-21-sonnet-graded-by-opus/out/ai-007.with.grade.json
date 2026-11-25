@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Order 1 states much faster test writing and higher coverage as a real gain."
+  },
+  {
+   "score": 1,
+   "why": "Order 2 covers tests asserting current behavior rather than intent and weaker review, tied to archetypes like Shifting the Burden and Fixes that Fail."
+  },
+  {
+   "score": 1,
+   "why": "Order 3 is labeled speculative and covers skill atrophy under Shifting the Burden."
+  },
+  {
+   "score": 1,
+   "why": "Remedies keep the speed (review standards for AI tests, hand-written critical-path tests, drills), and the answer stops at third order with hedged confidence."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-007",
+ "cond": "with",
+ "cost": 0.027172,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

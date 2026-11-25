@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It states L(next) = L + 30 − 25 − 0.05·L, with every flow taken from the start-of-week list."
+  },
+  {
+   "score": 1,
+   "why": "Its values of 119, 118.1, 117.2 and 116.3 match, and it derives the equilibrium of 100 from 30 = 25 + 0.05·100."
+  },
+  {
+   "score": 1,
+   "why": "It says demand exceeds capacity by 5 a week and that dropouts are the only drain shrinking the list."
+  },
+  {
+   "score": 1,
+   "why": "It calls the shrinkage a hidden shortfall, names dropouts (about 6 now, 5 at equilibrium) as the flow doing the work, and says to track the share of referrals that get seen."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says fewer people waiting doesn't mean better access."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-015",
+ "cond": "new",
+ "cost": 0.028996,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

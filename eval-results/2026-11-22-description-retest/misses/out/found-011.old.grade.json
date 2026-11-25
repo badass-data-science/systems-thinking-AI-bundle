@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Identifies an exact 10% weekly multiplier, calls it compounding, and notes the growing increments versus a linear reading."
+  },
+  {
+   "score": 1,
+   "why": "Projects doubling about every 7 weeks, gives 26- and 52-week figures, and recommends acting now with load tests and a scaling trigger."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-011",
+ "cond": "old",
+ "cost": 0.016424,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

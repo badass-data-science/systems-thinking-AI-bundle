@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Says blame is normative and a model cast as arbiter will be attacked through its assumptions and baselines, but treats the dispute mainly as a quantification problem rather than a disagreement about what the problem is."
+  },
+  {
+   "score": 0.5,
+   "why": "Has stakeholders agree on questions, baselines and data and review the conceptual model, but never draws out each group's view, sets the boundary explicitly, or records who was consulted versus informed."
+  },
+  {
+   "score": 0,
+   "why": "Mentions metering and pumping caps only as data gaps and scenario options, with no shared-resource or commons incentive structure and no agreed, enforceable rules."
+  },
+  {
+   "score": 1,
+   "why": "Keeps the model for water-budget reconstruction, directly tests the dry-years claim, and builds it with stakeholder input and review."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects presenting a blame verdict and calls for stakeholder involvement before building."
+  }
+ ],
+ "notes": "",
+ "id": "held-009",
+ "cond": "without",
+ "cost": 0.03756,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

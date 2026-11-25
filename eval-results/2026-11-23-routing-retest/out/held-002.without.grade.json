@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Describes the fix-that-backfires cycle (friction, bundling, more incidents, another sign-off) but doesn't acknowledge that sign-offs genuinely reduce risk in the short term, and in fact downplays it."
+  },
+  {
+   "score": 0.5,
+   "why": "Traces the reinforcing side-effect loop clearly but never separates out the quick-fix balancing loop, and doesn't note the delay as batch size grew over months."
+  },
+  {
+   "score": 1,
+   "why": "Notes that each added approval worsens things and projects that a fourth would grow batches further and make the next incident harder to diagnose."
+  },
+  {
+   "score": 1,
+   "why": "Recommends small frequent deploys, automated gates, canaries, flags and fast rollback, and proposes tracking changes per deploy and time to resolve, though it doesn't frame any extra sign-off as a stopgap."
+  },
+  {
+   "score": 0.5,
+   "why": "Moves from the incident to the structural pattern and its controls, but only implies the belief that more approval means more safety without naming it as the mental model sustaining the structure."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly recommends against the fourth sign-off."
+  },
+  {
+   "committed": false,
+   "why": "Never blames an individual engineer; it attributes the problem to batch size and process."
+  }
+ ],
+ "notes": "Claims the sign-offs add 'little real assurance' and suggests retiring one without evidence, which overstates the case and may undercut credibility with the VP.",
+ "id": "held-002",
+ "cond": "without",
+ "cost": 0.049100000000000005,
+ "score": 0.7,
+ "pitfalls_committed": 0
+}

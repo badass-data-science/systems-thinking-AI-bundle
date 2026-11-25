@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Nodes are phrased as quantities and all four link signs match the rubric."
+  },
+  {
+   "score": 1,
+   "why": "Counts two minus links, an even number, and labels the loop reinforcing (R)."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly describes both the virtuous cycle and the vicious/death-spiral direction."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Labels it reinforcing, not balancing."
+  }
+ ],
+ "notes": "",
+ "id": "found-006",
+ "cond": "with",
+ "cost": 0.017696,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

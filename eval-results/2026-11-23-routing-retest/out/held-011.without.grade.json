@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Sets up in-training and trained stocks with hires in, graduates (half of trainees) between them, and 5% attrition out, all computed from start-of-month levels."
+  },
+  {
+   "score": 1,
+   "why": "The table gives 10, 15, 17.5, 18.75 in training and 95, 95.3, 98.0, 101.8 trained, which match the expected values."
+  },
+  {
+   "score": 1,
+   "why": "Attributes the dip to attrition starting at once while hires are held in training, and calls it expected rather than a failure."
+  },
+  {
+   "score": 0.5,
+   "why": "Correctly derives the 20 and 200 equilibria and the slow approach, but never flags training time, the attrition rate, or faster early-tenure attrition as guesses to sensitivity-test; it only checks a timing convention and names levers."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "New hires are held in training and only graduates count as taking tickets."
+  }
+ ],
+ "notes": "",
+ "id": "held-011",
+ "cond": "without",
+ "cost": 0.037424,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

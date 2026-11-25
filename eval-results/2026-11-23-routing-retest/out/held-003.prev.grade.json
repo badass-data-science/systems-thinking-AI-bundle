@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the fit to three on-sales shows only reproduction of seen conditions, not correct structure, and that recalibrating just adds one more fitted point."
+  },
+  {
+   "score": 0.5,
+   "why": "It explains that the retry loop was missing and invisible in calm history and recommends adding it, but never proposes disturbing the model with a dip or spike and comparing runs with the loop on and off."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends checking each link with app and backend engineers, including people who didn't build the model, but doesn't explicitly ask to record which parameters were tuned to get the fit."
+  },
+  {
+   "score": 1,
+   "why": "It asks the team to write down in advance what would show the model wrong, and to run sensitivity sweeps on retry rate and backoff tied to the go/no-go decision."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says recalibrating on the crash would not validate the model."
+  }
+ ],
+ "notes": "",
+ "id": "held-003",
+ "cond": "prev",
+ "cost": 0.038828,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

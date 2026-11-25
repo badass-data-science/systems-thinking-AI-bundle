@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It hints at competing pressures (deadline clustering, velocity incentives) but never frames the workarounds as a balancing loop defending an unwritten throughput or cycle-time goal."
+  },
+  {
+   "score": 0,
+   "why": "It never sketches state, goal, gap and correction, and never asks who set the implicit goal; 'decide what the policy is for' concerns the policy's own goal."
+  },
+  {
+   "score": 0.5,
+   "why": "It advises redesigning the policy and making exceptions explicit rather than enforcing harder, but never says to renegotiate the competing implicit goal itself."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-009",
+ "cond": "without",
+ "cost": 0.030123999999999998,
+ "score": 0.3333333333333333,
+ "pitfalls_committed": 0
+}

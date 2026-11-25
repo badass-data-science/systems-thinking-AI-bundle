@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Computes delivery as min(120,100)=100 with the dock binding and shipments at 90 with pickers binding, since stock stays above 90."
+  },
+  {
+   "score": 1,
+   "why": "The table gives end-of-week stock of 210, 220, 230 and 240."
+  },
+  {
+   "score": 1,
+   "why": "Says pickers bind outflow, the dock binds inflow, stock grows +10/week, and supplier output has slack; it doesn't name storage, but it does say the stock term never binds."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-002",
+ "cond": "new",
+ "cost": 0.022944,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The table gives each check's scope and what kind of fault it can detect: tests check asserted behavior on executed paths, the linter checks style and static rules on source files."
+  },
+  {
+   "score": 1,
+   "why": "It says plainly that the config sat outside both checks because nothing loaded it."
+  },
+  {
+   "score": 1,
+   "why": "It fixes the checks themselves by loading every real config through the production loader, requiring each config path to be exercised, and adding cross-reference and smoke checks; the hand-kept path list is close to generating it from the repo."
+  },
+  {
+   "score": 1,
+   "why": "It reframes green as \"only covered what the checks could see\" and warns against treating absence of failures as proof of correctness."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The required-config list is maintained by hand rather than generated from the repo, so it could drift; otherwise nothing wrong.",
+ "id": "ai-011",
+ "cond": "without",
+ "cost": 0.030712,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

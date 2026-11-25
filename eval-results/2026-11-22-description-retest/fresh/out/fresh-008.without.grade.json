@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Never names Fixes That Fail but describes it in substance: the coupon lowers complaints while its added peak demand worsens the lateness that causes them."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly traces the reinforcing chain (coupons → peak redemptions → more late orders → more coupons) and notes that complaints trigger coupons, which lower complaints."
+  },
+  {
+   "score": 0.5,
+   "why": "Advises against 30% and says a bigger coupon adds more peak demand, but doesn't frame the move as an escalating dose for the same relief."
+  },
+  {
+   "score": 1,
+   "why": "Recommends off-peak-only coupons and peak capacity fixes, and measures the side effect directly via redemption by day and hour and repeat-late rate."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Does not invoke Shifting the Burden."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-008",
+ "cond": "without",
+ "cost": 0.036435999999999996,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

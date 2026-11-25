@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It lists the nodes as more-is-more quantities and gives a sign for every link; satisfaction and good reviews stand in for complaint reviews."
+  },
+  {
+   "score": 1,
+   "why": "It traces R1 with zero minuses and B1, B2 and B3 with one minus each, and labels them from the minus count."
+  },
+  {
+   "score": 1,
+   "why": "It marks the review-to-rating delay, attributes the shift to a fixed kitchen capacity, and names the shape Limits to Growth."
+  },
+  {
+   "score": 0.5,
+   "why": "It asks the owner to read checks aloud to kitchen staff, but those are questions rather than each loop as a sentence, and regulars are not mentioned."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-006",
+ "cond": "new",
+ "cost": 0.036736,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

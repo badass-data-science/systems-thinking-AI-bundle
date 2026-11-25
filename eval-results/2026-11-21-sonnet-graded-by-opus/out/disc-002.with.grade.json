@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Questions 2 and 3 distinguish one fixed limit, one removable own-capacity limit, and several limits."
+  },
+  {
+   "score": 1,
+   "why": "Question 1 asks whether the limit is a resource drawn on by several independent actors."
+  },
+  {
+   "score": 1,
+   "why": "Question 4 asks whether the don't-invest decision is reconfirmed after each failure using it as evidence."
+  },
+  {
+   "score": 1,
+   "why": "Actions match: relax or plan around the limit, invest ahead and hold the standard, choose which unattractiveness to accept, collective rules/quotas."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Question 3 leaves a gap for a removable limit that is not your own capacity, but this is minor.",
+ "id": "disc-002",
+ "cond": "with",
+ "cost": 0.022744,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

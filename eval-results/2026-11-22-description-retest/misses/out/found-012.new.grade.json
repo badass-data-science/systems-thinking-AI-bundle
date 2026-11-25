@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It applies the 'is anyone in charge' test and concludes the designed pipeline with a triage coordinator is not a swarm."
+  },
+  {
+   "score": 1,
+   "why": "It says a system becomes a swarm when many independently built agents react to each other's outputs with nobody coordinating, and gives trading and pricing bots as examples."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-012",
+ "cond": "new",
+ "cost": 0.018728,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

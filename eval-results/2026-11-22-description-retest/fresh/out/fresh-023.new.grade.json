@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names shifting the burden to the intervenor, describes the team's hand-reconciliation skill fading, and treats the outage as how the hidden dependency came to light."
+  },
+  {
+   "score": 0.5,
+   "why": "It says a backup vendor covers availability but not the lost capability, yet never says a backup could deepen that loss."
+  },
+  {
+   "score": 1,
+   "why": "It recommends hand reconciliations each quarter compared against the tool, senior staff training the new hires, and a recovery-time target that tests whether the team can still close without the tool."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the tool with fixed-rate sampling and puts the vendor dependency on the risk register with a recovery target."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It keeps using the tool and adds checks around it."
+  },
+  {
+   "committed": false,
+   "why": "It calls the backup vendor half the lesson and makes it conditional on the manual fallback target."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-023",
+ "cond": "new",
+ "cost": 0.032836,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

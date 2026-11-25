@@ -1,0 +1,15 @@
+headcount -> heist success rate: + steelblue
+heist success rate -> Lab attractiveness to recruits: + steelblue
+Lab attractiveness to recruits -> new hires: + steelblue
+new hires -> headcount: + steelblue
+headcount -> training time per henchman: - steelblue
+training time per henchman -> heist success rate: + steelblue
+headcount -> bunk crowding: + steelblue
+bunk crowding -> Lab attractiveness to recruits: - steelblue
+heist success rate -> Interpol attention level: + delay steelblue
+Interpol attention level -> Lab attractiveness to recruits: - steelblue
+
+loop: headcount, heist success rate, Lab attractiveness to recruits, new hires
+loop: headcount, training time per henchman, heist success rate, Lab attractiveness to recruits, new hires
+loop: headcount, bunk crowding, Lab attractiveness to recruits, new hires
+loop: heist success rate, Interpol attention level, Lab attractiveness to recruits, new hires, headcount

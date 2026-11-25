@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It describes dependence growing as staff left while outsourcing looked safe, but never names Shifting the Burden or explains that the outside fix let in-house skill decay through disuse."
+  },
+  {
+   "score": 0.5,
+   "why": "It explains why the city has no alternative now, but not the reinforcing loop in which each year of outsourcing makes rebuilding harder."
+  },
+  {
+   "score": 1,
+   "why": "It recommends a hybrid that keeps the firm this cycle in a reduced or training role while hiring or training staff and securing a model handover."
+  },
+  {
+   "score": 0,
+   "why": "It never mentions putting the dependency on a risk register."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly allows keeping the firm this cycle and does not recommend dropping it."
+  },
+  {
+   "committed": false,
+   "why": "It covers negotiation and competing quotes, but frames the real problem as dependency and recommends rebuilding capability."
+  }
+ ],
+ "notes": "It suggests a one-time independent review rather than an internal parallel forecast, which partly but not fully rebuilds the city's own capability.",
+ "id": "fresh-009",
+ "cond": "without",
+ "cost": 0.032411999999999996,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

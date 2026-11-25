@@ -1,0 +1,10 @@
+villainium quality complaint -> hand-inspect and re-refine: + steelblue
+hand-inspect and re-refine -> villainium quality complaint: - steelblue
+villainium quality complaint -> fix mine extraction process: + steelblue
+fix mine extraction process -> villainium quality complaint: - delay steelblue
+hand-inspect and re-refine -> capability to fix extraction process: - delay steelblue
+capability to fix extraction process -> fix mine extraction process: + steelblue
+
+loop: villainium quality complaint, hand-inspect and re-refine
+loop: villainium quality complaint, fix mine extraction process
+loop: villainium quality complaint, hand-inspect and re-refine, capability to fix extraction process, fix mine extraction process

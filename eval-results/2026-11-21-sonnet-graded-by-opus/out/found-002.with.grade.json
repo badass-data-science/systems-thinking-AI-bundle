@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Monday's escalation as the event."
+  },
+  {
+   "score": 1,
+   "why": "Identifies the recurring quarterly escalations about two weeks after quarter-end as the pattern."
+  },
+  {
+   "score": 1,
+   "why": "Describes audit work and reports competing for fixed capacity, a backlog that accumulates faster than it clears, and a decision rule that never checks it."
+  },
+  {
+   "score": 1,
+   "why": "Presents 'we push through' as a belief that was reasonable and worked, and assigns no blame."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "The claim that 'nobody was hurt' sits awkwardly with three prior escalations; the timing-mismatch flag is a legitimate check, not an error.",
+ "id": "found-002",
+ "cond": "with",
+ "cost": 0.028567999999999996,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

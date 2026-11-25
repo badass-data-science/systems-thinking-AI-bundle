@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It frames the meeting as a buy-in problem and says the easiest way to resist an unwelcome conclusion is to attack its inputs."
+  },
+  {
+   "score": 1,
+   "why": "It says extra detail only adds more to attack, calls contractors a boundary question to settle with leadership, and recommends rebuilding the argument live with them."
+  },
+  {
+   "score": 0.5,
+   "why": "It gives a clear swing test and flip point for attrition and contractors, but does not explicitly say to name the value-laden choices openly."
+  },
+  {
+   "score": 0.5,
+   "why": "It suggests taking assumptions to the skeptics and notes that solo work stays 'yours', but does not distinguish leaders consulted during the build from those only shown results."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects more detail alone and centres the advice on co-building and sensitivity testing."
+  }
+ ],
+ "notes": "It overclaims that a robust swing result 'ends the argument' and that leaders who supply inputs 'can't attack them afterward', which oversells how settled resistance will be.",
+ "id": "fresh-030",
+ "cond": "new",
+ "cost": 0.034184,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

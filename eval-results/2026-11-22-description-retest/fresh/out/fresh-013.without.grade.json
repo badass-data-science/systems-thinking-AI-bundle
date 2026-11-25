@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It treats theory 1 as a fixed market limit and calls the 'flat sales prove no demand' reasoning circular under a supply cap, but it never frames theory 3 as several limits binding together or theory 4 as a shared tolerance being drawn down."
+  },
+  {
+   "score": 1,
+   "why": "It gives distinguishing evidence for each theory: sellouts and tap-out walkaways, production versus revenue, peak-hour ceilings, and whether the other breweries are also flat."
+  },
+  {
+   "score": 1,
+   "why": "It explains that remedies differ (cheap capacity fixes, a conditional brewhouse, joint action with the other breweries on the town) and that the theories aren't mutually exclusive."
+  },
+  {
+   "score": 1,
+   "why": "Its recommendations target production, capacity and permit limits rather than marketing."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It doesn't push marketing or promotions; shifting traffic to midweek is framed as relieving peak capacity."
+  }
+ ],
+ "notes": "Advising to 'hold the brewhouse decision' could prolong the underinvestment pattern of theory 2, and calling theory 4 'not a cause' plays down how the shared event noise may already be eroding the strip's standing.",
+ "id": "fresh-013",
+ "cond": "without",
+ "cost": 0.042092000000000004,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

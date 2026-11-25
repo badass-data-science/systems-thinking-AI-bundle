@@ -1,0 +1,10 @@
+our Heroine's price cut -> our Heroine's relative position: + steelblue
+our Heroine's relative position -> our Heroine's price cut: - steelblue
+rival's price cut -> rival's relative position: + steelblue
+rival's relative position -> rival's price cut: - steelblue
+our Heroine's price cut -> rival's relative position: - steelblue
+rival's price cut -> our Heroine's relative position: - steelblue
+
+loop: our Heroine's price cut, our Heroine's relative position
+loop: rival's price cut, rival's relative position
+loop: our Heroine's price cut, rival's relative position, rival's price cut, our Heroine's relative position

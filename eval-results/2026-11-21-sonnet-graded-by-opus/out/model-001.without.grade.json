@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Open tickets and Agent burnout as the stocks and explains that the delay comes from burnout being a stock."
+  },
+  {
+   "score": 1,
+   "why": "Lists ticket arrivals, tickets resolved, burnout accumulation and burnout recovery as the flows."
+  },
+  {
+   "score": 1,
+   "why": "Overtime is an auxiliary computed from Open tickets against a Normal backlog constant, which makes the reference level explicit."
+  },
+  {
+   "score": 0.5,
+   "why": "Maps each link's polarity and gives stock equations, but gives no units and doesn't explicitly check that every loop passes through a stock."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-001",
+ "cond": "without",
+ "cost": 0.034236,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

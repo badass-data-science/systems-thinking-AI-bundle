@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It frames the question as whether plausible input errors push the reduction below the 10% target, and notes the 8-point margin."
+  },
+  {
+   "score": 1,
+   "why": "It swings each input across a plausible range with the others at baseline, flags any that can pull the result below 10%, and offers a tornado analysis."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds a joint Monte Carlo analysis as a global method but never says one-at-a-time swings miss inputs that matter only together, and names neither Morris nor Sobol."
+  },
+  {
+   "score": 1,
+   "why": "It aims for a ranking and recommends buying only the top 2–4 inputs instead of the full $400k package."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "fresh-017",
+ "cond": "without",
+ "cost": 0.03198,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

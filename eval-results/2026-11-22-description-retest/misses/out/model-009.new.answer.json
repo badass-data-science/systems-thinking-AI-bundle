@@ -1,0 +1,15 @@
+{
+ "id": "model-009",
+ "cond": "new",
+ "answer": "**Modeler 1 (30% because of last month's failure): availability heuristic.** The most vivid recent event stands in for the base rate. One dramatic failure is easy to recall, so it gets overweighted, whether or not it's typical. (Recency and salience bias are close cousins.)\n\nCounter-practices:\n- Ask the record, not memory. Count failures over a long window, such as 3–5 years of deliveries, or use an industry base rate, and set the number from that.\n- Write down the denominator: \"1 failure in N orders or months.\"\n- Give a range instead of a point, such as 10–30%, and test both ends.\n- Ask whether last month's failure was typical or an outlier, and why it was so memorable.\n\n**Modeler 2 (0.5 in the first draft, about 0.5 ever since): anchoring.** The first number, even an arbitrary placeholder, keeps pulling every later estimate toward itself. There's also a hint of status-quo or default bias. 0.5 is the \"I have no idea\" value, and it has quietly become a finding. Nobody measured it, so nothing ever moved it.\n\nCounter-practices:\n- Mark it as a guess in the model documentation, and record its source as \"unmeasured placeholder.\"\n- Have someone else estimate it independently, before they see your number.\n- Run a one-at-a-time swing test. Move it ±25% with everything else fixed, then see whether the recommendation flips. If it does, find the flip point and note whether the parameter has ever been measured. That list is your measurement to-do list.\n- Follow with a Sobol analysis if several guesses might interact. One-at-a-time swings never let two guesses be wrong together.\n- Don't swing only the convenient parameters. The anchored one is often the one nobody wants to touch.\n\n**What the two have in common:** both set a parameter from something that is easy to reach (a vivid memory, a first draft) rather than from evidence. The shared fix is to treat every guessed parameter as a range, test whether the decision depends on it, and measure the ones that matter. When a recommendation hinges on one of these, say so explicitly.",
+ "cost": 0.0564269,
+ "turns": 7,
+ "tool_calls": [
+  "Skill:systems-thinking",
+  "Grep:anchor|availability|vivid|0\\.5",
+  "Read:new/.claude/skills/systems-thinking/concepts/anchoring.md",
+  "Read:new/.claude/skills/systems-thinking/concepts/availability-heuristic.md",
+  "Read:new/.claude/skills/systems-thinking/procedures/one-at-a-time-swing-test.md"
+ ],
+ "skill_loaded": true
+}

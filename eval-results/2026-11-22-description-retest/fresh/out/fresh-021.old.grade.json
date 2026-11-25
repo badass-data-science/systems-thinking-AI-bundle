@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explicitly separates power from reach, calling culture change high-power but low near-term reach, and says the strongest lever isn't the whole analysis."
+  },
+  {
+   "score": 1,
+   "why": "It says high leverage isn't the same as the right next step and defends the checklist as an honestly labeled stopgap."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends doing both with the checklist as a labeled stopgap, but it doesn't tie each intervention to the specific handoff link it changes; it only suggests reviewing incidents to find the driver."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects skipping the checklist."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-021",
+ "cond": "old",
+ "cost": 0.027299999999999998,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Names arms race / mutual escalation, but frames it as a prisoner's dilemma and never describes balancing loops on relative position joining into a reinforcing loop."
+  },
+  {
+   "score": 1,
+   "why": "Explains that a vendor who restrains while the other escalates loses sign-ups, so stopping alone fails."
+  },
+  {
+   "score": 1,
+   "why": "Proposes changing what is competed on, plus public verifiable commitments that work only if the rival can verify them, rather than willpower."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Treats it as a mutual escalation trap, not ordinary reinforcing growth with a natural ceiling."
+  }
+ ],
+ "notes": "",
+ "id": "arch-009",
+ "cond": "without",
+ "cost": 0.026504,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names escalation: each town reacts to the other's offer, so the offers ratchet up and both towns end up worse off."
+  },
+  {
+   "score": 1,
+   "why": "Says every move was reasonable, that standing down alone hands the deal to the neighbor, and that 'how do we win' is the wrong question."
+  },
+  {
+   "score": 1,
+   "why": "Proposes a binding, verifiable regional cap or revenue-sharing, checking state law, and competing on site readiness, permitting and workforce."
+  },
+  {
+   "score": 1,
+   "why": "Calls for weighing what the deal returns per dollar, including school costs and forgone revenue, rather than counting wins."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly advises against winning by escalating the package."
+  },
+  {
+   "committed": false,
+   "why": "Offers local limits only as a fallback alongside a regional rule, and warns that a town binding only itself can still be outbid."
+  }
+ ],
+ "notes": "",
+ "id": "held-019",
+ "cond": "prev",
+ "cost": 0.031776,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

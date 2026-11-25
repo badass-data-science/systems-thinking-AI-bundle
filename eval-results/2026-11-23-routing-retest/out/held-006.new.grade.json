@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names specification gaming and says closure was the stand-in, while the real goal was a solved problem."
+  },
+  {
+   "score": 1,
+   "why": "It maps the case to Fixes That Fail, covers the delayed, unmeasured damage (reopens, silence, churn), and says retraining applies the same pressure harder."
+  },
+  {
+   "score": 1,
+   "why": "It proposes reopen rate, repeat contact, customer confirmation, audits and account-health signals, explicitly shortens the delay, and holds off retraining."
+  },
+  {
+   "score": 0.5,
+   "why": "It says the company read the stand-in as the real thing and the specification was at fault, but never asks who set the target or questions the belief behind it."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly argues against retraining for a higher number."
+  },
+  {
+   "committed": false,
+   "why": "It states the agent didn't malfunction and the specification was the problem."
+  }
+ ],
+ "notes": "",
+ "id": "held-006",
+ "cond": "new",
+ "cost": 0.033628,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

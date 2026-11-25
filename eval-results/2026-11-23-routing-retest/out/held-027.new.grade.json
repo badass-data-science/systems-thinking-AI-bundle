@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It names Shifting the Burden, separates the fast symptomatic fix from the slow fundamental fix, and ties the crew shrinking from 12 to 3 to the fast fix."
+  },
+  {
+   "score": 1,
+   "why": "It traces the reinforcing loop that erodes capability, notes that trees take years to matter, and explains why each summer deepens the dependence on the fast fix."
+  },
+  {
+   "score": 1,
+   "why": "It keeps the cooling centers, calls more center money a treatment of the symptom, says to rebuild the forestry crew now, and recommends a separate contingency budget."
+  },
+  {
+   "score": 1,
+   "why": "It recommends tracking crew size, planting against plan, and canopy and roof area so the erosion becomes visible to the council."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It correctly uses Shifting the Burden, not Fixes That Fail."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly says to keep the cooling centers."
+  }
+ ],
+ "notes": "The polarity labels in the traced loop are a bit muddled, but the conclusion that the loop is reinforcing is correct.",
+ "id": "held-027",
+ "cond": "new",
+ "cost": 0.033324,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

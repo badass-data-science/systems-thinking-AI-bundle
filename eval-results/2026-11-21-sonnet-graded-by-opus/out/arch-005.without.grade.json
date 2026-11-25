@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It calls this saturation hitting a TAM ceiling set by the niche's size, which is Limits to Growth with the niche as carrying capacity, though it never names the archetype."
+  },
+  {
+   "score": 1,
+   "why": "It says the doubled spend had near-zero marginal return, that this is 'not a channel problem', and that it is a success story, meaning nothing broke."
+  },
+  {
+   "score": 1,
+   "why": "It recommends expanding into adjacent segments, geographies and use cases, and planning around the ceiling by monetizing and defending the base."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The checks on duplicates, churn and lead quality come after the saturation diagnosis and only verify it; they are not a hunt for a broken funnel."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly advises against doubling spend and offers only a small, time-boxed test as a fallback."
+  }
+ ],
+ "notes": "",
+ "id": "arch-005",
+ "cond": "without",
+ "cost": 0.032976,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

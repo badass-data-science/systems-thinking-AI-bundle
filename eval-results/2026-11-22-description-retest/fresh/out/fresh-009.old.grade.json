@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names shifting the burden to the intervenor and explains the firm met the need yearly while in-house skill lapsed."
+  },
+  {
+   "score": 1,
+   "why": "Describes the in-house option getting harder each year, making the firm more essential, and warns that waiting worsens it."
+  },
+  {
+   "score": 1,
+   "why": "Recommends keeping the firm now, having it teach, building an internal core, and running a parallel shadow forecast."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly says to put the dependency on the risk register by name."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly cautions against dropping the firm abruptly."
+  },
+  {
+   "committed": false,
+   "why": "Negotiation is one step among several structural fixes aimed at rebuilding capability."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-009",
+ "cond": "old",
+ "cost": 0.025964,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

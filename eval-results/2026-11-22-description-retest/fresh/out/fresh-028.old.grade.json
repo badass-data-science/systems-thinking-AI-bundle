@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Opens by stating the time savings and new written records as a real, undisputed gain."
+  },
+  {
+   "score": 1,
+   "why": "Traces months-out effects with clear mechanisms: fewer attendees supplying context, trust rising as scrutiny falls, and absent people unable to catch errors."
+  },
+  {
+   "score": 0.5,
+   "why": "Gives labeled-speculative third-order effects including junior staff losing informal learning and skill dependence, but never checks them against known archetypes or explicitly limits the chain."
+  },
+  {
+   "score": 1,
+   "why": "Remedies preserve the gain: owner confirms summaries before distribution, sample audits against recordings, and decision meetings kept non-skippable."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Recommends a guarded pilot and rollout, not rejecting the tool."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-028",
+ "cond": "old",
+ "cost": 0.037408,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

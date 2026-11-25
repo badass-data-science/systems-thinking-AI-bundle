@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Explicitly names the 'success to the successful' structure."
+  },
+  {
+   "score": 1,
+   "why": "Explains that the rule compounds the early lucky edge and that past papers partly record past allocation, so the argument is circular."
+  },
+  {
+   "score": 1,
+   "why": "Recommends changing the rule with a per-group floor, needs-based allocation, and discounting allocation-driven output."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects past output as proof of merit and proposes per-student measures instead."
+  },
+  {
+   "committed": false,
+   "why": "Never calls it Escalation and correctly frames the dynamic as the allocation rule, not mutual reaction."
+  }
+ ],
+ "notes": "",
+ "id": "arch-003",
+ "cond": "new",
+ "cost": 0.02108,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

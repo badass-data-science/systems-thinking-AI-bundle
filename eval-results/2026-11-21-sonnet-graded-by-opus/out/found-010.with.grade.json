@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Point 4 explicitly checks compounding, that referred users must themselves refer others, via k-factor, cycle time and cohort behavior."
+  },
+  {
+   "score": 1,
+   "why": "Point 2 names seasonality, a press hit and a competitor's outage as alternative causes that could produce the same growth."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-010",
+ "cond": "with",
+ "cost": 0.016856,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "Says the claim is partly right and warns of risks from wholesale mapping, but doesn't explicitly frame it as close enough to be useful yet dangerously wrong."
+  },
+  {
+   "score": 0.5,
+   "why": "Correctly says Cynefin sorts by cause-effect relationship and wicked by contested formulation/values, but doesn't connect wicked/tame to Checkland's soft versus hard distinction."
+  },
+  {
+   "score": 0.5,
+   "why": "Decomposes housing into interacting sub-problems and calls for deliberation alongside probing, but doesn't name it a mess or call for boundary interrogation like CATWOE."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-014",
+ "cond": "with",
+ "cost": 0.019772,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It classifies tech debt as a stock and cumulative planned and shipped work as running totals, treats shortcuts and output as per-sprint flows, and derives pressure and drag each period."
+  },
+  {
+   "score": 1,
+   "why": "Debt is filled by new shortcuts and drained by an added cleanup flow that the 20% option acts on, and the delay is modeled as a latent-debt stock with a maturation outflow."
+  },
+  {
+   "score": 1,
+   "why": "It defines 'behind' as cumulative planned minus cumulative shipped and computes pressure from that gap."
+  },
+  {
+   "score": 0.5,
+   "why": "Having formulas reference only the previous row's stocks makes every loop pass through an accumulation, but it never states units or checks that formula directions match the drawing."
+  },
+  {
+   "score": 0.5,
+   "why": "It uses placeholder guesses and sweeps DragK, the delay and ramp-up, but never steps the model by hand, never frames the result as the margin between options, and leaves debt-per-shortcut out of the sensitivity list."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Pressure, drag and gap are derived each sprint rather than accumulated."
+  },
+  {
+   "committed": false,
+   "why": "The delay is a latent-debt stock with a maturation rate, not a fixed shift."
+  }
+ ],
+ "notes": "Cleanup can only drain active debt, not latent debt, so the model cannot clean up shortcuts before they bite, which may understate the 20% option.",
+ "id": "held-012",
+ "cond": "without",
+ "cost": 0.051044000000000006,
+ "score": 0.8,
+ "pitfalls_committed": 0
+}

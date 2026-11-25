@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It explicitly asks whether anyone is in charge, notes that 3,000 uncoordinated agents react to each other, and lists emergent cascades and slot crowding."
+  },
+  {
+   "score": 1,
+   "why": "It says the aggregate model averages away interaction effects, recommends an actor-based simulation with varied preference types, and proposes a bounded pilot."
+  },
+  {
+   "score": 1,
+   "why": "It recommends caps on moves and negotiation rounds plus a human escalation path, and monitoring of combined behavior across agents rather than each agent alone."
+  },
+  {
+   "score": 0.5,
+   "why": "It implies IT sets the bounds but never says the centrally designed defaults and limits are where IT has leverage."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It treats the aggregate model only as a baseline and centers the answer on the lack of coordination."
+  }
+ ],
+ "notes": "",
+ "id": "held-028",
+ "cond": "new",
+ "cost": 0.031100000000000003,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

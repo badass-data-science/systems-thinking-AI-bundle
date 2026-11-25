@@ -1,0 +1,9 @@
+{
+ "id": "found-005",
+ "cond": "without",
+ "answer": "**Ask: \"Who is leaving, and why?\"** Specifically, is the drop coming from attrition (people quitting), from layoffs, or from hiring that hasn't kept pace with departures?\n\n\"Headcount is dropping\" is a symptom with several different causes, and each one needs a different fix.\n\n- **Regretted attrition** (strong people leaving for better pay, growth, or management) calls for retention fixes such as compensation, career paths, or manager quality.\n- **Concentrated attrition** (one team, one manager, or one tenure band) points to a local problem. A company-wide program would miss it.\n- **Low-performer exits or planned reductions** may not be a problem at all.\n- **A hiring shortfall** (departures are normal, but backfills are slow or stalled) is a recruiting or budget-approval problem. Retention programs won't help.\n- **Hiring freezes or non-backfill policy** means the decline is deliberate, and the real question is whether the business wants it.\n\nIf you propose a fix first, you'll probably solve the wrong problem. Raises don't help if the cause is a bad director or a frozen requisition. A hiring push is wasted if people are leaving as fast as you add them.\n\nFollow-up questions, once you know the type of departure, are where the exits are concentrated (team, level, tenure), what exit interviews say, whether the decline is intentional, and what it's costing the business (missed roadmap, burnout, on-call load). That tells you whether it's urgent and which lever to pull.",
+ "cost": 0.0180128,
+ "turns": 1,
+ "tool_calls": [],
+ "skill_loaded": false
+}

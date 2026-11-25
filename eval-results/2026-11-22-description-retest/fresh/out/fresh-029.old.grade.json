@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It refuses to pick one group's view and treats all four claims as parts of one structure, but it never says the problem definition itself is contested, and it reframes the ambiguity as the board's question type."
+  },
+  {
+   "score": 0.5,
+   "why": "It interviews each group and suggests a live workshop to check draft loops, but the analyst draws the loops first rather than the groups surfacing their worldviews together in one room."
+  },
+  {
+   "score": 0,
+   "why": "There is no CATWOE or explicit examination of the worldview that makes each group's fix look obviously right."
+  },
+  {
+   "score": 0.5,
+   "why": "It moves to stock-and-flow only after the structure is validated, but it never tracks which groups were consulted, informed or not yet consulted."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It draws the boundary around the whole patient journey and treats bed shortage as one link among four, not as the model's frame."
+  }
+ ],
+ "notes": "Declaring all four claims true from the outset pre-judges contested positions instead of testing them.",
+ "id": "fresh-029",
+ "cond": "old",
+ "cost": 0.042628,
+ "score": 0.375,
+ "pitfalls_committed": 0
+}

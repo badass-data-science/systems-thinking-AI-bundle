@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names a balancing loop with an information delay (10-min window) and a material delay (8-min boot) that cause overshoot and swing-back."
+  },
+  {
+   "score": 1,
+   "why": "Explicitly says bigger batches are reacting harder to a stale signal and will enlarge the swings."
+  },
+  {
+   "score": 1,
+   "why": "Recommends faster boot and warm pools, proportional partial correction with re-measurement, and a wider band, and warns that a 2-minute window risks flapping."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-008",
+ "cond": "with",
+ "cost": 0.022312,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

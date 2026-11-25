@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Accidental Adversaries, calls them natural allies, and describes how each side's local fix hurts the other."
+  },
+  {
+   "score": 1,
+   "why": "Traces the full reinforcing loop from volume to weak candidates, more screening, slower fills and back to more volume."
+  },
+  {
+   "score": 1,
+   "why": "States the tell explicitly: each side accurately narrates its own behavior as reasonable, and neither account explains the loop alone."
+  },
+  {
+   "score": 1,
+   "why": "Recommends showing both groups the loop together and changing measures, including quality-adjusted time-to-fill, a joint intake and a signed scorecard."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says neither side is right."
+  },
+  {
+   "committed": false,
+   "why": "Frames them as allies under Accidental Adversaries, not as rivals in Escalation."
+  }
+ ],
+ "notes": "",
+ "id": "held-008",
+ "cond": "prev",
+ "cost": 0.026416000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

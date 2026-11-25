@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Shifting the Burden in the intervenor variant and identifies the agency as the on-demand outside fixer."
+  },
+  {
+   "score": 1,
+   "why": "Identifies agency shifts as the symptomatic fix and preceptorship, retention and permanent hiring as the fundamental fix."
+  },
+  {
+   "score": 1,
+   "why": "Traces loop R1 in which agency reliance erodes mentoring and retention, so the fundamental fix gets harder."
+  },
+  {
+   "score": 1,
+   "why": "Keeps agency cover and restarts preceptorship now, noting that the capability decays the longer it stays dormant."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly rejects Fixes That Fail, giving a reason."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly keeps agency shifts, saying that abolishing them would harm patients."
+  }
+ ],
+ "notes": "The R1 sign check is slightly loose (the loop as written has more than two links), but the reinforcing conclusion is correct.",
+ "id": "arch-001",
+ "cond": "with",
+ "cost": 0.025144,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

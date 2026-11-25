@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names the shelter runs as a third outflow the spreadsheet has no entry for, so recorded stock overstates physical stock, and notes that software logging the same two flows will show the same gap."
+  },
+  {
+   "score": 0.5,
+   "why": "Lists other possible unlogged losses (spoilage, untracked discards, receiving errors) and suggests a side-by-side check, but never asks systematically what else leaves each stock or recommends drawing those flows into the model."
+  },
+  {
+   "score": 1,
+   "why": "Says to decide deliberately whether the diversion becomes an official tracked outflow, and argues that software covering only the existing categories won't close the gap."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says to fix what the model counts by adding an outflow category before buying software."
+  },
+  {
+   "committed": false,
+   "why": "Explicitly warns against treating volunteers as a theft problem and frames their runs as a reasonable workaround."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-001",
+ "cond": "new",
+ "cost": 0.035208,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

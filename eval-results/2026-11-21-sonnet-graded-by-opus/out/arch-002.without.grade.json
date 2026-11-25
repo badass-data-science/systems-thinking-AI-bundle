@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Calls it 'target drift' and describes the ratchet where each bad quarter becomes the new baseline, which is the eroding-goals archetype in substance."
+  },
+  {
+   "score": 0.5,
+   "why": "Contrasts cheap target-lowering with costly capacity fixes but never frames these as two balancing loops on the same gap or notes the delay in improving performance."
+  },
+  {
+   "score": 1,
+   "why": "Anchors the target to customer need via CSAT data and requires a named owner, a written reason and a recorded history for any future change."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly identifies the moving target as the core issue rather than treating it only as staffing."
+  }
+ ],
+ "notes": "Labeling it 'normalization of deviance' is a loosely related but different concept; otherwise nothing harmful.",
+ "id": "arch-002",
+ "cond": "without",
+ "cost": 0.030632,
+ "score": 0.8333333333333334,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,21 @@
+Operation A overbuilding -> Operation A lair gains: + steelblue
+Operation A lair gains -> Operation A overbuilding: + steelblue
+Operation A overbuilding -> regional volcano-lair viability: - steelblue
+regional volcano-lair viability -> Operation A lair gains: + delay steelblue
+
+Operation B overbuilding -> Operation B lair gains: + steelblue
+Operation B lair gains -> Operation B overbuilding: + steelblue
+Operation B overbuilding -> regional volcano-lair viability: - steelblue
+regional volcano-lair viability -> Operation B lair gains: + delay steelblue
+
+Operation C overbuilding -> Operation C lair gains: + steelblue
+Operation C lair gains -> Operation C overbuilding: + steelblue
+Operation C overbuilding -> regional volcano-lair viability: - steelblue
+regional volcano-lair viability -> Operation C lair gains: + delay steelblue
+
+loop: Operation A overbuilding, Operation A lair gains
+loop: Operation A overbuilding, regional volcano-lair viability, Operation A lair gains
+loop: Operation B overbuilding, Operation B lair gains
+loop: Operation B overbuilding, regional volcano-lair viability, Operation B lair gains
+loop: Operation C overbuilding, Operation C lair gains
+loop: Operation C overbuilding, regional volcano-lair viability, Operation C lair gains

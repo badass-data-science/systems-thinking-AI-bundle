@@ -1,0 +1,28 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Names Escalation and describes each vendor's balancing loop toward a relative target combining into a reinforcing loop."
+  },
+  {
+   "score": 1,
+   "why": "Explains that developers keep rewarding the bigger free tier, so a unilateral cut just cedes ground to the rival."
+  },
+  {
+   "score": 1,
+   "why": "Proposes structural fixes: a mutually binding verifiable limit, a new dimension to compete on, and making free tier less decisive, explicitly not willpower."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says there is no natural ceiling and that only cost limits the spiral."
+  }
+ ],
+ "notes": "",
+ "id": "arch-009",
+ "cond": "with",
+ "cost": 0.023808000000000003,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

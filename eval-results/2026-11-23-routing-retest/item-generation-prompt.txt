@@ -1,0 +1,12 @@
+The folder ./bundle holds a set of cards distilled from a systems-thinking book (concepts, procedures, archetypes, heuristics, cases, tools), a catalog INDEX.md, the card format in SCHEMA.md (see its "Evals" section), and an existing eval set in ./bundle/evals/.
+
+Write 30 NEW eval items, as a YAML list in exactly the eval format SCHEMA.md describes. They will be a held-out test of whether an AI assistant uses this material well, so:
+
+- Each scenario must be new: not a restatement of any scenario in ./bundle/evals/ or of any case card's example.
+- Write each prompt the way a real user would ask it in their own work: a manager, engineer, analyst, policymaker, researcher or someone running AI agents. Most prompts (at least 20 of 30) must NOT name a systems-thinking term, technique or archetype; describe the situation in plain language and ask for help. The rest may name a method the user already knows.
+- Spread items across the whole catalog: foundations (feedback, stocks and flows, delays, boundaries, mental models), archetypes, quantitative modeling and validation (stock-and-flow, calibration, sensitivity analysis, parameter guesses), leverage and interventions, AI systems (trust, delegation, multi-agent, second-order effects, knowledge graphs, checking AI output), soft-systems and problem framing, and communicating a model. Use every kind (recognize, apply, discriminate, critique, procedure).
+- Within that spread, include at least five items where the user is following up an incident, outage, bad release or failed launch, or writing a postmortem, often under time pressure; at least five where the people involved disagree about what the problem even is; and at least four on building, hand-iterating or calibrating a simulation or on sensitivity analysis. Keep these plain-language like the rest.
+- `expected` lists 2-5 points a strong answer must make, judged on substance; `pitfalls` lists 0-2 tempting wrong moves; `uses` lists ids (filename stems) of the cards the item draws on, which must exist in ./bundle.
+- ids are held-001 to held-030.
+
+Read the cards you need so the rubric is faithful to them. Output only the YAML list, with no prose before or after and no code fence.

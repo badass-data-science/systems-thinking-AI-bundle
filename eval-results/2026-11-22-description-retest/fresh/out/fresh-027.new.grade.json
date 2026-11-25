@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It states the row-count check only catches dropped or duplicated rows and ran in staging, but it never asks whether the 40 scripts and the table list cover the whole schema or were picked by hand."
+  },
+  {
+   "score": 1,
+   "why": "It names truncated values, timezone and encoding damage, NULL handling, orphaned foreign keys and production-versus-staging differences."
+  },
+  {
+   "score": 0.5,
+   "why": "It adds different kinds of checks (checksums, sampled diffs, constraint validation, running the application) but never writes a concrete pass standard that could fail."
+  },
+  {
+   "score": 1,
+   "why": "It explicitly restates the report as 'nothing a row-count comparison can see is wrong.'"
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly calls for checks of a different kind rather than a harder version of the row count."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-027",
+ "cond": "new",
+ "cost": 0.028811999999999997,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

@@ -1,0 +1,23 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "All six elements are covered, each with substantive content."
+  },
+  {
+   "score": 1,
+   "why": "It states management's worldview that lectures are one-way information transfer and contrasts it with competing worldviews."
+  },
+  {
+   "score": 1,
+   "why": "The Transformation check and Insight 1 reveal the real purpose may be educating and retaining first-years, not saving money, which changes the system's goal."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "found-004",
+ "cond": "without",
+ "cost": 0.028552,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

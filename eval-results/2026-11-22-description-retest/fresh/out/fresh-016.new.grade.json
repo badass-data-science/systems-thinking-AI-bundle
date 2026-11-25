@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says history can't separate the models because two models can fit the same net curve with completely different internal flows, so fit doesn't validate mechanism."
+  },
+  {
+   "score": 1,
+   "why": "It has someone who built neither model, such as a support or sales lead, defend each causal link, and flags parameters tuned only to improve fit."
+  },
+  {
+   "score": 1,
+   "why": "It identifies divergent checkable predictions (gross adds vs churn paths, penetration, churn by support experience, segments) and says to write down refutation criteria beforehand."
+  },
+  {
+   "score": 1,
+   "why": "It asks which uncertain parameter would flip the expansion-versus-support recommendation and says to measure those first."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says not to choose on fit."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-016",
+ "cond": "new",
+ "cost": 0.032396,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

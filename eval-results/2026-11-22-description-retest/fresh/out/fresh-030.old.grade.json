@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says an unwanted conclusion gets fought by attacking assumptions, and that it becomes 'your claim for them to defeat' because leadership had no part in it."
+  },
+  {
+   "score": 0.5,
+   "why": "It rejects more detail and proposes a live whiteboard rebuild, but it decides the contractor boundary alone as a toggle rather than agreeing it with leadership before showing results."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends a sensitivity and break-even test on attrition, but it doesn't call for openly naming the value-laden choices."
+  },
+  {
+   "score": 0,
+   "why": "It never suggests tracking which leaders helped draw the model versus only saw results, or planning those conversations."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly rejects adding detail alone and centers a participatory rebuild."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-030",
+ "cond": "old",
+ "cost": 0.033476,
+ "score": 0.5,
+ "pitfalls_committed": 0
+}

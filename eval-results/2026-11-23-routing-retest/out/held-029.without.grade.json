@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Notes that only successful price changes were tested and that the reviewer shares the designer's assumptions, and gives concrete counter-practices, though it doesn't frame this as normal judgment."
+  },
+  {
+   "score": 1,
+   "why": "Says three matches could be luck, that tuned parameters make them training data rather than validation, and asks the user to state which it was."
+  },
+  {
+   "score": 0.5,
+   "why": "Recommends an independent reviewer who didn't build the model and a pre-agreed rollback threshold, but never asks for a written falsification criterion before further runs or a link-by-link review."
+  },
+  {
+   "score": 1,
+   "why": "Recommends sensitivity tests on elasticity, usage drift and retention, plus a staged pilot, and reframes the pitch away from 'validated' toward 'to be confirmed by rollout.'"
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Explicitly says the three close matches do not amount to validation."
+  }
+ ],
+ "notes": "",
+ "id": "held-029",
+ "cond": "without",
+ "cost": 0.032072,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

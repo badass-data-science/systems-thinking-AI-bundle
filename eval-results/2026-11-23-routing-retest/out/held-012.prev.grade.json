@@ -1,0 +1,40 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Delivered, debt and headcount are stocks; shipped, created and repaid are flows; gap, pressure and drag are recalculated each sprint."
+  },
+  {
+   "score": 0.5,
+   "why": "Gives debt its inflow and a cleanup drain that the 20% reserve acts on, but never says the 'bites months later' lag is the debt stock itself (only the hiring ramp is framed as stock-not-lag)."
+  },
+  {
+   "score": 1,
+   "why": "Pressure comes from the gap between planned cumulative and delivered."
+  },
+  {
+   "score": 1,
+   "why": "Checks signs around the loop, says every loop must pass through a stock, and checks units (points per sprint into points)."
+  },
+  {
+   "score": 1,
+   "why": "Uses labeled guesses, hand-checks rows, and swings drag, ramp and others to see whether the ranking flips."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "Pressure, shortcut share and drag are auxiliaries, not accumulating columns."
+  },
+  {
+   "committed": false,
+   "why": "Debt's effect runs through the accumulated debt stock, and the answer explicitly warns against fixed lags."
+  }
+ ],
+ "notes": "",
+ "id": "held-012",
+ "cond": "prev",
+ "cost": 0.055324,
+ "score": 0.9,
+ "pitfalls_committed": 0
+}

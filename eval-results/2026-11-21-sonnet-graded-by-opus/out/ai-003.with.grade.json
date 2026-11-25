@@ -1,0 +1,31 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Classifies (a) as clear and has the agent call a coded rate table or rule rather than work out the rate."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (b) as complicated, with agent analysis checked on held-out data or by a forecasting expert."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (c) as complex; the agent proposes and tracks small reversible probes while an accountable person chooses them and judges results."
+  },
+  {
+   "score": 1,
+   "why": "Classifies (d) as chaotic, says stabilize first, and limits the agent to pre-written runbook steps."
+  },
+  {
+   "score": 1,
+   "why": "Tells the reader to classify each decision before the agent's answer shapes their view, which puts classification with the person."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "ai-003",
+ "cond": "with",
+ "cost": 0.024220000000000002,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

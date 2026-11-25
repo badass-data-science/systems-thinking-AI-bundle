@@ -1,0 +1,17 @@
+sales effort -> warhead orders: + steelblue
+warhead orders -> sales effort: + steelblue
+warhead orders -> delivery performance: - steelblue
+delivery performance -> warhead orders: + delay steelblue
+delivery performance -> perceived need to invest: - steelblue
+acceptable delivery performance -> perceived need to invest: + steelblue
+warhead orders -> perceived need to invest: + steelblue
+perceived need to invest -> investment in assembly capacity: + steelblue
+investment in assembly capacity -> assembly capacity: + delay steelblue
+assembly capacity -> delivery performance: + steelblue
+delivery performance -> acceptable delivery performance: + delay steelblue
+
+loop: sales effort, warhead orders
+loop: warhead orders, delivery performance
+loop: delivery performance, perceived need to invest, investment in assembly capacity, assembly capacity
+loop: warhead orders, perceived need to invest, investment in assembly capacity, assembly capacity, delivery performance
+loop: delivery performance, acceptable delivery performance, perceived need to invest, investment in assembly capacity, assembly capacity

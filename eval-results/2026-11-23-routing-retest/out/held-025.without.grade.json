@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 0.5,
+   "why": "It plans to win over skeptics and says boards trust models that admit weaknesses, but it never says the fight will be over the model's boundary and assumptions rather than its conclusion."
+  },
+  {
+   "score": 1,
+   "why": "It treats driver capacity as the possibly binding constraint, explains how crowding and unreliability would cap gains, and brings capacity into the model as scenarios."
+  },
+  {
+   "score": 0.5,
+   "why": "It engages the union and the skeptical members early and treats their concerns as improving the analysis, but does not walk through or build the model's links with them."
+  },
+  {
+   "score": 1,
+   "why": "It openly names the congestion-benefit accounting, the three-year horizon and the elasticity guess, and calls for sensitivity analysis on the key drivers, including staffing scenarios."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It changes who is consulted by meeting the union and the skeptical board members before the presentation."
+  }
+ ],
+ "notes": "",
+ "id": "held-025",
+ "cond": "without",
+ "cost": 0.038984000000000005,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

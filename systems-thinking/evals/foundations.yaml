@@ -1,0 +1,165 @@
+# Parts I and II: seeing systems, boundaries, the iceberg, loops, delays, CLDs.
+
+- id: found-001
+  kind: apply
+  prompt: >
+    Over six months a web service had five outages: a bad config push, a
+    database failover, an expired certificate, a dependency upgrade, and a
+    traffic spike. Each postmortem found and fixed a different real root
+    cause. The outage rate hasn't changed. What should the next postmortem
+    do differently?
+  expected:
+    - Recognizes recurring, differently caused failures as evidence of a structural cause.
+    - Runs the iceberg, lining up the events as a pattern, then asking what structure keeps producing them and what mental model keeps that structure in place.
+    - Looks for an unchanged interconnection (shared deadline pressure, review shortcuts, on-call load) that stresses whichever part is weakest.
+  pitfalls:
+    - Proposing a sixth root-cause fix.
+  uses: [recurring-causes-mean-structure, iceberg-analysis, system]
+
+- id: found-002
+  kind: procedure
+  prompt: >
+    Run the iceberg model on this: "Our biggest client escalated a complaint
+    about late reports on Monday." Supporting record: the same client
+    escalated in March, June and September, each about two weeks after a
+    quarter-end, when the reporting team also handles audit requests. The
+    team lead says "quarter-end is always crazy, we push through."
+  expected:
+    - "Event: Monday's escalation."
+    - "Pattern: quarterly escalations, about two weeks after quarter-end."
+    - "Structure: quarter-end audit work competes with reporting for the same fixed capacity, building a backlog that drains slowly, with no decision rule that checks it."
+    - "Mental model: the reasonable belief that 'we push through', which makes the structure look acceptable. Stated without blame."
+  uses: [iceberg-analysis, iceberg-model]
+
+- id: found-003
+  kind: procedure
+  prompt: >
+    You're modeling why a hospital's emergency department wait times keep
+    rising. The data you have is from the ED's own systems. Draw (in words) a
+    boundary on purpose and say what you'd check before trusting it.
+  expected:
+    - States the question the boundary must answer.
+    - Names stocks and flows (patients waiting, arrivals, admissions, discharges).
+    - Considers whether factors outside ED data (inpatient bed availability and discharge timing, primary care access) are part of why the system behaves as it does, and avoids the convenience trap.
+    - Writes a defense for each exclusion, checks for flows leaving through undrawn pipes, and runs CATWOE.
+  uses: [draw-a-boundary, convenience-boundary-trap, catwoe]
+
+- id: found-004
+  kind: procedure
+  prompt: >
+    Apply CATWOE to a university's plan to move all first-year lectures to
+    recorded video to save money.
+  expected:
+    - Gives all six (Customers, Actors, Transformation, Worldview, Owner, Environmental constraints).
+    - The Worldview answer is contestable (for example, that content delivery is the main value of a lecture).
+    - Notes at least one surprising answer and whether it changes the boundary or goal.
+  uses: [catwoe]
+
+- id: found-005
+  kind: apply
+  prompt: >
+    "Our engineering headcount has been dropping all year." What question
+    should you ask before proposing a fix, and why?
+  expected:
+    - Splits the stock change into inflow (hiring) and outflow (attrition) and asks which one moved.
+    - Explains that the two readings call for different fixes.
+  uses: [name-the-flow, stock, flow]
+
+- id: found-006
+  kind: procedure
+  prompt: >
+    Trace this loop and label it. More automated tests means fewer bugs
+    reaching users. Fewer bugs reaching users means fewer urgent hotfixes.
+    More urgent hotfixes means less time to write tests. More time to write
+    tests means more automated tests.
+  expected:
+    - "Phrases nodes as quantities and marks links: tests → bugs reaching users (−), bugs → hotfixes (+), hotfixes → test-writing time (−), time → tests (+)."
+    - Counts two minus signs, so the loop is reinforcing (R).
+    - Notes it can run in a virtuous or vicious direction.
+  pitfalls:
+    - Labeling it balancing because it "stabilizes quality."
+  uses: [trace-loop-polarity, reinforcing-loop, polarity-carries-no-value]
+
+- id: found-007
+  kind: procedure
+  prompt: >
+    Build a causal loop diagram from this story: "When the bug backlog gets
+    long, managers pull engineers off feature work to fix bugs. Feature work
+    slips, so sales promises customers custom features to close deals. Custom
+    features are rushed and buggy, so the backlog gets longer." Then read it
+    aloud and say what you'd check.
+  expected:
+    - Lists quantities phrased so higher means more.
+    - Marks polarity on each link and identifies any delay (rushed features produce bugs after release).
+    - Checks the loop closes and labels it by counting minus signs.
+    - Reads it aloud as one sentence and proposes saying it to the people who own each link.
+  uses: [build-cld-from-story, trace-loop-polarity, consistent-is-not-true]
+
+- id: found-008
+  kind: apply
+  prompt: >
+    A company's autoscaler adds servers when CPU stays above 80% for 10
+    minutes; new servers take 8 minutes to boot. Capacity keeps overshooting
+    and then scaling down too far. The team proposes reacting after 2 minutes
+    instead of 10 and adding servers in bigger batches. Evaluate.
+  expected:
+    - Identifies a balancing loop with delays (a measurement window, an information delay, and boot time, a material delay) producing oscillation.
+    - Warns that reacting harder to a still-late signal (bigger batches) enlarges the swings.
+    - Recommends shortening the delay where possible (faster boot, warm pools), correcting part of the gap and waiting, or widening the acceptable band; notes a shorter window helps only if it doesn't just make the loop jumpier.
+  uses: [damp-an-oscillation, dont-react-harder-to-late-signals, delay]
+
+- id: found-009
+  kind: apply
+  prompt: >
+    A new code-review policy (every change needs two approvals) keeps getting
+    quietly worked around: one-approval exceptions here, rubber-stamp second
+    reviews there. Nobody is openly opposing it. What should the policy owner
+    look for?
+  expected:
+    - Suspects a balancing loop defending an unwritten goal (for example, an implicit throughput or cycle-time target).
+    - Sketches state, goal, gap and correction and asks who set the goal.
+    - Recommends changing the goal explicitly rather than pushing the state.
+  uses: [find-the-unwritten-goal, change-initiative-meets-balancing-loop, balancing-loop]
+
+- id: found-010
+  kind: critique
+  prompt: >
+    An analyst claims: "Our user base grew 20% this quarter, which proves our
+    referral loop is working." What's missing from this argument?
+  expected:
+    - Growth isn't proof of a reinforcing loop; must check self-causation, that each round's referrals drive the next round's sign-ups.
+    - Considers outside causes moving the same way (a competitor's outage, seasonality, press coverage).
+  uses: [growing-is-not-reinforcing]
+
+- id: found-011
+  kind: apply
+  prompt: >
+    A team's weekly active users went 1,000, 1,100, 1,210, 1,331. The manager
+    says growth is modest and there's no need to plan for scale this year.
+    Respond.
+  expected:
+    - Recognizes a steady 10% multiplier (compounding); absolute changes look small early.
+    - Projects forward (roughly doubling about every seven weeks) and recommends deciding about scale now, while the curve looks flat.
+  uses: [exponential-looks-flat, snowballing]
+
+- id: found-012
+  kind: discriminate
+  prompt: >
+    Is a multi-agent customer-support pipeline, designed by one team, in
+    which a triage agent routes tickets to three specialist agents, a swarm?
+    When would a system of AI agents become one?
+  expected:
+    - Applies the swarm test, asking whether anyone is in charge; a designed pipeline has assigned coordination, so it is not a swarm.
+    - Says it becomes a swarm when many independently built agents act on each other's outputs with nobody coordinating (for example, pricing or trading agents in one market).
+  uses: [swarm-test, agentic-ai]
+
+- id: found-013
+  kind: discriminate
+  prompt: >
+    A manager says "we just need to tighten the control loop on delivery
+    dates." When is that the right framing, and when is it the wrong
+    question?
+  expected:
+    - Right when there's a defined setpoint and error signal (a control/cybernetics question).
+    - Wrong when the structure itself produces the behavior (a system dynamics question); tightening control won't fix a structure that needs redrawing.
+  uses: [system-dynamics, cybernetics]

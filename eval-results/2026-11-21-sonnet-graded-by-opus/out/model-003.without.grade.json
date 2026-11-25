@@ -1,0 +1,19 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "Says a constant ignores state and capacity, ships 90 even when stock is short, and hides whether 90 is a capacity or a target, which covers both the hidden binding constraint and the lost dynamics."
+  },
+  {
+   "score": 1,
+   "why": "Writes shipping as MIN(desired/backlog-driven, capacity, inventory/dt), so the binding constraint can change over time."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "",
+ "id": "model-003",
+ "cond": "without",
+ "cost": 0.017472,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}

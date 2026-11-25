@@ -1,0 +1,32 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "The answer says the boundary stops at the facility scale, where the county's data ends, so it was drawn for data convenience rather than for the landfill-diversion question."
+  },
+  {
+   "score": 1,
+   "why": "It lists distinct downstream loss routes (residue, unsold bales, exports, low-value grades) that the model can't see but that decide actual diversion."
+  },
+  {
+   "score": 1,
+   "why": "It recommends extending tracking with estimates from residue rates and end-market tonnage, and restating the figure as 'collected' versus 'actually recycled.'"
+  },
+  {
+   "score": 0.5,
+   "why": "It endorses rough estimates over the uncorrected number but never says each exclusion from the model must be explicitly justified."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "It explicitly says the precise weighing measures collection, not diversion, and does not accept the figure."
+  }
+ ],
+ "notes": "",
+ "id": "held-017",
+ "cond": "new",
+ "cost": 0.03042,
+ "score": 0.875,
+ "pitfalls_committed": 0
+}

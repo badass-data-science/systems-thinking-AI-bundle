@@ -1,0 +1,36 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says the team stopped being able to do the work without the tool and that relying on it has faded the review skill, which is the capability-erosion dynamic in substance."
+  },
+  {
+   "score": 1,
+   "why": "It says a second vendor fixes only vendor dependency, leaves the staff gap in place, and lets people stay unable to reconcile manually."
+  },
+  {
+   "score": 0.5,
+   "why": "It recommends quarterly manual reconciliations by each person that also check the AI's output, but never says to track whether people can still do the work."
+  },
+  {
+   "score": 0.5,
+   "why": "It implicitly keeps the tool and suggests quantifying the outage exposure, but never says to put the dependency on the risk register by name."
+  }
+ ],
+ "pitfalls": [
+  {
+   "committed": false,
+   "why": "The answer keeps the tool and builds a fallback around it."
+  },
+  {
+   "committed": false,
+   "why": "It explicitly says a backup vendor is not the first fix and puts it after the capability work."
+  }
+ ],
+ "notes": "",
+ "id": "fresh-023",
+ "cond": "without",
+ "cost": 0.030315999999999996,
+ "score": 0.75,
+ "pitfalls_committed": 0
+}

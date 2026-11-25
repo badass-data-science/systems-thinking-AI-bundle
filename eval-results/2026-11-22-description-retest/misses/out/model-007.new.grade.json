@@ -1,0 +1,27 @@
+{
+ "points": [
+  {
+   "score": 1,
+   "why": "It says parameter 2 alone explains about 60% of the variance and dominates."
+  },
+  {
+   "score": 1,
+   "why": "It gives parameter 1's 10% alone against its 0.40 total, attributes 30 points to interaction, and checks this against S2 = 0.28."
+  },
+  {
+   "score": 1,
+   "why": "It warns that a one-at-a-time swing would make parameter 1 look irrelevant, says to pin down parameter 2 first, and says not to drop parameter 1."
+  },
+  {
+   "score": 1,
+   "why": "It treats the indices as sample estimates, cites sampling error of about ±0.1, and recommends an adequate sample size."
+  }
+ ],
+ "pitfalls": [],
+ "notes": "Minor notation slips (writing 'S1 + S1 + S2' and labeling parameter 2's index 'S1 = 0.60') and a meaningless remark about third-order effects in a two-parameter model, none of which change the interpretation.",
+ "id": "model-007",
+ "cond": "new",
+ "cost": 0.025844,
+ "score": 1.0,
+ "pitfalls_committed": 0
+}
