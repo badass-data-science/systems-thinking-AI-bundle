@@ -31,7 +31,11 @@ python3 tools/build_bundle.py                # 0 errors expected; regenerates gr
 python3 tools/test_build_bundle.py           # every planted bug still caught
 python3 tools/review_archetypes.py --check   # archetype cards still match the book's diagrams
 python3 tools/test_review_archetypes.py
+python3 tools/test_bundle_mcp_server.py      # MCP tools; ranking no worse than its floors
+python3 tools/test_run_evals.py              # eval runner, offline
 ```
+
+Install the dependencies with `pip install -r requirements.txt`. CI (`.github/workflows/ci.yml`) runs all six, checks the generated files are committed and up to date, parses `graph.ttl` and greps `eval-results/` for local paths; a pull request shouldn't merge with it red. If a change genuinely improves search or archetype matching, raise the floors in `test_bundle_mcp_server.py` to the new rates.
 
 Commit the regenerated `graph.json`, `graph.ttl` and `INDEX.md` together with the cards that changed them. Then add an entry to `CHANGELOG.md`.
 

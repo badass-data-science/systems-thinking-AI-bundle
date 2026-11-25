@@ -1,0 +1,4 @@
+# The build, the review script, the MCP server and their tests.
+# mcp is held below 2: version 2 renamed FastMCP, which bundle_mcp_server.py imports.
+pyyaml>=6
+mcp>=1.2,<2

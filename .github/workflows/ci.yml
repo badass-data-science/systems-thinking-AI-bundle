@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Checks (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt rdflib
+
+      - name: Build the bundle
+        run: python3 tools/build_bundle.py
+
+      - name: Generated files are committed and up to date
+        run: |
+          if ! git diff --exit-code -- systems-thinking/graph.json systems-thinking/graph.ttl systems-thinking/INDEX.md; then
+            echo "::error::Run python3 tools/build_bundle.py and commit graph.json, graph.ttl and INDEX.md."
+            exit 1
+          fi
+
+      - name: Validator catches planted bugs
+        run: python3 tools/test_build_bundle.py
+
+      - name: Archetype cards match the book's diagrams
+        run: python3 tools/review_archetypes.py --check
+
+      - name: Archetype review catches planted errors
+        run: python3 tools/test_review_archetypes.py
+
+      - name: MCP server
+        run: python3 tools/test_bundle_mcp_server.py
+
+      - name: Eval runner (offline)
+        run: python3 tools/test_run_evals.py
+
+      - name: graph.ttl parses as RDF
+        run: python3 -c "import rdflib; g = rdflib.Graph(); g.parse('systems-thinking/graph.ttl'); print(len(g), 'triples')"
+
+      - name: No private paths in eval results
+        run: |
+          if grep -rnE '/home/|/tmp/claude' eval-results; then
+            echo "::error::Replace local paths in eval-results before committing (see AGENTS.md)."
+            exit 1
+          fi
